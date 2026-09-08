@@ -28,6 +28,13 @@ V2를 조용히 수정하지 마세요. 확장(FBX, 다수 캐릭터, lip-sync �
 
 대용량 GLB/FBX/ZIP·`dist/`·임시 블렌더 캐시는 Git에 포함하지 않습니다.
 
+## Post-V2 안전 보완
+
+후속 런타임 보완은 기존 V2 증빙을 변경하지 않고 `nurion_post_v2_hardening`에서
+검증합니다. Gate 6은 FBX 입력·내보내기 경로·시간값·원본 권위를 fail-closed로
+확인합니다. 로컬 재현 절차와 환경변수는
+[`docs/REPRODUCIBLE_RUNTIME.md`](docs/REPRODUCIBLE_RUNTIME.md)를 따릅니다.
+
 ## Quick pointers
 
 - V2 Integration SPEC: `fast_track/working/adaptation_engine_v2/semantic/NURION_ADAPTATION_ENGINE_V2_INTEGRATION_RELEASE_GATE_SPEC_R1.json`

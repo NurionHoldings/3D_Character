@@ -1,0 +1,36 @@
+name: Post-V2 Runtime Contracts
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install --upgrade pip pytest
+      - run: python -m compileall -q nurion_post_v2_runtime nurion_character_landmarker/profiles
+      - run: python -m pytest tests/test_post_v2_runtime.py
+      - run: python -c "import nurion_post_v2_runtime; print('offline-import: PASS')"
+      - run: python tools/post_v2_offline_smoke.py
+  blender-smoke:
+    # This remains SKIPPED until repository configuration explicitly supplies Blender.
+    if: ${{ vars.NURION_BLENDER_CI == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: command -v blender || (echo 'Blender validation required but unavailable' && exit 1)
+      - run: blender --background --version
