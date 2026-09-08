@@ -31,5 +31,11 @@
   documentation are committed together on `chore/post-v2-runtime-hardening`.
 - HEAD change policy: only this Post-V2 change set was reviewed after the base
   `43733b9`; no re-review of unchanged locked material was performed.
+- Windows delta record: the first Windows 10/Python 3.10 run produced 5 PASS
+  and 3 harness failures: WinError 1314 for an unprivileged symlink and two
+  subprocess initialization failures caused by replacing the child environment
+  with PATH alone. The corrected tests skip only the unavailable Windows
+  symlink capability (Linux CI still exercises it) and pass the full inherited
+  environment to isolated Python processes.
 - Credit guard: no reliable in-repository credit meter exists. This bounded Terra
   implementation is to stop and report before any additional broad work.

@@ -48,7 +48,12 @@ def test_export_rejects_escape_symlink_and_clobber(tmp_path):
     with pytest.raises(ContractViolation, match="EXPORT_TARGET_EXISTS"):
         validate_export_target(target, fmt="FBX", root=root)
     link = root / "linked"
-    link.symlink_to(tmp_path, target_is_directory=True)
+    try:
+        link.symlink_to(tmp_path, target_is_directory=True)
+    except OSError as exc:
+        if os.name == "nt" and getattr(exc, "winerror", None) == 1314:
+            pytest.skip("Windows symlink privilege is unavailable")
+        raise
     with pytest.raises(ContractViolation, match="EXPORT_ROOT_DENIED|EXPORT_SYMLINK_DENIED"):
         validate_export_target(link / "x.fbx", fmt="FBX", root=root)
 
@@ -133,7 +138,7 @@ def test_runtime_package_imports_from_zip_without_checkout(tmp_path):
         for path in (root / "nurion_post_v2_runtime").glob("*.py"):
             bundle.write(path, path.relative_to(root))
     code = f"import sys; sys.path.insert(0, {str(archive)!r}); import nurion_post_v2_runtime; print(nurion_post_v2_runtime.__all__)"
-    completed = subprocess.run([sys.executable, "-c", code], cwd=tmp_path, check=True, capture_output=True, text=True, env={"PATH": os.environ["PATH"]})
+    completed = subprocess.run([sys.executable, "-c", code], cwd=tmp_path, check=True, capture_output=True, text=True, env=os.environ.copy())
     assert "PostV2RuntimeEngine" in completed.stdout
 
 
@@ -149,5 +154,5 @@ def test_landmarker_profile_contract_imports_from_addon_zip(tmp_path):
         for path in files:
             bundle.write(path, path.relative_to(root))
     code = f"import sys; sys.path.insert(0, {str(archive)!r}); from nurion_character_landmarker.profiles.profile_contract import normalize_and_validate; print(normalize_and_validate({{'schema':'NURION_CHARACTER_PROFILE','version':'0.1.0','characterId':'a','characterHeight':1,'width':1,'center':[0,0,0],'forwardAxis':'-Y','floorZ':0,'landmarks':[]}})['schema'])"
-    completed = subprocess.run([sys.executable, "-c", code], cwd=tmp_path, check=True, capture_output=True, text=True, env={"PATH": os.environ["PATH"]})
+    completed = subprocess.run([sys.executable, "-c", code], cwd=tmp_path, check=True, capture_output=True, text=True, env=os.environ.copy())
     assert "NURION_CHARACTER_PROFILE" in completed.stdout
