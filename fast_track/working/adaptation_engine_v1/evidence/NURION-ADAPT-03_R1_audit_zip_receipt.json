@@ -1,0 +1,16 @@
+{
+  "AD3-G20": "HUMAN_FINAL_ONLY",
+  "ADAPT-04": "LOCKED BY PREDECESSOR",
+  "adapt01Mutation": "NONE",
+  "adapt02Mutation": "NONE",
+  "agentStatus": "READY_FOR_HUMAN_AUDIT",
+  "byteLength": 91973,
+  "entryCount": 48,
+  "finalAuditZipSha256": "1b960bc3dac3930365724d12a4ab1944e81a1b77afbf97d996e88e1c8d4672b7",
+  "nurionV1Mutation": "NONE",
+  "pass": "NOT_DECLARED",
+  "payloadCanonicalDigest": "a19ffd9d6177427dec960c465a5c9b7bb1ef350b59bc3521378af7618b7cdff2",
+  "revision": "R1",
+  "schema": "NURION_ADAPT03_R1_AUDIT_ZIP_RECEIPT_V1",
+  "zip": "d:\\NURION Character Landmarker\\fast_track\\working\\adaptation_engine_v1\\evidence\\NURION-ADAPT-03_face_expression_proof_R1.zip"
+}

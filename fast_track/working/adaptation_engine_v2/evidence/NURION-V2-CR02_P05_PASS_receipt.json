@@ -1,0 +1,34 @@
+{
+  "bodyMotionsVerified": [
+    "Idle",
+    "Bow",
+    "LargeBow",
+    "Handshake",
+    "Dance"
+  ],
+  "changeRequestId": "V2-CR-02",
+  "classification": "QUALIFIED_WITH_LIMITATIONS",
+  "inputP04Sha256": "b88afef253af32995a6915c5d7be247b79c2fc0c0ed8e54e1bf93367d20736b2",
+  "limitations": [
+    "Bow: qualification profile simulation \u2014 no embedded clip in Idle_15 baseline",
+    "LargeBow: qualification profile simulation \u2014 no embedded clip in Idle_15 baseline",
+    "Handshake: qualification profile simulation \u2014 no embedded clip in Idle_15 baseline",
+    "Dance: qualification profile simulation \u2014 no embedded clip in Idle_15 baseline"
+  ],
+  "next": "CR02-P06 Real-Asset End-to-End Proof Package",
+  "originalSourceImmutable": true,
+  "p04DerivedSemanticDigest": "2405040cbf0bcb63f8cf7491fd2ce39a70c178bc1cb997a6a5bd203faf936fe5",
+  "p04InputImmutable": true,
+  "qualificationDigest": "1ef31c55e225a48c06bd871726804f6ef3a6bd7d8ca25c238921357625fde5a7",
+  "receiptId": "NURION-V2-CR02_P05_PASS_receipt",
+  "revision": "R1",
+  "stage": "CR02-P05",
+  "status": "PASS",
+  "talkingWhileMoving": [
+    "Idle+TALKING",
+    "Bow+TALKING",
+    "Handshake+TALKING",
+    "Dance+TALKING"
+  ],
+  "v2Engine": "NOT OPEN"
+}

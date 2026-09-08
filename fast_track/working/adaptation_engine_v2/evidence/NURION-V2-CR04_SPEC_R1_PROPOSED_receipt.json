@@ -1,0 +1,45 @@
+{
+  "receiptId": "NURION-V2-CR04_SPEC_R1_PROPOSED",
+  "schema": "NURION_V2_CR04_SPEC_PROPOSED_RECEIPT_V1",
+  "authority": "SPEC_PROPOSAL",
+  "changeRequest": "V2-CR-04",
+  "title": "SECOND REAL MESHY ASSET GENERALIZATION",
+  "specRevision": "R1",
+  "status": "SPEC_PROPOSED",
+  "humanSpecReview": "PENDING",
+  "implementationAuthority": "NONE",
+  "openStatus": "NOT OPEN",
+  "declaredAtUtc": "20260830T054100Z",
+  "declaredBy": "etherean",
+  "proposedSpecDigest": "203466befd67d01a4acf42a60048d6b2ac01c42b4dd2ffea49da73f0c8edface",
+  "specPath": "semantic/NURION_ADAPTATION_ENGINE_V2_CR04_SECOND_REAL_MESHY_ASSET_GENERALIZATION_SPEC_R1.json",
+  "specMarkdown": "semantic/NURION_ADAPTATION_ENGINE_V2_CR04_SPEC_R1.md",
+  "cr04Track": "semantic/NURION_ADAPTATION_ENGINE_V2_CR04_TRACK_V1.json",
+  "changeControlGate": "semantic/NURION_CHANGE_CONTROL_GATE_V1.json",
+  "coreClaim": "Validate CR01+CR02+CR03 Human-PASS chain on a second independent real Meshy asset without asset-specific hardcoding — generalization proof, not new feature development",
+  "secondAssetAtProposal": "NOT SELECTED / NOT PINNED — pin only after Spec Gate APPROVE, before P01",
+  "authorityLine": {
+    "V2-CR-01": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-02": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-03": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-04": "SPEC_PROPOSED / HUMAN_SPEC_REVIEW PENDING / IMPLEMENTATION AUTHORITY NONE / NOT OPEN",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN"
+  },
+  "agentCeiling": "SPEC_REVIEW_ONLY",
+  "humanSpecGate": {
+    "required": true,
+    "status": "PENDING",
+    "approvedSpecDigest": null
+  },
+  "onApprove": {
+    "status": "OPEN_PROTOTYPE",
+    "implementationAuthority": "GRANTED",
+    "then": "Pin second asset SHA256 before CR04-P01",
+    "receipt": "evidence/NURION-V2-CR04_SPEC_R1_HUMAN_PASS_receipt.json"
+  },
+  "onReject": {
+    "status": "CANDIDATE",
+    "implementationAuthority": "NONE"
+  },
+  "next": "Human Spec Gate review — no implementation / no second-asset cherry-pick until APPROVED"
+}

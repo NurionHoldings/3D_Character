@@ -1,0 +1,12 @@
+{
+  "receiptId": "NURION-V2-CR04_audit_zip_receipt",
+  "changeRequestId": "V2-CR-04",
+  "zipPath": "d:/NURION Character Landmarker/fast_track/working/adaptation_engine_v2/evidence/NURION-V2-CR04_second_meshy_generalization_proof.zip",
+  "zipSha256": "741bd7b012cfbd2ee2ce5336ce3ff7672612335ef601d95f97233e7009d7db46",
+  "secondAssetSha256": "40b7783f5ca70f9dac23404564f90ac8749c97762299300ae85bbc4b88e5f88b",
+  "derivedSha256": "a20069f9a05f21e50204fd20e3a43079418f7d28d0d58236f915faa00acc6405",
+  "approvedSpecDigest": "203466befd67d01a4acf42a60048d6b2ac01c42b4dd2ffea49da73f0c8edface",
+  "finalCandidateSemanticDigest": "0815d35dee63f422d43d016753a837049c96a1ba134957bf245e667da7fbdecd",
+  "CR04-G20": "HUMAN_FINAL_ONLY",
+  "status": "READY_FOR_HUMAN_AUDIT"
+}

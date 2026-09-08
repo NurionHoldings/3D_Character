@@ -1,0 +1,37 @@
+{
+  "receiptId": "NURION-V2-CR03_P01_PASS",
+  "changeRequestId": "V2-CR-03",
+  "stage": "CR03-P01",
+  "status": "PASS",
+  "declaredAtUtc": "20260830T051948Z",
+  "approvedSpecDigest": "3e3885335bcfd8489209a302852230ae6cdd55da89fb8328048f82d8fe4a206c",
+  "inputSha256": "1ee90420ba39cc2e74de6624230538f4416d39ec7b34656e5b175a776c171cdd",
+  "morphIndexMap": {
+    "VISEME_AA": {
+      "name": "VISEME_AA",
+      "targetIndex": 6,
+      "positionAccessor": 87,
+      "maxMorphDelta": 0.013416407629847527,
+      "activationReady": true
+    },
+    "VISEME_OH": {
+      "name": "VISEME_OH",
+      "targetIndex": 7,
+      "positionAccessor": 88,
+      "maxMorphDelta": 0.016613248735666275,
+      "activationReady": true
+    },
+    "VISEME_EE": {
+      "name": "VISEME_EE",
+      "targetIndex": 8,
+      "positionAccessor": 89,
+      "maxMorphDelta": 0.00800000037997961,
+      "activationReady": true
+    }
+  },
+  "reportPath": "reports_cr03/V2_CR03_P01_morph_binding_idle15.json",
+  "reportSha256": "5ec59788f3800028b4859b68f924745c9e13e41131855148a7b2fdfc1d2307ac",
+  "agentCeiling": "READY_FOR_HUMAN_AUDIT",
+  "note": "P01 binding only — not temporal talking PASS; Gate infra ≠ technical PASS",
+  "next": "CR03-P02 Morph-Weight Animation Injection"
+}

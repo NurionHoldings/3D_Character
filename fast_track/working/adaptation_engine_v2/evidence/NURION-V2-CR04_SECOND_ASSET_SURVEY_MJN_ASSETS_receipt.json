@@ -1,0 +1,40 @@
+{
+  "receiptId": "NURION-V2-CR04_SECOND_ASSET_SURVEY_MJN_ASSETS",
+  "changeRequest": "V2-CR-04",
+  "surveyRoot": "D:/보관자료/MJN/assets",
+  "declaredAtUtc": "20260830T054600Z",
+  "declaredBy": "etherean",
+  "secondAsset": "NOT_PINNED",
+  "P01": "BLOCKED_UNTIL_SECOND_ASSET_PIN",
+  "findings": {
+    "glbCount": 0,
+    "independentMeshyCharacterFamilies": [
+      {
+        "name": "Meshy_AI_Sporty_Studio_Portrai_biped",
+        "format": "FBX (+ textures in zip)",
+        "role": "ONLY real Meshy character family under survey root",
+        "animationsObserved": ["Idle_15", "Formal_Bow", "Superlove_Pop_Dance", "Wave_for_Help_4", "Big_Wave_Hello", "Gentlemans_Bow"],
+        "proposedIdleSource": {
+          "path": "D:/보관자료/MJN/assets/_sot_extract/idle/Meshy_AI_Sporty_Studio_Portrai_biped/Meshy_AI_Sporty_Studio_Portrai_biped_Animation_Idle_15_withSkin.fbx",
+          "sha256": "fb271aa4979fcf04db51e9f332f842ae9f9061c2ce148b1dc1229436b6642b94",
+          "byteLength": 7280364,
+          "neqIdle15GlbBaseline": true,
+          "idle15GlbBaselineSha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1"
+        }
+      }
+    ],
+    "notEligible": [
+      "Idle_15 silver_starlight GLB lineage in NURION repo (first proof asset)",
+      "V1 synthetic fixtures",
+      "animation motion variants of same Sporty character counted as separate characters"
+    ],
+    "blockerForP01": "CR01–CR03 consume path is GLB-native; survey root has FBX only; fbx2gltf/blender not available in environment"
+  },
+  "antiCherryPick": "Did not run CR04 pipeline against candidates before pin. Did not select by success scanning.",
+  "awaitingHuman": [
+    "Confirm Meshy_AI_Sporty_Studio_Portrai_biped Idle FBX is the intended SECOND independent Meshy character",
+    "Provide GLB export of that same asset (preferred), OR authorize a declared FBX→GLB format-bridge that preserves source FBX SHA as immutable SoT"
+  ],
+  "engineV2": "NOT_OPEN",
+  "approvedSpecDigest": "203466befd67d01a4acf42a60048d6b2ac01c42b4dd2ffea49da73f0c8edface"
+}

@@ -1,0 +1,25 @@
+{
+  "receiptId": "NURION-V2-CR03_R1_HUMAN_AUDIT_BLOCKED_PACKAGING",
+  "changeRequestId": "V2-CR-03",
+  "auditType": "HUMAN_FINAL_GATE / PACKAGING",
+  "result": "HUMAN AUDIT BLOCKED",
+  "CR03-P06": "HUMAN AUDIT BLOCKED",
+  "CR03-G20": "HUMAN AUDIT BLOCKED",
+  "blocker": "SELF-CONTAINED AUDIT ZIP INCOMPLETE",
+  "detail": "ModuleNotFoundError: No module named 'fast_track.adaptation.classifier'",
+  "technicalTalkingFailure": false,
+  "preservedPins": {
+    "zipSha256_R1": "c5c06592cfe42e10690e85d63831787ead8ec9103113a9632036b669d74781e8",
+    "derivedSha256": "fe493789135aaa80f96a6c2377daafd0a3ed016f402ba8d8611c9e3d07c7c8ca",
+    "cr02R2InputSha256": "1ee90420ba39cc2e74de6624230538f4416d39ec7b34656e5b175a776c171cdd",
+    "zipPathSafety": "PASS"
+  },
+  "stages": {
+    "CR03-P01_to_P05": "Agent PASS / PRESERVED",
+    "CR03": "READY_FOR_HUMAN_AUDIT",
+    "CR03-P06_G20": "HUMAN AUDIT BLOCKED (packaging)"
+  },
+  "remediation": "R2 audit ZIP — minimize independent runner deps (glb_measure; no inspector/classifier); do not re-run P02–P05",
+  "engineV2": "NOT_OPEN",
+  "declaredBy": "etherean"
+}

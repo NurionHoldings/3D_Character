@@ -1,0 +1,24 @@
+{
+  "AD1-G16": "HUMAN_FINAL_ONLY",
+  "ADAPT-02": "NOT_STARTED",
+  "auditZipRel": "NURION-ADAPT-01_intake_inspection_proof_R1.zip",
+  "blockerFix": {
+    "B1": "Removed fast_track.runtime dependency; local canonical_sha256 only",
+    "B2": "Final audit ZIP SHA is EXTERNAL_ONLY \u2014 not embedded inside ZIP payload"
+  },
+  "digestSemantics": {
+    "finalAuditZipSha256": "EXTERNAL_ONLY \u2014 NURION-ADAPT-01_R1_audit_zip_receipt.json beside ZIP",
+    "payloadCanonicalDigest": "SEE_MANIFEST_FIELD_payloadCanonicalDigest",
+    "r0Mismatch": "R0 recorded e3a7\u2026 inside READY while submitted ZIP was 161676\u2026 (self-referential re-pack). Corrected in R1."
+  },
+  "finalAuditZipSha256": null,
+  "humanPassAuthority": "RESERVED",
+  "note": "Do not treat null finalAuditZipSha256 inside ZIP as failure \u2014 see external receipt.",
+  "nurionV1Mutation": "NONE",
+  "pass": "NOT_DECLARED",
+  "receiptId": "NURION-ADAPT-01_READY_FOR_HUMAN_AUDIT_R1",
+  "revision": "R1",
+  "stage": "ADAPT-01",
+  "status": "READY_FOR_HUMAN_AUDIT",
+  "track": "NURION_CHARACTER_ADAPTATION_ENGINE_V1"
+}

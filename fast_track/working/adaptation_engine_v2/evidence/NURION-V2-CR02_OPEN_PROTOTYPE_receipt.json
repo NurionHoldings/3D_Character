@@ -1,0 +1,47 @@
+{
+  "receiptId": "NURION-V2-CR02_OPEN_PROTOTYPE_R1",
+  "changeRequestId": "V2-CR-02",
+  "title": "MESHY FACE / EYE / JAW / TALKING AUGMENTATION",
+  "revision": "R1",
+  "specStatus": "HUMAN REVIEW PASS / APPROVED",
+  "status": "OPEN / PROTOTYPE",
+  "prototypeStatus": "IN PROGRESS",
+  "declaredAtUtc": "20260830T043200Z",
+  "declaredBy": "etherean",
+  "auditType": "HUMAN_SPEC_GATE",
+  "approvedGates": {
+    "FUNCTIONAL_MEASURABLE": "APPROVED — N→A→N cycle + observable deformation required; bone-only ≠ PASS",
+    "PROVENANCE_REQUIRED": "APPROVED — capability→mechanism→region→functional evidence",
+    "SOURCE_IMMUTABLE": "APPROVED — BODY/skin IMMUTABLE; SOURCE_MUTATION/AUTO_BODY_RE_RIG/GLOBAL_AUTO_WEIGHT DENY",
+    "AUTHORITY_SEPARATION": "APPROVED — V2 engine NOT OPEN; CR01 CONSUME ONLY"
+  },
+  "authority": {
+    "NURION_CHARACTER_ADAPTATION_ENGINE_V1": "CLOSED / PASS / CONSUME ONLY",
+    "V1_MUTATION": "DENY",
+    "V2-CR-01": "PROTOTYPE HUMAN PASS / TECHNICAL BASIS CONFIRMED / CONSUME ONLY",
+    "CR01_REOPEN": "DENY",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN",
+    "V2-CR-02": "OPEN / PROTOTYPE",
+    "agentCeiling": "READY_FOR_HUMAN_AUDIT",
+    "CR02-G20": "HUMAN_FINAL_ONLY"
+  },
+  "authorizedStage": "CR02-P01 — Capability Gap Inspection",
+  "humanBlocker": "Declared capability without actual deformation → BLOCKED",
+  "firstProofAsset": {
+    "path": "fast_track/working/meshy_silver_starlight/baseline/Idle_15_withSkin_WORKING_BASELINE.glb",
+    "sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+    "blendshapeCount": 0,
+    "role": "FIRST_PROOF_ASSET_ONLY"
+  },
+  "stages": {
+    "CR02-P01": "AUTHORIZED",
+    "CR02-P02": "NOT STARTED",
+    "CR02-P03": "NOT STARTED",
+    "CR02-P04": "NOT STARTED",
+    "CR02-P05": "NOT STARTED",
+    "CR02-P06": "NOT STARTED",
+    "CR02-P07": "HUMAN_FINAL_ONLY"
+  },
+  "contract": "semantic/NURION_ADAPTATION_ENGINE_V2_CR02_MESHY_FACE_EYE_JAW_TALKING_AUGMENTATION_V1.json",
+  "next": "Implement CR02-P01 Capability Gap Inspection"
+}

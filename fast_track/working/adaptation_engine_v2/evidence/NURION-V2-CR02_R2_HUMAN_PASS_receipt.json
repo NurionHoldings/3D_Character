@@ -1,0 +1,89 @@
+{
+  "receiptId": "NURION-V2-CR02_R2_HUMAN_PASS_receipt",
+  "auditType": "HUMAN_FINAL_AUDIT",
+  "changeRequestId": "V2-CR-02",
+  "revision": "R2",
+  "title": "ACTUAL FACIAL DEFORMATION HARDENING",
+  "status": "PROTOTYPE HUMAN PASS",
+  "technicalBasis": "ACTUAL FACIAL DEFORMATION CONFIRMED",
+  "declaredBy": "etherean",
+  "declaredAtUtc": "20260830T050300Z",
+  "CR02-R2-G01_to_G19": "PASS",
+  "CR02-R2-G20": "HUMAN PASS",
+  "r1Historical": {
+    "revision": "R1",
+    "status": "HUMAN AUDIT BLOCKED",
+    "disposition": "HISTORICAL / PRESERVED",
+    "blocker": "AUXILIARY_CONTROL_METADATA_WITHOUT_ACTUAL_FACIAL_DEFORMATION",
+    "blockerDisposition": "CLOSED BY R2",
+    "receipt": "NURION-V2-CR02_R1_HUMAN_AUDIT_BLOCKED_receipt.json"
+  },
+  "package": {
+    "zip": "NURION-V2-CR02_R2_actual_facial_deformation_proof.zip",
+    "finalAuditZipSha256": "c96e2e875797f274ad44a234726e7b80b8c7a0ebe369ade1798c0626d5189ba2",
+    "byteLength": 14477901,
+    "entryCount": 25,
+    "payloadCanonicalDigest": "36e7a77137eb0e12f2d51842fe3917d2676664db12a80639b9ffa8765123d1a3",
+    "independentProofDigest": "a38a8855f1f4f1c9cb3171737c7f98355cfd79bcd72c50388d1a134faebda174",
+    "derivedSha256": "1ee90420ba39cc2e74de6624230538f4416d39ec7b34656e5b175a776c171cdd",
+    "idle15Sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+    "cleanExtraction": "PASS / EXIT 0"
+  },
+  "humanDirectVerification": {
+    "method": "GLB BIN → accessor → morph POSITION (not report JSON trust)",
+    "vertices": 11213,
+    "basePositionDelta": 0.0,
+    "jointsEquivalent": true,
+    "weightsMaxDifference": 0.0,
+    "skinJoints": "24 → 24",
+    "morphTargets": 9,
+    "faceRigRoot": "Head direct child",
+    "bodySkinCorruption": "NONE",
+    "maxVertexDeltas": {
+      "Blink_L": 0.008246211,
+      "Blink_R": 0.008246211,
+      "Jaw_Mouth": 0.018439088,
+      "EXPR_SMILE": 0.007,
+      "EXPR_BROW_UP": 0.006,
+      "EXPR_FROWN": 0.004,
+      "VISEME_AA": 0.013416408,
+      "VISEME_OH": 0.016613249,
+      "VISEME_EE": 0.008
+    },
+    "activationThreshold": 0.0001,
+    "allAboveThreshold": true,
+    "blinkLaterality": {
+      "Blink_L_left": 0.008246211,
+      "Blink_L_right": 0.0,
+      "Blink_R_left": 0.0,
+      "Blink_R_right": 0.008246211,
+      "crossContamination": 0.0
+    },
+    "visemeDistinctness": {
+      "AA_vs_OH": 0.00979796,
+      "AA_vs_EE": 0.0156205,
+      "OH_vs_EE": 0.020099752,
+      "conclusion": "AA ≠ OH ≠ EE ACTUAL GEOMETRICALLY DISTINCT"
+    },
+    "outsideFaceDeltas": "ALL ZERO",
+    "nanCycle": "NEUTRAL→ACTIVATE(Δ>1e-4)→RESTORE(error=0≤1e-6) CONFIRMED"
+  },
+  "explicitBoundary": {
+    "means": "Human-audited proof that Idle_15 BODY/SKIN preserved while NURION facial morph capability injects measurable Blink/Jaw/Expression/AA-OH-EE vertex deformation",
+    "doesNotMean": [
+      "New morph-weight animation channels embedded",
+      "New speech/Idle+TALKING animation clip authored",
+      "NURION ADAPTATION ENGINE V2 = OPEN"
+    ],
+    "existingAnimation": "Idle only; morph-weight animation channel count = 0 — NOT an R2 contract blocker"
+  },
+  "authority": {
+    "V2-CR-02_R1": "HUMAN AUDIT BLOCKED / HISTORICAL / PRESERVED",
+    "V2-CR-02_R2": "PROTOTYPE HUMAN PASS / ACTUAL FACIAL DEFORMATION TECHNICAL BASIS CONFIRMED",
+    "R1_BLOCKER": "CLOSED BY R2",
+    "V2-CR-01": "CONSUME ONLY / REOPEN DENY",
+    "NURION_CHARACTER_ADAPTATION_ENGINE_V1": "CLOSED / PASS / CONSUME ONLY",
+    "V1_MUTATION": "NONE",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN"
+  }
+}

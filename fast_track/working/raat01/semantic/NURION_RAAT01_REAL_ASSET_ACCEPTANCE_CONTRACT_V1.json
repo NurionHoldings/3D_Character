@@ -1,0 +1,42 @@
+{
+  "schema": "NURION_RAAT01_REAL_ASSET_ACCEPTANCE_CONTRACT_V1",
+  "testId": "RAAT-01",
+  "name": "REAL-ASSET ACCEPTANCE TEST 01",
+  "status": "OPEN / EXECUTING",
+  "track": "NURION_CHARACTER_ADAPTATION_RAAT_V1",
+  "engineReference": {
+    "NURION_CHARACTER_ADAPTATION_ENGINE_V1": "CLOSED / PASS / CONSUME ONLY",
+    "NURION_ADAPTED_CHARACTER_RELEASE_V1": "AUTHORITATIVE FINAL (closure reference only)",
+    "canonicalMutation": "DENY",
+    "adaptReopen": "DENY"
+  },
+  "purpose": "Validate frozen Adaptation Engine V1 against a real submitted character asset end-to-end. Measure realistic support boundary — not re-open ADAPT-01…06.",
+  "primaryAsset": {
+    "label": "Idle_15_withSkin_WORKING_BASELINE",
+    "path": "fast_track/working/meshy_silver_starlight/baseline/Idle_15_withSkin_WORKING_BASELINE.glb",
+    "sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+    "role": "PRODUCT-01 frozen baseline — first RAAT real-asset subject"
+  },
+  "pipeline": [
+    "EXISTING CHARACTER ASSET",
+    "ADAPT-01 Intake",
+    "ADAPT-02 Skeleton Semantic Adaptation",
+    "ADAPT-03 FACE / Expression Adaptation",
+    "ADAPT-04 Required Auxiliary Augmentation",
+    "ADAPT-05 Runtime Qualification",
+    "ADAPT-06 Adapted Character Release",
+    "NURION_ADAPTED_CHARACTER_RELEASE_V1",
+    "NURION Runtime playback (future step)"
+  ],
+  "record": [
+    "Per-stage classification",
+    "BLOCKED / MANUAL_REVIEW_REQUIRED stop points",
+    "Automation vs human boundary",
+    "Source byte preservation"
+  ],
+  "deny": [
+    "Modify Engine V1 contracts or canonical seals",
+    "Reopen ADAPT-01…06",
+    "AUTO REPAIR to force PASS"
+  ]
+}

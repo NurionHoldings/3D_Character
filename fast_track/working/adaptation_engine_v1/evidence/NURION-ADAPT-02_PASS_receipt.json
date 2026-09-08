@@ -1,0 +1,105 @@
+{
+  "receiptId": "NURION-ADAPT-02_PASS_20260830T004500Z",
+  "track": "NURION_CHARACTER_ADAPTATION_ENGINE_V1",
+  "stage": "ADAPT-02",
+  "name": "SKELETON SEMANTIC ADAPTATION",
+  "status": "PASS",
+  "stageStatus": "CLOSED / PASS / CONSUME ONLY",
+  "revision": "R2",
+  "reviewer": "etherean",
+  "auditType": "HUMAN_FINAL_AUDIT",
+  "technicalVerdict": "PASS",
+  "integrity": {
+    "submittedZip": "NURION-ADAPT-02_skeleton_semantic_proof_R2.zip",
+    "submittedZipSha256": "4cf33689131f4093e682120953c6d2fa99a931e90f4716dc8cd06f19694e1e46",
+    "observedZipSha256": "4cf33689131f4093e682120953c6d2fa99a931e90f4716dc8cd06f19694e1e46",
+    "byteLength": 68314,
+    "zipEntries": 41,
+    "unsafePath": "NONE",
+    "independentRunnerExit": 0,
+    "mainProofRunnerExit": 0,
+    "executionMode": "EXTRACTED_AUDIT_ZIP",
+    "automatedGates": "AD2-G01…G19 = 19/19 PASS"
+  },
+  "authoritativePins": {
+    "bodyCanonicalSpecSha256": "c73b5c540e29fcbf4ef4477c51f869eead9640194cec21110c6d60e55d1f900a",
+    "axisRetargetConventionSha256": "19da5a00f4943a144426efaf675d364f64d244773dc60ede7db81be5bb8c6d9a",
+    "bodyCoreDigest": "edfa882498efa95f251c6c0cf21a4f19f8a5f7ced232712709c8c15fe4b87456",
+    "axisConventionDigest": "92f838aca6716ccad4f9213f2262836ed26a52ee6605519911bb4ffd3b8a50e0",
+    "humanRecomputedSnapshotDigests": "MATCH"
+  },
+  "r1BlockersResolved": {
+    "G01_authoritative_input_provenance": "RESOLVED — upstream SHA256 pins + provenance receipt",
+    "G03_canonical_body_binding_provenance": "RESOLVED — snapshot digest cryptographically linked to locked BODY spec"
+  },
+  "gates": {
+    "AD2-G01": "PASS",
+    "AD2-G02": "PASS",
+    "AD2-G03": "PASS",
+    "AD2-G04": "PASS",
+    "AD2-G05": "PASS",
+    "AD2-G06": "PASS",
+    "AD2-G07": "PASS",
+    "AD2-G08": "PASS",
+    "AD2-G09": "PASS",
+    "AD2-G10": "PASS",
+    "AD2-G11": "PASS",
+    "AD2-G12": "PASS",
+    "AD2-G13": "PASS",
+    "AD2-G14": "PASS",
+    "AD2-G15": "PASS",
+    "AD2-G16": "PASS",
+    "AD2-G17": "PASS",
+    "AD2-G18": "PASS",
+    "AD2-G19": "PASS",
+    "AD2-G20": "PASS"
+  },
+  "criticalGates": {
+    "AD2-G01": "PASS",
+    "AD2-G02": "PASS",
+    "AD2-G03": "PASS",
+    "AD2-G05": "PASS",
+    "AD2-G09": "PASS",
+    "AD2-G11": "PASS",
+    "AD2-G12": "PASS",
+    "AD2-G13": "PASS",
+    "AD2-G15": "PASS",
+    "AD2-G16": "PASS",
+    "AD2-G18": "PASS"
+  },
+  "preservation": {
+    "sourceSkeletonMutation": "NONE",
+    "nurionV1Mutation": "NONE",
+    "adapt01Mutation": "NONE",
+    "faceGeneration": "DENY_IN_ADAPT02",
+    "helperRigGeneration": "DENY_IN_ADAPT02",
+    "autoRepair": "DENY"
+  },
+  "authorityAfterPass": {
+    "ADAPT-02": "CLOSED / PASS / CONSUME ONLY",
+    "ADAPT-03": "AUTHORIZED_TO_OPEN",
+    "ADAPT-03_implementation": "NOT STARTED — OPEN requires separate command",
+    "ADAPT-04": "LOCKED BY PREDECESSOR",
+    "ADAPT-05": "LOCKED BY PREDECESSOR",
+    "ADAPT-06": "LOCKED BY PREDECESSOR"
+  },
+  "productPipelineBoundary": {
+    "NURION_CHARACTER_PRODUCT_PIPELINE_V1": "CLOSED / PASS / CONSUME ONLY",
+    "NURION_CHARACTER_PRODUCT_RELEASE_V1": "AUTHORITATIVE FINAL",
+    "V1_MUTATION": "DENY",
+    "PRODUCT-07": "DOES NOT EXIST"
+  },
+  "adapt03Principle": {
+    "notNewFaceDevelopment": true,
+    "consumeAuthority": [
+      "NURION FACE Product Lock",
+      "Eye Calibration",
+      "TALKING / Expression",
+      "NURION_head → FACE_Rig_Root"
+    ],
+    "purpose": "Adapt FACE capability to external character face geometry/landmarks — not reinvent FACE"
+  },
+  "blocker": "NONE",
+  "policy": "ADAPT-02 FROZEN — reopen DENY; consume skeleton mapping contract only",
+  "declaredAtUtc": "20260830T004500Z"
+}

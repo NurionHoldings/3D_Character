@@ -1,0 +1,52 @@
+{
+  "receiptId": "NURION-V2-CR04_SPEC_R1_HUMAN_PASS",
+  "schema": "NURION_V2_CR04_SPEC_HUMAN_PASS_RECEIPT_V1",
+  "authority": "HUMAN_SPEC_GATE",
+  "changeRequest": "V2-CR-04",
+  "title": "SECOND REAL MESHY ASSET GENERALIZATION",
+  "specRevision": "R1",
+  "result": "PASS",
+  "humanSpecReview": "PASS / APPROVED",
+  "specSha256": "203466befd67d01a4acf42a60048d6b2ac01c42b4dd2ffea49da73f0c8edface",
+  "approvedSpecDigest": "203466befd67d01a4acf42a60048d6b2ac01c42b4dd2ffea49da73f0c8edface",
+  "status": "OPEN / PROTOTYPE",
+  "implementationAuthority": "GRANTED",
+  "engineV2": "NOT_OPEN",
+  "upstreamMutation": "DENY",
+  "declaredAtUtc": "20260830T054300Z",
+  "declaredBy": "etherean",
+  "secondAsset": {
+    "status": "NOT_PINNED",
+    "policy": "MUST BE PINNED AFTER SPEC APPROVAL AND BEFORE P01 EXECUTION",
+    "cherryPickAfterFailedRuns": "DENY",
+    "replacementPolicy": "If pin replacement needed: preserve failure + reason; do not silently reselect"
+  },
+  "authorizedScope": {
+    "AUTHORIZED": [
+      "second real Meshy asset SHA pin",
+      "CR04-P01…P06 fail-closed fast-track consuming CR01/CR02/CR03",
+      "cross-asset hardcoding scan",
+      "self-contained proof packaging to READY_FOR_HUMAN_AUDIT"
+    ],
+    "NOT_AUTHORIZED": [
+      "CR01/CR02/CR03 patch or reopen",
+      "asset-specific hardcoding / forced mapping",
+      "CR04-P07 / G20 Agent Human PASS declaration",
+      "Engine V2 OPEN",
+      "claim ALL MESHY / universal generalization"
+    ]
+  },
+  "authorityLine": {
+    "V2-CR-01": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-02": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-03": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-04": "OPEN / PROTOTYPE / IMPLEMENTATION AUTHORITY GRANTED",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN"
+  },
+  "agentCeiling": "READY_FOR_HUMAN_AUDIT",
+  "CR04-P07": "HUMAN_FINAL_ONLY",
+  "CR04-G20": "HUMAN_FINAL_ONLY",
+  "completionEstimateNote": "~91–92% after Spec Gate; next rise at second-asset pin + chain PASS",
+  "note": "Spec PASS ≠ technical PASS ≠ Engine V2 OPEN",
+  "next": "Pin secondAsset SHA256 → then CR04-P01…P06 fail-closed. Do not start P01 before pin."
+}

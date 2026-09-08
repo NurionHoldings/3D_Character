@@ -1,0 +1,27 @@
+{
+  "track": "NURION Universal Eye Calibration Alpha3",
+  "supersededImplementations": [
+    {
+      "revision": "r1",
+      "sha256": "7dfe4a2c81bc97d79500dfe2e8445503e441ac2772aafcb1978fffa00d4c1df8",
+      "finding": "Convex eye was generated before a reliable surface basis; placement remained behind the face."
+    },
+    {
+      "revision": "r2",
+      "sha256": "db2791f95deef9b01af290352e53b31efb11b202cae3911af33b67020f0099e1",
+      "finding": "Single front ray failed at an eye opening with no intersecting triangle."
+    },
+    {
+      "revision": "r3",
+      "sha256": "c7cf7794fbd94201f433705f4d4fa0df4bf74cc09581e346c4ef65652c0bbf84",
+      "finding": "Local multi-ray sampling still failed because the approach depended on front-ray addressability."
+    },
+    {
+      "revision": "r4",
+      "sha256": "092d3178b76090806891bebd191f2569b3dcafc631fd828657334bd93db6b5bc",
+      "finding": "Not promoted; replaced by the universal flat-first multi-view design before practical use."
+    }
+  ],
+  "retainedLesson": "Establish a universal face basis and validate a flat eye plane in multiple views before convex geometry, motion, or expression features.",
+  "status": "SUPERSEDED_NOT_SEALED"
+}

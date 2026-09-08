@@ -1,0 +1,29 @@
+{
+  "schema": "NURION_V2_CR01_FIXTURE_MANIFEST_V1",
+  "fixtures": {
+    "meshy_style_topology.glb": {
+      "bytes": 1172,
+      "role": "meshy_style_topology.glb"
+    },
+    "counter_spine_name_no_shoulders.glb": {
+      "bytes": 728,
+      "role": "counter_spine_name_no_shoulders.glb"
+    },
+    "exact_named_chest.glb": {
+      "bytes": 1216,
+      "role": "exact_named_chest.glb"
+    },
+    "counter_ambiguous_shoulder_side.glb": {
+      "bytes": 692,
+      "role": "counter_ambiguous_shoulder_side.glb"
+    },
+    "counter_multiple_pelvis.glb": {
+      "bytes": 788,
+      "role": "counter_multiple_pelvis.glb"
+    },
+    "counter_multiple_head.glb": {
+      "bytes": 688,
+      "role": "counter_multiple_head.glb"
+    }
+  }
+}

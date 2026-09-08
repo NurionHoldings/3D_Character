@@ -1,0 +1,27 @@
+{
+  "assets": [
+    {
+      "name": "body_minimal_face.glb",
+      "sha256": "a30358b310deb11a8eec27cc26d4acd96cf68a06d90dda218261619203220b8f"
+    },
+    {
+      "name": "meshy_style.glb",
+      "sha256": "b134f9448dba52a0428aaa2fbbdabd98250ac0fc79746f24be068c50e67cf3a3"
+    },
+    {
+      "name": "rich_facial_morphs.glb",
+      "sha256": "a1bc80d6ee225aa75d8e88f6998cfb382f649f4a0397346730af7724b7b03ec8"
+    },
+    {
+      "name": "talking_augmentation_required.glb",
+      "sha256": "5062cebae558e1ebe6a9e2ac83c9151d61e00f95067469379bc75af80cf6dd20"
+    },
+    {
+      "name": "expression_mapping_required.glb",
+      "sha256": "46e380c18796f5e50b35e757975638a3defd511117aea2ab50b5722637c438e7"
+    }
+  ],
+  "scenarioCount": 22,
+  "scenarioFlagsSha256": "ce27e1ffb3c3c366760c355a8c51cd0996d2461e78d8626f81dc4ffbbfe42a30",
+  "schema": "NURION_ADAPT05_FIXTURE_MANIFEST_V1"
+}

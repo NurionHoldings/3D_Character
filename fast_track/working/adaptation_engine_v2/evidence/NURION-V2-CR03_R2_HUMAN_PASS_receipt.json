@@ -1,0 +1,77 @@
+{
+  "receiptId": "NURION-V2-CR03_R2_HUMAN_PASS",
+  "schema": "NURION_V2_CR03_HUMAN_PASS_RECEIPT_V1",
+  "authority": "HUMAN_FINAL_GATE",
+  "changeRequestId": "V2-CR-03",
+  "title": "MORPH-WEIGHT RUNTIME TALKING SEQUENCE",
+  "revision": "R2",
+  "result": "PASS",
+  "status": "PROTOTYPE HUMAN PASS / MORPH-WEIGHT RUNTIME TALKING TECHNICAL BASIS CONFIRMED",
+  "declaredAtUtc": "20260830T053800Z",
+  "declaredBy": "etherean",
+  "auditType": "HUMAN_FINAL_GATE",
+  "CR03-P06": "HUMAN PASS",
+  "CR03-G20": "HUMAN PASS",
+  "CR03-G01_to_G19": "PASS",
+  "packaging": {
+    "R1": "HUMAN AUDIT BLOCKED / HISTORICAL / PRESERVED — packaging incomplete (classifier); NOT a technical talking failure",
+    "R2": "HUMAN-AUDITED — clean extraction runner PASS + independent GLB V(t) recompute PASS"
+  },
+  "pins": {
+    "derivedSha256": "fe493789135aaa80f96a6c2377daafd0a3ed016f402ba8d8611c9e3d07c7c8ca",
+    "runtimeVertexProofDigest": "593bf05d1fdebb8697bdf64f06d3f910645fc79043f465a59c20ab70897321e0",
+    "humanAuditedZipSha256": "701cad15f849558944413f16152c4c895d258bbb93c580e27c6ccec3a4fd58fb",
+    "approvedSpecDigest": "3e3885335bcfd8489209a302852230ae6cdd55da89fb8328048f82d8fe4a206c",
+    "cr02R2InputSha256": "1ee90420ba39cc2e74de6624230538f4416d39ec7b34656e5b175a776c171cdd"
+  },
+  "humanVerified": {
+    "weightsAnimationChannel": 1,
+    "target": "node 24 char1 / path=weights",
+    "timeline": [0.0, 0.1, 0.25, 0.4, 0.55],
+    "sequence": "Neutral → AA → OH → EE → Neutral",
+    "peakDisplacement": {
+      "AA": 0.013416408,
+      "OH": 0.016613248,
+      "EE": 0.008
+    },
+    "stateDistinctness": {
+      "AA_vs_OH": 0.009797959,
+      "AA_vs_EE": 0.0156205,
+      "OH_vs_EE": 0.020099752
+    },
+    "neutralRestorationError": {"start": 0.0, "end": 0.0},
+    "bodySkinPreservation": {
+      "POSITION_maxDiff": 0,
+      "JOINTS_0_maxDiff": 0,
+      "WEIGHTS_0_maxDiff": 0
+    },
+    "cr02MorphPosition": "all 9 morphs byte/array equivalent",
+    "idleAnimation": "original animation JSON preserved"
+  },
+  "provenProposition": "STATIC AA/OH/EE MORPHS → REAL GLB weights animation → TIMED AA→OH→EE → ACTUAL temporal vertex deformation → NEUTRAL restoration",
+  "means": "On Idle_15, CR02 Human-PASS AA/OH/EE morph geometry was consumed without mutation; GLB morph-weight animation drives actual timed talking deformation — Human-audited",
+  "stages": {
+    "CR03-P01": "PASS / CONSUME ONLY",
+    "CR03-P02": "PASS / CONSUME ONLY",
+    "CR03-P03": "PASS / CONSUME ONLY",
+    "CR03-P04": "PASS / CONSUME ONLY",
+    "CR03-P05": "PASS / CONSUME ONLY",
+    "CR03-P06": "HUMAN PASS"
+  },
+  "authorityLine": {
+    "V2-CR-01": "CONSUME ONLY / REOPEN DENY",
+    "V2-CR-02": "CONSUME ONLY / REOPEN DENY",
+    "V2-CR-03": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-04": "CANDIDATE / NOT OPEN",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN"
+  },
+  "boundary": {
+    "proven": "Idle_15 morph-weight runtime TALKING technical basis",
+    "notProven": [
+      "second real Meshy asset generalization (CR04)",
+      "V2 Engine OPEN",
+      "production readiness"
+    ]
+  },
+  "next": "Do not reopen CR03. Candidate next CR: V2-CR-04 second real Meshy asset. Engine V2 NOT OPEN."
+}

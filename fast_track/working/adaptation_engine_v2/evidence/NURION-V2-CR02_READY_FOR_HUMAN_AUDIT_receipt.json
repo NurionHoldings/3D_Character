@@ -1,0 +1,26 @@
+{
+  "CR01_REOPEN": "DENY",
+  "CR02-G20": "HUMAN_FINAL_ONLY",
+  "CR02-P07": "HUMAN_FINAL_ONLY",
+  "agentMayNotPassG20": true,
+  "changeRequestId": "V2-CR-02",
+  "finalCandidateSha256": "b88afef253af32995a6915c5d7be247b79c2fc0c0ed8e54e1bf93367d20736b2",
+  "limitationsCarriedForward": {
+    "Bow": "PROFILE_SIMULATION",
+    "Dance": "PROFILE_SIMULATION",
+    "FACE_BODY_FAILURE": "NONE",
+    "Handshake": "PROFILE_SIMULATION",
+    "LargeBow": "PROFILE_SIMULATION",
+    "embeddedMotionClips": [
+      "Idle"
+    ]
+  },
+  "pass": "NOT_DECLARED",
+  "realAssetProofDigest": "803d3f614233a315e6aa2900da9cbe0f10da46dfed6c028ab46978711fc4504f",
+  "receiptId": "NURION-V2-CR02_READY_FOR_HUMAN_AUDIT_R1",
+  "revision": "R1",
+  "runtimeQualification": "QUALIFIED_WITH_LIMITATIONS",
+  "stage": "CR02-P06",
+  "status": "READY_FOR_HUMAN_AUDIT",
+  "v2Engine": "NOT OPEN"
+}

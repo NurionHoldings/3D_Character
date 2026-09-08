@@ -1,0 +1,120 @@
+{
+  "schema": "NURION_ADAPT03_FACE_EXPRESSION_ADAPTATION_CONTRACT_V1",
+  "contractId": "NURION-ADAPT-03_FACE_EXPRESSION_ADAPTATION_CONTRACT_V1",
+  "track": "NURION_CHARACTER_ADAPTATION_ENGINE_V1",
+  "stage": "ADAPT-03",
+  "name": "FACE / EXPRESSION ADAPTATION",
+  "status": "CONTRACT_FROZEN / CONSUME ONLY",
+  "stageStatus": "CLOSED / PASS / CONSUME ONLY",
+  "pass": "PASS",
+  "humanPassAuthority": "EXERCISED — HUMAN_FINAL_AUDIT PASS (R1)",
+  "agentCeiling": "CLOSED — do not reopen",
+  "revision": "R1",
+  "closedAtUtc": "20260830T011600Z",
+  "passReceipt": "evidence/NURION-ADAPT-03_PASS_receipt.json",
+  "authoritativeAuditZipSha256": "1b960bc3dac3930365724d12a4ab1944e81a1b77afbf97d996e88e1c8d4672b7",
+  "openedAtUtc": "20260830T010000Z",
+  "agentReadyAtUtc": "20260830T011500Z",
+  "declaredBy": "etherean",
+  "proofReceipt": "evidence/NURION-ADAPT-03_face_adaptation_proof_receipt.json",
+  "auditZip": "evidence/NURION-ADAPT-03_face_expression_proof_R1.zip",
+  "nextAction": "ADAPT-03 CONSUME ONLY — ADAPT-04 is AUTHORIZED_TO_OPEN but not OPEN until explicit command",
+  "oneLineContract": "ADAPT-03 shall consume locked NURION FACE/Eye/TALKING authority and ADAPT-01/02 results to produce non-destructive target-specific FACE adaptation metadata — mapping, landmark correspondence, expression/eye/jaw/talking adaptation, missing-capability classification, and ADAPT-04 augmentation requirements — without mutating NURION V1, FACE authority, source assets, or performing helper-rig augmentation.",
+  "predecessor": {
+    "ADAPT-01": "CLOSED / PASS / CONSUME ONLY",
+    "ADAPT-02": "CLOSED / PASS / CONSUME ONLY",
+    "adapt02AuditZipSha256": "4cf33689131f4093e682120953c6d2fa99a931e90f4716dc8cd06f19694e1e46"
+  },
+  "authoritySources": {
+    "consumeOnly": [
+      "NURION FACE Product Lock",
+      "Eye Calibration",
+      "TALKING",
+      "Expression semantics",
+      "FACE/BODY attachment contract",
+      "NURION_head → FACE_Rig_Root"
+    ],
+    "deny": [
+      "New FACE invention",
+      "NURION FACE redesign",
+      "NURION V1 mutation",
+      "ADAPT-01/02 authoritative mutation",
+      "Physical helper-rig augmentation (ADAPT-04)",
+      "AUTO REPAIR"
+    ]
+  },
+  "capabilityLevels": [
+    "NATIVE",
+    "MAPPABLE",
+    "ADAPTABLE",
+    "MISSING",
+    "AMBIGUOUS",
+    "BLOCKED"
+  ],
+  "twoLevelModel": {
+    "level1": "MAPPING — target facial bones/morphs → locked NURION FACE semantics",
+    "level2": "ADAPTATION_SPECIFICATION — target-specific metadata + ADAPT-04 augmentation requirements"
+  },
+  "allow": [
+    "Consume ADAPT-01 inspection",
+    "Consume ADAPT-02 skeleton mapping",
+    "Consume pinned FACE authority",
+    "Target face analysis (read-only)",
+    "Landmark correspondence",
+    "Expression semantic mapping",
+    "Eye adaptation metadata",
+    "Jaw/mouth mapping",
+    "TALKING/viseme mapping",
+    "Missing capability classification",
+    "ADAPT-04 augmentation requirement specification",
+    "FACE/BODY attachment metadata"
+  ],
+  "deny": [
+    "NURION V1 mutation",
+    "ADAPT-01 mutation",
+    "ADAPT-02 mutation",
+    "FACE authority mutation",
+    "Eye Calibration mutation",
+    "TALKING authority mutation",
+    "Source destructive mutation",
+    "Physical helper-rig augmentation",
+    "ADAPT-04 implementation",
+    "AUTO REPAIR",
+    "Name-only matching without evidence"
+  ],
+  "gates": [
+    "AD3-G01",
+    "AD3-G02",
+    "AD3-G03",
+    "AD3-G04",
+    "AD3-G05",
+    "AD3-G06",
+    "AD3-G07",
+    "AD3-G08",
+    "AD3-G09",
+    "AD3-G10",
+    "AD3-G11",
+    "AD3-G12",
+    "AD3-G13",
+    "AD3-G14",
+    "AD3-G15",
+    "AD3-G16",
+    "AD3-G17",
+    "AD3-G18",
+    "AD3-G19",
+    "AD3-G20"
+  ],
+  "criticalGates": [
+    "AD3-G01",
+    "AD3-G03",
+    "AD3-G05",
+    "AD3-G07",
+    "AD3-G08",
+    "AD3-G10",
+    "AD3-G13",
+    "AD3-G16",
+    "AD3-G17",
+    "AD3-G18",
+    "AD3-G19"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "adaptationClassification": {
+    "adaptationClass": "BLOCKED",
+    "body": "INCOMPATIBLE",
+    "evidenceBased": true,
+    "eye": "UNKNOWN",
+    "face": "UNKNOWN",
+    "jaw": "UNKNOWN",
+    "rationale": [
+      "FORMAT_RESERVED_NOT_IMPLEMENTED"
+    ],
+    "talking": "UNKNOWN"
+  },
+  "characterId": "fixture_fbx_reserved",
+  "issues": [
+    {
+      "code": "FORMAT_RESERVED_NOT_IMPLEMENTED",
+      "message": "FBX reserved but not implemented in ADAPT-01; do not fake support",
+      "severity": "BLOCKER"
+    }
+  ],
+  "parseStatus": "FAILED",
+  "reportCanonicalSha256": "ce7038417d4673273f8443acfc2fc68e9c5f39c4cd4cdb9c188aefd4b774c1fc",
+  "schema": "NURION_ADAPT01_INSPECTION_REPORT_V1",
+  "sourceAsset": {
+    "byteLength": 25,
+    "exists": true,
+    "format": "fbx",
+    "path": "d:\\NURION Character Landmarker\\fast_track\\adaptation\\fixtures\\unsupported_fake.fbx",
+    "sha256": "ae1a982b941fa2a562e36807f6a09302fb9ec82b197010b844d9d3ceffcab854",
+    "suffix": ".fbx",
+    "supported": false
+  }
+}

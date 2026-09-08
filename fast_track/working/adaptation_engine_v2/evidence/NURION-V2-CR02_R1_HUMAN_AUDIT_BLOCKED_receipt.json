@@ -1,0 +1,48 @@
+{
+  "receiptId": "NURION-V2-CR02_R1_HUMAN_AUDIT_BLOCKED_receipt",
+  "auditType": "HUMAN_FINAL_AUDIT",
+  "changeRequestId": "V2-CR-02",
+  "revision": "R1",
+  "status": "HUMAN AUDIT BLOCKED",
+  "CR02-P07": "HUMAN BLOCKED",
+  "CR02-G20": "HUMAN BLOCKED",
+  "declaredBy": "etherean",
+  "declaredAtUtc": "20260830T045200Z",
+  "packageVerified": {
+    "finalAuditZipSha256": "376f43694e880439300c02e99549991b857f78127de89c2852d8bac523a18118",
+    "byteLength": 21738845,
+    "entryCount": 48,
+    "cleanExtractionExit0": true,
+    "realAssetProofDigest": "803d3f614233a315e6aa2900da9cbe0f10da46dfed6c028ab46978711fc4504f",
+    "finalCandidateSha256": "b88afef253af32995a6915c5d7be247b79c2fc0c0ed8e54e1bf93367d20736b2",
+    "limitationsCarriedForward": "QUALIFIED_WITH_LIMITATIONS",
+    "v2Engine": "NOT OPEN"
+  },
+  "blocker": {
+    "code": "AUXILIARY_CONTROL_METADATA_WITHOUT_ACTUAL_FACIAL_DEFORMATION",
+    "detail": "N→A→N evidence is synthetic JSON state traces (eyelidClosure/jawOpen/viseme sequence), not measured mesh vertex deformation. Helper nodes exist but are not in skin joints; morph targets=0; no new animation channels.",
+    "observed": {
+      "original": {"nodes": 26, "skinJoints": 24, "animations": 1, "morphTargets": 0},
+      "p03": {"nodes": 31, "skinJoints": 24, "animations": 1, "morphTargets": 0},
+      "p04": {"nodes": 38, "skinJoints": 24, "animations": 1, "morphTargets": 0}
+    },
+    "conflictsWith": "FUNCTIONAL = N→A→N + observable deformation; bone presence ≠ PASS"
+  },
+  "stageDisposition": {
+    "CR02-P01": "PRESERVED",
+    "CR02-P02": "PRESERVED",
+    "CR02-P03": "HUMAN FUNCTIONAL PROOF NOT ACCEPTED",
+    "CR02-P04": "HUMAN FUNCTIONAL PROOF NOT ACCEPTED",
+    "CR02-P05": "downstream proof insufficient due to P03/P04 blocker",
+    "CR02-P06": "downstream proof insufficient due to P03/P04 blocker"
+  },
+  "authority": {
+    "NURION_CHARACTER_ADAPTATION_ENGINE_V1": "CLOSED / PASS / CONSUME ONLY",
+    "V1_MUTATION": "NONE",
+    "V2-CR-01": "CONSUME ONLY",
+    "CR01_REOPEN": "DENY",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN"
+  },
+  "completionEstimateCorrection": "structural/provenance ~advanced; actual facial deformation unproven → ~75-80% not ~95%",
+  "next": "V2-CR-02 R2 — Actual Facial Deformation Hardening ONLY; V1/CR01 untouched"
+}

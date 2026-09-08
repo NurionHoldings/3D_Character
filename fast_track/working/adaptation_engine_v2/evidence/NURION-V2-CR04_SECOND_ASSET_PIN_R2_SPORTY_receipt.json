@@ -1,0 +1,39 @@
+{
+  "receiptId": "NURION-V2-CR04_SECOND_ASSET_PIN_R2_SPORTY",
+  "changeRequest": "V2-CR-04",
+  "authority": "SECOND_ASSET_PIN_REPLACEMENT",
+  "declaredAtUtc": "20260830T060300Z",
+  "declaredBy": "etherean",
+  "reason": "Human-directed: mjn_15.zip now provides Sporty Studio Portrait as real Meshy GLB family under D:/보관자료/MJN/assets — retest CR04 on this character",
+  "notSilentCherryPick": true,
+  "priorPinPreserved": {
+    "characterFamily": "Meshy_AI_Bolt_Voyager_biped",
+    "sha256": "40b7783f5ca70f9dac23404564f90ac8749c97762299300ae85bbc4b88e5f88b",
+    "status": "SUPERSEDED / HISTORICAL / PRESERVED",
+    "agentResult": "READY_FOR_HUMAN_AUDIT (R1 Bolt Voyager run) — not erased"
+  },
+  "secondAsset": {
+    "status": "PINNED",
+    "revision": "R2",
+    "characterFamily": "Meshy_AI_Sporty_Studio_Portrai_biped",
+    "clip": "Idle_15_withSkin",
+    "sourceZip": "D:/보관자료/MJN/assets/mjn_15.zip",
+    "extractedDir": "D:/보관자료/MJN/assets/Meshy_AI_Sporty_Studio_Portrai_biped_glb",
+    "topLevelCopy": "D:/보관자료/MJN/assets/Sporty_Studio_Portrait_Idle_15_withSkin.glb",
+    "workspaceBaseline": "fast_track/working/adaptation_engine_v2/assets_cr04/SECOND_ASSET_BASELINE.glb",
+    "sha256": "f3f9e343c8ba3c9a503a8423293dec90bb6be50f809f1321f4f6658b1bea133e",
+    "byteLength": 7293552,
+    "neqIdle15SilverStarlightBaseline": true,
+    "idle15SilverStarlightSha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+    "format": "GLB",
+    "mesh": true,
+    "skin": true,
+    "bodyRig": true,
+    "embeddedAnimation": "Armature|Idle_15|baselayer",
+    "morphTargetsAtSource": 0,
+    "immutable": true
+  },
+  "approvedSpecDigest": "203466befd67d01a4acf42a60048d6b2ac01c42b4dd2ffea49da73f0c8edface",
+  "next": "Re-run CR04-P01…P06 fail-closed on Sporty pin",
+  "engineV2": "NOT_OPEN"
+}

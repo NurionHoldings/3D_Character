@@ -1,0 +1,43 @@
+{
+  "receiptId": "NURION-V2-CR03_SPEC_R1_HUMAN_PASS",
+  "schema": "NURION_V2_CR03_SPEC_HUMAN_PASS_RECEIPT_V1",
+  "authority": "HUMAN_SPEC_GATE",
+  "changeRequest": "V2-CR-03",
+  "title": "MORPH-WEIGHT RUNTIME TALKING SEQUENCE",
+  "specRevision": "R1",
+  "result": "PASS",
+  "humanSpecReview": "PASS / APPROVED",
+  "specSha256": "3e3885335bcfd8489209a302852230ae6cdd55da89fb8328048f82d8fe4a206c",
+  "approvedSpecDigest": "3e3885335bcfd8489209a302852230ae6cdd55da89fb8328048f82d8fe4a206c",
+  "status": "OPEN / PROTOTYPE",
+  "implementationAuthority": "GRANTED",
+  "engineV2": "NOT_OPEN",
+  "upstreamMutation": "DENY",
+  "declaredAtUtc": "20260830T051700Z",
+  "declaredBy": "etherean",
+  "authorizedScope": {
+    "AUTHORIZED": "Consume existing VISEME_AA / VISEME_OH / VISEME_EE; create actual GLB morph-weight runtime animation",
+    "NOT_AUTHORIZED": [
+      "CR02 morph POSITION mutation",
+      "new facial morph creation",
+      "BODY rig/skin mutation",
+      "CR01/CR02 mutation",
+      "CR04 work",
+      "Engine V2 OPEN"
+    ]
+  },
+  "authorityLine": {
+    "V2-CR-01": "CONSUME ONLY / REOPEN DENY",
+    "V2-CR-02": "CONSUME ONLY / REOPEN DENY",
+    "V2-CR-03": "OPEN / PROTOTYPE / IMPLEMENTATION AUTHORITY GRANTED",
+    "V2-CR-04": "CANDIDATE / NOT OPEN",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN"
+  },
+  "agentCeiling": "READY_FOR_HUMAN_AUDIT",
+  "CR03-G20": "HUMAN_FINAL_ONLY",
+  "CR03-P06": "HUMAN_FINAL_ONLY",
+  "note": "Gate infrastructure is not CR03 technical PASS. Technical proof remains STATIC AA/OH/EE → timed GLB weights → temporal vertex deformation → neutral restoration.",
+  "authorizedStage": "CR03-P01 — Runtime Talking Contract / Morph Binding Inspection",
+  "specPath": "semantic/NURION_ADAPTATION_ENGINE_V2_CR03_MORPH_WEIGHT_RUNTIME_TALKING_SEQUENCE_SPEC_R1.json",
+  "next": "Implement CR03-P01 under gate; digest mismatch → IMPLEMENTATION DENIED"
+}

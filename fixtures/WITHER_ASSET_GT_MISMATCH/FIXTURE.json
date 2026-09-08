@@ -1,0 +1,26 @@
+{
+  "schema": "NURION_REGRESSION_FIXTURE",
+  "id": "WITHER_ASSET_GT_MISMATCH",
+  "role": "BAD_ASSET_DETECTION",
+  "status": "ACTIVE",
+  "description": "Wither Meshy biped retained as a regression fixture for Mesh↔GT mismatch detection. Not a quality-gate pass candidate.",
+  "asset": {
+    "label": "wither-meshy-biped",
+    "fbxRelative": "assets/wither_character_rig/Meshy_AI_Minimalist_Tennis_Out_biped/Meshy_AI_Minimalist_Tennis_Out_biped_Animation_Idle_15_withSkin.fbx"
+  },
+  "alpha3Package": {
+    "zip": "dist/v0.2/NURION_Character_Landmarker_v0.2.0-alpha.3.zip",
+    "sha256": "0310b47919ef4db4fb5363ea7287575dd66117ff4e221574c31bb1fa682da4bf",
+    "parameterHash": "6b964ebb684026c5367faae6554135a634dd29f30761560925ae57f038747348"
+  },
+  "evidence": {
+    "meshGtMismatchPath": "dist/v0.2/alpha3/reports/mesh-gt-mismatch.json",
+    "meshGtMismatchSha256": "302ccdd62c06c8315e91f8e1b32d931493e75c802120c1d1d9383e5f2f30d88b"
+  },
+  "policies": {
+    "gateRelaxation": "DENY",
+    "outsideExtrapolation": "DENY",
+    "autoRigConfirm": "DENY",
+    "qualityGateEvaluation": "SKIP_WHEN_INELIGIBLE"
+  }
+}

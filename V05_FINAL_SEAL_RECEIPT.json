@@ -1,0 +1,70 @@
+{
+  "schema": "NURION_V05_FINAL_SEAL_RECEIPT",
+  "project": "NURION Body Motion Retarget & Rig Correction",
+  "version": "0.5.0",
+  "verdict": "SEALED_WITH_LIMITATIONS",
+  "sealExecution": "PASS",
+  "sealed": true,
+  "SEALED": true,
+  "production": "NO-GO",
+  "supportedDomain": "LIMITED",
+  "reviewVerdict": "APPROVED_FOR_LIMITED_FINAL_SEAL",
+  "priorExecution": {
+    "verdict": "SEAL_DENY",
+    "reason": "ARTIFACT_SET_UNAVAILABLE_IN_REVIEW_WORKSPACE",
+    "supersededBy": "READONLY_REEXECUTION_WITH_COMPLETE_EVIDENCE_SET"
+  },
+  "releaseArtifact": {
+    "file": "NURION_Body_Motion_Retarget_v0.5.0-rc.1.zip",
+    "sha256": "1580f5871ba7737e34b0dfe99ef974aa7d3ed6b6656599aa51d08b8de5384722",
+    "archiveIntegrity": "PASS",
+    "repacked": false,
+    "repack": "DENY"
+  },
+  "dependencyVerification": {
+    "v0.4Rc1Sha256": "10483d6ba847a28f5ce64f7179394ddc338e08871414ea72b73c44ceb4bd6bc5",
+    "v0.4ArchiveIntegrity": "PASS",
+    "holdoutZipSha256": "3703b784072e791b999c2332fb4fff951e4997560ee7f92b5b49fdc743b3d54a",
+    "holdoutFbxSha256": "35470079f2ca6305688e793d5b9fe354cd49c18ed53c1e5b6c53b3735d867034",
+    "holdoutArchiveIntegrity": "PASS"
+  },
+  "gateVerdicts": {
+    "gate1": "PASS_WITH_LIMITATIONS",
+    "gate2": "PASS_WITH_LIMITATIONS",
+    "gate3": "PASS_WITH_LIMITATIONS",
+    "gate4": "PASS_WITH_LIMITATIONS",
+    "gate5": "PASS_WITH_LIMITATIONS",
+    "gate6": "PASS_WITH_LIMITATIONS",
+    "gate7": "PASS_WITH_LIMITATIONS",
+    "gate8": "PASS_WITH_LIMITATIONS",
+    "gate9": "PASS_WITH_LIMITATIONS",
+    "gate10": "PASS_WITH_LIMITATIONS"
+  },
+  "checks": {
+    "gateParameterChainMatchesRc1Lock": "PASS",
+    "manualCorrectionCount": 0,
+    "assetSpecificParameterTuningCount": 0,
+    "sourceMutationCount": 0,
+    "rc1MutationCount": 0,
+    "v0.4MutationCount": 0,
+    "formalBowMeaning": "PASS",
+    "wordConfirmTimeline": "PASS",
+    "wordConfirmFrames": [90, 135],
+    "fps24_30_60": "PASS",
+    "determinism3x": "PASS"
+  },
+  "limitations": [
+    "FOOT_SLIDE_RESIDUAL_11",
+    "SHALLOW_SUSTAINED_CONTACT_ACCEPTED",
+    "GATE3_REVERSE_FOREARM_MILD_PRESERVED",
+    "HOLDOUT_FOOT_SLIDE_9"
+  ],
+  "excludedEvidence": {
+    "file": "VALIDATION_STATUS.json",
+    "reason": "UNRELATED_V0.1_STATUS_NOT_V0.5"
+  },
+  "baselineLock": "V05_FINAL_BASELINE_LOCK.json",
+  "evidenceBundleSha256": "17a85a7622d924e2e68804bd1cad163374b7b1618e99027b1a72d8e1c0e5f99b",
+  "mismatchPolicy": "SEAL_DENY_NO_IN_PLACE_REPAIR",
+  "sealedAt": "2026-08-13T21:13:34+09:00"
+}

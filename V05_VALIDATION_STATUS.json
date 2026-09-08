@@ -1,0 +1,29 @@
+{
+  "schema": "NURION_V05_FINAL_VALIDATION_STATUS",
+  "version": "0.5.0",
+  "status": "SEALED_WITH_LIMITATIONS",
+  "sealed": true,
+  "SEALED": true,
+  "READ_ONLY": true,
+  "baselineRole": "OFFICIAL_READONLY_BASELINE",
+  "supportedDomain": "LIMITED",
+  "production": "NO-GO",
+  "productionAutoAdvance": "DENY",
+  "releaseArtifactSha256": "1580f5871ba7737e34b0dfe99ef974aa7d3ed6b6656599aa51d08b8de5384722",
+  "finalSealReceipt": "V05_FINAL_SEAL_RECEIPT.json",
+  "finalBaselineLock": "V05_FINAL_BASELINE_LOCK.json",
+  "limitations": [
+    "FOOT_SLIDE_RESIDUAL_11",
+    "SHALLOW_SUSTAINED_CONTACT_ACCEPTED",
+    "GATE3_REVERSE_FOREARM_MILD_PRESERVED",
+    "HOLDOUT_FOOT_SLIDE_9"
+  ],
+  "repack": "DENY",
+  "inPlaceRepair": "DENY",
+  "productionActivationRequiresSeparateApproval": true,
+  "productionRequires": [
+    "SEPARATE_PRODUCTION_READINESS_TRACK",
+    "EXPLICIT_PRODUCTION_APPROVAL"
+  ],
+  "updatedAt": "2026-08-13T21:19:00+09:00"
+}

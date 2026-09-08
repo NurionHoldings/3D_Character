@@ -1,0 +1,48 @@
+{
+  "schema": "NURION_VALIDATION_STATUS",
+  "package": "NURION_Character_Landmarker_v0.2.0.zip",
+  "version": "0.2.0",
+  "status": "SEAL_CANDIDATE",
+  "sealed": false,
+  "sealReview": "READY",
+  "blenderTarget": "5.0.x",
+  "algorithmSource": "v0.2.0-alpha.3 (frozen parameters; algorithm code unchanged for packaging)",
+  "parameterHash": "6b964ebb684026c5367faae6554135a634dd29f30761560925ae57f038747348",
+  "parameterHashLength": 64,
+  "hashPolicy": "FULL_64_CHAR_HEX_ONLY",
+  "SUPPORTED": [
+    "Blender 5.0.x",
+    "Eligibility PASS humanoid",
+    "REST Pose evaluation",
+    "Geometry Landmark Correction",
+    "Body 17 joints"
+  ],
+  "NOT_VALIDATED": [
+    "Face landmarks",
+    "Automatic Weight",
+    "Clothing fit",
+    "Non-humanoid",
+    "Arbitrary animation frames",
+    "Auto Rig production quality"
+  ],
+  "gates": {
+    "assetEligibility": "PASS",
+    "holdoutQuality": "PASS",
+    "meanError_cm": 5.105,
+    "maxError_cm": 10.414,
+    "lrSwap": 0,
+    "outsideMesh": 0,
+    "gtLeak": 0,
+    "determinism3x": "PASS",
+    "witherFixture": "PASS"
+  },
+  "restPosePolicy": {
+    "holdoutSourceClip": "Walking_withSkin",
+    "evaluationPose": "REST",
+    "note": "Walking-containing FBX was forced to REST before landmark/GT comparison so motion-frame pose does not mix into joint coordinate evaluation."
+  },
+  "packageSha256": "679190e443d5814c6f7a7c41dcc7a62a52a0b02a6697e7485358d6a8853b02b2",
+  "packageSha256Length": 64,
+  "holdoutVerdictSha256": "3d5f1fa00efd1ace88fbd9eb6947bca2d4eeae2bd7836fbe10cc30c7b4775d7c",
+  "holdoutReportBundleSha256": "93e967a0bfcac58ab210e721b2feed95ac0de37de0917ec7ba0780946dc06cef"
+}

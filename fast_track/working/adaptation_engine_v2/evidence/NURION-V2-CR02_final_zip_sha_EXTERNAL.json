@@ -1,0 +1,9 @@
+{
+  "byteLength": 21738845,
+  "finalAuditZipSha256": "376f43694e880439300c02e99549991b857f78127de89c2852d8bac523a18118",
+  "finalCandidateSha256": "b88afef253af32995a6915c5d7be247b79c2fc0c0ed8e54e1bf93367d20736b2",
+  "payloadCanonicalDigest": "bef2ab538f3cac8c63ff87a66ae22b8d1fed4c4437e3a986ffb3775f267073b3",
+  "realAssetProofDigest": "803d3f614233a315e6aa2900da9cbe0f10da46dfed6c028ab46978711fc4504f",
+  "revision": "R1",
+  "runtimeQualification": "QUALIFIED_WITH_LIMITATIONS"
+}

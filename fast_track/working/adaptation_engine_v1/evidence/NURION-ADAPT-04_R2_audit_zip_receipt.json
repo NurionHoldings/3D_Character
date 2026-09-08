@@ -1,0 +1,20 @@
+{
+  "AD4-G20": "HUMAN_FINAL_ONLY",
+  "ADAPT-05": "LOCKED BY PREDECESSOR",
+  "adapt03PassReceiptSha256": "2e2904dbafab1377195bd16787e0f87dc93258bfeb7be40eb3f3c88e16719d1f",
+  "adapt03UpstreamProvenanceReceiptSha256": "f5299db69fa81e61f2fc48f48180cad3921467f1995055a00d49f7c19bd3c6b4",
+  "adapt04UpstreamProvenanceReceiptSha256": "dc25cbcdf6e1ee80f400952b8893b7bb5a9f1e2f3f4766c98cc15f1e2c617429",
+  "agentStatus": "READY_FOR_HUMAN_AUDIT",
+  "augmentationPlanDigest": "cf7cbf1e7866530d741f83a5e577b2cb197475af1c669bf6b35379caac203205",
+  "byteLength": 113113,
+  "derivedSemanticDigest": "2887aace941bb9a01adc30f124dae97266dc329c77b51430147f7d541da0d904",
+  "entryCount": 59,
+  "finalAuditZipSha256": "dc1159c515772f4ebef3829785b6bdc6943700df0c8a7708e0ead8ac285cc5e0",
+  "pass": "NOT_DECLARED",
+  "payloadCanonicalDigest": "e6a3c7d2e2427a3245dcc23e28a6f9759d8e975bf95810ba82968548b6ea6829",
+  "r1Blocker": "PROVENANCE_RECEIPT_MISSING \u2014 NURION-ADAPT-03_UPSTREAM_PROVENANCE_RECEIPT.json absent from R1 extracted package",
+  "r2Fix": "Immutable ADAPT-03 upstream provenance receipt included in evidence/",
+  "revision": "R2",
+  "schema": "NURION_ADAPT04_R2_AUDIT_ZIP_RECEIPT_V1",
+  "zip": "d:\\NURION Character Landmarker\\fast_track\\working\\adaptation_engine_v1\\evidence\\NURION-ADAPT-04_auxiliary_rig_proof_R2.zip"
+}

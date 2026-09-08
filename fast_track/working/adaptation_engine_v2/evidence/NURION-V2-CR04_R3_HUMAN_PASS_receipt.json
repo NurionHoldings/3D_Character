@@ -1,0 +1,106 @@
+{
+  "receiptId": "NURION-V2-CR04_R3_HUMAN_PASS",
+  "schema": "NURION_V2_CR04_HUMAN_PASS_RECEIPT_V1",
+  "authority": "HUMAN_FINAL_GATE",
+  "changeRequestId": "V2-CR-04",
+  "corrective": "V2-CR-04-GAP-01",
+  "title": "SECOND REAL MESHY ASSET GENERALIZATION",
+  "revision": "R3",
+  "result": "PASS",
+  "status": "PROTOTYPE HUMAN PASS / SECOND REAL MESHY ASSET GENERALIZATION TECHNICAL BASIS CONFIRMED",
+  "declaredAtUtc": "20260830T072600Z",
+  "declaredBy": "etherean",
+  "auditType": "HUMAN_FINAL_GATE",
+  "CR04-P07": "HUMAN PASS",
+  "CR04-G20": "HUMAN PASS",
+  "CR04-G01_to_G19": "PASS",
+  "blocker": {
+    "id": "CR04-GENERALIZATION-HC-01",
+    "status": "CLOSED BY R3",
+    "causeClosed": "Idle_15 HEAD_SKIN_LOCAL=21 / FACE_Y_MIN=1.28 removed from CR04 consume execution path via GAP-01 resolver"
+  },
+  "packaging": {
+    "R1": "HUMAN AUDIT BLOCKED / HISTORICAL / PRESERVED — Bolt Voyager; HC-01 present",
+    "R2": "FUNCTIONAL PIPELINE PASS / HUMAN AUDIT BLOCKED / HISTORICAL / PRESERVED — Sporty; HC-01 present",
+    "R3": "HUMAN-AUDITED PASS — Sporty + GAP-01 resolved facial; clean extraction runner PASS + independent GLB recompute PASS"
+  },
+  "pins": {
+    "secondAssetSha256": "f3f9e343c8ba3c9a503a8423293dec90bb6be50f809f1321f4f6658b1bea133e",
+    "facialDerivedSha256": "92502f6f66b82c4dc1a7138b90746b4b0e755e6e857de0c2390ae9ef6320f51a",
+    "talkingDerivedSha256": "55601949d6fc67eaebe405e683134fc516be5d6374ca748ea8809ae12dbace4d",
+    "runtimeProofDigest": "50e085ca5ce2d33583db8ec158d21fae12987795ba33fa172f609dedae179c18",
+    "finalCandidateSemanticDigest": "d3294a62cce6c55d312fa9065e16160238b1c972a21924c5d371308f945c879d",
+    "humanAuditedZipSha256": "fbb14acf28ef3695c3cb036aedf2f976757e4f9e0046952891e8f0ec38b87d29",
+    "approvedCr04SpecDigest": "203466befd67d01a4acf42a60048d6b2ac01c42b4dd2ffea49da73f0c8edface",
+    "approvedGap01SpecDigest": "4a8467ad945d3c56d9222075c44ae4cc12e8df5edcd833d4091b046901b903f3"
+  },
+  "humanVerified": {
+    "zipEntries": 65,
+    "unsafePath": "NONE",
+    "cleanExtractionRunner": "exit 0 / PASS",
+    "secondAsset": "Meshy_AI_Sporty_Studio_Portrai_biped / Idle_15_withSkin — PRESERVED DO NOT RESELECT",
+    "headResolve": {
+      "NURION_head": "Head",
+      "headNodeIndex": 18,
+      "headJointLocalIndex": 21,
+      "provenance": "CR01_NURION_head→skin.joints.index",
+      "hardcodedIdle15Index21": "NOT_USED",
+      "coincidenceNote": "resolved local index equals 21 by asset topology — not Idle_15 constant SoT"
+    },
+    "didNotCall": "v2_cr02.select_facial_vertices",
+    "facialResolver": "select_facial_vertices_resolved — head weight + relative head-local bands (no FACE_Y_MIN SoT)",
+    "bodyPreservation": {
+      "POSITION": "identical to source",
+      "JOINTS_0": "identical to source",
+      "WEIGHTS_0": "identical to source",
+      "idleClip": "preserved",
+      "allowedAugmentation": "Head.children FACE root only"
+    },
+    "talking": {
+      "clipPresent": true,
+      "timeline": [0.0, 0.1, 0.25, 0.4, 0.55],
+      "sequence": "Neutral → AA → OH → EE → Neutral",
+      "peakDisplacement": {
+        "AA": 0.013416408,
+        "OH": 0.016613249,
+        "EE": 0.008
+      },
+      "stateDistinctness": {
+        "AA_vs_OH": 0.00979796,
+        "AA_vs_EE": 0.0156205,
+        "OH_vs_EE": 0.020099752
+      },
+      "neutralRestorationError": {"start": 0.0, "end": 0.0}
+    },
+    "morphCount": 9,
+    "morphInvarianceFaceToTalking": true
+  },
+  "provenProposition": "CR01→CR02→CR03 chain on second independent real Meshy asset WITHOUT asset-specific Idle_15 facial hardcoding in CR04 consume path",
+  "means": "GAP-01 CR01 semantic Head → skin.joints local index + head-local geometry regions; CR02 select_facial_vertices unused; Sporty pin preserved",
+  "stages": {
+    "CR04-P01": "PASS / CONSUME ONLY",
+    "CR04-P02": "PASS / CONSUME ONLY",
+    "CR04-P03": "PASS / CONSUME ONLY",
+    "CR04-P04": "PASS / CONSUME ONLY",
+    "CR04-P05": "PASS / CONSUME ONLY",
+    "CR04-P06": "PASS / CONSUME ONLY",
+    "CR04-P07": "HUMAN PASS"
+  },
+  "authorityLine": {
+    "V2-CR-01": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-02": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-03": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-04": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-04-GAP-01": "HUMAN PASS / CLOSED INTO CR04 R3",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN"
+  },
+  "boundary": {
+    "proven": "Second real Meshy asset generalization technical basis (Sporty) with asset-independent facial region resolution",
+    "notProven": [
+      "NURION ADAPTATION ENGINE V2 CLOSED / PASS",
+      "V2 Integration / Release Gate",
+      "production readiness / 100%"
+    ]
+  },
+  "next": "Do not reopen CR01–CR04. Next: V2 Integration / Release Gate only. Engine V2 remains NOT OPEN until that Gate closes."
+}

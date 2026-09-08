@@ -1,0 +1,122 @@
+{
+  "schema": "NURION_WITHER_FIXTURE_REPORT",
+  "timestamp": "2026-08-09T17:29:38.727570+00:00",
+  "fixtureId": "WITHER_ASSET_GT_MISMATCH",
+  "pass": true,
+  "failures": [],
+  "evidenceSha256": "302ccdd62c06c8315e91f8e1b32d931493e75c802120c1d1d9383e5f2f30d88b",
+  "evidenceShaMatch": true,
+  "eligibility": {
+    "schema": "NURION_ASSET_ELIGIBILITY",
+    "assetEligible": false,
+    "reasonCode": "MESH_GT_MISMATCH",
+    "blockedJoints": [
+      "ankle.L",
+      "ankle.R"
+    ],
+    "evaluationExcluded": [
+      "ankle.L",
+      "ankle.R"
+    ],
+    "evaluationAllowed": false,
+    "autoRigAllowed": false,
+    "checks": {
+      "worldTransformUsable": true,
+      "restPoseConsistent": false,
+      "lateralComponentsPresent": true,
+      "lateralCentersOpposite": true,
+      "lateralGapAdequate": true,
+      "gtInsideMeshReachable": false
+    },
+    "details": {
+      "height": 1.6593,
+      "centerX": 0.0583,
+      "worldTransform": {
+        "meshMatrixDet": 1e-06,
+        "armMatrixDet": 1e-06,
+        "meshLocation": [
+          -4e-06,
+          1e-06,
+          4e-06
+        ],
+        "armLocation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "restPose": {
+        "posePosition": "POSE",
+        "maxPoseDelta": 6.80034,
+        "preferred": "REST",
+        "gtUsesRestLocalHeads": true
+      },
+      "footClusters": {
+        "leftCount": 9687,
+        "rightCount": 3221,
+        "leftMean": [
+          0.1661,
+          -0.0391,
+          0.0738
+        ],
+        "rightMean": [
+          0.0375,
+          0.0469,
+          0.078
+        ],
+        "leftXRange": [
+          0.0583,
+          0.2704
+        ],
+        "rightXRange": [
+          0.0099,
+          0.0583
+        ],
+        "zMax": 0.13274349212646486
+      },
+      "lateral": {
+        "leftMeanX": 0.1661,
+        "rightMeanX": 0.0375,
+        "gap": 0.1286,
+        "minGap": 0.0664,
+        "oppositeSides": true
+      },
+      "jointReachability": {
+        "ankle.L": {
+          "bestInsideError_cm": 10.9,
+          "gateCm": 10.0,
+          "gateReachableInsideMesh": false,
+          "meshXRange": [
+            0.0583,
+            0.2704
+          ],
+          "gt": [
+            0.128925,
+            0.060519,
+            0.12808
+          ],
+          "bone": "LeftFoot"
+        },
+        "ankle.R": {
+          "bestInsideError_cm": 16.116,
+          "gateCm": 10.0,
+          "gateReachableInsideMesh": false,
+          "meshXRange": [
+            0.0099,
+            0.0583
+          ],
+          "gt": [
+            -0.121787,
+            0.061285,
+            0.128081
+          ],
+          "bone": "RightFoot"
+        }
+      }
+    }
+  },
+  "blocker": true,
+  "autoRigConfirm": "DENY",
+  "alpha3FrozenSha256": "0310b47919ef4db4fb5363ea7287575dd66117ff4e221574c31bb1fa682da4bf",
+  "failClass": "ASSET_GT_MISMATCH"
+}

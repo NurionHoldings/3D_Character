@@ -1,0 +1,1173 @@
+{
+  "adapt01": {
+    "reportCanonicalSha256": "32d958f43e5ff11adcbfe3f672cd79d00c718de12715dbb9ea8fd60f10083b4f"
+  },
+  "adapt02": {
+    "contractCanonicalSha256": "756d11ad335ade6793579eab4498be46e0f8a6c3f577372599664e5e2c08dc0b"
+  },
+  "adapt03": {
+    "adapt01InspectionDigest": "32d958f43e5ff11adcbfe3f672cd79d00c718de12715dbb9ea8fd60f10083b4f",
+    "adapt02MappingDigest": "756d11ad335ade6793579eab4498be46e0f8a6c3f577372599664e5e2c08dc0b",
+    "adapt04AugmentationRequirements": {
+      "adapt04Implementation": "NOT_STARTED",
+      "augmentationRequired": true,
+      "physicalHelperRigPerformed": false,
+      "requirements": [
+        {
+          "adapt04Only": true,
+          "authority": "NURION_TALKING",
+          "capability": "FACE_dentalLip",
+          "reason": "NO_TARGET_CONTROL",
+          "targetRegion": "MOUTH"
+        },
+        {
+          "adapt04Only": true,
+          "authority": "NURION_TALKING",
+          "capability": "FACE_lipsPart",
+          "reason": "NO_TARGET_CONTROL",
+          "targetRegion": "MOUTH"
+        },
+        {
+          "adapt04Only": true,
+          "authority": "NURION_TALKING",
+          "capability": "FACE_lipsTight",
+          "reason": "NO_TARGET_CONTROL",
+          "targetRegion": "MOUTH"
+        },
+        {
+          "adapt04Only": true,
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_browDownLeft",
+          "reason": "NO_TARGET_CONTROL",
+          "targetRegion": "FACE"
+        },
+        {
+          "adapt04Only": true,
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_browDownRight",
+          "reason": "NO_TARGET_CONTROL",
+          "targetRegion": "FACE"
+        },
+        {
+          "adapt04Only": true,
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_browOuterUpLeft",
+          "reason": "NO_TARGET_CONTROL",
+          "targetRegion": "FACE"
+        },
+        {
+          "adapt04Only": true,
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_browOuterUpRight",
+          "reason": "NO_TARGET_CONTROL",
+          "targetRegion": "FACE"
+        },
+        {
+          "adapt04Only": true,
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_cheekRaiseLeft",
+          "reason": "NO_TARGET_CONTROL",
+          "targetRegion": "FACE"
+        },
+        {
+          "adapt04Only": true,
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_cheekRaiseRight",
+          "reason": "NO_TARGET_CONTROL",
+          "targetRegion": "FACE"
+        },
+        {
+          "adapt04Only": true,
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_dentalLip",
+          "reason": "NO_TARGET_CONTROL",
+          "targetRegion": "FACE"
+        },
+        {
+          "adapt04Only": true,
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_eyeSquintLeft",
+          "reason": "NO_TARGET_CONTROL",
+          "targetRegion": "FACE"
+        },
+        {
+          "adapt04Only": true,
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_eyeSquintRight",
+          "reason": "NO_TARGET_CONTROL",
+          "targetRegion": "FACE"
+        },
+        {
+          "adapt04Only": true,
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_eyeWideLeft",
+          "reason": "NO_TARGET_CONTROL",
+          "targetRegion": "FACE"
+        },
+        {
+          "adapt04Only": true,
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_eyeWideRight",
+          "reason": "NO_TARGET_CONTROL",
+          "targetRegion": "FACE"
+        },
+        {
+          "adapt04Only": true,
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_lipsPart",
+          "reason": "NO_TARGET_CONTROL",
+          "targetRegion": "FACE"
+        },
+        {
+          "adapt04Only": true,
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_lipsTight",
+          "reason": "NO_TARGET_CONTROL",
+          "targetRegion": "FACE"
+        },
+        {
+          "adapt04Only": true,
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_mouthFrownLeft",
+          "reason": "NO_TARGET_CONTROL",
+          "targetRegion": "FACE"
+        },
+        {
+          "adapt04Only": true,
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_mouthFrownRight",
+          "reason": "NO_TARGET_CONTROL",
+          "targetRegion": "FACE"
+        }
+      ]
+    },
+    "adaptationSpecification": {
+      "level": "ADAPTATION_SPECIFICATION",
+      "nonDestructive": true,
+      "physicalAugmentation": "DENY \u2014 ADAPT-04 ONLY"
+    },
+    "blockers": [],
+    "capabilityMatrix": {
+      "rows": [
+        {
+          "capability": "FACE_browDownLeft",
+          "domain": "EXPRESSION",
+          "level": "MISSING"
+        },
+        {
+          "capability": "FACE_browDownRight",
+          "domain": "EXPRESSION",
+          "level": "MISSING"
+        },
+        {
+          "capability": "FACE_browInnerUpLeft",
+          "domain": "EXPRESSION",
+          "level": "NATIVE"
+        },
+        {
+          "capability": "FACE_browInnerUpRight",
+          "domain": "EXPRESSION",
+          "level": "NATIVE"
+        },
+        {
+          "capability": "FACE_browOuterUpLeft",
+          "domain": "EXPRESSION",
+          "level": "MISSING"
+        },
+        {
+          "capability": "FACE_browOuterUpRight",
+          "domain": "EXPRESSION",
+          "level": "MISSING"
+        },
+        {
+          "capability": "FACE_cheekRaiseLeft",
+          "domain": "EXPRESSION",
+          "level": "MISSING"
+        },
+        {
+          "capability": "FACE_cheekRaiseRight",
+          "domain": "EXPRESSION",
+          "level": "MISSING"
+        },
+        {
+          "capability": "FACE_dentalLip",
+          "domain": "EXPRESSION",
+          "level": "MISSING"
+        },
+        {
+          "capability": "FACE_eyeBlinkLeft",
+          "domain": "EXPRESSION",
+          "level": "NATIVE"
+        },
+        {
+          "capability": "FACE_eyeBlinkRight",
+          "domain": "EXPRESSION",
+          "level": "NATIVE"
+        },
+        {
+          "capability": "FACE_eyeSquintLeft",
+          "domain": "EXPRESSION",
+          "level": "MISSING"
+        },
+        {
+          "capability": "FACE_eyeSquintRight",
+          "domain": "EXPRESSION",
+          "level": "MISSING"
+        },
+        {
+          "capability": "FACE_eyeWideLeft",
+          "domain": "EXPRESSION",
+          "level": "MISSING"
+        },
+        {
+          "capability": "FACE_eyeWideRight",
+          "domain": "EXPRESSION",
+          "level": "MISSING"
+        },
+        {
+          "capability": "FACE_lipsPart",
+          "domain": "EXPRESSION",
+          "level": "MISSING"
+        },
+        {
+          "capability": "FACE_lipsTight",
+          "domain": "EXPRESSION",
+          "level": "MISSING"
+        },
+        {
+          "capability": "FACE_mouthFrownLeft",
+          "domain": "EXPRESSION",
+          "level": "MISSING"
+        },
+        {
+          "capability": "FACE_mouthFrownRight",
+          "domain": "EXPRESSION",
+          "level": "MISSING"
+        },
+        {
+          "capability": "FACE_mouthOpen",
+          "domain": "EXPRESSION",
+          "level": "NATIVE"
+        },
+        {
+          "capability": "FACE_mouthPlosive",
+          "domain": "EXPRESSION",
+          "level": "NATIVE"
+        },
+        {
+          "capability": "FACE_mouthPucker",
+          "domain": "EXPRESSION",
+          "level": "NATIVE"
+        },
+        {
+          "capability": "FACE_mouthSmileLeft",
+          "domain": "EXPRESSION",
+          "level": "NATIVE"
+        },
+        {
+          "capability": "FACE_mouthSmileRight",
+          "domain": "EXPRESSION",
+          "level": "NATIVE"
+        },
+        {
+          "capability": "FACE_mouthWiden",
+          "domain": "EXPRESSION",
+          "level": "NATIVE"
+        },
+        {
+          "capability": "FACE_eyeBlinkLeft",
+          "domain": "EYE",
+          "level": "NATIVE"
+        },
+        {
+          "capability": "FACE_eyeBlinkRight",
+          "domain": "EYE",
+          "level": "NATIVE"
+        },
+        {
+          "capability": "FACE_eyeSquintLeft",
+          "domain": "EYE",
+          "level": "MAPPABLE"
+        },
+        {
+          "capability": "FACE_eyeSquintRight",
+          "domain": "EYE",
+          "level": "MAPPABLE"
+        },
+        {
+          "capability": "FACE_eyeWideLeft",
+          "domain": "EYE",
+          "level": "MAPPABLE"
+        },
+        {
+          "capability": "FACE_eyeWideRight",
+          "domain": "EYE",
+          "level": "MAPPABLE"
+        },
+        {
+          "capability": "FACE_dentalLip",
+          "domain": "TALKING",
+          "level": "MISSING"
+        },
+        {
+          "capability": "FACE_lipsPart",
+          "domain": "TALKING",
+          "level": "MISSING"
+        },
+        {
+          "capability": "FACE_lipsTight",
+          "domain": "TALKING",
+          "level": "MISSING"
+        },
+        {
+          "capability": "FACE_mouthOpen",
+          "domain": "TALKING",
+          "level": "NATIVE"
+        },
+        {
+          "capability": "FACE_mouthPlosive",
+          "domain": "TALKING",
+          "level": "NATIVE"
+        },
+        {
+          "capability": "FACE_mouthPucker",
+          "domain": "TALKING",
+          "level": "NATIVE"
+        },
+        {
+          "capability": "FACE_mouthWiden",
+          "domain": "TALKING",
+          "level": "NATIVE"
+        }
+      ],
+      "summary": {
+        "ADAPTABLE": 0,
+        "AMBIGUOUS": 0,
+        "BLOCKED": 0,
+        "MAPPABLE": 4,
+        "MISSING": 18,
+        "NATIVE": 16
+      }
+    },
+    "characterIdentity": "rich",
+    "classification": "ADAPTED_WITH_AUGMENTATION_PENDING",
+    "contractCanonicalSha256": "ed850886c5aaafc8b7de42ff165a7ab5bb8cf50be9f9d24350f91fd4a95ea106",
+    "expressionMap": {
+      "conflicts": [],
+      "mappings": {
+        "FACE_browDownLeft": {
+          "capability": "MISSING",
+          "evidence": [],
+          "semantic": "FACE_browDownLeft",
+          "status": "MISSING"
+        },
+        "FACE_browDownRight": {
+          "capability": "MISSING",
+          "evidence": [],
+          "semantic": "FACE_browDownRight",
+          "status": "MISSING"
+        },
+        "FACE_browInnerUpLeft": {
+          "capability": "NATIVE",
+          "evidence": [
+            "exact_canonical_token",
+            "target_control_identity"
+          ],
+          "semantic": "FACE_browInnerUpLeft",
+          "status": "RESOLVED",
+          "targetReference": "FACE_browInnerUpLeft"
+        },
+        "FACE_browInnerUpRight": {
+          "capability": "NATIVE",
+          "evidence": [
+            "exact_canonical_token",
+            "target_control_identity"
+          ],
+          "semantic": "FACE_browInnerUpRight",
+          "status": "RESOLVED",
+          "targetReference": "FACE_browInnerUpRight"
+        },
+        "FACE_browOuterUpLeft": {
+          "capability": "MISSING",
+          "evidence": [],
+          "semantic": "FACE_browOuterUpLeft",
+          "status": "MISSING"
+        },
+        "FACE_browOuterUpRight": {
+          "capability": "MISSING",
+          "evidence": [],
+          "semantic": "FACE_browOuterUpRight",
+          "status": "MISSING"
+        },
+        "FACE_cheekRaiseLeft": {
+          "capability": "MISSING",
+          "evidence": [],
+          "semantic": "FACE_cheekRaiseLeft",
+          "status": "MISSING"
+        },
+        "FACE_cheekRaiseRight": {
+          "capability": "MISSING",
+          "evidence": [],
+          "semantic": "FACE_cheekRaiseRight",
+          "status": "MISSING"
+        },
+        "FACE_dentalLip": {
+          "capability": "MISSING",
+          "evidence": [],
+          "semantic": "FACE_dentalLip",
+          "status": "MISSING"
+        },
+        "FACE_eyeBlinkLeft": {
+          "capability": "NATIVE",
+          "evidence": [
+            "exact_canonical_token",
+            "target_control_identity"
+          ],
+          "semantic": "FACE_eyeBlinkLeft",
+          "status": "RESOLVED",
+          "targetReference": "FACE_eyeBlinkLeft"
+        },
+        "FACE_eyeBlinkRight": {
+          "capability": "NATIVE",
+          "evidence": [
+            "exact_canonical_token",
+            "target_control_identity"
+          ],
+          "semantic": "FACE_eyeBlinkRight",
+          "status": "RESOLVED",
+          "targetReference": "FACE_eyeBlinkRight"
+        },
+        "FACE_eyeSquintLeft": {
+          "capability": "MISSING",
+          "evidence": [],
+          "semantic": "FACE_eyeSquintLeft",
+          "status": "MISSING"
+        },
+        "FACE_eyeSquintRight": {
+          "capability": "MISSING",
+          "evidence": [],
+          "semantic": "FACE_eyeSquintRight",
+          "status": "MISSING"
+        },
+        "FACE_eyeWideLeft": {
+          "capability": "MISSING",
+          "evidence": [],
+          "semantic": "FACE_eyeWideLeft",
+          "status": "MISSING"
+        },
+        "FACE_eyeWideRight": {
+          "capability": "MISSING",
+          "evidence": [],
+          "semantic": "FACE_eyeWideRight",
+          "status": "MISSING"
+        },
+        "FACE_lipsPart": {
+          "capability": "MISSING",
+          "evidence": [],
+          "semantic": "FACE_lipsPart",
+          "status": "MISSING"
+        },
+        "FACE_lipsTight": {
+          "capability": "MISSING",
+          "evidence": [],
+          "semantic": "FACE_lipsTight",
+          "status": "MISSING"
+        },
+        "FACE_mouthFrownLeft": {
+          "capability": "MISSING",
+          "evidence": [],
+          "semantic": "FACE_mouthFrownLeft",
+          "status": "MISSING"
+        },
+        "FACE_mouthFrownRight": {
+          "capability": "MISSING",
+          "evidence": [],
+          "semantic": "FACE_mouthFrownRight",
+          "status": "MISSING"
+        },
+        "FACE_mouthOpen": {
+          "capability": "NATIVE",
+          "evidence": [
+            "exact_canonical_token",
+            "target_control_identity"
+          ],
+          "semantic": "FACE_mouthOpen",
+          "status": "RESOLVED",
+          "targetReference": "FACE_mouthOpen"
+        },
+        "FACE_mouthPlosive": {
+          "capability": "NATIVE",
+          "evidence": [
+            "exact_canonical_token",
+            "target_control_identity"
+          ],
+          "semantic": "FACE_mouthPlosive",
+          "status": "RESOLVED",
+          "targetReference": "FACE_mouthPlosive"
+        },
+        "FACE_mouthPucker": {
+          "capability": "NATIVE",
+          "evidence": [
+            "exact_canonical_token",
+            "target_control_identity"
+          ],
+          "semantic": "FACE_mouthPucker",
+          "status": "RESOLVED",
+          "targetReference": "FACE_mouthPucker"
+        },
+        "FACE_mouthSmileLeft": {
+          "capability": "NATIVE",
+          "evidence": [
+            "exact_canonical_token",
+            "target_control_identity"
+          ],
+          "semantic": "FACE_mouthSmileLeft",
+          "status": "RESOLVED",
+          "targetReference": "FACE_mouthSmileLeft"
+        },
+        "FACE_mouthSmileRight": {
+          "capability": "NATIVE",
+          "evidence": [
+            "exact_canonical_token",
+            "target_control_identity"
+          ],
+          "semantic": "FACE_mouthSmileRight",
+          "status": "RESOLVED",
+          "targetReference": "FACE_mouthSmileRight"
+        },
+        "FACE_mouthWiden": {
+          "capability": "NATIVE",
+          "evidence": [
+            "exact_canonical_token",
+            "target_control_identity"
+          ],
+          "semantic": "FACE_mouthWiden",
+          "status": "RESOLVED",
+          "targetReference": "FACE_mouthWiden"
+        }
+      },
+      "status": "PASS"
+    },
+    "eyeAdaptation": {
+      "adaptationMetadata": {
+        "mode": "NON_DESTRUCTIVE",
+        "physicalHelperRig": "DENY_IN_ADAPT03"
+      },
+      "calibrationFingerprintSha256": "2d1dbb6772cd74c2a7dc991cf497d58dc5b803359f5430105dbe4ff9e513ff19",
+      "channelMaps": {
+        "FACE_eyeBlinkLeft": {
+          "capability": "NATIVE",
+          "evidence": [
+            "morph_deformation",
+            "eye_region",
+            "channel:FACE_eyeBlinkLeft"
+          ],
+          "semantic": "FACE_eyeBlinkLeft",
+          "status": "RESOLVED",
+          "targetReference": "FACE_eyeBlinkLeft"
+        },
+        "FACE_eyeBlinkRight": {
+          "capability": "NATIVE",
+          "evidence": [
+            "morph_deformation",
+            "eye_region",
+            "channel:FACE_eyeBlinkRight"
+          ],
+          "semantic": "FACE_eyeBlinkRight",
+          "status": "RESOLVED",
+          "targetReference": "FACE_eyeBlinkRight"
+        },
+        "FACE_eyeSquintLeft": {
+          "capability": "MAPPABLE",
+          "evidence": [
+            "morph_deformation",
+            "eye_region",
+            "channel:FACE_eyeSquintLeft"
+          ],
+          "semantic": "FACE_eyeSquintLeft",
+          "status": "RESOLVED",
+          "targetReference": "FACE_eyeBlinkLeft"
+        },
+        "FACE_eyeSquintRight": {
+          "capability": "MAPPABLE",
+          "evidence": [
+            "morph_deformation",
+            "eye_region",
+            "channel:FACE_eyeSquintRight"
+          ],
+          "semantic": "FACE_eyeSquintRight",
+          "status": "RESOLVED",
+          "targetReference": "FACE_eyeBlinkRight"
+        },
+        "FACE_eyeWideLeft": {
+          "capability": "MAPPABLE",
+          "evidence": [
+            "morph_deformation",
+            "eye_region",
+            "channel:FACE_eyeWideLeft"
+          ],
+          "semantic": "FACE_eyeWideLeft",
+          "status": "RESOLVED",
+          "targetReference": "FACE_eyeBlinkLeft"
+        },
+        "FACE_eyeWideRight": {
+          "capability": "MAPPABLE",
+          "evidence": [
+            "morph_deformation",
+            "eye_region",
+            "channel:FACE_eyeWideRight"
+          ],
+          "semantic": "FACE_eyeWideRight",
+          "status": "RESOLVED",
+          "targetReference": "FACE_eyeBlinkRight"
+        }
+      },
+      "leftEyeBone": {
+        "confidence": 0.9,
+        "nodeIndex": 20,
+        "observedSourceNodeName": "LeftEye",
+        "reason": "exact_alias:lefteye;side_token_match",
+        "status": "DETECTED"
+      },
+      "rightEyeBone": {
+        "confidence": 0.9,
+        "nodeIndex": 21,
+        "observedSourceNodeName": "RightEye",
+        "reason": "exact_alias:righteye;side_token_match",
+        "status": "DETECTED"
+      },
+      "status": "PASS"
+    },
+    "faceAuthorityBindingSchema": "NURION_ADAPT03_CANONICAL_FACE_BINDING_V1",
+    "faceBodyAttachment": {
+      "child": "FACE_Rig_Root",
+      "evidence": [
+        "adapt02_head_resolved",
+        "locked_attachment_contract"
+      ],
+      "metadata": {
+        "mode": "ATTACHMENT_SPECIFICATION_ONLY",
+        "mutateFaceAuthority": "DENY",
+        "mutateNURIONHead": "DENY"
+      },
+      "parent": "NURION_head",
+      "status": "COMPATIBLE",
+      "targetHeadNode": "Head",
+      "type": "SOLE_ATTACHMENT"
+    },
+    "faceSemanticMap": {
+      "expressionMappings": {
+        "conflicts": [],
+        "mappings": {
+          "FACE_browDownLeft": {
+            "capability": "MISSING",
+            "evidence": [],
+            "semantic": "FACE_browDownLeft",
+            "status": "MISSING"
+          },
+          "FACE_browDownRight": {
+            "capability": "MISSING",
+            "evidence": [],
+            "semantic": "FACE_browDownRight",
+            "status": "MISSING"
+          },
+          "FACE_browInnerUpLeft": {
+            "capability": "NATIVE",
+            "evidence": [
+              "exact_canonical_token",
+              "target_control_identity"
+            ],
+            "semantic": "FACE_browInnerUpLeft",
+            "status": "RESOLVED",
+            "targetReference": "FACE_browInnerUpLeft"
+          },
+          "FACE_browInnerUpRight": {
+            "capability": "NATIVE",
+            "evidence": [
+              "exact_canonical_token",
+              "target_control_identity"
+            ],
+            "semantic": "FACE_browInnerUpRight",
+            "status": "RESOLVED",
+            "targetReference": "FACE_browInnerUpRight"
+          },
+          "FACE_browOuterUpLeft": {
+            "capability": "MISSING",
+            "evidence": [],
+            "semantic": "FACE_browOuterUpLeft",
+            "status": "MISSING"
+          },
+          "FACE_browOuterUpRight": {
+            "capability": "MISSING",
+            "evidence": [],
+            "semantic": "FACE_browOuterUpRight",
+            "status": "MISSING"
+          },
+          "FACE_cheekRaiseLeft": {
+            "capability": "MISSING",
+            "evidence": [],
+            "semantic": "FACE_cheekRaiseLeft",
+            "status": "MISSING"
+          },
+          "FACE_cheekRaiseRight": {
+            "capability": "MISSING",
+            "evidence": [],
+            "semantic": "FACE_cheekRaiseRight",
+            "status": "MISSING"
+          },
+          "FACE_dentalLip": {
+            "capability": "MISSING",
+            "evidence": [],
+            "semantic": "FACE_dentalLip",
+            "status": "MISSING"
+          },
+          "FACE_eyeBlinkLeft": {
+            "capability": "NATIVE",
+            "evidence": [
+              "exact_canonical_token",
+              "target_control_identity"
+            ],
+            "semantic": "FACE_eyeBlinkLeft",
+            "status": "RESOLVED",
+            "targetReference": "FACE_eyeBlinkLeft"
+          },
+          "FACE_eyeBlinkRight": {
+            "capability": "NATIVE",
+            "evidence": [
+              "exact_canonical_token",
+              "target_control_identity"
+            ],
+            "semantic": "FACE_eyeBlinkRight",
+            "status": "RESOLVED",
+            "targetReference": "FACE_eyeBlinkRight"
+          },
+          "FACE_eyeSquintLeft": {
+            "capability": "MISSING",
+            "evidence": [],
+            "semantic": "FACE_eyeSquintLeft",
+            "status": "MISSING"
+          },
+          "FACE_eyeSquintRight": {
+            "capability": "MISSING",
+            "evidence": [],
+            "semantic": "FACE_eyeSquintRight",
+            "status": "MISSING"
+          },
+          "FACE_eyeWideLeft": {
+            "capability": "MISSING",
+            "evidence": [],
+            "semantic": "FACE_eyeWideLeft",
+            "status": "MISSING"
+          },
+          "FACE_eyeWideRight": {
+            "capability": "MISSING",
+            "evidence": [],
+            "semantic": "FACE_eyeWideRight",
+            "status": "MISSING"
+          },
+          "FACE_lipsPart": {
+            "capability": "MISSING",
+            "evidence": [],
+            "semantic": "FACE_lipsPart",
+            "status": "MISSING"
+          },
+          "FACE_lipsTight": {
+            "capability": "MISSING",
+            "evidence": [],
+            "semantic": "FACE_lipsTight",
+            "status": "MISSING"
+          },
+          "FACE_mouthFrownLeft": {
+            "capability": "MISSING",
+            "evidence": [],
+            "semantic": "FACE_mouthFrownLeft",
+            "status": "MISSING"
+          },
+          "FACE_mouthFrownRight": {
+            "capability": "MISSING",
+            "evidence": [],
+            "semantic": "FACE_mouthFrownRight",
+            "status": "MISSING"
+          },
+          "FACE_mouthOpen": {
+            "capability": "NATIVE",
+            "evidence": [
+              "exact_canonical_token",
+              "target_control_identity"
+            ],
+            "semantic": "FACE_mouthOpen",
+            "status": "RESOLVED",
+            "targetReference": "FACE_mouthOpen"
+          },
+          "FACE_mouthPlosive": {
+            "capability": "NATIVE",
+            "evidence": [
+              "exact_canonical_token",
+              "target_control_identity"
+            ],
+            "semantic": "FACE_mouthPlosive",
+            "status": "RESOLVED",
+            "targetReference": "FACE_mouthPlosive"
+          },
+          "FACE_mouthPucker": {
+            "capability": "NATIVE",
+            "evidence": [
+              "exact_canonical_token",
+              "target_control_identity"
+            ],
+            "semantic": "FACE_mouthPucker",
+            "status": "RESOLVED",
+            "targetReference": "FACE_mouthPucker"
+          },
+          "FACE_mouthSmileLeft": {
+            "capability": "NATIVE",
+            "evidence": [
+              "exact_canonical_token",
+              "target_control_identity"
+            ],
+            "semantic": "FACE_mouthSmileLeft",
+            "status": "RESOLVED",
+            "targetReference": "FACE_mouthSmileLeft"
+          },
+          "FACE_mouthSmileRight": {
+            "capability": "NATIVE",
+            "evidence": [
+              "exact_canonical_token",
+              "target_control_identity"
+            ],
+            "semantic": "FACE_mouthSmileRight",
+            "status": "RESOLVED",
+            "targetReference": "FACE_mouthSmileRight"
+          },
+          "FACE_mouthWiden": {
+            "capability": "NATIVE",
+            "evidence": [
+              "exact_canonical_token",
+              "target_control_identity"
+            ],
+            "semantic": "FACE_mouthWiden",
+            "status": "RESOLVED",
+            "targetReference": "FACE_mouthWiden"
+          }
+        },
+        "status": "PASS"
+      },
+      "level": "MAPPING"
+    },
+    "headSemantic": {
+      "capability": "NATIVE",
+      "confidence": 1.0,
+      "evidence": [
+        "exact_alias:head;skin_joint_member;hierarchy_chain_ok",
+        "multi_evidence_required",
+        "hierarchy",
+        "laterality_pending",
+        "adapt01_confidence",
+        "adapt02_consumed"
+      ],
+      "semantic": "NURION_head",
+      "status": "RESOLVED",
+      "targetReference": "Head"
+    },
+    "issues": [],
+    "jawMouthMap": {
+      "controls": {
+        "JAW_BONE": {
+          "capability": "NATIVE",
+          "evidence": [
+            "jaw_bone_semantic"
+          ],
+          "semantic": "JAW_BONE",
+          "status": "RESOLVED"
+        },
+        "LOWER_LIP": {
+          "capability": "MISSING",
+          "evidence": [],
+          "semantic": "LOWER_LIP",
+          "status": "MISSING"
+        },
+        "MOUTH_CLOSE": {
+          "capability": "MISSING",
+          "evidence": [],
+          "semantic": "MOUTH_CLOSE",
+          "status": "MISSING"
+        },
+        "MOUTH_CORNER_L": {
+          "capability": "MAPPABLE",
+          "evidence": [
+            "lip_region"
+          ],
+          "semantic": "MOUTH_CORNER_L",
+          "status": "RESOLVED",
+          "targetReference": "FACE_mouthSmileLeft"
+        },
+        "MOUTH_OPEN": {
+          "capability": "NATIVE",
+          "evidence": [
+            "mouth_deformation"
+          ],
+          "semantic": "MOUTH_OPEN",
+          "status": "RESOLVED",
+          "targetReference": "FACE_mouthOpen"
+        },
+        "UPPER_LIP": {
+          "capability": "MISSING",
+          "evidence": [],
+          "semantic": "UPPER_LIP",
+          "status": "MISSING"
+        }
+      },
+      "status": "PASS"
+    },
+    "landmarkCorrespondence": {
+      "landmarks": {
+        "CHIN": {
+          "confidence": 0.6,
+          "evidence": [
+            "head_bone_proxy",
+            "hierarchy"
+          ],
+          "semantic": "CHIN",
+          "status": "RESOLVED",
+          "targetReference": "Head"
+        },
+        "LEFT_BROW": {
+          "evidence": [
+            "insufficient_geometry_evidence"
+          ],
+          "semantic": "LEFT_BROW",
+          "status": "NOT_APPLICABLE"
+        },
+        "LEFT_EYE_CENTER": {
+          "evidence": [
+            "no_eye_bone"
+          ],
+          "semantic": "LEFT_EYE_CENTER",
+          "status": "MISSING"
+        },
+        "LEFT_EYE_INNER": {
+          "evidence": [
+            "insufficient_geometry_evidence"
+          ],
+          "semantic": "LEFT_EYE_INNER",
+          "status": "MISSING"
+        },
+        "LEFT_EYE_OUTER": {
+          "evidence": [
+            "insufficient_geometry_evidence"
+          ],
+          "semantic": "LEFT_EYE_OUTER",
+          "status": "MISSING"
+        },
+        "LEFT_MOUTH_CORNER": {
+          "evidence": [
+            "insufficient_geometry_evidence"
+          ],
+          "semantic": "LEFT_MOUTH_CORNER",
+          "status": "MISSING"
+        },
+        "LOWER_LIP": {
+          "evidence": [
+            "insufficient_geometry_evidence"
+          ],
+          "semantic": "LOWER_LIP",
+          "status": "MISSING"
+        },
+        "MOUTH_CENTER": {
+          "confidence": 0.7,
+          "evidence": [
+            "morph_region:mouth",
+            "deformation_metadata"
+          ],
+          "semantic": "MOUTH_CENTER",
+          "status": "RESOLVED",
+          "targetReference": "FACE_mouthOpen"
+        },
+        "NOSE_BRIDGE": {
+          "evidence": [
+            "insufficient_geometry_evidence"
+          ],
+          "semantic": "NOSE_BRIDGE",
+          "status": "NOT_APPLICABLE"
+        },
+        "NOSE_TIP": {
+          "evidence": [
+            "insufficient_geometry_evidence"
+          ],
+          "semantic": "NOSE_TIP",
+          "status": "NOT_APPLICABLE"
+        },
+        "RIGHT_BROW": {
+          "evidence": [
+            "insufficient_geometry_evidence"
+          ],
+          "semantic": "RIGHT_BROW",
+          "status": "NOT_APPLICABLE"
+        },
+        "RIGHT_EYE_CENTER": {
+          "evidence": [
+            "no_eye_bone"
+          ],
+          "semantic": "RIGHT_EYE_CENTER",
+          "status": "MISSING"
+        },
+        "RIGHT_EYE_INNER": {
+          "evidence": [
+            "insufficient_geometry_evidence"
+          ],
+          "semantic": "RIGHT_EYE_INNER",
+          "status": "MISSING"
+        },
+        "RIGHT_EYE_OUTER": {
+          "evidence": [
+            "insufficient_geometry_evidence"
+          ],
+          "semantic": "RIGHT_EYE_OUTER",
+          "status": "MISSING"
+        },
+        "RIGHT_MOUTH_CORNER": {
+          "evidence": [
+            "insufficient_geometry_evidence"
+          ],
+          "semantic": "RIGHT_MOUTH_CORNER",
+          "status": "MISSING"
+        },
+        "UPPER_LIP": {
+          "evidence": [
+            "insufficient_geometry_evidence"
+          ],
+          "semantic": "UPPER_LIP",
+          "status": "MISSING"
+        }
+      },
+      "status": "PASS"
+    },
+    "preservationEvidence": {
+      "adapt01Mutation": "NONE",
+      "adapt02Mutation": "NONE",
+      "adapt04Implementation": "NOT_STARTED",
+      "autoRepair": "DENY",
+      "eyeCalibrationMutation": "NONE",
+      "faceAuthorityMutation": "NONE",
+      "nurionV1Mutation": "NONE",
+      "physicalHelperRigAugmentation": "NONE",
+      "sourceMaterialMutation": "NONE",
+      "sourceMeshMutation": "NONE",
+      "sourceSkeletonMutation": "NONE",
+      "sourceSkinWeightMutation": "NONE",
+      "talkingAuthorityMutation": "NONE"
+    },
+    "schema": "NURION_ADAPT03_FACE_ADAPTATION_CONTRACT_OUTPUT_V1",
+    "sourceAssetDigest": "a1bc80d6ee225aa75d8e88f6998cfb382f649f4a0397346730af7724b7b03ec8",
+    "talkingVisemeMap": {
+      "overallOutcome": "ADAPTATION_REQUIRED",
+      "speechPrimitiveMaps": {
+        "FACE_dentalLip": {
+          "capability": "MISSING",
+          "evidence": [
+            "speech_primitive",
+            "locked_talking_authority"
+          ],
+          "outcome": "AUGMENTATION_REQUIRED",
+          "semantic": "FACE_dentalLip",
+          "status": "MISSING",
+          "targetReference": null
+        },
+        "FACE_lipsPart": {
+          "capability": "MISSING",
+          "evidence": [
+            "speech_primitive",
+            "locked_talking_authority"
+          ],
+          "outcome": "AUGMENTATION_REQUIRED",
+          "semantic": "FACE_lipsPart",
+          "status": "MISSING",
+          "targetReference": null
+        },
+        "FACE_lipsTight": {
+          "capability": "MISSING",
+          "evidence": [
+            "speech_primitive",
+            "locked_talking_authority"
+          ],
+          "outcome": "AUGMENTATION_REQUIRED",
+          "semantic": "FACE_lipsTight",
+          "status": "MISSING",
+          "targetReference": null
+        },
+        "FACE_mouthOpen": {
+          "capability": "NATIVE",
+          "evidence": [
+            "speech_primitive",
+            "locked_talking_authority"
+          ],
+          "outcome": "COMPATIBLE_WITH_MAPPING",
+          "semantic": "FACE_mouthOpen",
+          "status": "RESOLVED",
+          "targetReference": "FACE_mouthOpen"
+        },
+        "FACE_mouthPlosive": {
+          "capability": "NATIVE",
+          "evidence": [
+            "speech_primitive",
+            "locked_talking_authority"
+          ],
+          "outcome": "COMPATIBLE_WITH_MAPPING",
+          "semantic": "FACE_mouthPlosive",
+          "status": "RESOLVED",
+          "targetReference": "FACE_mouthPlosive"
+        },
+        "FACE_mouthPucker": {
+          "capability": "NATIVE",
+          "evidence": [
+            "speech_primitive",
+            "locked_talking_authority"
+          ],
+          "outcome": "COMPATIBLE_WITH_MAPPING",
+          "semantic": "FACE_mouthPucker",
+          "status": "RESOLVED",
+          "targetReference": "FACE_mouthPucker"
+        },
+        "FACE_mouthWiden": {
+          "capability": "NATIVE",
+          "evidence": [
+            "speech_primitive",
+            "locked_talking_authority"
+          ],
+          "outcome": "COMPATIBLE_WITH_MAPPING",
+          "semantic": "FACE_mouthWiden",
+          "status": "RESOLVED",
+          "targetReference": "FACE_mouthWiden"
+        }
+      },
+      "status": "PASS",
+      "talkingStatus": "GO",
+      "visemeTargetsDetected": [
+        "FACE_eyeBlinkLeft",
+        "FACE_eyeBlinkRight",
+        "FACE_mouthOpen",
+        "FACE_mouthSmileLeft",
+        "FACE_mouthSmileRight",
+        "FACE_mouthPucker",
+        "FACE_mouthWiden",
+        "FACE_mouthPlosive",
+        "viseme_aa",
+        "viseme_oh",
+        "viseme_ee",
+        "mouthFunnel"
+      ]
+    },
+    "targetFaceProfile": {
+      "analysisMode": "READ_ONLY",
+      "blendshapeCount": 22,
+      "blendshapesDetected": true,
+      "facialBones": {
+        "count": 0,
+        "samples": [],
+        "status": "NOT_DETECTED"
+      },
+      "headMeshIdentity": null,
+      "symmetry": "NOT_EVALUATED"
+    }
+  }
+}

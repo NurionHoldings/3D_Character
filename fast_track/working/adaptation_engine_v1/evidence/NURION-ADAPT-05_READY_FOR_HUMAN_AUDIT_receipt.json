@@ -1,0 +1,8 @@
+{
+  "receiptId": "NURION-ADAPT-05_READY_FOR_HUMAN_AUDIT_R2",
+  "revision": "R2",
+  "status": "SUPERSEDED_BY_PASS",
+  "passReceipt": "evidence/NURION-ADAPT-05_PASS_receipt.json",
+  "humanPassDeclaredAtUtc": "20260830T022600Z",
+  "note": "Human Final Audit PASS on R2 ZIP — this ready receipt is historical only"
+}

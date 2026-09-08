@@ -1,0 +1,55 @@
+{
+  "schema": "NURION_PRACTICAL_SMOKE",
+  "version": "0.1.0",
+  "sealStatus": "CANDIDATE_NOT_SEALED",
+  "verifiedBlender": "5.0.1",
+  "bl_info_blender": [5, 0, 0],
+  "passedInstallBaseline": true,
+  "checklist": {
+    "zip_install": "PASS",
+    "python_compile": "PASS",
+    "panel_register_structure": "PASS",
+    "measurement_guide_profile_design": "PASS",
+    "cube_standin_smoke": "PASS",
+    "humanoid_joint_accuracy": "NOT_TESTED",
+    "meshy_glb_fbx_compatibility": "NOT_TESTED",
+    "bone_generation_quality": "NOT_VALIDATED",
+    "ai_detection": "INACTIVE"
+  },
+  "notes": [
+    "Cube stand-in smoke validates install and basic MEASURED/ESTIMATED/MANUAL/profile flow only.",
+    "Joint guides are anthropometric ESTIMATED coordinates with reviewRequired=true.",
+    "Do not treat shoulder/pelvis/elbow/knee placement as accurate on Meshy humanoids.",
+    "v0.1 SEALED requires one real Meshy A-Pose GLB: import transform check, ESTIMATED guide capture, front/side/top error measurement, MANUAL correction deltas for v0.2 AI baseline."
+  ],
+  "cubeStandinSmoke": {
+    "passed": true,
+    "blender": "5.0.1",
+    "operatorChecklist": {
+      "zip_install": true,
+      "sidebar_panel_registered": true,
+      "character_select": true,
+      "measurements": true,
+      "body_guides": true,
+      "guide_move_save": true,
+      "profile_restore": true,
+      "profile_export": true,
+      "disable_reinstall": true,
+      "diagnostic_on_error": true
+    },
+    "sampleMeasurements": {
+      "height": 0.8500000834465027,
+      "width": 0.44999998807907104,
+      "center": [0.0, 0.0, 0.8500000238418579],
+      "floorZ": 0.42500001192092896
+    },
+    "sampleManualLandmark": {
+      "name": "elbow.L",
+      "position": [0.2516, -0.01, 1.02],
+      "source": "MANUAL",
+      "confidence": 1.0,
+      "reviewRequired": false
+    }
+  },
+  "errors": []
+}

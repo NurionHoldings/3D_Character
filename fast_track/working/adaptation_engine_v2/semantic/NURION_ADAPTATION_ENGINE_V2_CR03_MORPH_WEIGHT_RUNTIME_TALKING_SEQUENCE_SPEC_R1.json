@@ -1,0 +1,217 @@
+{
+  "schema": "NURION_ADAPTATION_ENGINE_V2_CR03_MORPH_WEIGHT_RUNTIME_TALKING_SEQUENCE_SPEC_R1",
+  "changeRequestId": "V2-CR-03",
+  "revision": "R1",
+  "title": "MORPH-WEIGHT RUNTIME TALKING SEQUENCE",
+  "status": "SPEC_PROPOSED",
+  "humanSpecReview": "PENDING",
+  "implementationAuthority": "NONE",
+  "prototypeStatus": "NOT STARTED",
+  "openStatus": "NOT OPEN",
+  "declaredAtUtc": "20260830T051400Z",
+  "declaredBy": "etherean",
+
+  "purpose": "Consume CR02 R2 Human-PASS facial morph deformation (VISEME_AA / VISEME_OH / VISEME_EE) without mutation, and prove an actual TALKING animation mechanism driven as a runtime time-axis morph-weight sequence.",
+
+  "coreClaim": "STATIC MORPHS → TIME-VARYING WEIGHTS → ACTUAL TEMPORAL MOUTH DEFORMATION",
+
+  "authority": {
+    "V2-CR-01": "CONSUME ONLY / REOPEN DENY",
+    "V2-CR-02": "CONSUME ONLY / REOPEN DENY",
+    "V2-CR-03": "SPEC_PROPOSED / NOT OPEN / IMPLEMENTATION AUTHORITY NONE",
+    "V2-CR-04": "CANDIDATE / NOT OPEN",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN",
+    "Engine_V1": "CLOSED / PASS / CONSUME ONLY"
+  },
+
+  "authoritativeInput": {
+    "role": "CR02_R2_HUMAN_AUDITED_DERIVED",
+    "path": "fast_track/working/adaptation_engine_v2/derived_cr02/Idle_15_R2_facial_deformation.glb",
+    "fileName": "Idle_15_R2_facial_deformation.glb",
+    "sha256": "1ee90420ba39cc2e74de6624230538f4416d39ec7b34656e5b175a776c171cdd",
+    "independentProofDigest": "a38a8855f1f4f1c9cb3171737c7f98355cfd79bcd72c50388d1a134faebda174",
+    "humanAuditedZipSha256": "c96e2e875797f274ad44a234726e7b80b8c7a0ebe369ade1798c0626d5189ba2",
+    "requiredMorphs": ["VISEME_AA", "VISEME_OH", "VISEME_EE"],
+    "mutationOfInputMorphGeometry": "DENY"
+  },
+
+  "upstream": {
+    "CR01": "CONSUME_ONLY",
+    "CR02": "CONSUME_ONLY",
+    "REOPEN": "DENY"
+  },
+
+  "authorizedMutationScope": {
+    "ALLOW": [
+      "morph-weight animation track creation",
+      "AA/OH/EE weight keyframe creation",
+      "TALKING animation clip creation",
+      "neutral transition keyframe creation",
+      "runtime playback metadata creation",
+      "new derived artifact creation"
+    ],
+    "DENY": [
+      "AA/OH/EE morph POSITION mutation",
+      "new facial morph geometry creation",
+      "Blink/Jaw/Expression geometry mutation",
+      "BODY skeleton mutation",
+      "BODY skin weight mutation",
+      "FACE topology regeneration",
+      "CR01 semantic mapping mutation",
+      "CR02 augmentation mutation",
+      "auto re-rig",
+      "global auto-weight"
+    ]
+  },
+
+  "talkingFunctionalContract": {
+    "sequenceSemantics": "NEUTRAL → AA → transition → OH → transition → EE → NEUTRAL",
+    "required": [
+      "time axis exists",
+      "minimum 3 distinct mouth states",
+      "actual morph weight change per state",
+      "actual vertex deformation during playback",
+      "geometry difference between states",
+      "neutral restoration at end"
+    ],
+    "exampleTimelineIllustrativeOnly": [
+      {"t": 0.0, "VISEME_AA": 0.0, "VISEME_OH": 0.0, "VISEME_EE": 0.0},
+      {"t": 0.1, "VISEME_AA": 1.0, "VISEME_OH": 0.0, "VISEME_EE": 0.0},
+      {"t": 0.25, "VISEME_AA": 0.0, "VISEME_OH": 1.0, "VISEME_EE": 0.0},
+      {"t": 0.4, "VISEME_AA": 0.0, "VISEME_OH": 0.0, "VISEME_EE": 1.0},
+      {"t": 0.55, "VISEME_AA": 0.0, "VISEME_OH": 0.0, "VISEME_EE": 0.0}
+    ],
+    "timingPolicy": "R1 fixes sequence semantics only. Exact duration/key timing are deterministic SPEC parameters declared before implementation; illustrative values above are NOT Human-approved fixed timings.",
+    "notPassCriteria": [
+      "animation clip name exists alone",
+      "VISEME_AA/OH/EE morphs exist (already CR02 Human PASS)",
+      "Jaw_Mouth open pose equated to TALKING",
+      "JSON/report-only sequence without GLB weights channels (ANIMATION_METADATA_ONLY)"
+    ]
+  },
+
+  "independence": {
+    "Jaw_Mouth": "CR02 capability / CONSUME ONLY — not TALKING PASS",
+    "TALKING": "timed morph-weight sequence = AA/OH/EE temporal orchestration",
+    "rule": "Jaw open pose ≠ TALKING PASS; static morph presence ≠ CR03 PASS"
+  },
+
+  "proofLayers": {
+    "LAYER_1_ANIMATION_STRUCTURE": {
+      "channel": "GLB animation channel target.path == weights",
+      "samplerInput": "actual timestamps",
+      "samplerOutput": "actual morph weights",
+      "target": "CR02 Human-PASS facial mesh"
+    },
+    "LAYER_2_RUNTIME_GEOMETRY": {
+      "reconstruction": "V(t) = V0 + ΔAA*wAA(t) + ΔOH*wOH(t) + ΔEE*wEE(t)",
+      "distinctness": ["AA≠OH", "AA≠EE", "OH≠EE"],
+      "activation": "max vertex deformation > activationThreshold"
+    },
+    "LAYER_3_RESTORATION": {
+      "V_start": "≈ V0",
+      "V_end": "≈ V0",
+      "restorationError": "≤ restorationTolerance"
+    }
+  },
+
+  "thresholds": {
+    "activationThreshold": 1e-4,
+    "restorationTolerance": 1e-6,
+    "source": "CR02 R2 contract-pinned; CR03 R1 inherits for consistency"
+  },
+
+  "bodyFaceCoexistence": {
+    "role": "BODY regression only — not a new BODY qualification CR",
+    "BODY_REGRESSION": {
+      "basePOSITION": "unchanged",
+      "JOINTS_WEIGHTS": "unchanged",
+      "skeletonHierarchy": "unchanged",
+      "CR02_facial_morph_POSITION": "byte/semantic equivalent",
+      "FACE_Rig_Root_interface": "preserved"
+    },
+    "minimumCoexistence": "Idle + TALKING executable coexistence via actual embedded Idle clip",
+    "profileSimulationExpansion": "DENY for Bow/LargeBow/Handshake/Dance in CR03 (do not silently promote CR02 P05 limitations)"
+  },
+
+  "failClosed": [
+    "NO weights animation channel",
+    "STATIC morph only",
+    "AA/OH/EE weight states not distinct",
+    "animation targets wrong mesh",
+    "morph index mismatch",
+    "non-deterministic morph ordering",
+    "start neutral failure",
+    "end neutral restoration failure",
+    "CR02 morph POSITION mutation",
+    "BODY skin/rig mutation",
+    "source overwrite",
+    "upstream CR01/CR02 mutation",
+    "ANIMATION_METADATA_ONLY"
+  ],
+
+  "stages": {
+    "CR03-P01": "Runtime Talking Contract / Morph Binding Inspection",
+    "CR03-P02": "Morph-Weight Animation Injection",
+    "CR03-P03": "Temporal Vertex-Deformation Proof",
+    "CR03-P04": "Idle + TALKING Coexistence / Regression",
+    "CR03-P05": "Real Asset Proof Packaging",
+    "CR03-P06": "Human Final Audit — Agent MUST NOT declare PASS"
+  },
+
+  "gates": {
+    "CR03-G01_to_G19": "AUTOMATABLE / AUDITABLE",
+    "CR03-G20": "HUMAN_FINAL_ONLY — Agent MUST NOT declare PASS"
+  },
+
+  "humanGates": {
+    "HUMAN_SPEC_GATE": "implementation authorization only — pending",
+    "HUMAN_FINAL_GATE": "technical Human PASS only — separate; after READY_FOR_HUMAN_AUDIT"
+  },
+
+  "provenanceRequired": [
+    "sourceAssetSha256",
+    "cr02R2DerivedSha256",
+    "cr02R2HumanPassReceiptDigest",
+    "inputMorphSemanticDigest",
+    "talkingAnimationName",
+    "talkingAnimationIndex",
+    "targetMeshIdentity",
+    "morphIndexMap.VISEME_AA",
+    "morphIndexMap.VISEME_OH",
+    "morphIndexMap.VISEME_EE",
+    "timelineDigest",
+    "animationSamplerDigest",
+    "animationChannelDigest",
+    "derivedAssetSha256",
+    "runtimeVertexProofDigest",
+    "regressionDigest",
+    "cr03DerivedSemanticDigest"
+  ],
+
+  "morphIndexMapPolicy": "Names alone insufficient — each must bind to actual primitive morph target index",
+
+  "determinism": {
+    "requirement": "Same input + same SPEC + same parameters ⇒ identical derivedAssetSha256, timelineDigest, runtimeVertexProofDigest when byte-deterministic",
+    "fallbackPolicy": "If GLB serialization cannot guarantee byte-identical output, SPEC must declare that BEFORE implementation and adopt canonical semantic digest as SoT. Lowering determinism criteria after implementation is DENIED."
+  },
+
+  "humanAuditRecomputeFromGlb": [
+    "animation channel target.path == weights",
+    "timestamp accessor",
+    "weight accessor",
+    "AA/OH/EE target index",
+    "weight evolution over time",
+    "actual V(t)",
+    "AA/OH/EE geometry distinctness",
+    "neutral restoration",
+    "BODY preservation",
+    "CR02 morph POSITION preservation"
+  ],
+
+  "agentCeilingUntilHumanSpecGate": "SPEC_REVIEW_ONLY",
+  "agentCeilingAfterOpen": "READY_FOR_HUMAN_AUDIT maximum",
+  "CR03-G20": "HUMAN_FINAL_ONLY",
+
+  "next": "Human Spec Gate review of this R1 SPEC — APPROVE to OPEN / PROTOTYPE + IMPLEMENTATION AUTHORITY GRANTED; REJECT returns to CANDIDATE. No implementation until APPROVED."
+}

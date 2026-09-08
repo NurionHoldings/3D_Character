@@ -1,0 +1,93 @@
+{
+  "critical": {
+    "AD1-G02": "PASS",
+    "AD1-G05": "PASS",
+    "AD1-G06": "PASS",
+    "AD1-G12": "PASS",
+    "AD1-G14": "PASS",
+    "AD1-G15": "PASS"
+  },
+  "gates": {
+    "AD1-G01": {
+      "byteLength": 2432,
+      "fixtureSha256": "3fdff18511d42c71194bc051c6510b405537e72052fc46d4bbb05dc11c71d4f2",
+      "status": "PASS"
+    },
+    "AD1-G02": {
+      "malformed": "FAILED",
+      "positive": "OK",
+      "status": "PASS"
+    },
+    "AD1-G03": {
+      "nodeCount": 23,
+      "status": "PASS"
+    },
+    "AD1-G04": {
+      "meshes": 1,
+      "skins": 1,
+      "status": "PASS"
+    },
+    "AD1-G05": {
+      "edges": 22,
+      "jointCount": 23,
+      "status": "PASS"
+    },
+    "AD1-G06": {
+      "policy": "name_alias+skin_joint+side+hierarchy \u2014 not name-only",
+      "renamedHead": "Cranium",
+      "renamedPelvis": "HipBone",
+      "status": "PASS"
+    },
+    "AD1-G07": {
+      "missingFaceBlendshapes": 0,
+      "positiveBlendshapes": 32,
+      "status": "PASS"
+    },
+    "AD1-G08": {
+      "missingFaceNoEyes": true,
+      "positiveEyesJaw": true,
+      "status": "PASS"
+    },
+    "AD1-G09": {
+      "blendshapeCount": 32,
+      "status": "PASS"
+    },
+    "AD1-G10": {
+      "clipCount": 1,
+      "status": "PASS"
+    },
+    "AD1-G11": {
+      "status": "PASS",
+      "upAxis": "Y"
+    },
+    "AD1-G12": {
+      "autoRepair": "DENY",
+      "sourceBytesUnchanged": true,
+      "status": "PASS"
+    },
+    "AD1-G13": {
+      "fbx": "BLOCKED",
+      "malformed": "BLOCKED",
+      "missingFace": "CLASS_C",
+      "noMesh": "BLOCKED",
+      "positive": "CLASS_A",
+      "renamed": "CLASS_C",
+      "status": "PASS"
+    },
+    "AD1-G14": {
+      "autoRepair": "DENY",
+      "failClosed": true,
+      "status": "PASS"
+    },
+    "AD1-G15": {
+      "identical": true,
+      "reportCanonicalSha256": "7d64d08c9aac281b29b68140681a03112d80e0a130e78ecc2d401661dac2872c",
+      "status": "PASS"
+    },
+    "AD1-G16": {
+      "agentMayNotPass": true,
+      "note": "Human auditor only may declare ADAPT-01 CLOSED / PASS",
+      "status": "HUMAN_FINAL_ONLY"
+    }
+  }
+}

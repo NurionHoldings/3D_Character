@@ -1,0 +1,93 @@
+{
+  "schema": "NURION_MESHY_COMPATIBILITY_GAP_V1",
+  "gapId": "MESHY-COMPATIBILITY-GAP-01",
+  "status": "SUPERSEDED BY V2-CR-01 PROPOSED",
+  "openedAtUtc": "20260830T030000Z",
+  "engineV1": "CLOSED / PASS / CONSUME ONLY — NOT MODIFIED BY THIS GAP",
+  "v2ChangeRequest": {
+    "id": "V2-CR-01",
+    "status": "PROPOSED",
+    "contract": "fast_track/working/adaptation_engine_v2/semantic/NURION_ADAPTATION_ENGINE_V2_CR01_FLEXIBLE_MESHY_SKELETON_SEMANTIC_ADAPTER_V1.json",
+    "receipt": "fast_track/working/adaptation_engine_v2/evidence/NURION-V2-CR01_PROPOSED_receipt.json"
+  },
+  "sourceObservation": {
+    "testId": "RAAT-01",
+    "asset": "Idle_15_withSkin_WORKING_BASELINE.glb",
+    "sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+    "v1Verdict": "ADAPT-02 BLOCKED",
+    "v1Reason": "ancestry_break:NURION_spine01->NURION_chest"
+  },
+  "productIntent": {
+    "summary": "Preserve Meshy skin+rig; adapt semantics for NURION runtime; augment FACE/Eye/Jaw/TALKING — not force canonical skeleton clone",
+    "notTheGoal": "Reject any Meshy rig whose bone names/depth differ from NURION canonical hierarchy"
+  },
+  "v1SupportEnvelope": {
+    "adapt02Rule": "Exact strict ancestry between resolved NURION semantic nodes in source hierarchy",
+    "implementation": "fast_track/adaptation/skeleton_mapping.py validate_chain()",
+    "contract": "semantic/NURION_ADAPT02_CANONICAL_BODY_BINDING_V1.json",
+    "note": "V1 CLOSED/PASS defines this envelope; RAAT does not silently widen it"
+  },
+  "gapHypothesis": "POTENTIAL FALSE BLOCK — Meshy commercial input may be semantically adaptable but rejected by exact ancestry rule",
+  "meshyObservedHierarchy": {
+    "tree": "Armature > Hips > Spine02 > Spine01 > Spine > {LeftShoulder, RightShoulder, neck > Head}",
+    "legs": "Hips > LeftUpLeg/RightUpLeg chains PASS in V1",
+    "arms": "Spine > LeftShoulder/RightShoulder chains PASS in V1",
+    "namingQuirk": "Meshy Spine02 is closer to Hips; Meshy Spine is shoulder-attachment depth (functionally chest)"
+  },
+  "v1RigidMapping": {
+    "NURION_pelvis": "Hips",
+    "NURION_chest": "Spine02",
+    "NURION_spine01": "Spine",
+    "NURION_neck": "neck",
+    "NURION_head": "Head",
+    "failureMechanism": "Spine (spine01) is DESCENDANT of Spine02 (chest) in Meshy tree — inverted vs NURION pelvis>spine01>chest order"
+  },
+  "flexibleSemanticAdapterProposal": {
+    "authority": "EXPECTED_OUTCOME_IF_GENERAL_TOPOLOGY_RULES_APPLIED — not hardcoded implementation",
+    "NURION_pelvis": "Hips",
+    "NURION_spine01": "Spine02",
+    "NURION_spine02": "Spine01",
+    "NURION_chest": "Spine",
+    "NURION_neck": "neck",
+    "NURION_head": "Head",
+    "intermediatePolicy": "absorb / non-destructive — do not delete Meshy bones",
+    "simulatedSpineHeadChain": "PASS",
+    "simulatedArmAttachment": "PASS — shoulders attach under Spine (chest semantic)",
+    "implementationMustNot": "Hardcode Spine02→Spine01→Spine as asset-specific exception"
+  },
+  "reviewQuestions": [
+    "Can semantic descendant-chain adaptation support Meshy torso without changing source rig?",
+    "Are intermediate bones (Spine01) safely absorbable into NURION_spine02 virtual semantic?",
+    "Is BODY deformation preserved under flexible mapping (no full re-rig)?",
+    "Are root/pelvis invariants maintained (Armature root distinct from Hips pelvis)?",
+    "Is retarget axis deterministically computable from mapping table?"
+  ],
+  "preliminaryAnswers": {
+    "semanticDescendantMapping": "LIKELY YES for Idle_15 — remapping chest to shoulder-attach Spine fixes ancestry",
+    "intermediateBonesAllowed": "LIKELY YES — Spine01 absorbable as NURION_spine02",
+    "bodyDeformationPreserved": "REQUIRES V2 PROOF — no source mutation in analysis-only phase",
+    "rootPelvisInvariant": "YES — V1 already resolves Armature root and Hips pelvis distinctly",
+    "deterministicRetarget": "PLAUSIBLE — mapping table + existing axis convention; needs V2 implementation proof"
+  },
+  "v2ChangeRequest": {
+    "id": "V2-CR-01",
+    "title": "Flexible Meshy Skeleton Semantic Adapter",
+    "feature": "FLEXIBLE_SEMANTIC_CHAIN_ADAPTER",
+    "replaces": "Exact alias-only ancestry validation for Meshy-class rigs",
+    "preserves": [
+      "Source rig bytes",
+      "Skin weights",
+      "NURION canonical semantic runtime model",
+      "Fail-closed on true ambiguity/unresolved required semantics"
+    ]
+  },
+  "faceProductCenter": {
+    "note": "Even if ADAPT-02 gap is resolved, Meshy Idle_15 lacks blendshapes/FACE rig — engine value is FACE/Eye/Jaw/TALKING augmentation on preserved body",
+    "adapt01Class": "CLASS_C — body compatible, face/jaw/talking missing"
+  },
+  "actionNow": "V2-CR-01 PROPOSED — spec fixed R1; prototype NOT STARTED; V1 unchanged",
+  "relatedArtifacts": [
+    "fast_track/working/raat01/evidence/NURION-RAAT-01_CLOSED_AS_TEST_RESULT.json",
+    "fast_track/working/meshy_silver_starlight/baseline/Idle_15_withSkin_WORKING_BASELINE.glb"
+  ]
+}

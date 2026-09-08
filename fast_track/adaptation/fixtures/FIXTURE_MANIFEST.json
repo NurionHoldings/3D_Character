@@ -1,0 +1,29 @@
+{
+  "fixtures": {
+    "body_compatible_missing_face.glb": {
+      "byteLength": 1188,
+      "sha256": "aca29d80af4b3c3505f36c31fe3b219a7be6e1072f66395bedb30d03033921e0"
+    },
+    "malformed_not_glb.bin": {
+      "byteLength": 13,
+      "sha256": "102bba27bae8cec5bd7651d8ad5aeee095dac31b4f82e947c886d5ed7b78a1b1"
+    },
+    "no_mesh.glb": {
+      "byteLength": 112,
+      "sha256": "d0ec0a0c1864e30d3b63401b9db8d415265cecec5dbe7de4be5e3166c25c78f0"
+    },
+    "positive_rigged_with_face.glb": {
+      "byteLength": 2432,
+      "sha256": "3fdff18511d42c71194bc051c6510b405537e72052fc46d4bbb05dc11c71d4f2"
+    },
+    "renamed_nonstandard_bones.glb": {
+      "byteLength": 1256,
+      "sha256": "7bee762d4710b4673e38ca2cff349f86a960245d771b3485dcc0ae4ed221b2c8"
+    },
+    "unsupported_fake.fbx": {
+      "byteLength": 25,
+      "sha256": "ae1a982b941fa2a562e36807f6a09302fb9ec82b197010b844d9d3ceffcab854"
+    }
+  },
+  "schema": "NURION_ADAPT01_FIXTURE_MANIFEST_V1"
+}

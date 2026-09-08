@@ -1,0 +1,10 @@
+{
+  "receiptId": "NURION-V2-CR03_P04_PASS_receipt",
+  "changeRequestId": "V2-CR-03",
+  "stage": "P04",
+  "status": "PASS",
+  "declaredAtUtc": "20260830T053050Z",
+  "approvedSpecDigest": "3e3885335bcfd8489209a302852230ae6cdd55da89fb8328048f82d8fe4a206c",
+  "regressionDigest": "acc1732ce349fccdbf3830e4845fb0b6bab682a78a62c51ca53f99cc3fc626ea",
+  "reportPath": "reports_cr03/V2_CR03_P04_idle_talking_regression_idle15.json"
+}

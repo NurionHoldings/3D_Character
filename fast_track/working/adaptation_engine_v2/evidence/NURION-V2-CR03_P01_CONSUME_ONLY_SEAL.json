@@ -1,0 +1,26 @@
+{
+  "receiptId": "NURION-V2-CR03_P01_CONSUME_ONLY_SEAL",
+  "changeRequestId": "V2-CR-03",
+  "stage": "CR03-P01",
+  "status": "PASS / CONSUME ONLY",
+  "disposition": "CLOSED AS BINDING INSPECTION — DO NOT REOPEN / DO NOT EXPAND TO TALKING PASS",
+  "declaredAtUtc": "20260830T052600Z",
+  "declaredBy": "etherean",
+  "proven": {
+    "role": "morph binding inspection only",
+    "morphIndexMap": {
+      "VISEME_AA": {"targetIndex": 6, "positionAccessor": 87},
+      "VISEME_OH": {"targetIndex": 7, "positionAccessor": 88},
+      "VISEME_EE": {"targetIndex": 8, "positionAccessor": 89}
+    },
+    "weightsChannelCount": 0,
+    "notProven": "timed morph-weight TALKING / temporal vertex deformation"
+  },
+  "nextAuthorized": "CR03-P02 Morph-Weight Animation Injection ONLY",
+  "authority": {
+    "V2-CR-03": "OPEN / PROTOTYPE",
+    "CR01": "CONSUME ONLY / REOPEN DENY",
+    "CR02": "CONSUME ONLY / REOPEN DENY",
+    "EngineV2": "NOT OPEN"
+  }
+}

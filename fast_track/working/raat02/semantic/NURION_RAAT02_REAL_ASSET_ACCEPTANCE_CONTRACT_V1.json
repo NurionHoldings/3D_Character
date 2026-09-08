@@ -1,0 +1,45 @@
+{
+  "schema": "NURION_RAAT02_REAL_ASSET_ACCEPTANCE_CONTRACT_V1",
+  "testId": "RAAT-02",
+  "name": "REAL-ASSET ACCEPTANCE TEST 02",
+  "status": "DEFERRED — superseded by MESHY-COMPATIBILITY-GAP-01 analysis",
+  "track": "NURION_CHARACTER_ADAPTATION_RAAT_V1",
+  "engineReference": {
+    "NURION_CHARACTER_ADAPTATION_ENGINE_V1": "CLOSED / PASS / CONSUME ONLY",
+    "canonicalMutation": "DENY",
+    "adaptReopen": "DENY"
+  },
+  "deferralReason": "Engine purpose is Meshy skin+rig adaptation, not arbitrary GLB envelope testing. RAAT-02 deferred until GAP-01 / V2-CR-01 Flexible Meshy Skeleton Semantic Adapter is reviewed.",
+  "supersededBy": "fast_track/working/raat01/evidence/NURION-MESHY-COMPATIBILITY-GAP-01.json",
+  "predecessor": {
+    "RAAT-01": "CLOSED AS TEST RESULT",
+    "firstStopStage": "ADAPT-02",
+    "blockedReason": "ancestry_break:NURION_spine01->NURION_chest",
+    "v2Candidate": "V2-CANDIDATE-ADAPT02-SPINE-ANCESTRY-MESHY — accumulate only"
+  },
+  "primaryAsset": {
+    "label": "free_cartoon_game_man_character_rigged",
+    "glob": "assets/**/free_cartoon_game_man_character_rigged.glb",
+    "sha256": "06017b554696cfd025636a24bc58c1ee792ee0427196a0bd9c5c8b43497120a0",
+    "skeletonConvention": "CC_Base_* (Character Creator style)",
+    "selectionRationale": "Different from Meshy Idle_15 — spineHead can PASS while limb/root semantics fail differently"
+  },
+  "requiredResultFields": [
+    "sourceSha256",
+    "assetIdentity",
+    "ADAPT-01_classification",
+    "ADAPT-02_mappingResult",
+    "ADAPT-03_faceCapabilityResult",
+    "ADAPT-04_augmentationResult",
+    "ADAPT-05_runtimeQualification",
+    "ADAPT-06_releaseResult",
+    "firstStopStage",
+    "automaticStagesPassed",
+    "manualReviewRequired",
+    "blockedReasons",
+    "sourceMutation",
+    "EngineV1Mutation",
+    "releaseCandidateSha256"
+  ],
+  "raptGate": "RAPT-01 opens only when releaseCandidateSha256 is present (ADAPT-06 RELEASED)"
+}

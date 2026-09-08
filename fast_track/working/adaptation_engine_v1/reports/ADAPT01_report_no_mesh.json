@@ -1,0 +1,277 @@
+{
+  "adaptationClassification": {
+    "adaptationClass": "BLOCKED",
+    "body": "INCOMPATIBLE",
+    "evidenceBased": true,
+    "eye": "UNKNOWN",
+    "face": "UNKNOWN",
+    "jaw": "UNKNOWN",
+    "rationale": [
+      "NO_USABLE_MESH"
+    ],
+    "talking": "UNKNOWN"
+  },
+  "animationCapabilities": {
+    "clipCount": 0,
+    "clips": [],
+    "status": "NOT_DETECTED"
+  },
+  "axisAndScale": {
+    "assetVersion": "2.0",
+    "forwardAxis": "NOT_DECLARED",
+    "generator": null,
+    "gltfExtrasKeys": [],
+    "nodeScaleSamples": [],
+    "note": "Axis inferred only from declared extras; silent invention DENY",
+    "status": "OBSERVED",
+    "upAxis": "NOT_DECLARED"
+  },
+  "characterId": "fixture_no_mesh",
+  "expressionCapabilities": {
+    "blendshapeCount": 0,
+    "blendshapes": {
+      "status": "NOT_DETECTED"
+    },
+    "targetNames": [],
+    "targetNamesTruncated": false
+  },
+  "eyeCapabilities": {
+    "leftEyeBone": {
+      "status": "NOT_DETECTED"
+    },
+    "rightEyeBone": {
+      "status": "NOT_DETECTED"
+    }
+  },
+  "faceCapabilities": {
+    "blendshapesDetected": false,
+    "facialBones": {
+      "count": 0,
+      "samples": [],
+      "status": "NOT_DETECTED"
+    }
+  },
+  "issues": [
+    {
+      "code": "NO_USABLE_MESH",
+      "message": "no meshes present",
+      "severity": "BLOCKER"
+    }
+  ],
+  "jawCapabilities": {
+    "bone": {
+      "status": "NOT_DETECTED"
+    }
+  },
+  "materials": {
+    "count": 0,
+    "names": [],
+    "status": "NOT_DETECTED"
+  },
+  "meshes": {
+    "count": 0,
+    "entries": [],
+    "status": "NOT_DETECTED"
+  },
+  "nurionV1Boundary": {
+    "consume": "REFERENCE_ONLY",
+    "mutation": "NONE",
+    "productPipeline": "CLOSED / PASS / CONSUME ONLY"
+  },
+  "parseStatus": "OK",
+  "preservation": {
+    "autoRepair": "DENY",
+    "mode": "READ_ONLY",
+    "mutationsApplied": [],
+    "sourceBytesUnchanged": true
+  },
+  "reportCanonicalSha256": "20251be771a2d370a005dd5951cf024f4b6e677843f51466883c7820e877675e",
+  "scene": {
+    "assetGenerator": null,
+    "assetVersion": "2.0",
+    "cyclicHierarchy": false,
+    "defaultScene": 0,
+    "nodeCount": 1,
+    "nodes": [
+      {
+        "children": [],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 0,
+        "mesh": null,
+        "name": "Empty",
+        "skin": null
+      }
+    ],
+    "sceneCount": 1
+  },
+  "schema": "NURION_ADAPT01_INSPECTION_REPORT_V1",
+  "semanticBoneCandidates": {
+    "candidates": {
+      "calf_L": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "calf_R": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "chest": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "clavicle_L": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "clavicle_R": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "eye_L": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "eye_R": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "foot_L": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "foot_R": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "hand_L": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "hand_R": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "head": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "jaw": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "lowerArm_L": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "lowerArm_R": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "neck": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "pelvis": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "root": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "spine": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "thigh_L": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "thigh_R": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "toe_L": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "toe_R": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "upperArm_L": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "upperArm_R": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      }
+    },
+    "detectionPolicy": "name_alias+skin_joint+side+hierarchy \u2014 not name-only",
+    "jointNodeCount": 0,
+    "nodeCount": 1
+  },
+  "skeleton": {
+    "hierarchyEdgeCount": 0,
+    "hierarchyEdgesSample": [],
+    "jointCount": 0,
+    "jointIndices": [],
+    "skinCount": 0,
+    "skins": [],
+    "skinsDetected": false,
+    "status": "NOT_DETECTED"
+  },
+  "skinning": {
+    "skinnedMeshNodes": [],
+    "status": "NOT_DETECTED"
+  },
+  "sourceAsset": {
+    "byteLength": 112,
+    "exists": true,
+    "format": "glb",
+    "path": "d:\\NURION Character Landmarker\\fast_track\\adaptation\\fixtures\\no_mesh.glb",
+    "sha256": "d0ec0a0c1864e30d3b63401b9db8d415265cecec5dbe7de4be5e3166c25c78f0",
+    "suffix": ".glb",
+    "supported": true
+  },
+  "talkingCapabilities": {
+    "visemeCandidates": {
+      "matchedNames": [],
+      "status": "NOT_DETECTED"
+    }
+  },
+  "textures": {
+    "imageCount": 0,
+    "status": "NOT_DETECTED",
+    "textureCount": 0
+  }
+}

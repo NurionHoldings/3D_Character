@@ -1,0 +1,66 @@
+{
+  "schema": "NURION_CHARACTER_PROFILE",
+  "version": "0.1.0",
+  "characterId": "character-001",
+  "characterHeight": 1.68,
+  "width": 0.52,
+  "center": [0.0, 0.0, 0.84],
+  "forwardAxis": "-Y",
+  "floorZ": 0.0,
+  "measurements": {
+    "height": {"value": 1.68, "source": "MEASURED"},
+    "width": {"value": 0.52, "source": "MEASURED"},
+    "depth": {"value": 0.28, "source": "MEASURED"},
+    "center": {"value": [0.0, 0.0, 0.84], "source": "MEASURED"},
+    "floorZ": {"value": 0.0, "source": "MEASURED"},
+    "shoulderWidth": {"value": 0.2184, "source": "ESTIMATED", "note": "≈42% of measured width"},
+    "hipWidth": {"value": 0.1768, "source": "ESTIMATED", "note": "≈34% of measured width"},
+    "armLength": {"value": 0.6048, "source": "ESTIMATED", "note": "≈36% of measured height"},
+    "legLength": {"value": 0.8064, "source": "ESTIMATED", "note": "≈48% of measured height"},
+    "forwardAxis": {"value": "-Y", "source": "ESTIMATED"}
+  },
+  "landmarks": [
+    {
+      "name": "bounds.head_top",
+      "position": [0.0, 0.0, 1.68],
+      "source": "MEASURED",
+      "confidence": 1.0,
+      "reviewRequired": false
+    },
+    {
+      "name": "bounds.feet",
+      "position": [0.0, 0.0, 0.0],
+      "source": "MEASURED",
+      "confidence": 1.0,
+      "reviewRequired": false
+    },
+    {
+      "name": "bounds.center",
+      "position": [0.0, 0.0, 0.84],
+      "source": "MEASURED",
+      "confidence": 1.0,
+      "reviewRequired": false
+    },
+    {
+      "name": "pelvis",
+      "position": [0.0, 0.01, 0.91],
+      "source": "ESTIMATED",
+      "confidence": 0.7,
+      "reviewRequired": true
+    },
+    {
+      "name": "elbow.L",
+      "position": [0.43, -0.01, 1.18],
+      "source": "ESTIMATED",
+      "confidence": 0.64,
+      "reviewRequired": true
+    },
+    {
+      "name": "shoulder.L",
+      "position": [0.19, 0.0, 1.39],
+      "source": "MANUAL",
+      "confidence": 1.0,
+      "reviewRequired": false
+    }
+  ]
+}

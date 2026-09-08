@@ -1,0 +1,42 @@
+{
+  "receiptId": "NURION-V2-CR02_R2_CONSUME_ONLY_SEAL",
+  "changeRequestId": "V2-CR-02",
+  "revision": "R2",
+  "status": "PROTOTYPE HUMAN PASS / ACTUAL FACIAL DEFORMATION TECHNICAL BASIS CONFIRMED / CONSUME ONLY",
+  "declaredAtUtc": "20260830T050500Z",
+  "declaredBy": "etherean",
+  "disposition": "CLOSED AS TECHNICAL BASIS — DO NOT REOPEN",
+  "CR02_REOPEN": "DENY",
+  "r1Status": "HUMAN AUDIT BLOCKED / HISTORICAL / PRESERVED",
+  "r1BlockerDisposition": "CLOSED BY R2",
+  "humanPassReceipt": "NURION-V2-CR02_R2_HUMAN_PASS_receipt.json",
+  "pins": {
+    "derivedSha256": "1ee90420ba39cc2e74de6624230538f4416d39ec7b34656e5b175a776c171cdd",
+    "independentProofDigest": "a38a8855f1f4f1c9cb3171737c7f98355cfd79bcd72c50388d1a134faebda174",
+    "humanAuditedZipSha256": "c96e2e875797f274ad44a234726e7b80b8c7a0ebe369ade1798c0626d5189ba2"
+  },
+  "proven": {
+    "asset": "Idle_15_withSkin_WORKING_BASELINE",
+    "bodySkinPreservation": true,
+    "facialMorphInjection": true,
+    "measuredDeformation": ["Blink_L", "Blink_R", "Jaw_Mouth", "Expression", "AA", "OH", "EE"]
+  },
+  "authorityExpansionDeny": [
+    "morph-weight speech animation clip generation",
+    "arbitrary Meshy character generalization",
+    "V2 production readiness",
+    "NURION ADAPTATION ENGINE V2 OPEN"
+  ],
+  "nextWorkPolicy": "Separate Change Request only — do not reopen CR01 or CR02",
+  "candidateNextCRs": [
+    "morph-weight runtime animation / TALKING sequence",
+    "second real Meshy asset generalization"
+  ],
+  "authority": {
+    "V2-CR-01": "CONSUME ONLY / REOPEN DENY",
+    "V2-CR-02": "CONSUME ONLY / REOPEN DENY",
+    "Engine V1": "CLOSED / PASS / CONSUME ONLY",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN"
+  },
+  "combinedTechnicalBasis": "CR01 BODY semantic adaptation + CR02 FACE deformation augmentation — both Human-audited on real Meshy Idle_15"
+}

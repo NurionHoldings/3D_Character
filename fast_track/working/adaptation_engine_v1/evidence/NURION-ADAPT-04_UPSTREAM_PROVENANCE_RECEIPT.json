@@ -1,0 +1,37 @@
+{
+  "adapt01Mutation": "NONE",
+  "adapt02Mutation": "NONE",
+  "adapt03Mutation": "NONE",
+  "adapt03SnapshotDigests": {
+    "attachmentDigest": "5ff7277baf421a9cc59fef35f8892f9c26bab765817641719682e712e0171e0f",
+    "eyeTalkingDigest": "63fd641857f4c5f5255a26f721a675030e4674e9caeb718f0fdf861d6c5c011a",
+    "faceSemanticDigest": "eb10f6455295af2138914c15382ea8382ed8e9e4d41059ea3158f270468b8bc1"
+  },
+  "autoRepair": "DENY",
+  "bindingSha256": "e6eeeda5dfd7ecdb082fcdf79a2c56f0e5f0ee1d7c89e5d476b809675452fb39",
+  "derivation": "READ_ONLY_CONSUME",
+  "faceAuthorityPins": {
+    "assemblyBaselineSha256": "1a38586905d155053f7eff6a625bb3497a2a17235892017e4ad277ce06c14605",
+    "compositionPolicySha256": "da5b7399cc291dcf1f00fbc35052f5f69215862c26a5cf7d77c465a6778f51d3",
+    "eyeCalibrationFingerprintSha256": "2d1dbb6772cd74c2a7dc991cf497d58dc5b803359f5430105dbe4ff9e513ff19",
+    "faceBodyRuntimeSha256": "917d640f10946e4b77fe5dafa8f6c649e36b95198361024fe4514c69d05f0fef",
+    "faceProductLockSha256": "07830e1c34ce79b1d9ff9fc15a8b456ef7e3438d05ae7709d3515c00baebcf06",
+    "namingTableSha256": "61995e5c47b1c25d17cdf8733a8d23b87a7faae667dc5724ad3ea2372fe15187"
+  },
+  "generatedFromMonorepo": true,
+  "nurionV1Mutation": "NONE",
+  "policy": "ADAPT-04 consumes ADAPT-03 augmentation requirements only; unpinned authority = FAIL CLOSED",
+  "predecessorPass": {
+    "adapt01AuditZipSha256": "dff9ac13c36916903523d55096d76ed2e0c8f387720160f21f0026006a4d7f8b",
+    "adapt01PassReceipt": "evidence/NURION-ADAPT-01_PASS_receipt.json",
+    "adapt01Status": "CLOSED / PASS / CONSUME ONLY",
+    "adapt02AuditZipSha256": "4cf33689131f4093e682120953c6d2fa99a931e90f4716dc8cd06f19694e1e46",
+    "adapt02PassReceipt": "evidence/NURION-ADAPT-02_PASS_receipt.json",
+    "adapt02Status": "CLOSED / PASS / CONSUME ONLY",
+    "adapt03AuditZipSha256": "1b960bc3dac3930365724d12a4ab1944e81a1b77afbf97d996e88e1c8d4672b7",
+    "adapt03PassReceipt": "evidence/NURION-ADAPT-03_PASS_receipt.json",
+    "adapt03Status": "CLOSED / PASS / CONSUME ONLY"
+  },
+  "revision": "R1",
+  "schema": "NURION_ADAPT04_UPSTREAM_PROVENANCE_RECEIPT_V1"
+}

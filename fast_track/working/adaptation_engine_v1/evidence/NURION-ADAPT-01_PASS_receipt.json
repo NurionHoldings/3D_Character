@@ -1,0 +1,78 @@
+{
+  "receiptId": "NURION-ADAPT-01_PASS_20260829T181500Z",
+  "track": "NURION_CHARACTER_ADAPTATION_ENGINE_V1",
+  "stage": "ADAPT-01",
+  "name": "CHARACTER INTAKE & INSPECTION",
+  "status": "PASS",
+  "stageStatus": "CLOSED / PASS / CONSUME ONLY",
+  "revision": "R1",
+  "reviewer": "etherean",
+  "auditType": "HUMAN_FINAL_AUDIT",
+  "technicalVerdict": "PASS",
+  "integrity": {
+    "submittedZip": "NURION-ADAPT-01_intake_inspection_proof_R1.zip",
+    "submittedZipSha256": "dff9ac13c36916903523d55096d76ed2e0c8f387720160f21f0026006a4d7f8b",
+    "observedZipSha256": "dff9ac13c36916903523d55096d76ed2e0c8f387720160f21f0026006a4d7f8b",
+    "byteLength": 47735,
+    "zipEntries": 30,
+    "unsafePath": "NONE",
+    "independentRunnerExit": 0,
+    "mainProofRunnerExit": 0,
+    "executionMode": "EXTRACTED_AUDIT_ZIP",
+    "fastTrackRuntimeDependency": "NONE",
+    "implementationHashParity": "12/12 MATCH"
+  },
+  "gates": {
+    "AD1-G01": "PASS",
+    "AD1-G02": "PASS",
+    "AD1-G03": "PASS",
+    "AD1-G04": "PASS",
+    "AD1-G05": "PASS",
+    "AD1-G06": "PASS",
+    "AD1-G07": "PASS",
+    "AD1-G08": "PASS",
+    "AD1-G09": "PASS",
+    "AD1-G10": "PASS",
+    "AD1-G11": "PASS",
+    "AD1-G12": "PASS",
+    "AD1-G13": "PASS",
+    "AD1-G14": "PASS",
+    "AD1-G15": "PASS",
+    "AD1-G16": "PASS"
+  },
+  "criticalGates": {
+    "AD1-G02": "PASS",
+    "AD1-G05": "PASS",
+    "AD1-G06": "PASS",
+    "AD1-G12": "PASS",
+    "AD1-G14": "PASS",
+    "AD1-G15": "PASS"
+  },
+  "r0BlockersResolved": {
+    "B1_independent_runtime_import": "RESOLVED — no fast_track.runtime dependency",
+    "B2_zip_sha_provenance": "RESOLVED — payloadCanonicalDigest vs finalAuditZipSha256 EXTERNAL_ONLY"
+  },
+  "preservation": {
+    "readOnly": "PASS",
+    "autoRepair": "DENY",
+    "nurionV1Mutation": "NONE"
+  },
+  "authorityAfterPass": {
+    "ADAPT-01": "CLOSED / PASS / CONSUME ONLY",
+    "ADAPT-02": "AUTHORIZED_TO_OPEN",
+    "ADAPT-03": "LOCKED BY PREDECESSOR",
+    "ADAPT-04": "LOCKED BY PREDECESSOR",
+    "ADAPT-05": "LOCKED BY PREDECESSOR",
+    "ADAPT-06": "LOCKED BY PREDECESSOR",
+    "ADAPT-02_implementation": "NOT STARTED — OPEN requires separate command"
+  },
+  "productPipelineBoundary": {
+    "NURION_CHARACTER_PRODUCT_PIPELINE_V1": "CLOSED / PASS / CONSUME ONLY",
+    "NURION_CHARACTER_PRODUCT_RELEASE_V1": "AUTHORITATIVE FINAL",
+    "V1_MUTATION": "DENY",
+    "PRODUCT-07": "DOES NOT EXIST"
+  },
+  "blocker": "NONE",
+  "policy": "ADAPT-01 FROZEN — reopen DENY; consume inspection contract/report model only",
+  "declaredAtUtc": "20260829T181500Z"
+}

@@ -1,0 +1,521 @@
+{
+  "canonical": {
+    "chainValidation": {
+      "armL": {
+        "chain": "armL",
+        "resolvedCount": 5,
+        "status": "PASS"
+      },
+      "armR": {
+        "chain": "armR",
+        "resolvedCount": 5,
+        "status": "PASS"
+      },
+      "legL": {
+        "chain": "legL",
+        "resolvedCount": 4,
+        "status": "PASS"
+      },
+      "legR": {
+        "chain": "legR",
+        "resolvedCount": 4,
+        "status": "PASS"
+      },
+      "spineHead": {
+        "chain": "spineHead",
+        "resolvedCount": 6,
+        "status": "PASS"
+      }
+    },
+    "chestEvidence": [
+      "ABOVE_PELVIS",
+      "BILATERAL_SHOULDER_ATTACHMENT",
+      "CANONICAL_ORDER_VALID",
+      "CENTRAL_TORSO_CHAIN",
+      "NECK_DESCENDANT"
+    ],
+    "mappingView": {
+      "NURION_calf_L": "LeftLeg",
+      "NURION_calf_R": "RightLeg",
+      "NURION_chest": "Spine",
+      "NURION_clavicle_L": "LeftShoulder",
+      "NURION_clavicle_R": "RightShoulder",
+      "NURION_foot_L": "LeftFoot",
+      "NURION_foot_R": "RightFoot",
+      "NURION_hand_L": "LeftHand",
+      "NURION_hand_R": "RightHand",
+      "NURION_head": "Head",
+      "NURION_lowerArm_L": "LeftForeArm",
+      "NURION_lowerArm_R": "RightForeArm",
+      "NURION_neck": "neck",
+      "NURION_pelvis": "Hips",
+      "NURION_root": "Armature",
+      "NURION_spine01": "Spine02",
+      "NURION_spine02": "Spine01",
+      "NURION_thigh_L": "LeftUpLeg",
+      "NURION_thigh_R": "RightUpLeg",
+      "NURION_toe_L": "LeftToeBase",
+      "NURION_toe_R": "RightToeBase",
+      "NURION_upperArm_L": "LeftArm",
+      "NURION_upperArm_R": "RightArm"
+    },
+    "orderedTorsoChain": [
+      {
+        "index": 23,
+        "name": "Hips"
+      },
+      {
+        "index": 22,
+        "name": "Spine02"
+      },
+      {
+        "index": 21,
+        "name": "Spine01"
+      },
+      {
+        "index": 20,
+        "name": "Spine"
+      },
+      {
+        "index": 19,
+        "name": "neck"
+      },
+      {
+        "index": 18,
+        "name": "Head"
+      }
+    ],
+    "role": "FIRST_PROOF_ASSET_ONLY",
+    "semanticAdapterDigest": "c6aecfa1a90e81afa878a08ca7cdfc0ed34135b60bbdd2d48e597955d485393d",
+    "sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+    "skeletonTreeSample": [
+      {
+        "childIndices": [],
+        "index": 0,
+        "isSkinJoint": true,
+        "name": "LeftToeBase",
+        "parentIndex": 1
+      },
+      {
+        "childIndices": [
+          0
+        ],
+        "index": 1,
+        "isSkinJoint": true,
+        "name": "LeftFoot",
+        "parentIndex": 2
+      },
+      {
+        "childIndices": [
+          1
+        ],
+        "index": 2,
+        "isSkinJoint": true,
+        "name": "LeftLeg",
+        "parentIndex": 3
+      },
+      {
+        "childIndices": [
+          2
+        ],
+        "index": 3,
+        "isSkinJoint": true,
+        "name": "LeftUpLeg",
+        "parentIndex": 23
+      },
+      {
+        "childIndices": [],
+        "index": 4,
+        "isSkinJoint": true,
+        "name": "RightToeBase",
+        "parentIndex": 5
+      },
+      {
+        "childIndices": [
+          4
+        ],
+        "index": 5,
+        "isSkinJoint": true,
+        "name": "RightFoot",
+        "parentIndex": 6
+      },
+      {
+        "childIndices": [
+          5
+        ],
+        "index": 6,
+        "isSkinJoint": true,
+        "name": "RightLeg",
+        "parentIndex": 7
+      },
+      {
+        "childIndices": [
+          6
+        ],
+        "index": 7,
+        "isSkinJoint": true,
+        "name": "RightUpLeg",
+        "parentIndex": 23
+      },
+      {
+        "childIndices": [],
+        "index": 8,
+        "isSkinJoint": true,
+        "name": "LeftHand",
+        "parentIndex": 9
+      },
+      {
+        "childIndices": [
+          8
+        ],
+        "index": 9,
+        "isSkinJoint": true,
+        "name": "LeftForeArm",
+        "parentIndex": 10
+      },
+      {
+        "childIndices": [
+          9
+        ],
+        "index": 10,
+        "isSkinJoint": true,
+        "name": "LeftArm",
+        "parentIndex": 11
+      },
+      {
+        "childIndices": [
+          10
+        ],
+        "index": 11,
+        "isSkinJoint": true,
+        "name": "LeftShoulder",
+        "parentIndex": 20
+      },
+      {
+        "childIndices": [],
+        "index": 12,
+        "isSkinJoint": true,
+        "name": "RightHand",
+        "parentIndex": 13
+      },
+      {
+        "childIndices": [
+          12
+        ],
+        "index": 13,
+        "isSkinJoint": true,
+        "name": "RightForeArm",
+        "parentIndex": 14
+      },
+      {
+        "childIndices": [
+          13
+        ],
+        "index": 14,
+        "isSkinJoint": true,
+        "name": "RightArm",
+        "parentIndex": 15
+      },
+      {
+        "childIndices": [
+          14
+        ],
+        "index": 15,
+        "isSkinJoint": true,
+        "name": "RightShoulder",
+        "parentIndex": 20
+      },
+      {
+        "childIndices": [],
+        "index": 16,
+        "isSkinJoint": true,
+        "name": "head_end",
+        "parentIndex": 18
+      },
+      {
+        "childIndices": [],
+        "index": 17,
+        "isSkinJoint": true,
+        "name": "headfront",
+        "parentIndex": 18
+      },
+      {
+        "childIndices": [
+          16,
+          17
+        ],
+        "index": 18,
+        "isSkinJoint": true,
+        "name": "Head",
+        "parentIndex": 19
+      },
+      {
+        "childIndices": [
+          18
+        ],
+        "index": 19,
+        "isSkinJoint": true,
+        "name": "neck",
+        "parentIndex": 20
+      },
+      {
+        "childIndices": [
+          11,
+          15,
+          19
+        ],
+        "index": 20,
+        "isSkinJoint": true,
+        "name": "Spine",
+        "parentIndex": 21
+      },
+      {
+        "childIndices": [
+          20
+        ],
+        "index": 21,
+        "isSkinJoint": true,
+        "name": "Spine01",
+        "parentIndex": 22
+      },
+      {
+        "childIndices": [
+          21
+        ],
+        "index": 22,
+        "isSkinJoint": true,
+        "name": "Spine02",
+        "parentIndex": 23
+      },
+      {
+        "childIndices": [
+          3,
+          7,
+          22
+        ],
+        "index": 23,
+        "isSkinJoint": true,
+        "name": "Hips",
+        "parentIndex": 25
+      },
+      {
+        "childIndices": [],
+        "index": 24,
+        "isSkinJoint": false,
+        "name": "char1",
+        "parentIndex": 25
+      },
+      {
+        "childIndices": [
+          24,
+          23
+        ],
+        "index": 25,
+        "isSkinJoint": false,
+        "name": "Armature",
+        "parentIndex": null
+      }
+    ],
+    "specialCase": "DENY",
+    "status": "PASS"
+  },
+  "gates": {
+    "CR01-G01": {
+      "byteLength": 7543428,
+      "sourceSha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+      "status": "PASS"
+    },
+    "CR01-G02": {
+      "nodeCount": 26,
+      "sourceSkeletonDigest": "b38833534504e3730c4cb46d550ba2067d3e7327f6212657a02e2c96969da58f",
+      "status": "PASS"
+    },
+    "CR01-G03": {
+      "pelvis": "Hips",
+      "status": "PASS"
+    },
+    "CR01-G04": {
+      "orderedTorsoChain": [
+        {
+          "index": 23,
+          "name": "Hips"
+        },
+        {
+          "index": 22,
+          "name": "Spine02"
+        },
+        {
+          "index": 21,
+          "name": "Spine01"
+        },
+        {
+          "index": 20,
+          "name": "Spine"
+        },
+        {
+          "index": 19,
+          "name": "neck"
+        },
+        {
+          "index": 18,
+          "name": "Head"
+        }
+      ],
+      "status": "PASS"
+    },
+    "CR01-G05": {
+      "evidence": [
+        "ABOVE_PELVIS",
+        "BILATERAL_SHOULDER_ATTACHMENT",
+        "CANONICAL_ORDER_VALID",
+        "CENTRAL_TORSO_CHAIN",
+        "NECK_DESCENDANT"
+      ],
+      "selectionBasis": "TOPOLOGY_NOT_NAME",
+      "sourceBone": "Spine",
+      "status": "PASS"
+    },
+    "CR01-G06": {
+      "classification": "INTERMEDIATE_PRESERVED",
+      "intermediateBones": [],
+      "spine02": "Spine01",
+      "status": "PASS"
+    },
+    "CR01-G07": {
+      "head": "Head",
+      "neck": "neck",
+      "status": "PASS"
+    },
+    "CR01-G08": {
+      "status": "PASS"
+    },
+    "CR01-G09": {
+      "status": "PASS"
+    },
+    "CR01-G10": {
+      "pelvis": "Hips",
+      "root": "Armature",
+      "status": "PASS"
+    },
+    "CR01-G11": {
+      "status": "PASS"
+    },
+    "CR01-G12": {
+      "status": "PASS"
+    },
+    "CR01-G13": {
+      "cases": {
+        "multipleHeadCandidates": {
+          "adapterStatus": "BLOCKED",
+          "blockers": [
+            "MULTIPLE_HEAD_CANDIDATES",
+            "UPSTREAM_P02_BLOCKED",
+            "UPSTREAM_P03_BLOCKED"
+          ],
+          "expectedBlocker": "MULTIPLE_HEAD_CANDIDATES",
+          "fixture": "counter_multiple_head.glb"
+        },
+        "multiplePelvisCandidates": {
+          "adapterStatus": "BLOCKED",
+          "blockers": [
+            "MULTIPLE_PELVIS_CANDIDATES",
+            "UPSTREAM_P02_BLOCKED",
+            "UPSTREAM_P03_BLOCKED"
+          ],
+          "expectedBlocker": "MULTIPLE_PELVIS_CANDIDATES",
+          "fixture": "counter_multiple_pelvis.glb"
+        },
+        "namedSpineWithoutShoulders": {
+          "adapterStatus": "BLOCKED",
+          "expected": "TOPOLOGY_NOT_NAME",
+          "fixture": "counter_spine_name_no_shoulders.glb",
+          "namedSpineRejectedAsChest": true,
+          "selectedChest": "TorsoAttach"
+        },
+        "shoulderSideAmbiguous": {
+          "adapterStatus": "BLOCKED",
+          "blockers": [
+            "SHOULDER_SIDE_AMBIGUOUS",
+            "UPSTREAM_P02_BLOCKED",
+            "UPSTREAM_P03_BLOCKED"
+          ],
+          "expectedBlocker": "SHOULDER_SIDE_AMBIGUOUS",
+          "fixture": "counter_ambiguous_shoulder_side.glb"
+        }
+      },
+      "gateIntent": "AMBIGUITY_FAIL_CLOSED",
+      "status": "PASS"
+    },
+    "CR01-G14": {
+      "shaAfter": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+      "shaBefore": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+      "status": "PASS"
+    },
+    "CR01-G15": {
+      "semanticAdapterDigest": "c6aecfa1a90e81afa878a08ca7cdfc0ed34135b60bbdd2d48e597955d485393d",
+      "status": "PASS"
+    },
+    "CR01-G16": {
+      "humanRecomputed": "MATCH",
+      "semanticAdapterDigest": "c6aecfa1a90e81afa878a08ca7cdfc0ed34135b60bbdd2d48e597955d485393d",
+      "status": "PASS"
+    },
+    "CR01-G17": {
+      "mappingView": {
+        "NURION_calf_L": "LeftLeg",
+        "NURION_calf_R": "RightLeg",
+        "NURION_chest": "Spine",
+        "NURION_clavicle_L": "LeftShoulder",
+        "NURION_clavicle_R": "RightShoulder",
+        "NURION_foot_L": "LeftFoot",
+        "NURION_foot_R": "RightFoot",
+        "NURION_hand_L": "LeftHand",
+        "NURION_hand_R": "RightHand",
+        "NURION_head": "Head",
+        "NURION_lowerArm_L": "LeftForeArm",
+        "NURION_lowerArm_R": "RightForeArm",
+        "NURION_neck": "neck",
+        "NURION_pelvis": "Hips",
+        "NURION_root": "Armature",
+        "NURION_spine01": "Spine02",
+        "NURION_spine02": "Spine01",
+        "NURION_thigh_L": "LeftUpLeg",
+        "NURION_thigh_R": "RightUpLeg",
+        "NURION_toe_L": "LeftToeBase",
+        "NURION_toe_R": "RightToeBase",
+        "NURION_upperArm_L": "LeftArm",
+        "NURION_upperArm_R": "RightArm"
+      },
+      "oracleRole": "VALIDATION_ORACLE_ONLY",
+      "status": "PASS"
+    },
+    "CR01-G18": {
+      "adapterHardcodingScan": {
+        "scanned": [
+          "torso_chain.py",
+          "semantic_assignment.py",
+          "skeleton_inspection.py",
+          "retarget_safety.py",
+          "flexible_adapter.py"
+        ],
+        "status": "PASS",
+        "violations": []
+      },
+      "engineV1": "CLOSED / PASS / CONSUME ONLY",
+      "status": "PASS",
+      "v1Mutation": "NONE",
+      "v2Engine": "NOT OPEN"
+    },
+    "CR01-G19": {
+      "determinismVerified": true,
+      "executionMode": "MONOREPO",
+      "independentExtractedProof": false,
+      "semanticAdapterDigest": "c6aecfa1a90e81afa878a08ca7cdfc0ed34135b60bbdd2d48e597955d485393d",
+      "status": "PASS"
+    },
+    "CR01-G20": {
+      "agentMayNotPass": true,
+      "status": "HUMAN_FINAL_ONLY"
+    }
+  }
+}

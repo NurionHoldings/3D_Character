@@ -1,0 +1,38 @@
+{
+  "receiptId": "NURION-V2-CR04_SECOND_ASSET_PIN",
+  "changeRequest": "V2-CR-04",
+  "authority": "SECOND_ASSET_PIN",
+  "declaredAtUtc": "20260830T055100Z",
+  "declaredBy": "etherean",
+  "selectionOrder": "SPEC APPROVED → pin → P01 (no success-scanning)",
+  "secondAsset": {
+    "status": "PINNED",
+    "characterFamily": "Meshy_AI_Bolt_Voyager_biped",
+    "clip": "Walking_withSkin",
+    "sourcePath": "D:/보관자료/CMB Studio/cmb-studio-v1/assets/characters/bolt-voyager/Meshy_AI_Bolt_Voyager_biped/Meshy_AI_Bolt_Voyager_biped_Animation_Walking_withSkin.glb",
+    "workspaceBaseline": "fast_track/working/adaptation_engine_v2/assets_cr04/SECOND_ASSET_BASELINE.glb",
+    "workspaceBaselineAlias": "Bolt_Voyager_Walking_withSkin_BASELINE.glb (same bytes; generic name used by runner)",
+    "sha256": "40b7783f5ca70f9dac23404564f90ac8749c97762299300ae85bbc4b88e5f88b",
+    "byteLength": 7466324,
+    "neqIdle15Baseline": true,
+    "idle15BaselineSha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+    "format": "GLB",
+    "mesh": true,
+    "skin": true,
+    "bodyRig": true,
+    "embeddedAnimation": "Armature|walking_man|baselayer",
+    "morphTargetsAtSource": 0,
+    "immutable": true
+  },
+  "alternateClipsNotPinned": [
+    {
+      "clip": "Running_withSkin",
+      "sha256": "13dcdbf25e8cd1a1ac0bf4d5d3bfbd063ecd771239265a778c7a36d4deb1ad39",
+      "note": "Same character family — not a separate second character"
+    }
+  ],
+  "replacementPolicy": "DENY silent reselection after failed runs",
+  "next": "CR04-P01…P06 fail-closed",
+  "approvedSpecDigest": "203466befd67d01a4acf42a60048d6b2ac01c42b4dd2ffea49da73f0c8edface",
+  "engineV2": "NOT_OPEN"
+}

@@ -1,0 +1,91 @@
+{
+  "schema": "NURION_ADAPTATION_ENGINE_V2_RELEASE_MANIFEST_V1",
+  "engine": "NURION_ADAPTATION_ENGINE_V2",
+  "release": {
+    "version": "V2",
+    "status": "RELEASE_CANDIDATE",
+    "irgChangeRequest": "V2-IRG-01",
+    "approvedSpecDigest": "a78769ecbcfc2c0094ad059dd312e565c27c975f3d68bef218c5d03c1539511a"
+  },
+  "consumes": {
+    "CR01": {
+      "status": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+      "humanAuditedZipSha256": "ea12a5ce5b99f1eeecfa896744785e118b7caa40d51d15991f3c23e1ea969512",
+      "semanticAdapterDigest": "c6aecfa1a90e81afa878a08ca7cdfc0ed34135b60bbdd2d48e597955d485393d",
+      "authorityDigest": "7b31623e7e1d2b0f4be2135c2bdd017bfbff03f483581bbec9cc412fbbadefb9"
+    },
+    "CR02": {
+      "status": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+      "idle15DerivedSha256": "1ee90420ba39cc2e74de6624230538f4416d39ec7b34656e5b175a776c171cdd",
+      "independentProofDigest": "a38a8855f1f4f1c9cb3171737c7f98355cfd79bcd72c50388d1a134faebda174",
+      "humanAuditedZipSha256": "c96e2e875797f274ad44a234726e7b80b8c7a0ebe369ade1798c0626d5189ba2",
+      "authorityDigest": "ca1a38df612f711aa578532f8af4dc0a7a6a040043789e95b9cdcaa2da90a5b9"
+    },
+    "CR03": {
+      "status": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+      "idle15TalkingDerivedSha256": "fe493789135aaa80f96a6c2377daafd0a3ed016f402ba8d8611c9e3d07c7c8ca",
+      "runtimeVertexProofDigest": "593bf05d1fdebb8697bdf64f06d3f910645fc79043f465a59c20ab70897321e0",
+      "humanAuditedZipSha256": "701cad15f849558944413f16152c4c895d258bbb93c580e27c6ccec3a4fd58fb",
+      "authorityDigest": "965cc800aace5980f86dddd89aeb8baaa87b7a629d03bb855a425b747a196129"
+    },
+    "CR04": {
+      "status": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+      "secondAssetSha256": "f3f9e343c8ba3c9a503a8423293dec90bb6be50f809f1321f4f6658b1bea133e",
+      "facialDerivedSha256": "92502f6f66b82c4dc1a7138b90746b4b0e755e6e857de0c2390ae9ef6320f51a",
+      "talkingDerivedSha256": "55601949d6fc67eaebe405e683134fc516be5d6374ca748ea8809ae12dbace4d",
+      "runtimeProofDigest": "50e085ca5ce2d33583db8ec158d21fae12987795ba33fa172f609dedae179c18",
+      "finalCandidateSemanticDigest": "d3294a62cce6c55d312fa9065e16160238b1c972a21924c5d371308f945c879d",
+      "humanAuditedZipSha256": "fbb14acf28ef3695c3cb036aedf2f976757e4f9e0046952891e8f0ec38b87d29",
+      "HC-01": "CLOSED BY R3",
+      "authorityDigest": "b1b22671fe7cd3815ebcd61c0f8c99821ed271e1d4a55bda22ee0f51a83788da"
+    }
+  },
+  "supportEnvelope": {
+    "SUPPORTED_V2_CORE": {
+      "INPUT": [
+        "rigged + skinned Meshy-style character",
+        "validated GLB pipeline"
+      ],
+      "BODY": [
+        "source skeleton preservation",
+        "source skin preservation",
+        "semantic skeleton adaptation"
+      ],
+      "FACE": [
+        "missing facial capability augmentation",
+        "Blink",
+        "Jaw / Mouth",
+        "Expression",
+        "Viseme AA/OH/EE"
+      ],
+      "TALKING": [
+        "actual GLB morph-weight animation",
+        "temporal vertex deformation",
+        "neutral restoration"
+      ],
+      "GENERALIZATION_BASIS": "Human-audited on >1 real Meshy asset"
+    },
+    "NOT_CLAIMED_BY_V2": [
+      "unrigged character auto-rig",
+      "global auto-weight",
+      "arbitrary topology support",
+      "all Meshy characters guaranteed",
+      "all external generators guaranteed",
+      "FBX input/output",
+      "VRM",
+      "USD/USDZ",
+      "natural phoneme lip-sync",
+      "speech-engine integration",
+      "tongue/teeth advanced rig",
+      "facial muscle simulation",
+      "universal production compatibility"
+    ]
+  },
+  "canonicalInterface": {
+    "NURION_root_neq_NURION_pelvis": true,
+    "NURION_head_to_FACE_Rig_Root": true
+  },
+  "engineV2": "NOT_OPEN_UNTIL_HUMAN_FINAL",
+  "declaredAtUtc": "20260830T074111Z",
+  "releaseDigest": "c7cfe95874eb07237fb4f9c72957d4b7a0449b160c522b042fc007843284901a"
+}

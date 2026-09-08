@@ -1,0 +1,127 @@
+{
+  "receiptId": "NURION-ADAPT-04_PASS_20260830T014800Z",
+  "track": "NURION_CHARACTER_ADAPTATION_ENGINE_V1",
+  "stage": "ADAPT-04",
+  "name": "AUXILIARY RIG AUGMENTATION",
+  "status": "PASS",
+  "stageStatus": "CLOSED / PASS / CONSUME ONLY",
+  "revision": "R2",
+  "reviewer": "etherean",
+  "auditType": "HUMAN_FINAL_AUDIT",
+  "technicalVerdict": "PASS",
+  "integrity": {
+    "submittedZip": "NURION-ADAPT-04_auxiliary_rig_proof_R2.zip",
+    "submittedZipSha256": "dc1159c515772f4ebef3829785b6bdc6943700df0c8a7708e0ead8ac285cc5e0",
+    "observedZipSha256": "dc1159c515772f4ebef3829785b6bdc6943700df0c8a7708e0ead8ac285cc5e0",
+    "byteLength": 113113,
+    "zipEntries": 59,
+    "unsafePath": "NONE",
+    "independentRunnerExit": 0,
+    "augmentationProofExit": 0,
+    "executionMode": "EXTRACTED_AUDIT_ZIP",
+    "automatedGates": "AD4-G01…G19 = 19/19 PASS",
+    "payloadCanonicalDigest": "e6a3c7d2e2427a3245dcc23e28a6f9759d8e975bf95810ba82968548b6ea6829"
+  },
+  "r1BlockerResolution": {
+    "r1Blocker": "PROVENANCE_RECEIPT_MISSING — NURION-ADAPT-03_UPSTREAM_PROVENANCE_RECEIPT.json absent from R1 extracted package",
+    "r2Fix": "Immutable ADAPT-03 upstream provenance receipt packaged in evidence/ — validator fail-closed behavior preserved",
+    "validatorWeakened": false
+  },
+  "authoritativePins": {
+    "adapt03PassReceiptSha256": "2e2904dbafab1377195bd16787e0f87dc93258bfeb7be40eb3f3c88e16719d1f",
+    "adapt03UpstreamProvenanceReceiptSha256": "f5299db69fa81e61f2fc48f48180cad3921467f1995055a00d49f7c19bd3c6b4",
+    "adapt04UpstreamProvenanceReceiptSha256": "dc25cbcdf6e1ee80f400952b8893b7bb5a9f1e2f3f4766c98cc15f1e2c617429",
+    "humanRecomputedReceiptSha256": "MATCH",
+    "augmentationPlanDigest": "cf7cbf1e7866530d741f83a5e577b2cb197475af1c669bf6b35379caac203205",
+    "derivedSemanticDigest": "2887aace941bb9a01adc30f124dae97266dc329c77b51430147f7d541da0d904",
+    "faceProductLockSha256": "07830e1c34ce79b1d9ff9fc15a8b456ef7e3438d05ae7709d3515c00baebcf06",
+    "faceSemanticDigest": "eb10f6455295af2138914c15382ea8382ed8e9e4d41059ea3158f270468b8bc1",
+    "attachmentDigest": "5ff7277baf421a9cc59fef35f8892f9c26bab765817641719682e712e0171e0f",
+    "eyeTalkingDigest": "63fd641857f4c5f5255a26f721a675030e4674e9caeb718f0fdf861d6c5c011a"
+  },
+  "derivedArtifactVerification": {
+    "model": "source immutable; derived auxiliary augmentation in separate GLB",
+    "sampleSource": "body_minimal_face.glb",
+    "sampleSourceSha256": "a30358b310deb11a8eec27cc26d4acd96cf68a06d90dda218261619203220b8f",
+    "sampleDerived": "body_minimal_face_adapt04_derived.glb",
+    "sampleDerivedSha256": "5628f7a699d0bd6d3f293fb712fde8a056629a83afed51e47a7f98d182b6e652",
+    "sourceDerivedDistinct": true
+  },
+  "boundaryVerification": {
+    "soleAttachment": "NURION_head → FACE_Rig_Root",
+    "deformationScope": "AUGMENTATION_REGION_ONLY",
+    "requirementToOperationTraceability": "VERIFIED",
+    "bodyMutation": "NONE",
+    "adapt05Handoff": "SPECIFICATION_ONLY"
+  },
+  "gates": {
+    "AD4-G01": "PASS",
+    "AD4-G02": "PASS",
+    "AD4-G03": "PASS",
+    "AD4-G04": "PASS",
+    "AD4-G05": "PASS",
+    "AD4-G06": "PASS",
+    "AD4-G07": "PASS",
+    "AD4-G08": "PASS",
+    "AD4-G09": "PASS",
+    "AD4-G10": "PASS",
+    "AD4-G11": "PASS",
+    "AD4-G12": "PASS",
+    "AD4-G13": "PASS",
+    "AD4-G14": "PASS",
+    "AD4-G15": "PASS",
+    "AD4-G16": "PASS",
+    "AD4-G17": "PASS",
+    "AD4-G18": "PASS",
+    "AD4-G19": "PASS",
+    "AD4-G20": "PASS"
+  },
+  "criticalGates": {
+    "AD4-G01": "PASS",
+    "AD4-G02": "PASS",
+    "AD4-G05": "PASS",
+    "AD4-G06": "PASS",
+    "AD4-G07": "PASS",
+    "AD4-G12": "PASS",
+    "AD4-G14": "PASS",
+    "AD4-G15": "PASS",
+    "AD4-G16": "PASS",
+    "AD4-G18": "PASS",
+    "AD4-G19": "PASS"
+  },
+  "preservation": {
+    "nurionV1Mutation": "NONE",
+    "adapt01Mutation": "NONE",
+    "adapt02Mutation": "NONE",
+    "adapt03Mutation": "NONE",
+    "faceAuthorityMutation": "NONE",
+    "sourceOriginalMutation": "NONE",
+    "bodyCanonicalMutation": "NONE",
+    "adapt05Implementation": "NOT_STARTED",
+    "autoRepair": "DENY"
+  },
+  "weightedProgress": {
+    "humanPassConfirmedPercent": 75,
+    "note": "ADAPT-01 + ADAPT-02 + ADAPT-03 + ADAPT-04 Human PASS — 4 of 5 adaptation stages"
+  },
+  "authorityAfterPass": {
+    "ADAPT-04": "CLOSED / PASS / CONSUME ONLY",
+    "ADAPT-05": "AUTHORIZED_TO_OPEN",
+    "ADAPT-05_implementation": "NOT STARTED — OPEN requires separate command",
+    "ADAPT-06": "LOCKED BY PREDECESSOR"
+  },
+  "productPipelineBoundary": {
+    "NURION_CHARACTER_PRODUCT_PIPELINE_V1": "CLOSED / PASS / CONSUME ONLY",
+    "NURION_CHARACTER_PRODUCT_RELEASE_V1": "AUTHORITATIVE FINAL",
+    "V1_MUTATION": "DENY",
+    "PRODUCT-07": "DOES NOT EXIST"
+  },
+  "milestone": {
+    "summary": "External character intake → BODY semantic mapping → FACE capability judgment → requirement-bound auxiliary augmentation in derived artifact is now Human PASS confirmed",
+    "notNewFaceDevelopment": true,
+    "notRuntimeQualification": true
+  },
+  "blocker": "NONE",
+  "policy": "ADAPT-04 FROZEN — reopen DENY; consume auxiliary augmentation contract only",
+  "declaredAtUtc": "20260830T014800Z"
+}

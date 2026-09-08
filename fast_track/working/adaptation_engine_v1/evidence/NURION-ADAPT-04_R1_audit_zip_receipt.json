@@ -1,0 +1,13 @@
+{
+  "AD4-G20": "HUMAN_FINAL_ONLY",
+  "ADAPT-05": "LOCKED BY PREDECESSOR",
+  "agentStatus": "READY_FOR_HUMAN_AUDIT",
+  "byteLength": 110755,
+  "entryCount": 58,
+  "finalAuditZipSha256": "01187c6599bd4531616fe614e0c238187d54552d9f7f4ff6a494397ea4f8932c",
+  "pass": "NOT_DECLARED",
+  "payloadCanonicalDigest": "b42837cc4000e5c3c4802876d55ce081d258eea0bffe4d5d4368c485ff3b9a39",
+  "revision": "R1",
+  "schema": "NURION_ADAPT04_R1_AUDIT_ZIP_RECEIPT_V1",
+  "zip": "d:\\NURION Character Landmarker\\fast_track\\working\\adaptation_engine_v1\\evidence\\NURION-ADAPT-04_auxiliary_rig_proof_R1.zip"
+}

@@ -1,0 +1,49 @@
+{
+  "receiptId": "NURION-V2-CR03_SPEC_R1_PROPOSED",
+  "schema": "NURION_V2_CR03_SPEC_PROPOSED_RECEIPT_V1",
+  "authority": "SPEC_PROPOSAL",
+  "changeRequest": "V2-CR-03",
+  "title": "MORPH-WEIGHT RUNTIME TALKING SEQUENCE",
+  "specRevision": "R1",
+  "status": "SPEC_PROPOSED",
+  "humanSpecReview": "PENDING",
+  "implementationAuthority": "NONE",
+  "openStatus": "NOT OPEN",
+  "declaredAtUtc": "20260830T051400Z",
+  "declaredBy": "etherean",
+  "proposedSpecDigest": "3e3885335bcfd8489209a302852230ae6cdd55da89fb8328048f82d8fe4a206c",
+  "specPath": "semantic/NURION_ADAPTATION_ENGINE_V2_CR03_MORPH_WEIGHT_RUNTIME_TALKING_SEQUENCE_SPEC_R1.json",
+  "specMarkdown": "semantic/NURION_ADAPTATION_ENGINE_V2_CR03_SPEC_R1.md",
+  "cr03Track": "semantic/NURION_ADAPTATION_ENGINE_V2_CR03_TRACK_V1.json",
+  "changeControlGate": "semantic/NURION_CHANGE_CONTROL_GATE_V1.json",
+  "authoritativeInput": {
+    "fileName": "Idle_15_R2_facial_deformation.glb",
+    "sha256": "1ee90420ba39cc2e74de6624230538f4416d39ec7b34656e5b175a776c171cdd",
+    "requiredMorphs": ["VISEME_AA", "VISEME_OH", "VISEME_EE"]
+  },
+  "coreClaim": "Consume CR02 static facial morphs without mutation; prove actual GLB morph-weight animation channels drive temporal mouth deformation",
+  "authorityLine": {
+    "V2-CR-01": "CONSUME ONLY / REOPEN DENY",
+    "V2-CR-02": "CONSUME ONLY / REOPEN DENY",
+    "V2-CR-03": "SPEC_PROPOSED / HUMAN_SPEC_REVIEW PENDING / IMPLEMENTATION AUTHORITY NONE / NOT OPEN",
+    "V2-CR-04": "CANDIDATE / NOT OPEN",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN"
+  },
+  "agentCeiling": "SPEC_REVIEW_ONLY",
+  "humanSpecGate": {
+    "required": true,
+    "status": "PENDING",
+    "approvedSpecDigest": null
+  },
+  "onApprove": {
+    "status": "OPEN_PROTOTYPE",
+    "implementationAuthority": "GRANTED",
+    "receipt": "evidence/NURION-V2-CR03_SPEC_R1_HUMAN_PASS_receipt.json",
+    "pin": "humanSpecGate.approvedSpecDigest = proposedSpecDigest (or re-hash of approved SPEC bytes)"
+  },
+  "onReject": {
+    "status": "CANDIDATE",
+    "implementationAuthority": "NONE"
+  },
+  "next": "Human Spec Gate review — no implementation until APPROVED"
+}

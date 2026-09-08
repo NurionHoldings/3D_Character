@@ -1,0 +1,32 @@
+{
+  "adaptationClassification": {
+    "adaptationClass": "BLOCKED",
+    "body": "INCOMPATIBLE",
+    "evidenceBased": true,
+    "eye": "UNKNOWN",
+    "face": "UNKNOWN",
+    "jaw": "UNKNOWN",
+    "rationale": [
+      "PARSE_FAILURE"
+    ],
+    "talking": "UNKNOWN"
+  },
+  "characterId": "fixture_malformed",
+  "issues": [
+    {
+      "code": "PARSE_FAILURE",
+      "message": "unsupported format for ADAPT-01 canonical path: .bin",
+      "severity": "BLOCKER"
+    }
+  ],
+  "parseStatus": "FAILED",
+  "reportCanonicalSha256": "90b42304c871d320ca63a41525c2d99f327d5cae3d41dae577af06b9b0bdb5eb",
+  "schema": "NURION_ADAPT01_INSPECTION_REPORT_V1",
+  "sourceAsset": {
+    "byteLength": 13,
+    "exists": true,
+    "path": "d:\\NURION Character Landmarker\\fast_track\\adaptation\\fixtures\\malformed_not_glb.bin",
+    "sha256": "102bba27bae8cec5bd7651d8ad5aeee095dac31b4f82e947c886d5ed7b78a1b1",
+    "suffix": ".bin"
+  }
+}

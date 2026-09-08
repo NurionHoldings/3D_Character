@@ -1,0 +1,34 @@
+{
+  "receiptId": "NURION-V2-IRG_R1_HUMAN_AUDIT_BLOCKED",
+  "authority": "HUMAN_FINAL_GATE",
+  "changeRequestId": "V2-IRG-01",
+  "revision": "R1",
+  "result": "BLOCKED",
+  "status": "HUMAN AUDIT BLOCKED / HISTORICAL / PRESERVED",
+  "declaredAtUtc": "20260830T074500Z",
+  "declaredBy": "etherean",
+  "zipSha256": "49f015f90f5be2cbcbc3520b4e0ba5f5d0ca0909f31b0ebcdec7a048a4352fb9",
+  "zipBytes": 42349931,
+  "zipSafety": "PASS",
+  "cleanExtraction": "PASS",
+  "independentRunner": "BLOCKED / FAIL",
+  "blocker": {
+    "id": "IRG-P06-SELF-CONTAINED-01",
+    "status": "OPEN",
+    "code": "MISSING_MODULE",
+    "detail": "ModuleNotFoundError: fast_track.v2_cr03.pins — glb_measure.py present but pins.py absent from proof ZIP"
+  },
+  "P07": "HUMAN AUDIT BLOCKED",
+  "G20": "NOT REACHED",
+  "classification": "IRG P06 packaging defect — NOT upstream CR01–CR04 technical failure",
+  "upstream": {
+    "CR01": "HUMAN PASS / CONSUME ONLY / REOPEN DENY — DO NOT REOPEN",
+    "CR02": "HUMAN PASS / CONSUME ONLY / REOPEN DENY — DO NOT REOPEN",
+    "CR03": "HUMAN PASS / CONSUME ONLY / REOPEN DENY — DO NOT REOPEN",
+    "CR04": "HUMAN PASS / CONSUME ONLY / REOPEN DENY — DO NOT REOPEN"
+  },
+  "correctiveScope": "IRG P06 only — include required consume deps; clean-extract independent runner exit 0; produce R2 ZIP",
+  "engineV2": "NOT_OPEN",
+  "progress": "~97%",
+  "deny": ["Engine V2 CLOSED/PASS", "100%"]
+}

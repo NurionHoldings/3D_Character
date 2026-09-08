@@ -1,0 +1,96 @@
+{
+  "schema": "NURION_ADAPTATION_ENGINE_TRACK_V1",
+  "trackId": "NURION_CHARACTER_ADAPTATION_ENGINE_V1",
+  "status": "CLOSED / PASS",
+  "declaredAtUtc": "20260829T173000Z",
+  "declaredBy": "etherean",
+  "updatedAtUtc": "20260830T024500Z",
+  "closedAtUtc": "20260830T024500Z",
+  "purpose": "Adapt externally authored characters (mesh + basic body rig/skin) into NURION V1–compatible packages WITHOUT mutating NURION Character Product Pipeline V1.",
+  "separation": {
+    "NURION_CHARACTER_PRODUCT_PIPELINE_V1": "CLOSED / PASS / CONSUME ONLY",
+    "NURION_CHARACTER_PRODUCT_RELEASE_V1": "AUTHORITATIVE FINAL",
+    "V1_MUTATION": "DENY",
+    "PRODUCT-07": "DOES NOT EXIST",
+    "adaptationMutatesNURIONV1": false
+  },
+  "weightedProgress": {
+    "humanPassConfirmedPercent": 100,
+    "stagesHumanPass": ["ADAPT-01", "ADAPT-02", "ADAPT-03", "ADAPT-04", "ADAPT-05", "ADAPT-06"]
+  },
+  "canonicalRelease": {
+    "releaseId": "NURION_ADAPTED_CHARACTER_RELEASE_V1",
+    "status": "AUTHORITATIVE FINAL",
+    "finalReleaseDigest": "f78fcdc4ee0a9519308e1ea74a816cf587382c91cb13cabebfd0fef3cc887c51",
+    "semantic": "semantic/NURION_ADAPTED_CHARACTER_RELEASE_V1.json"
+  },
+  "stages": [
+    {
+      "id": "ADAPT-01",
+      "name": "CHARACTER INTAKE & INSPECTION",
+      "status": "CLOSED / PASS / CONSUME ONLY",
+      "pass": "PASS"
+    },
+    {
+      "id": "ADAPT-02",
+      "name": "SKELETON SEMANTIC ADAPTATION",
+      "status": "CLOSED / PASS / CONSUME ONLY",
+      "pass": "PASS"
+    },
+    {
+      "id": "ADAPT-03",
+      "name": "FACE / EXPRESSION ADAPTATION",
+      "status": "CLOSED / PASS / CONSUME ONLY",
+      "pass": "PASS",
+      "authoritativeAuditZipSha256": "1b960bc3dac3930365724d12a4ab1944e81a1b77afbf97d996e88e1c8d4672b7"
+    },
+    {
+      "id": "ADAPT-04",
+      "name": "AUXILIARY RIG AUGMENTATION",
+      "status": "CLOSED / PASS / CONSUME ONLY",
+      "implementation": "COMPLETE",
+      "pass": "PASS",
+      "humanPassAuthority": "EXERCISED — HUMAN_FINAL_AUDIT PASS (R2)",
+      "revision": "R2",
+      "authoritativeAuditZipSha256": "dc1159c515772f4ebef3829785b6bdc6943700df0c8a7708e0ead8ac285cc5e0"
+    },
+    {
+      "id": "ADAPT-05",
+      "name": "RUNTIME QUALIFICATION",
+      "status": "CLOSED / PASS / CONSUME ONLY",
+      "implementation": "COMPLETE",
+      "pass": "PASS",
+      "humanPassAuthority": "EXERCISED — HUMAN_FINAL_AUDIT PASS (R2)",
+      "revision": "R2",
+      "openedAtUtc": "20260830T015100Z",
+      "closedAtUtc": "20260830T022600Z",
+      "contract": "semantic/NURION_ADAPT05_RUNTIME_QUALIFICATION_CONTRACT_V1.json",
+      "passReceipt": "evidence/NURION-ADAPT-05_PASS_receipt.json",
+      "proofReceipt": "evidence/NURION-ADAPT-05_runtime_qualification_proof_receipt.json",
+      "auditZip": "evidence/NURION-ADAPT-05_runtime_qualification_proof_R2.zip",
+      "authoritativeAuditZipSha256": "15dcc54f90f03c2b2e54d0dc03ae6800110a1edc2121554594db151f8fbebd3e",
+      "qualificationReportDigest": "a5362ea9339bb52c2e8e5c17b2a6c229029e5dc11f221228adf38a2b65ad0412"
+    },
+    {
+      "id": "ADAPT-06",
+      "name": "ADAPTED CHARACTER RELEASE",
+      "status": "CLOSED / PASS / CONSUME ONLY",
+      "implementation": "COMPLETE",
+      "pass": "PASS",
+      "humanPassAuthority": "EXERCISED — HUMAN_FINAL_AUDIT PASS (R1)",
+      "revision": "R1",
+      "openedAtUtc": "20260830T023000Z",
+      "closedAtUtc": "20260830T024500Z",
+      "contract": "semantic/NURION_ADAPT06_ADAPTED_CHARACTER_RELEASE_CONTRACT_V1.json",
+      "passReceipt": "evidence/NURION-ADAPT-06_PASS_receipt.json",
+      "proofReceipt": "evidence/NURION-ADAPT-06_release_proof_receipt.json",
+      "auditZip": "evidence/NURION-ADAPT-06_release_proof_R1.zip",
+      "authoritativeAuditZipSha256": "c6b15953ee07c1d8c50320bcb2a88517a846482425984fac51729526062dbec0",
+      "releaseId": "NURION_ADAPTED_CHARACTER_RELEASE_V1",
+      "finalReleaseDigest": "f78fcdc4ee0a9519308e1ea74a816cf587382c91cb13cabebfd0fef3cc887c51"
+    }
+  ],
+  "downstreamConsumers": ["MJN", "P^fect", "ARKAON CALL"],
+  "ADAPT-07": "DOES NOT EXIST",
+  "next": "CONSUME ONLY — NURION_ADAPTED_CHARACTER_RELEASE_V1 AUTHORITATIVE FINAL; reopen DENY without V2/change-control"
+}

@@ -1,0 +1,10 @@
+{
+  "receiptId": "NURION-V2_MJN_PLATFORM_DEPLOY_STAGED",
+  "declaredAtUtc": "20260830T081000Z",
+  "engineV2": "CLOSED / PASS / CONSUME ONLY",
+  "engineV2Reopen": "DENY",
+  "downstream": "MJN platform staged Character Master = Sporty_V2_FACE_TALKING.glb",
+  "artifactSha256": "55601949d6fc67eaebe405e683134fc516be5d6374ca748ea8809ae12dbace4d",
+  "mjnReceipt": "D:/보관자료/MJN/assets/v2_platform_deploy/MJN_SPORTY_V2_PLATFORM_DEPLOY_R1_receipt.json",
+  "note": "Post-V2 consume deploy into MJN web assets — production CDN publish is MJN ops separate step"
+}

@@ -1,0 +1,40 @@
+{
+  "receiptId": "NURION-V2-CR01_OPEN_PROTOTYPE_20260830T031500Z",
+  "changeRequestId": "V2-CR-01",
+  "title": "FLEXIBLE MESHY SKELETON SEMANTIC ADAPTER",
+  "revision": "R1",
+  "specStatus": "HUMAN REVIEW PASS / APPROVED",
+  "status": "OPEN / PROTOTYPE",
+  "prototypeStatus": "IN PROGRESS",
+  "declaredAtUtc": "20260830T031500Z",
+  "declaredBy": "etherean",
+  "auditType": "HUMAN_SPEC_GATE",
+  "approvedGates": {
+    "GENERAL_TOPOLOGY_RULE": "APPROVED — shoulder/neck/torso topology → semantic role; Idle_15 hardcoding DENY",
+    "AUTHORITY_SEPARATION": "APPROVED — V2 engine NOT OPEN; V2-CR-01 separate CR authority"
+  },
+  "authority": {
+    "NURION_CHARACTER_ADAPTATION_ENGINE_V1": "CLOSED / PASS / CONSUME ONLY",
+    "V1_MUTATION": "DENY",
+    "NURION_CHARACTER_ADAPTATION_ENGINE_V2": "NOT OPEN",
+    "V2-CR-01": "OPEN / PROTOTYPE",
+    "agentCeiling": "READY_FOR_HUMAN_AUDIT",
+    "CR01-G20": "HUMAN_FINAL_ONLY"
+  },
+  "authorizedStage": "CR01-P01 — Real Skeleton Inspection",
+  "firstProofAsset": {
+    "path": "fast_track/working/meshy_silver_starlight/baseline/Idle_15_withSkin_WORKING_BASELINE.glb",
+    "sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+    "role": "FIRST_PROOF_ASSET_ONLY",
+    "specialCase": "DENY",
+    "expectedResult": "VALIDATION ORACLE ONLY — not algorithm input"
+  },
+  "prototypeEvidenceRequirement": {
+    "machineReadableTopologyEvidence": "REQUIRED",
+    "example": "NURION_chest ← Spine only if BILATERAL_SHOULDER_ATTACHMENT + NECK_DESCENDANT + CENTRAL_TORSO_CHAIN + ABOVE_PELVIS + CANONICAL_ORDER_VALID",
+    "counterFixtures": "REQUIRED — named Spine without shoulders must NOT become chest"
+  },
+  "p06HumanPassDoesNotMean": "NURION ADAPTATION ENGINE V2 = OPEN/PASS",
+  "p06HumanPassMeans": "V2-CR-01 Flexible Meshy Skeleton Semantic Adapter prototype technical evidence only",
+  "next": "Implement CR01-P01 → P05; stop at READY_FOR_HUMAN_AUDIT for CR01-G20"
+}

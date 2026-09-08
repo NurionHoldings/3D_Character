@@ -1,0 +1,15 @@
+{
+  "receiptId": "NURION-V2-CR03_R2_audit_zip_receipt",
+  "changeRequestId": "V2-CR-03",
+  "packagingRevision": "R2",
+  "r1Blocker": "SELF-CONTAINED AUDIT ZIP INCOMPLETE — missing fast_track.adaptation.classifier",
+  "r1BlockerDisposition": "CLOSED BY R2 — independent runner deps minimized (no inspector)",
+  "zipPath": "d:/NURION Character Landmarker/fast_track/working/adaptation_engine_v2/evidence/NURION-V2-CR03_R2_morph_weight_runtime_talking_proof.zip",
+  "zipSha256": "701cad15f849558944413f16152c4c895d258bbb93c580e27c6ccec3a4fd58fb",
+  "derivedSha256": "fe493789135aaa80f96a6c2377daafd0a3ed016f402ba8d8611c9e3d07c7c8ca",
+  "approvedSpecDigest": "3e3885335bcfd8489209a302852230ae6cdd55da89fb8328048f82d8fe4a206c",
+  "cr02R2InputSha256": "1ee90420ba39cc2e74de6624230538f4416d39ec7b34656e5b175a776c171cdd",
+  "p02_to_p05": "PRESERVED — not re-run",
+  "CR03-G20": "HUMAN_FINAL_ONLY",
+  "status": "READY_FOR_HUMAN_AUDIT"
+}

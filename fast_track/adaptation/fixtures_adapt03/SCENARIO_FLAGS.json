@@ -1,0 +1,49 @@
+{
+  "adapt01_02_identity_mismatch": {
+    "force": {
+      "adapt01Adapt02IdentityMismatch": true
+    }
+  },
+  "adapt04_augmentation": {
+    "asset": "body_minimal_face.glb"
+  },
+  "adapt04_premature": {
+    "asset": "rich_facial_morphs.glb",
+    "force": {
+      "performAdapt04Augmentation": true
+    }
+  },
+  "ambiguous_facial": {
+    "asset": "rich_facial_morphs.glb",
+    "force": {
+      "ambiguousFacialControls": true
+    }
+  },
+  "determinism": {
+    "asset": "rich_facial_morphs.glb"
+  },
+  "expression_conflict": {
+    "asset": "expression_mapping_required.glb",
+    "force": {
+      "expressionMappingConflict": true
+    }
+  },
+  "eye_inversion": {
+    "asset": "rich_facial_morphs.glb",
+    "force": {
+      "invertEyeLaterality": true
+    }
+  },
+  "head_mismatch": {
+    "asset": "rich_facial_morphs.glb",
+    "force": {
+      "headSemanticUnresolved": true
+    }
+  },
+  "source_digest_mismatch": {
+    "asset": "rich_facial_morphs.glb",
+    "force": {
+      "sourceDigestMismatch": true
+    }
+  }
+}

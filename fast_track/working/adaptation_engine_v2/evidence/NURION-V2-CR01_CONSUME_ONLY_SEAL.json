@@ -1,0 +1,20 @@
+{
+  "receiptId": "NURION-V2-CR01_CONSUME_ONLY_SEAL_R2",
+  "changeRequestId": "V2-CR-01",
+  "revision": "R2",
+  "status": "PROTOTYPE HUMAN PASS / TECHNICAL BASIS CONFIRMED / CONSUME ONLY",
+  "declaredAtUtc": "20260830T043000Z",
+  "declaredBy": "etherean",
+  "disposition": "CLOSED AS TECHNICAL BASIS — DO NOT REOPEN",
+  "CR01_REOPEN": "DENY",
+  "humanPassReceipt": "NURION-V2-CR01_R2_HUMAN_PASS_receipt.json",
+  "semanticAdapterDigest": "c6aecfa1a90e81afa878a08ca7cdfc0ed34135b60bbdd2d48e597955d485393d",
+  "consumedBy": ["V2-CR-02"],
+  "authority": {
+    "NURION_CHARACTER_ADAPTATION_ENGINE_V1": "CLOSED / PASS / CONSUME ONLY",
+    "V1_MUTATION": "NONE",
+    "V2-CR-01": "CONSUME ONLY",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN"
+  },
+  "note": "BODY semantic problem is closed. Further work is V2-CR-02 facial/talking augmentation, not CR01 re-litigation."
+}

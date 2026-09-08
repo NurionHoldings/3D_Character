@@ -1,0 +1,23 @@
+{
+  "receiptId": "NURION-V2-IRG_R2_CONSUME_ONLY_SEAL",
+  "changeRequestId": "V2-IRG-01",
+  "revision": "R2",
+  "status": "HUMAN PASS / CLOSED / CONSUME ONLY",
+  "disposition": "CLOSED — DO NOT REOPEN IRG; V2 RELEASE IS AUTHORITATIVE FINAL",
+  "IRG_REOPEN": "DENY",
+  "declaredAtUtc": "20260830T075600Z",
+  "declaredBy": "etherean",
+  "humanPassReceipt": "NURION-V2-IRG_R2_HUMAN_PASS_receipt.json",
+  "closes": "IRG-P06-SELF-CONTAINED-01",
+  "pins": {
+    "approvedSpecDigest": "a78769ecbcfc2c0094ad059dd312e565c27c975f3d68bef218c5d03c1539511a",
+    "humanAuditedZipSha256": "233521b68a3e4a750c3854f0eeb4ee90aa1db6a442cd5eadaa64922fb67ddf72",
+    "releaseManifestDigest": "c7cfe95874eb07237fb4f9c72957d4b7a0449b160c522b042fc007843284901a",
+    "releaseCandidateDigest": "7df80ff5265aac081a5e83c3ffe3acf9f82466c35f0f3634ef2a2acb66cf32f4",
+    "integrationProofDigest": "03b1447e9c27d8553efae731cf8b80a38ee4062b8fedfafbe0b395cb5da4eb43",
+    "finalReleaseDigest": "3f144ec3a78cd5e423384ec4b620f96a9c430ef18a878796188886818287b5a9"
+  },
+  "engineV2": "CLOSED / PASS",
+  "release": "AUTHORITATIVE FINAL",
+  "progress": "100%"
+}

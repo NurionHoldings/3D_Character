@@ -1,0 +1,8 @@
+{
+  "byteLength": 7280183,
+  "finalAuditZipSha256": "ea12a5ce5b99f1eeecfa896744785e118b7caa40d51d15991f3c23e1ea969512",
+  "idle15Sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+  "payloadCanonicalDigest": "5df3f5a5df0d2bc88337cc3af16442f2b111e67bf5048a74f53a0754d70d8e19",
+  "revision": "R2",
+  "semanticAdapterDigest": "c6aecfa1a90e81afa878a08ca7cdfc0ed34135b60bbdd2d48e597955d485393d"
+}

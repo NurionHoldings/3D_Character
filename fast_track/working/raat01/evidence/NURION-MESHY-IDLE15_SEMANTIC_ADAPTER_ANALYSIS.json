@@ -1,0 +1,50 @@
+{
+  "schema": "NURION_MESHY_IDLE15_SEMANTIC_ADAPTER_ANALYSIS_V1",
+  "asset": "Idle_15_withSkin_WORKING_BASELINE.glb",
+  "sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+  "analysisType": "READ_ONLY — no rig mutation",
+  "meshyBoneTree": {
+    "Armature": {
+      "Hips": {
+        "LeftUpLeg": "…",
+        "RightUpLeg": "…",
+        "Spine02": {
+          "Spine01": {
+            "Spine": {
+              "LeftShoulder": "LeftArm > LeftForeArm > LeftHand",
+              "RightShoulder": "RightArm > RightForeArm > RightHand",
+              "neck": "Head"
+            }
+          }
+        }
+      }
+    }
+  },
+  "mappingComparison": {
+    "v1RigidAliasMapping": {
+      "NURION_pelvis": "Hips",
+      "NURION_spine01": "Spine",
+      "NURION_chest": "Spine02",
+      "NURION_neck": "neck",
+      "NURION_head": "Head",
+      "spineHeadChain": "BLOCKED — Spine is child of Spine02, not parent"
+    },
+    "proposedFlexibleSemanticMapping": {
+      "NURION_pelvis": "Hips",
+      "NURION_spine01": "Spine02",
+      "NURION_spine02": "Spine01",
+      "NURION_chest": "Spine",
+      "NURION_neck": "neck",
+      "NURION_head": "Head",
+      "spineHeadChain": "PASS",
+      "armLChain": "PASS — LeftShoulder under Spine (chest)",
+      "legChains": "PASS — unchanged from V1"
+    }
+  },
+  "interpretation": {
+    "blockerNature": "Naming/depth inversion — not missing bones or broken Meshy rig",
+    "falseBlockLikelihood": "HIGH for commercial Meshy Idle_15 input",
+    "v1Correctness": "V1 behaves per frozen contract; gap is envelope vs product intent",
+    "nextProofRequired": "V2 prototype adapter on same asset without mutating source bytes"
+  }
+}

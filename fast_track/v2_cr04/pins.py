@@ -1,0 +1,32 @@
+"""CR04 pins — Bolt Voyager second asset (pinned after Spec Gate, before P01)."""
+
+from __future__ import annotations
+
+APPROVED_SPEC_DIGEST = "203466befd67d01a4acf42a60048d6b2ac01c42b4dd2ffea49da73f0c8edface"
+CR = "V2-CR-04"
+
+SECOND_ASSET_SHA = "f3f9e343c8ba3c9a503a8423293dec90bb6be50f809f1321f4f6658b1bea133e"
+SECOND_ASSET_NAME = "Meshy_AI_Sporty_Studio_Portrai_biped"
+SECOND_ASSET_FILE = "SECOND_ASSET_BASELINE.glb"
+SECOND_ASSET_CLIP = "Idle_15_withSkin"
+IDLE15_BASELINE_SHA = "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1"
+
+# Bolt Voyager R1 Human Final SoT package — HISTORICAL / do not silent-reselect for R3
+BOLT_VOYAGER_R1_SHA = "40b7783f5ca70f9dac23404564f90ac8749c97762299300ae85bbc4b88e5f88b"
+
+# Upstream Human-PASS pins (consume / do not reopen)
+CR01_IDLE15_ADAPTER_DIGEST = "c6aecfa1a90e81afa878a08ca7cdfc0ed34135b60bbdd2d48e597955d485393d"
+CR02_IDLE15_DERIVED_SHA = "1ee90420ba39cc2e74de6624230538f4416d39ec7b34656e5b175a776c171cdd"
+CR03_IDLE15_DERIVED_SHA = "fe493789135aaa80f96a6c2377daafd0a3ed016f402ba8d8611c9e3d07c7c8ca"
+
+ACTIVATION_THRESHOLD = 1e-4
+RESTORATION_TOLERANCE = 1e-6
+REQUIRED_VISEMES = ("VISEME_AA", "VISEME_OH", "VISEME_EE")
+TALKING_ANIMATION_NAME = "NURION_TALKING_VISEME_SEQUENCE"
+TALKING_TIMELINE = (
+    (0.00, 0.0, 0.0, 0.0),
+    (0.10, 1.0, 0.0, 0.0),
+    (0.25, 0.0, 1.0, 0.0),
+    (0.40, 0.0, 0.0, 1.0),
+    (0.55, 0.0, 0.0, 0.0),
+)

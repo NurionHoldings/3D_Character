@@ -1,0 +1,21 @@
+{
+  "AD2-G20": "HUMAN_FINAL_ONLY",
+  "ADAPT-03": "LOCKED BY PREDECESSOR",
+  "adapt01Mutation": "NONE",
+  "blockerFix": "R2 authoritative upstream SHA256 pins + snapshot derivation provenance",
+  "digestSemantics": {
+    "authoritativeAxisSha256": "PINNED_IN_BINDING_AND_PROVENANCE",
+    "authoritativeBodySpecSha256": "PINNED_IN_BINDING_AND_PROVENANCE",
+    "finalAuditZipSha256": "EXTERNAL_ONLY",
+    "payloadCanonicalDigest": "SEE_MANIFEST"
+  },
+  "finalAuditZipSha256": null,
+  "note": "Final ZIP SHA external only. Unpinned snapshot without upstream pins = FAIL CLOSED.",
+  "nurionV1Mutation": "NONE",
+  "pass": "NOT_DECLARED",
+  "receiptId": "NURION-ADAPT-02_READY_FOR_HUMAN_AUDIT_R2",
+  "revision": "R2",
+  "stage": "ADAPT-02",
+  "status": "READY_FOR_HUMAN_AUDIT",
+  "track": "NURION_CHARACTER_ADAPTATION_ENGINE_V1"
+}

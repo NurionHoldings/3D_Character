@@ -1,0 +1,14 @@
+{
+  "AD3-G20": "HUMAN_FINAL_ONLY",
+  "ADAPT-04": "LOCKED BY PREDECESSOR",
+  "adapt01Mutation": "NONE",
+  "adapt02Mutation": "NONE",
+  "faceAuthorityMutation": "NONE",
+  "nurionV1Mutation": "NONE",
+  "pass": "NOT_DECLARED",
+  "receiptId": "NURION-ADAPT-03_READY_FOR_HUMAN_AUDIT_R1",
+  "revision": "R1",
+  "stage": "ADAPT-03",
+  "status": "READY_FOR_HUMAN_AUDIT",
+  "track": "NURION_CHARACTER_ADAPTATION_ENGINE_V1"
+}

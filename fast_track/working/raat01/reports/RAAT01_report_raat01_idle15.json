@@ -1,0 +1,2061 @@
+{
+  "canonicalMutation": "DENY",
+  "characterId": "raat01_idle15",
+  "engineV1": "CLOSED / PASS / CONSUME ONLY",
+  "firstStopStage": "ADAPT-02",
+  "pipelineStatus": "BLOCKED",
+  "preservation": {
+    "adaptStageMutation": "NONE",
+    "engineV1Mutation": "NONE",
+    "sourceBytesUnchanged": true
+  },
+  "reports": {
+    "adapt01": {
+      "adaptationClassification": {
+        "adaptationClass": "CLASS_C",
+        "body": "COMPATIBLE",
+        "bodyCoreHits": 9,
+        "evidenceBased": true,
+        "eye": "MISSING",
+        "face": "MISSING",
+        "jaw": "MISSING",
+        "rationale": [
+          "body_hits=9",
+          "blendshapes=0",
+          "eyes=False/False",
+          "jaw=False",
+          "viseme=False",
+          "body_ok_needs_face_eye_jaw_helper"
+        ],
+        "talking": "MISSING"
+      },
+      "animationCapabilities": {
+        "clipCount": 1,
+        "clips": [
+          {
+            "channelCount": 72,
+            "index": 0,
+            "name": "Armature|Idle_15|baselayer",
+            "samplerCount": 72
+          }
+        ],
+        "status": "DETECTED"
+      },
+      "axisAndScale": {
+        "assetVersion": "2.0",
+        "forwardAxis": "NOT_DECLARED",
+        "generator": "Khronos glTF Blender I/O v4.0.43",
+        "gltfExtrasKeys": [],
+        "nodeScaleSamples": [
+          [
+            0.9999998807907104,
+            0.9999999403953552,
+            0.9999998211860657
+          ],
+          [
+            0.9999998211860657,
+            1,
+            1
+          ],
+          [
+            0.9999999403953552,
+            1,
+            0.9999999403953552
+          ],
+          [
+            1,
+            1.0000001192092896,
+            1
+          ],
+          [
+            1,
+            1.0000001192092896,
+            0.9999999403953552
+          ],
+          [
+            1.0000001192092896,
+            0.9999998211860657,
+            1.0000001192092896
+          ],
+          [
+            0.9999999403953552,
+            1,
+            0.9999999403953552
+          ],
+          [
+            1.0000001192092896,
+            1.0000001192092896,
+            0.9999999403953552
+          ],
+          [
+            0.9999998807907104,
+            1,
+            1
+          ],
+          [
+            1.0000001192092896,
+            1,
+            1
+          ],
+          [
+            1.0000001192092896,
+            1.0000001192092896,
+            1
+          ],
+          [
+            1,
+            1,
+            1.0000001192092896
+          ],
+          [
+            0.9999999403953552,
+            0.9999998807907104,
+            0.9999998807907104
+          ],
+          [
+            0.9999998807907104,
+            0.9999998211860657,
+            0.9999999403953552
+          ],
+          [
+            1.0000001192092896,
+            0.9999998807907104,
+            1
+          ],
+          [
+            1,
+            0.9999998807907104,
+            1
+          ]
+        ],
+        "note": "Axis inferred only from declared extras; silent invention DENY",
+        "status": "OBSERVED",
+        "upAxis": "NOT_DECLARED"
+      },
+      "characterId": "raat01_idle15",
+      "expressionCapabilities": {
+        "blendshapeCount": 0,
+        "blendshapes": {
+          "status": "NOT_DETECTED"
+        },
+        "targetNames": [],
+        "targetNamesTruncated": false
+      },
+      "eyeCapabilities": {
+        "leftEyeBone": {
+          "status": "NOT_DETECTED"
+        },
+        "rightEyeBone": {
+          "status": "NOT_DETECTED"
+        }
+      },
+      "faceCapabilities": {
+        "blendshapesDetected": false,
+        "facialBones": {
+          "count": 0,
+          "samples": [],
+          "status": "NOT_DETECTED"
+        }
+      },
+      "issues": [],
+      "jawCapabilities": {
+        "bone": {
+          "status": "NOT_DETECTED"
+        }
+      },
+      "materials": {
+        "count": 1,
+        "names": [
+          "Material_1"
+        ],
+        "status": "DETECTED"
+      },
+      "meshes": {
+        "count": 1,
+        "entries": [
+          {
+            "index": 0,
+            "morphTargetCount": 0,
+            "name": "char1",
+            "primitiveCount": 1,
+            "targetNamesDeclared": []
+          }
+        ],
+        "status": "DETECTED"
+      },
+      "nurionV1Boundary": {
+        "consume": "REFERENCE_ONLY",
+        "mutation": "NONE",
+        "productPipeline": "CLOSED / PASS / CONSUME ONLY"
+      },
+      "parseStatus": "OK",
+      "preservation": {
+        "autoRepair": "DENY",
+        "mode": "READ_ONLY",
+        "mutationsApplied": [],
+        "sourceBytesUnchanged": true
+      },
+      "reportCanonicalSha256": "d6efd3e1b022b57c1ba91760a2b630ae75590b9e9b34c26ad83b00531ed18bf8",
+      "scene": {
+        "assetGenerator": "Khronos glTF Blender I/O v4.0.43",
+        "assetVersion": "2.0",
+        "cyclicHierarchy": false,
+        "defaultScene": 0,
+        "nodeCount": 26,
+        "nodes": [
+          {
+            "children": [],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": true,
+            "hasTranslation": true,
+            "index": 0,
+            "mesh": null,
+            "name": "LeftToeBase",
+            "skin": null
+          },
+          {
+            "children": [
+              0
+            ],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": true,
+            "hasTranslation": true,
+            "index": 1,
+            "mesh": null,
+            "name": "LeftFoot",
+            "skin": null
+          },
+          {
+            "children": [
+              1
+            ],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": true,
+            "hasTranslation": true,
+            "index": 2,
+            "mesh": null,
+            "name": "LeftLeg",
+            "skin": null
+          },
+          {
+            "children": [
+              2
+            ],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": true,
+            "hasTranslation": true,
+            "index": 3,
+            "mesh": null,
+            "name": "LeftUpLeg",
+            "skin": null
+          },
+          {
+            "children": [],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": true,
+            "hasTranslation": true,
+            "index": 4,
+            "mesh": null,
+            "name": "RightToeBase",
+            "skin": null
+          },
+          {
+            "children": [
+              4
+            ],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": false,
+            "hasTranslation": true,
+            "index": 5,
+            "mesh": null,
+            "name": "RightFoot",
+            "skin": null
+          },
+          {
+            "children": [
+              5
+            ],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": true,
+            "hasTranslation": true,
+            "index": 6,
+            "mesh": null,
+            "name": "RightLeg",
+            "skin": null
+          },
+          {
+            "children": [
+              6
+            ],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": true,
+            "hasTranslation": true,
+            "index": 7,
+            "mesh": null,
+            "name": "RightUpLeg",
+            "skin": null
+          },
+          {
+            "children": [],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": true,
+            "hasTranslation": true,
+            "index": 8,
+            "mesh": null,
+            "name": "LeftHand",
+            "skin": null
+          },
+          {
+            "children": [
+              8
+            ],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": true,
+            "hasTranslation": true,
+            "index": 9,
+            "mesh": null,
+            "name": "LeftForeArm",
+            "skin": null
+          },
+          {
+            "children": [
+              9
+            ],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": true,
+            "hasTranslation": true,
+            "index": 10,
+            "mesh": null,
+            "name": "LeftArm",
+            "skin": null
+          },
+          {
+            "children": [
+              10
+            ],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": true,
+            "hasTranslation": true,
+            "index": 11,
+            "mesh": null,
+            "name": "LeftShoulder",
+            "skin": null
+          },
+          {
+            "children": [],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": true,
+            "hasTranslation": true,
+            "index": 12,
+            "mesh": null,
+            "name": "RightHand",
+            "skin": null
+          },
+          {
+            "children": [
+              12
+            ],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": true,
+            "hasTranslation": true,
+            "index": 13,
+            "mesh": null,
+            "name": "RightForeArm",
+            "skin": null
+          },
+          {
+            "children": [
+              13
+            ],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": true,
+            "hasTranslation": true,
+            "index": 14,
+            "mesh": null,
+            "name": "RightArm",
+            "skin": null
+          },
+          {
+            "children": [
+              14
+            ],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": true,
+            "hasTranslation": true,
+            "index": 15,
+            "mesh": null,
+            "name": "RightShoulder",
+            "skin": null
+          },
+          {
+            "children": [],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": true,
+            "hasTranslation": true,
+            "index": 16,
+            "mesh": null,
+            "name": "head_end",
+            "skin": null
+          },
+          {
+            "children": [],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": true,
+            "hasTranslation": true,
+            "index": 17,
+            "mesh": null,
+            "name": "headfront",
+            "skin": null
+          },
+          {
+            "children": [
+              16,
+              17
+            ],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": true,
+            "hasTranslation": true,
+            "index": 18,
+            "mesh": null,
+            "name": "Head",
+            "skin": null
+          },
+          {
+            "children": [
+              18
+            ],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": true,
+            "hasTranslation": true,
+            "index": 19,
+            "mesh": null,
+            "name": "neck",
+            "skin": null
+          },
+          {
+            "children": [
+              11,
+              15,
+              19
+            ],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": false,
+            "hasTranslation": true,
+            "index": 20,
+            "mesh": null,
+            "name": "Spine",
+            "skin": null
+          },
+          {
+            "children": [
+              20
+            ],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": true,
+            "hasTranslation": true,
+            "index": 21,
+            "mesh": null,
+            "name": "Spine01",
+            "skin": null
+          },
+          {
+            "children": [
+              21
+            ],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": false,
+            "hasTranslation": true,
+            "index": 22,
+            "mesh": null,
+            "name": "Spine02",
+            "skin": null
+          },
+          {
+            "children": [
+              3,
+              7,
+              22
+            ],
+            "hasMatrix": false,
+            "hasRotation": true,
+            "hasScale": true,
+            "hasTranslation": true,
+            "index": 23,
+            "mesh": null,
+            "name": "Hips",
+            "skin": null
+          },
+          {
+            "children": [],
+            "hasMatrix": false,
+            "hasRotation": false,
+            "hasScale": false,
+            "hasTranslation": false,
+            "index": 24,
+            "mesh": 0,
+            "name": "char1",
+            "skin": 0
+          },
+          {
+            "children": [
+              24,
+              23
+            ],
+            "hasMatrix": false,
+            "hasRotation": false,
+            "hasScale": true,
+            "hasTranslation": false,
+            "index": 25,
+            "mesh": null,
+            "name": "Armature",
+            "skin": null
+          }
+        ],
+        "sceneCount": 1
+      },
+      "schema": "NURION_ADAPT01_INSPECTION_REPORT_V1",
+      "semanticBoneCandidates": {
+        "candidates": {
+          "calf_L": {
+            "alternates": [],
+            "selected": {
+              "confidence": 1.0,
+              "nodeIndex": 2,
+              "observedSourceNodeName": "LeftLeg",
+              "reason": "exact_alias:leftleg;skin_joint_member;side_token_match"
+            },
+            "status": "DETECTED"
+          },
+          "calf_R": {
+            "alternates": [],
+            "selected": {
+              "confidence": 1.0,
+              "nodeIndex": 6,
+              "observedSourceNodeName": "RightLeg",
+              "reason": "exact_alias:rightleg;skin_joint_member;side_token_match"
+            },
+            "status": "DETECTED"
+          },
+          "chest": {
+            "alternates": [],
+            "selected": {
+              "confidence": 0.95,
+              "nodeIndex": 22,
+              "observedSourceNodeName": "Spine02",
+              "reason": "exact_alias:spine02;skin_joint_member"
+            },
+            "status": "DETECTED"
+          },
+          "clavicle_L": {
+            "alternates": [],
+            "selected": {
+              "confidence": 0.95,
+              "nodeIndex": 11,
+              "observedSourceNodeName": "LeftShoulder",
+              "reason": "exact_alias:leftshoulder;skin_joint_member"
+            },
+            "status": "DETECTED"
+          },
+          "clavicle_R": {
+            "alternates": [],
+            "selected": {
+              "confidence": 1.0,
+              "nodeIndex": 15,
+              "observedSourceNodeName": "RightShoulder",
+              "reason": "exact_alias:rightshoulder;skin_joint_member;side_token_match"
+            },
+            "status": "DETECTED"
+          },
+          "eye_L": {
+            "alternates": [],
+            "selected": null,
+            "status": "NOT_DETECTED"
+          },
+          "eye_R": {
+            "alternates": [],
+            "selected": null,
+            "status": "NOT_DETECTED"
+          },
+          "foot_L": {
+            "alternates": [],
+            "selected": {
+              "confidence": 1.0,
+              "nodeIndex": 1,
+              "observedSourceNodeName": "LeftFoot",
+              "reason": "exact_alias:leftfoot;skin_joint_member;side_token_match"
+            },
+            "status": "DETECTED"
+          },
+          "foot_R": {
+            "alternates": [],
+            "selected": {
+              "confidence": 1.0,
+              "nodeIndex": 5,
+              "observedSourceNodeName": "RightFoot",
+              "reason": "exact_alias:rightfoot;skin_joint_member;side_token_match"
+            },
+            "status": "DETECTED"
+          },
+          "hand_L": {
+            "alternates": [],
+            "selected": {
+              "confidence": 1.0,
+              "nodeIndex": 8,
+              "observedSourceNodeName": "LeftHand",
+              "reason": "exact_alias:lefthand;skin_joint_member;side_token_match"
+            },
+            "status": "DETECTED"
+          },
+          "hand_R": {
+            "alternates": [],
+            "selected": {
+              "confidence": 1.0,
+              "nodeIndex": 12,
+              "observedSourceNodeName": "RightHand",
+              "reason": "exact_alias:righthand;skin_joint_member;side_token_match"
+            },
+            "status": "DETECTED"
+          },
+          "head": {
+            "alternates": [
+              {
+                "confidence": 0.65,
+                "nodeIndex": 16,
+                "observedSourceNodeName": "head_end",
+                "reason": "substring_alias:head;skin_joint_member"
+              },
+              {
+                "confidence": 0.65,
+                "nodeIndex": 17,
+                "observedSourceNodeName": "headfront",
+                "reason": "substring_alias:head;skin_joint_member"
+              }
+            ],
+            "selected": {
+              "confidence": 0.95,
+              "nodeIndex": 18,
+              "observedSourceNodeName": "Head",
+              "reason": "exact_alias:head;skin_joint_member"
+            },
+            "status": "DETECTED"
+          },
+          "jaw": {
+            "alternates": [],
+            "selected": null,
+            "status": "NOT_DETECTED"
+          },
+          "lowerArm_L": {
+            "alternates": [],
+            "selected": {
+              "confidence": 1.0,
+              "nodeIndex": 9,
+              "observedSourceNodeName": "LeftForeArm",
+              "reason": "exact_alias:leftforearm;skin_joint_member;side_token_match"
+            },
+            "status": "DETECTED"
+          },
+          "lowerArm_R": {
+            "alternates": [],
+            "selected": {
+              "confidence": 1.0,
+              "nodeIndex": 13,
+              "observedSourceNodeName": "RightForeArm",
+              "reason": "exact_alias:rightforearm;skin_joint_member;side_token_match"
+            },
+            "status": "DETECTED"
+          },
+          "neck": {
+            "alternates": [],
+            "selected": {
+              "confidence": 0.95,
+              "nodeIndex": 19,
+              "observedSourceNodeName": "neck",
+              "reason": "exact_alias:neck;skin_joint_member"
+            },
+            "status": "DETECTED"
+          },
+          "pelvis": {
+            "alternates": [],
+            "selected": {
+              "confidence": 0.95,
+              "nodeIndex": 23,
+              "observedSourceNodeName": "Hips",
+              "reason": "exact_alias:hips;skin_joint_member"
+            },
+            "status": "DETECTED"
+          },
+          "root": {
+            "alternates": [],
+            "selected": {
+              "confidence": 0.85,
+              "nodeIndex": 25,
+              "observedSourceNodeName": "Armature",
+              "reason": "exact_alias:armature"
+            },
+            "status": "DETECTED"
+          },
+          "spine": {
+            "alternates": [
+              {
+                "confidence": 0.65,
+                "nodeIndex": 21,
+                "observedSourceNodeName": "Spine01",
+                "reason": "substring_alias:spine;skin_joint_member"
+              },
+              {
+                "confidence": 0.65,
+                "nodeIndex": 22,
+                "observedSourceNodeName": "Spine02",
+                "reason": "substring_alias:spine;skin_joint_member"
+              }
+            ],
+            "selected": {
+              "confidence": 0.95,
+              "nodeIndex": 20,
+              "observedSourceNodeName": "Spine",
+              "reason": "exact_alias:spine;skin_joint_member"
+            },
+            "status": "DETECTED"
+          },
+          "thigh_L": {
+            "alternates": [],
+            "selected": {
+              "confidence": 1.0,
+              "nodeIndex": 3,
+              "observedSourceNodeName": "LeftUpLeg",
+              "reason": "exact_alias:leftupleg;skin_joint_member;side_token_match"
+            },
+            "status": "DETECTED"
+          },
+          "thigh_R": {
+            "alternates": [],
+            "selected": {
+              "confidence": 1.0,
+              "nodeIndex": 7,
+              "observedSourceNodeName": "RightUpLeg",
+              "reason": "exact_alias:rightupleg;skin_joint_member;side_token_match"
+            },
+            "status": "DETECTED"
+          },
+          "toe_L": {
+            "alternates": [],
+            "selected": {
+              "confidence": 1.0,
+              "nodeIndex": 0,
+              "observedSourceNodeName": "LeftToeBase",
+              "reason": "exact_alias:lefttoebase;skin_joint_member;side_token_match"
+            },
+            "status": "DETECTED"
+          },
+          "toe_R": {
+            "alternates": [],
+            "selected": {
+              "confidence": 1.0,
+              "nodeIndex": 4,
+              "observedSourceNodeName": "RightToeBase",
+              "reason": "exact_alias:righttoebase;skin_joint_member;side_token_match"
+            },
+            "status": "DETECTED"
+          },
+          "upperArm_L": {
+            "alternates": [],
+            "selected": {
+              "confidence": 1.0,
+              "nodeIndex": 10,
+              "observedSourceNodeName": "LeftArm",
+              "reason": "exact_alias:leftarm;skin_joint_member;side_token_match"
+            },
+            "status": "DETECTED"
+          },
+          "upperArm_R": {
+            "alternates": [],
+            "selected": {
+              "confidence": 1.0,
+              "nodeIndex": 14,
+              "observedSourceNodeName": "RightArm",
+              "reason": "exact_alias:rightarm;skin_joint_member;side_token_match"
+            },
+            "status": "DETECTED"
+          }
+        },
+        "detectionPolicy": "name_alias+skin_joint+side+hierarchy \u2014 not name-only",
+        "jointNodeCount": 24,
+        "nodeCount": 26
+      },
+      "skeleton": {
+        "hierarchyEdgeCount": 25,
+        "hierarchyEdgesSample": [
+          {
+            "childIndex": 0,
+            "childName": "LeftToeBase",
+            "parentIndex": 1,
+            "parentName": "LeftFoot"
+          },
+          {
+            "childIndex": 1,
+            "childName": "LeftFoot",
+            "parentIndex": 2,
+            "parentName": "LeftLeg"
+          },
+          {
+            "childIndex": 2,
+            "childName": "LeftLeg",
+            "parentIndex": 3,
+            "parentName": "LeftUpLeg"
+          },
+          {
+            "childIndex": 4,
+            "childName": "RightToeBase",
+            "parentIndex": 5,
+            "parentName": "RightFoot"
+          },
+          {
+            "childIndex": 5,
+            "childName": "RightFoot",
+            "parentIndex": 6,
+            "parentName": "RightLeg"
+          },
+          {
+            "childIndex": 6,
+            "childName": "RightLeg",
+            "parentIndex": 7,
+            "parentName": "RightUpLeg"
+          },
+          {
+            "childIndex": 8,
+            "childName": "LeftHand",
+            "parentIndex": 9,
+            "parentName": "LeftForeArm"
+          },
+          {
+            "childIndex": 9,
+            "childName": "LeftForeArm",
+            "parentIndex": 10,
+            "parentName": "LeftArm"
+          },
+          {
+            "childIndex": 10,
+            "childName": "LeftArm",
+            "parentIndex": 11,
+            "parentName": "LeftShoulder"
+          },
+          {
+            "childIndex": 12,
+            "childName": "RightHand",
+            "parentIndex": 13,
+            "parentName": "RightForeArm"
+          },
+          {
+            "childIndex": 13,
+            "childName": "RightForeArm",
+            "parentIndex": 14,
+            "parentName": "RightArm"
+          },
+          {
+            "childIndex": 14,
+            "childName": "RightArm",
+            "parentIndex": 15,
+            "parentName": "RightShoulder"
+          },
+          {
+            "childIndex": 16,
+            "childName": "head_end",
+            "parentIndex": 18,
+            "parentName": "Head"
+          },
+          {
+            "childIndex": 17,
+            "childName": "headfront",
+            "parentIndex": 18,
+            "parentName": "Head"
+          },
+          {
+            "childIndex": 18,
+            "childName": "Head",
+            "parentIndex": 19,
+            "parentName": "neck"
+          },
+          {
+            "childIndex": 11,
+            "childName": "LeftShoulder",
+            "parentIndex": 20,
+            "parentName": "Spine"
+          },
+          {
+            "childIndex": 15,
+            "childName": "RightShoulder",
+            "parentIndex": 20,
+            "parentName": "Spine"
+          },
+          {
+            "childIndex": 19,
+            "childName": "neck",
+            "parentIndex": 20,
+            "parentName": "Spine"
+          },
+          {
+            "childIndex": 20,
+            "childName": "Spine",
+            "parentIndex": 21,
+            "parentName": "Spine01"
+          },
+          {
+            "childIndex": 21,
+            "childName": "Spine01",
+            "parentIndex": 22,
+            "parentName": "Spine02"
+          },
+          {
+            "childIndex": 3,
+            "childName": "LeftUpLeg",
+            "parentIndex": 23,
+            "parentName": "Hips"
+          },
+          {
+            "childIndex": 7,
+            "childName": "RightUpLeg",
+            "parentIndex": 23,
+            "parentName": "Hips"
+          },
+          {
+            "childIndex": 22,
+            "childName": "Spine02",
+            "parentIndex": 23,
+            "parentName": "Hips"
+          },
+          {
+            "childIndex": 24,
+            "childName": "char1",
+            "parentIndex": 25,
+            "parentName": "Armature"
+          },
+          {
+            "childIndex": 23,
+            "childName": "Hips",
+            "parentIndex": 25,
+            "parentName": "Armature"
+          }
+        ],
+        "jointCount": 24,
+        "jointIndices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "skinCount": 1,
+        "skins": [
+          {
+            "index": 0,
+            "jointCount": 24,
+            "joints": [
+              23,
+              3,
+              2,
+              1,
+              0,
+              7,
+              6,
+              5,
+              4,
+              22,
+              21,
+              20,
+              11,
+              10,
+              9,
+              8,
+              15,
+              14,
+              13,
+              12,
+              19,
+              18,
+              16,
+              17
+            ],
+            "name": "Armature",
+            "skeletonRoot": null
+          }
+        ],
+        "skinsDetected": true,
+        "status": "DETECTED"
+      },
+      "skinning": {
+        "skinnedMeshNodes": [
+          24
+        ],
+        "status": "DETECTED"
+      },
+      "sourceAsset": {
+        "byteLength": 7543428,
+        "exists": true,
+        "format": "glb",
+        "path": "d:\\NURION Character Landmarker\\fast_track\\working\\meshy_silver_starlight\\baseline\\Idle_15_withSkin_WORKING_BASELINE.glb",
+        "sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+        "suffix": ".glb",
+        "supported": true
+      },
+      "talkingCapabilities": {
+        "visemeCandidates": {
+          "matchedNames": [],
+          "status": "NOT_DETECTED"
+        }
+      },
+      "textures": {
+        "imageCount": 1,
+        "status": "DETECTED",
+        "textureCount": 2
+      }
+    },
+    "adapt02": {
+      "adapt01InspectionDigest": "d6efd3e1b022b57c1ba91760a2b630ae75590b9e9b34c26ad83b00531ed18bf8",
+      "adapterMetadata": {
+        "axisConversion": {
+          "nonDestructive": true,
+          "upConversion": "IDENTITY_PENDING_RUNTIME"
+        },
+        "correspondence": {
+          "NURION_calf_L": {
+            "sourceNode": "LeftLeg",
+            "status": "RESOLVED"
+          },
+          "NURION_calf_R": {
+            "sourceNode": "RightLeg",
+            "status": "RESOLVED"
+          },
+          "NURION_chest": {
+            "sourceNode": "Spine02",
+            "status": "RESOLVED"
+          },
+          "NURION_clavicle_L": {
+            "sourceNode": "LeftShoulder",
+            "status": "RESOLVED"
+          },
+          "NURION_clavicle_R": {
+            "sourceNode": "RightShoulder",
+            "status": "RESOLVED"
+          },
+          "NURION_foot_L": {
+            "sourceNode": "LeftFoot",
+            "status": "RESOLVED"
+          },
+          "NURION_foot_R": {
+            "sourceNode": "RightFoot",
+            "status": "RESOLVED"
+          },
+          "NURION_hand_L": {
+            "sourceNode": "LeftHand",
+            "status": "RESOLVED"
+          },
+          "NURION_hand_R": {
+            "sourceNode": "RightHand",
+            "status": "RESOLVED"
+          },
+          "NURION_head": {
+            "sourceNode": "Head",
+            "status": "RESOLVED"
+          },
+          "NURION_lowerArm_L": {
+            "sourceNode": "LeftForeArm",
+            "status": "RESOLVED"
+          },
+          "NURION_lowerArm_R": {
+            "sourceNode": "RightForeArm",
+            "status": "RESOLVED"
+          },
+          "NURION_neck": {
+            "sourceNode": "neck",
+            "status": "RESOLVED"
+          },
+          "NURION_pelvis": {
+            "sourceNode": "Hips",
+            "status": "RESOLVED"
+          },
+          "NURION_root": {
+            "sourceNode": "Armature",
+            "status": "RESOLVED"
+          },
+          "NURION_spine01": {
+            "sourceNode": "Spine",
+            "status": "RESOLVED"
+          },
+          "NURION_thigh_L": {
+            "sourceNode": "LeftUpLeg",
+            "status": "RESOLVED"
+          },
+          "NURION_thigh_R": {
+            "sourceNode": "RightUpLeg",
+            "status": "RESOLVED"
+          },
+          "NURION_toe_L": {
+            "sourceNode": "LeftToeBase",
+            "status": "RESOLVED"
+          },
+          "NURION_toe_R": {
+            "sourceNode": "RightToeBase",
+            "status": "RESOLVED"
+          },
+          "NURION_upperArm_L": {
+            "sourceNode": "LeftArm",
+            "status": "RESOLVED"
+          },
+          "NURION_upperArm_R": {
+            "sourceNode": "RightArm",
+            "status": "RESOLVED"
+          }
+        },
+        "destructive": false,
+        "faceGeneration": "DENY",
+        "helperRigGeneration": "DENY",
+        "scaleNormalization": {
+          "mode": "REPORT_ONLY",
+          "samples": [
+            [
+              0.9999998807907104,
+              0.9999999403953552,
+              0.9999998211860657
+            ],
+            [
+              0.9999998211860657,
+              1,
+              1
+            ],
+            [
+              0.9999999403953552,
+              1,
+              0.9999999403953552
+            ],
+            [
+              1,
+              1.0000001192092896,
+              1
+            ],
+            [
+              1,
+              1.0000001192092896,
+              0.9999999403953552
+            ],
+            [
+              1.0000001192092896,
+              0.9999998211860657,
+              1.0000001192092896
+            ],
+            [
+              0.9999999403953552,
+              1,
+              0.9999999403953552
+            ],
+            [
+              1.0000001192092896,
+              1.0000001192092896,
+              0.9999999403953552
+            ],
+            [
+              0.9999998807907104,
+              1,
+              1
+            ],
+            [
+              1.0000001192092896,
+              1,
+              1
+            ],
+            [
+              1.0000001192092896,
+              1.0000001192092896,
+              1
+            ],
+            [
+              1,
+              1,
+              1.0000001192092896
+            ],
+            [
+              0.9999999403953552,
+              0.9999998807907104,
+              0.9999998807907104
+            ],
+            [
+              0.9999998807907104,
+              0.9999998211860657,
+              0.9999999403953552
+            ],
+            [
+              1.0000001192092896,
+              0.9999998807907104,
+              1
+            ],
+            [
+              1,
+              0.9999998807907104,
+              1
+            ]
+          ]
+        },
+        "skinWeightMutation": "DENY",
+        "sourceBoneDelete": "DENY",
+        "sourceBoneInsert": "DENY",
+        "sourceBoneRename": "DENY"
+      },
+      "ambiguousMappings": [],
+      "axisConventionIdentity": {
+        "forward": "+Z",
+        "handedness": "right-handed",
+        "right": "+X",
+        "up": "+Y"
+      },
+      "axisObservation": {
+        "assetVersion": "2.0",
+        "forwardAxis": "NOT_DECLARED",
+        "generator": "Khronos glTF Blender I/O v4.0.43",
+        "gltfExtrasKeys": [],
+        "nodeScaleSamples": [
+          [
+            0.9999998807907104,
+            0.9999999403953552,
+            0.9999998211860657
+          ],
+          [
+            0.9999998211860657,
+            1,
+            1
+          ],
+          [
+            0.9999999403953552,
+            1,
+            0.9999999403953552
+          ],
+          [
+            1,
+            1.0000001192092896,
+            1
+          ],
+          [
+            1,
+            1.0000001192092896,
+            0.9999999403953552
+          ],
+          [
+            1.0000001192092896,
+            0.9999998211860657,
+            1.0000001192092896
+          ],
+          [
+            0.9999999403953552,
+            1,
+            0.9999999403953552
+          ],
+          [
+            1.0000001192092896,
+            1.0000001192092896,
+            0.9999999403953552
+          ],
+          [
+            0.9999998807907104,
+            1,
+            1
+          ],
+          [
+            1.0000001192092896,
+            1,
+            1
+          ],
+          [
+            1.0000001192092896,
+            1.0000001192092896,
+            1
+          ],
+          [
+            1,
+            1,
+            1.0000001192092896
+          ],
+          [
+            0.9999999403953552,
+            0.9999998807907104,
+            0.9999998807907104
+          ],
+          [
+            0.9999998807907104,
+            0.9999998211860657,
+            0.9999999403953552
+          ],
+          [
+            1.0000001192092896,
+            0.9999998807907104,
+            1
+          ],
+          [
+            1,
+            0.9999998807907104,
+            1
+          ]
+        ],
+        "note": "Axis inferred only from declared extras; silent invention DENY",
+        "status": "OBSERVED",
+        "upAxis": "NOT_DECLARED"
+      },
+      "blockers": [
+        {
+          "code": "CHAIN_VALIDATION",
+          "detail": {
+            "chain": "spineHead",
+            "reason": "ancestry_break:NURION_spine01->NURION_chest",
+            "status": "BLOCKED"
+          }
+        }
+      ],
+      "canonicalBoneSpecIdentity": {
+        "bindingSchema": "NURION_ADAPT02_CANONICAL_BODY_BINDING_V1",
+        "bodyCoreCount": 23
+      },
+      "chainValidation": {
+        "armL": {
+          "chain": "armL",
+          "resolvedCount": 5,
+          "status": "PASS"
+        },
+        "armR": {
+          "chain": "armR",
+          "resolvedCount": 5,
+          "status": "PASS"
+        },
+        "legL": {
+          "chain": "legL",
+          "resolvedCount": 4,
+          "status": "PASS"
+        },
+        "legR": {
+          "chain": "legR",
+          "resolvedCount": 4,
+          "status": "PASS"
+        },
+        "spineHead": {
+          "chain": "spineHead",
+          "reason": "ancestry_break:NURION_spine01->NURION_chest",
+          "status": "BLOCKED"
+        }
+      },
+      "characterIdentity": "raat01_idle15",
+      "classification": "BLOCKED",
+      "contractCanonicalSha256": "8890235e0b653039a8b8287215f9723ae4e5277e19f618f316df3cff86e23489",
+      "fingerMappings": {
+        "entries": [],
+        "note": "HAND_EXTENSION_V1 not required for ADAPT-02 BODY_CORE mapping; FACE/hand detail deferred",
+        "status": "NOT_APPLICABLE"
+      },
+      "hierarchyValidation": {
+        "assignedNodeCount": 22,
+        "status": "PASS"
+      },
+      "issues": [],
+      "lateralityValidation": {
+        "issues": [],
+        "status": "PASS"
+      },
+      "leftArmChain": {
+        "chain": "armL",
+        "resolvedCount": 5,
+        "status": "PASS"
+      },
+      "leftLegChain": {
+        "chain": "legL",
+        "resolvedCount": 4,
+        "status": "PASS"
+      },
+      "pelvisMapping": {
+        "confidence": 0.95,
+        "evidence": [
+          "exact_alias:hips;skin_joint_member",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 23,
+        "semantic": "NURION_pelvis",
+        "sourceNode": "Hips",
+        "status": "RESOLVED"
+      },
+      "preservationEvidence": {
+        "adapt01Mutation": "NONE",
+        "autoRepair": "DENY",
+        "faceGeneration": "DENY",
+        "helperRig": "DENY",
+        "nurionV1Mutation": "NONE",
+        "sourceMeshMutation": "NONE",
+        "sourceSkeletonMutation": "NONE"
+      },
+      "restPoseObservation": {
+        "mode": "REPORT_ONLY",
+        "status": "NOT_DECLARED_IN_ADAPT01"
+      },
+      "retargetCompatibility": {
+        "adapter": {
+          "nonDestructive": true,
+          "upConversion": "IDENTITY_PENDING_RUNTIME"
+        },
+        "canonicalForward": "+Z",
+        "canonicalUp": "+Y",
+        "observedForward": "NOT_DECLARED",
+        "observedUp": "NOT_DECLARED",
+        "reason": [
+          "undeclared_axis_assume_adapter_identity"
+        ],
+        "status": "COMPATIBLE_WITH_ADAPTER"
+      },
+      "rightArmChain": {
+        "chain": "armR",
+        "resolvedCount": 5,
+        "status": "PASS"
+      },
+      "rightLegChain": {
+        "chain": "legR",
+        "resolvedCount": 4,
+        "status": "PASS"
+      },
+      "rootMapping": {
+        "confidence": 0.85,
+        "evidence": [
+          "exact_alias:armature",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 25,
+        "semantic": "NURION_root",
+        "sourceNode": "Armature",
+        "status": "RESOLVED"
+      },
+      "rootPelvisValidation": {
+        "distinct": true,
+        "pelvis": {
+          "confidence": 0.95,
+          "evidence": [
+            "exact_alias:hips;skin_joint_member",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 23,
+          "semantic": "NURION_pelvis",
+          "sourceNode": "Hips",
+          "status": "RESOLVED"
+        },
+        "root": {
+          "confidence": 0.85,
+          "evidence": [
+            "exact_alias:armature",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 25,
+          "semantic": "NURION_root",
+          "sourceNode": "Armature",
+          "status": "RESOLVED"
+        },
+        "status": "PASS"
+      },
+      "scaleObservation": {
+        "nodeScaleSamples": [
+          [
+            0.9999998807907104,
+            0.9999999403953552,
+            0.9999998211860657
+          ],
+          [
+            0.9999998211860657,
+            1,
+            1
+          ],
+          [
+            0.9999999403953552,
+            1,
+            0.9999999403953552
+          ],
+          [
+            1,
+            1.0000001192092896,
+            1
+          ],
+          [
+            1,
+            1.0000001192092896,
+            0.9999999403953552
+          ],
+          [
+            1.0000001192092896,
+            0.9999998211860657,
+            1.0000001192092896
+          ],
+          [
+            0.9999999403953552,
+            1,
+            0.9999999403953552
+          ],
+          [
+            1.0000001192092896,
+            1.0000001192092896,
+            0.9999999403953552
+          ],
+          [
+            0.9999998807907104,
+            1,
+            1
+          ],
+          [
+            1.0000001192092896,
+            1,
+            1
+          ],
+          [
+            1.0000001192092896,
+            1.0000001192092896,
+            1
+          ],
+          [
+            1,
+            1,
+            1.0000001192092896
+          ],
+          [
+            0.9999999403953552,
+            0.9999998807907104,
+            0.9999998807907104
+          ],
+          [
+            0.9999998807907104,
+            0.9999998211860657,
+            0.9999999403953552
+          ],
+          [
+            1.0000001192092896,
+            0.9999998807907104,
+            1
+          ],
+          [
+            1,
+            0.9999998807907104,
+            1
+          ]
+        ]
+      },
+      "schema": "NURION_ADAPT02_SKELETON_ADAPTATION_CONTRACT_OUTPUT_V1",
+      "semanticMappings": {
+        "NURION_calf_L": {
+          "confidence": 1.0,
+          "evidence": [
+            "exact_alias:leftleg;skin_joint_member;side_token_match",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 2,
+          "semantic": "NURION_calf_L",
+          "sourceNode": "LeftLeg",
+          "status": "RESOLVED"
+        },
+        "NURION_calf_R": {
+          "confidence": 1.0,
+          "evidence": [
+            "exact_alias:rightleg;skin_joint_member;side_token_match",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 6,
+          "semantic": "NURION_calf_R",
+          "sourceNode": "RightLeg",
+          "status": "RESOLVED"
+        },
+        "NURION_chest": {
+          "confidence": 0.95,
+          "evidence": [
+            "exact_alias:spine02;skin_joint_member",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 22,
+          "semantic": "NURION_chest",
+          "sourceNode": "Spine02",
+          "status": "RESOLVED"
+        },
+        "NURION_clavicle_L": {
+          "confidence": 0.95,
+          "evidence": [
+            "exact_alias:leftshoulder;skin_joint_member",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 11,
+          "semantic": "NURION_clavicle_L",
+          "sourceNode": "LeftShoulder",
+          "status": "RESOLVED"
+        },
+        "NURION_clavicle_R": {
+          "confidence": 1.0,
+          "evidence": [
+            "exact_alias:rightshoulder;skin_joint_member;side_token_match",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 15,
+          "semantic": "NURION_clavicle_R",
+          "sourceNode": "RightShoulder",
+          "status": "RESOLVED"
+        },
+        "NURION_foot_L": {
+          "confidence": 1.0,
+          "evidence": [
+            "exact_alias:leftfoot;skin_joint_member;side_token_match",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 1,
+          "semantic": "NURION_foot_L",
+          "sourceNode": "LeftFoot",
+          "status": "RESOLVED"
+        },
+        "NURION_foot_R": {
+          "confidence": 1.0,
+          "evidence": [
+            "exact_alias:rightfoot;skin_joint_member;side_token_match",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 5,
+          "semantic": "NURION_foot_R",
+          "sourceNode": "RightFoot",
+          "status": "RESOLVED"
+        },
+        "NURION_hand_L": {
+          "confidence": 1.0,
+          "evidence": [
+            "exact_alias:lefthand;skin_joint_member;side_token_match",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 8,
+          "semantic": "NURION_hand_L",
+          "sourceNode": "LeftHand",
+          "status": "RESOLVED"
+        },
+        "NURION_hand_R": {
+          "confidence": 1.0,
+          "evidence": [
+            "exact_alias:righthand;skin_joint_member;side_token_match",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 12,
+          "semantic": "NURION_hand_R",
+          "sourceNode": "RightHand",
+          "status": "RESOLVED"
+        },
+        "NURION_head": {
+          "confidence": 0.95,
+          "evidence": [
+            "exact_alias:head;skin_joint_member",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 18,
+          "semantic": "NURION_head",
+          "sourceNode": "Head",
+          "status": "RESOLVED"
+        },
+        "NURION_lowerArm_L": {
+          "confidence": 1.0,
+          "evidence": [
+            "exact_alias:leftforearm;skin_joint_member;side_token_match",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 9,
+          "semantic": "NURION_lowerArm_L",
+          "sourceNode": "LeftForeArm",
+          "status": "RESOLVED"
+        },
+        "NURION_lowerArm_R": {
+          "confidence": 1.0,
+          "evidence": [
+            "exact_alias:rightforearm;skin_joint_member;side_token_match",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 13,
+          "semantic": "NURION_lowerArm_R",
+          "sourceNode": "RightForeArm",
+          "status": "RESOLVED"
+        },
+        "NURION_neck": {
+          "confidence": 0.95,
+          "evidence": [
+            "exact_alias:neck;skin_joint_member",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 19,
+          "semantic": "NURION_neck",
+          "sourceNode": "neck",
+          "status": "RESOLVED"
+        },
+        "NURION_pelvis": {
+          "confidence": 0.95,
+          "evidence": [
+            "exact_alias:hips;skin_joint_member",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 23,
+          "semantic": "NURION_pelvis",
+          "sourceNode": "Hips",
+          "status": "RESOLVED"
+        },
+        "NURION_root": {
+          "confidence": 0.85,
+          "evidence": [
+            "exact_alias:armature",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 25,
+          "semantic": "NURION_root",
+          "sourceNode": "Armature",
+          "status": "RESOLVED"
+        },
+        "NURION_spine01": {
+          "confidence": 0.95,
+          "evidence": [
+            "exact_alias:spine;skin_joint_member",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 20,
+          "semantic": "NURION_spine01",
+          "sourceNode": "Spine",
+          "status": "RESOLVED"
+        },
+        "NURION_thigh_L": {
+          "confidence": 1.0,
+          "evidence": [
+            "exact_alias:leftupleg;skin_joint_member;side_token_match",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 3,
+          "semantic": "NURION_thigh_L",
+          "sourceNode": "LeftUpLeg",
+          "status": "RESOLVED"
+        },
+        "NURION_thigh_R": {
+          "confidence": 1.0,
+          "evidence": [
+            "exact_alias:rightupleg;skin_joint_member;side_token_match",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 7,
+          "semantic": "NURION_thigh_R",
+          "sourceNode": "RightUpLeg",
+          "status": "RESOLVED"
+        },
+        "NURION_toe_L": {
+          "confidence": 1.0,
+          "evidence": [
+            "exact_alias:lefttoebase;skin_joint_member;side_token_match",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 0,
+          "semantic": "NURION_toe_L",
+          "sourceNode": "LeftToeBase",
+          "status": "RESOLVED"
+        },
+        "NURION_toe_R": {
+          "confidence": 1.0,
+          "evidence": [
+            "exact_alias:righttoebase;skin_joint_member;side_token_match",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 4,
+          "semantic": "NURION_toe_R",
+          "sourceNode": "RightToeBase",
+          "status": "RESOLVED"
+        },
+        "NURION_upperArm_L": {
+          "confidence": 1.0,
+          "evidence": [
+            "exact_alias:leftarm;skin_joint_member;side_token_match",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 10,
+          "semantic": "NURION_upperArm_L",
+          "sourceNode": "LeftArm",
+          "status": "RESOLVED"
+        },
+        "NURION_upperArm_R": {
+          "confidence": 1.0,
+          "evidence": [
+            "exact_alias:rightarm;skin_joint_member;side_token_match",
+            "multi_evidence_required",
+            "hierarchy",
+            "laterality_pending",
+            "adapt01_confidence"
+          ],
+          "nodeIndex": 14,
+          "semantic": "NURION_upperArm_R",
+          "sourceNode": "RightArm",
+          "status": "RESOLVED"
+        }
+      },
+      "sourceAssetDigest": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+      "spineChain": {
+        "chain": "spineHead",
+        "reason": "ancestry_break:NURION_spine01->NURION_chest",
+        "status": "BLOCKED"
+      },
+      "unresolvedSemantics": []
+    }
+  },
+  "schema": "NURION_RAAT01_ACCEPTANCE_REPORT_V1",
+  "sourceAsset": {
+    "byteLength": 7543428,
+    "path": "d:\\NURION Character Landmarker\\fast_track\\working\\meshy_silver_starlight\\baseline\\Idle_15_withSkin_WORKING_BASELINE.glb",
+    "sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1"
+  },
+  "stages": {
+    "ADAPT-01": {
+      "adaptationClassification": {
+        "adaptationClass": "CLASS_C",
+        "body": "COMPATIBLE",
+        "bodyCoreHits": 9,
+        "evidenceBased": true,
+        "eye": "MISSING",
+        "face": "MISSING",
+        "jaw": "MISSING",
+        "rationale": [
+          "body_hits=9",
+          "blendshapes=0",
+          "eyes=False/False",
+          "jaw=False",
+          "viseme=False",
+          "body_ok_needs_face_eye_jaw_helper"
+        ],
+        "talking": "MISSING"
+      },
+      "blockers": [],
+      "classification": "CLASS_C",
+      "manualReviewItems": [],
+      "notes": [
+        "sourceSha256=a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1"
+      ],
+      "sourceAsset": {
+        "byteLength": 7543428,
+        "exists": true,
+        "format": "glb",
+        "path": "d:\\NURION Character Landmarker\\fast_track\\working\\meshy_silver_starlight\\baseline\\Idle_15_withSkin_WORKING_BASELINE.glb",
+        "sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+        "suffix": ".glb",
+        "supported": true
+      },
+      "stage": "ADAPT-01",
+      "status": "PASS"
+    },
+    "ADAPT-02": {
+      "blockers": [
+        {
+          "code": "CHAIN_VALIDATION",
+          "detail": {
+            "chain": "spineHead",
+            "reason": "ancestry_break:NURION_spine01->NURION_chest",
+            "status": "BLOCKED"
+          }
+        }
+      ],
+      "chainValidation": {
+        "armL": {
+          "chain": "armL",
+          "resolvedCount": 5,
+          "status": "PASS"
+        },
+        "armR": {
+          "chain": "armR",
+          "resolvedCount": 5,
+          "status": "PASS"
+        },
+        "legL": {
+          "chain": "legL",
+          "resolvedCount": 4,
+          "status": "PASS"
+        },
+        "legR": {
+          "chain": "legR",
+          "resolvedCount": 4,
+          "status": "PASS"
+        },
+        "spineHead": {
+          "chain": "spineHead",
+          "reason": "ancestry_break:NURION_spine01->NURION_chest",
+          "status": "BLOCKED"
+        }
+      },
+      "classification": "BLOCKED",
+      "manualReviewItems": [],
+      "notes": [],
+      "stage": "ADAPT-02",
+      "status": "BLOCKED"
+    },
+    "ADAPT-03": {
+      "blockers": [
+        {
+          "code": "UPSTREAM_BLOCKED",
+          "message": "upstream blocked at ADAPT-02"
+        }
+      ],
+      "classification": "BLOCKED",
+      "manualReviewItems": [],
+      "notes": [
+        "upstream blocked at ADAPT-02"
+      ],
+      "stage": "ADAPT-03",
+      "status": "BLOCKED"
+    },
+    "ADAPT-04": {
+      "blockers": [
+        {
+          "code": "UPSTREAM_BLOCKED",
+          "message": "upstream blocked at ADAPT-02"
+        }
+      ],
+      "classification": "BLOCKED",
+      "manualReviewItems": [],
+      "notes": [
+        "upstream blocked at ADAPT-02"
+      ],
+      "stage": "ADAPT-04",
+      "status": "BLOCKED"
+    },
+    "ADAPT-05": {
+      "blockers": [
+        {
+          "code": "UPSTREAM_BLOCKED",
+          "message": "upstream blocked at ADAPT-02"
+        }
+      ],
+      "classification": "BLOCKED",
+      "manualReviewItems": [],
+      "notes": [
+        "upstream blocked at ADAPT-02"
+      ],
+      "stage": "ADAPT-05",
+      "status": "BLOCKED"
+    },
+    "ADAPT-06": {
+      "blockers": [
+        {
+          "code": "UPSTREAM_BLOCKED",
+          "message": "upstream blocked at ADAPT-02"
+        }
+      ],
+      "classification": "BLOCKED",
+      "manualReviewItems": [],
+      "notes": [
+        "upstream blocked at ADAPT-02"
+      ],
+      "stage": "ADAPT-06",
+      "status": "BLOCKED"
+    }
+  },
+  "testId": "RAAT-01"
+}

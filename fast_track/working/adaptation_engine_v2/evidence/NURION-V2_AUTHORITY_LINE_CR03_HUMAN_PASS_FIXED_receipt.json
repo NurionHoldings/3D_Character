@@ -1,0 +1,22 @@
+{
+  "receiptId": "NURION-V2_AUTHORITY_LINE_CR03_HUMAN_PASS_FIXED",
+  "declaredBy": "etherean",
+  "declaredAtUtc": "20260830T053800Z",
+  "authorityLine": "FIXED",
+  "CR01": "CONSUME ONLY / REOPEN DENY",
+  "CR02": "CONSUME ONLY / REOPEN DENY",
+  "CR03": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+  "V2-CR-04": {
+    "title": "SECOND REAL MESHY ASSET GENERALIZATION",
+    "status": "CANDIDATE ONLY / NOT OPEN",
+    "implementationAuthority": "NONE"
+  },
+  "NURION_ADAPTATION_ENGINE_V2": "NOT_OPEN",
+  "completionEstimate": "~90–91%",
+  "remainingCoreRisk": "CR04 second real Meshy generalization",
+  "policy": {
+    "reProveOrModifyCR01CR02CR03": "DENY",
+    "consumeCR01CR02CR03": "ALLOW",
+    "nextCR": "CR04 SPEC proposal only when Human explicitly starts"
+  }
+}

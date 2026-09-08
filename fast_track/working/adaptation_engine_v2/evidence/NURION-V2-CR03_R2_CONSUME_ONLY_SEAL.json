@@ -1,0 +1,46 @@
+{
+  "receiptId": "NURION-V2-CR03_R2_CONSUME_ONLY_SEAL",
+  "changeRequestId": "V2-CR-03",
+  "revision": "R2",
+  "status": "PROTOTYPE HUMAN PASS / MORPH-WEIGHT RUNTIME TALKING TECHNICAL BASIS CONFIRMED / CONSUME ONLY",
+  "disposition": "CLOSED AS TECHNICAL BASIS — DO NOT REOPEN",
+  "CR03_REOPEN": "DENY",
+  "declaredAtUtc": "20260830T053800Z",
+  "declaredBy": "etherean",
+  "r1Packaging": "HUMAN AUDIT BLOCKED / HISTORICAL / PRESERVED — not technical talking failure",
+  "r1BlockerDisposition": "CLOSED BY R2 PACKAGING + HUMAN FINAL PASS",
+  "humanPassReceipt": "NURION-V2-CR03_R2_HUMAN_PASS_receipt.json",
+  "pins": {
+    "derivedSha256": "fe493789135aaa80f96a6c2377daafd0a3ed016f402ba8d8611c9e3d07c7c8ca",
+    "runtimeVertexProofDigest": "593bf05d1fdebb8697bdf64f06d3f910645fc79043f465a59c20ab70897321e0",
+    "humanAuditedZipSha256": "701cad15f849558944413f16152c4c895d258bbb93c580e27c6ccec3a4fd58fb",
+    "approvedSpecDigest": "3e3885335bcfd8489209a302852230ae6cdd55da89fb8328048f82d8fe4a206c"
+  },
+  "proven": {
+    "asset": "Idle_15 CR02 R2 derived → CR03 talking weights",
+    "staticMorphConsume": true,
+    "glbWeightsAnimation": true,
+    "timedVisemeSequence": true,
+    "temporalVertexDeformation": true,
+    "neutralRestoration": true,
+    "bodySkinPreservation": true,
+    "cr02MorphPositionPreservation": true
+  },
+  "authorityExpansionDeny": [
+    "second Meshy asset generalization without CR04",
+    "V2 production readiness",
+    "NURION ADAPTATION ENGINE V2 OPEN"
+  ],
+  "nextWorkPolicy": "Separate Change Request only — do not reopen CR01/CR02/CR03",
+  "candidateNextCR": "V2-CR-04 SECOND REAL MESHY ASSET GENERALIZATION",
+  "authority": {
+    "V2-CR-01": "CONSUME ONLY / REOPEN DENY",
+    "V2-CR-02": "CONSUME ONLY / REOPEN DENY",
+    "V2-CR-03": "CONSUME ONLY / REOPEN DENY",
+    "V2-CR-04": "CANDIDATE / NOT OPEN",
+    "Engine V1": "CLOSED / PASS / CONSUME ONLY",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN"
+  },
+  "combinedTechnicalBasis": "CR01 BODY semantic + CR02 FACE morph deformation + CR03 morph-weight runtime TALKING — all Human-audited on Idle_15",
+  "completionEstimateNote": "~90–91%; remaining core risk ≈ CR04 second Meshy generalization"
+}

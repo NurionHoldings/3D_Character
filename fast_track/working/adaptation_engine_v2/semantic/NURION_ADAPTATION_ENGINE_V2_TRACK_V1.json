@@ -1,0 +1,40 @@
+{
+  "schema": "NURION_ADAPTATION_ENGINE_V2_TRACK_V1",
+  "trackId": "NURION_CHARACTER_ADAPTATION_ENGINE_V2",
+  "status": "CLOSED / PASS",
+  "updatedAtUtc": "20260830T075600Z",
+  "declaredBy": "etherean",
+  "authorityLine": "FINAL — Engine V1 CLOSED; CR01–CR04 CONSUME ONLY; IRG HUMAN PASS; Engine V2 CLOSED / PASS; RELEASE AUTHORITATIVE FINAL",
+  "completionEstimate": "100%",
+  "completionScope": "DECLARED V2 SUPPORT ENVELOPE",
+  "release": {
+    "status": "AUTHORITATIVE FINAL",
+    "humanAuditedZipSha256": "233521b68a3e4a750c3854f0eeb4ee90aa1db6a442cd5eadaa64922fb67ddf72",
+    "finalReleaseDigest": "3f144ec3a78cd5e423384ec4b620f96a9c430ef18a878796188886818287b5a9",
+    "approvedSpecDigest": "a78769ecbcfc2c0094ad059dd312e565c27c975f3d68bef218c5d03c1539511a",
+    "finalization": "semantic/NURION_ADAPTATION_ENGINE_V2_RELEASE_FINALIZATION.json",
+    "auditedManifestDigest": "c7cfe95874eb07237fb4f9c72957d4b7a0449b160c522b042fc007843284901a"
+  },
+  "changeRequests": [
+    {"id": "V2-CR-01", "status": "HUMAN PASS / CONSUME ONLY / REOPEN DENY"},
+    {"id": "V2-CR-02", "status": "HUMAN PASS / CONSUME ONLY / REOPEN DENY"},
+    {"id": "V2-CR-03", "status": "HUMAN PASS / CONSUME ONLY / REOPEN DENY"},
+    {"id": "V2-CR-04", "status": "HUMAN PASS / CONSUME ONLY / REOPEN DENY", "HC-01": "CLOSED BY R3"},
+    {"id": "V2-CR-04-GAP-01", "status": "HUMAN PASS / CLOSED INTO CR04 R3", "REOPEN": "DENY"},
+    {
+      "id": "V2-IRG-01",
+      "alias": "V2-INTEGRATION-RELEASE-GATE",
+      "status": "HUMAN PASS / CLOSED",
+      "revision": "R2",
+      "humanAuditedZipSha256": "233521b68a3e4a750c3854f0eeb4ee90aa1db6a442cd5eadaa64922fb67ddf72",
+      "IRG-P06-SELF-CONTAINED-01": "CLOSED BY R2"
+    }
+  ],
+  "historical": {
+    "IRG_R1": "HUMAN AUDIT BLOCKED / HISTORICAL / PRESERVED — 49f015f9…2fb9"
+  },
+  "engineV1": "CLOSED / PASS / CONSUME ONLY",
+  "v2InternalWork": "TERMINATED",
+  "immutableUpstreamPolicy": "V2 RELEASE = consume only; silent mutation DENY; Post-V2 = separate CR only",
+  "next": "No further V2 internal work. Post-V2 features require explicit separate Change Requests."
+}

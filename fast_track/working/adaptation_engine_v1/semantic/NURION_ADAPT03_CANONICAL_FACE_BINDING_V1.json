@@ -1,0 +1,173 @@
+{
+  "attachmentSnapshot": {
+    "assemblyBaselineChild": "FACE_Rig_Root",
+    "assemblyBaselineParent": "NURION_head",
+    "child": "FACE_Rig_Root",
+    "crossBoundaryOwnershipCollision": "DENY",
+    "parent": "NURION_head",
+    "schema": "NURION_ADAPT03_ATTACHMENT_SNAPSHOT_V1",
+    "sourceIdentity": "NURION_PRODUCT03_FACE_BODY_RUNTIME_V1",
+    "type": "SOLE_ATTACHMENT"
+  },
+  "eyeCalibrationFingerprintSha256": "2d1dbb6772cd74c2a7dc991cf497d58dc5b803359f5430105dbe4ff9e513ff19",
+  "eyeTalkingSnapshot": {
+    "coplayPassCount": 5,
+    "eyeCalibrationFingerprintSha256": "2d1dbb6772cd74c2a7dc991cf497d58dc5b803359f5430105dbe4ff9e513ff19",
+    "eyeChannels": [
+      "FACE_eyeBlinkLeft",
+      "FACE_eyeBlinkRight",
+      "FACE_eyeSquintLeft",
+      "FACE_eyeSquintRight",
+      "FACE_eyeWideLeft",
+      "FACE_eyeWideRight"
+    ],
+    "faceLockUnmutated": true,
+    "schema": "NURION_ADAPT03_EYE_TALKING_SNAPSHOT_V1",
+    "sourceIdentity": "NURION_PRODUCT03_FACE_BODY_RUNTIME_V1",
+    "talkingStatus": "GO"
+  },
+  "faceBodyAttachment": {
+    "child": "FACE_Rig_Root",
+    "parent": "NURION_head",
+    "type": "SOLE_ATTACHMENT"
+  },
+  "faceSemanticSnapshot": {
+    "canonicalContract": "NURION_FACE_CANONICAL_V1",
+    "essentialCount": 25,
+    "essentialExpressions": [
+      "FACE_browDownLeft",
+      "FACE_browDownRight",
+      "FACE_browInnerUpLeft",
+      "FACE_browInnerUpRight",
+      "FACE_browOuterUpLeft",
+      "FACE_browOuterUpRight",
+      "FACE_cheekRaiseLeft",
+      "FACE_cheekRaiseRight",
+      "FACE_dentalLip",
+      "FACE_eyeBlinkLeft",
+      "FACE_eyeBlinkRight",
+      "FACE_eyeSquintLeft",
+      "FACE_eyeSquintRight",
+      "FACE_eyeWideLeft",
+      "FACE_eyeWideRight",
+      "FACE_lipsPart",
+      "FACE_lipsTight",
+      "FACE_mouthFrownLeft",
+      "FACE_mouthFrownRight",
+      "FACE_mouthOpen",
+      "FACE_mouthPlosive",
+      "FACE_mouthPucker",
+      "FACE_mouthSmileLeft",
+      "FACE_mouthSmileRight",
+      "FACE_mouthWiden"
+    ],
+    "expressionOwned": [
+      "FACE_browDownLeft",
+      "FACE_browDownRight",
+      "FACE_browInnerUpLeft",
+      "FACE_browInnerUpRight",
+      "FACE_browOuterUpLeft",
+      "FACE_browOuterUpRight",
+      "FACE_cheekRaiseLeft",
+      "FACE_cheekRaiseRight",
+      "FACE_eyeBlinkLeft",
+      "FACE_eyeBlinkRight",
+      "FACE_eyeSquintLeft",
+      "FACE_eyeSquintRight",
+      "FACE_eyeWideLeft",
+      "FACE_eyeWideRight"
+    ],
+    "legacyAdapterContract": {
+      "PRES_Blink_L": [
+        "FACE_eyeBlinkLeft"
+      ],
+      "PRES_Blink_R": [
+        "FACE_eyeBlinkRight"
+      ],
+      "PRES_JawOpen": [
+        "FACE_mouthOpen"
+      ],
+      "PRES_SmileMild": [
+        "FACE_mouthSmileLeft",
+        "FACE_mouthSmileRight"
+      ],
+      "PRES_Viseme_A": [
+        "FACE_mouthOpen"
+      ],
+      "PRES_Viseme_E": [
+        "FACE_mouthWiden"
+      ],
+      "PRES_Viseme_M": [
+        "FACE_mouthPlosive"
+      ],
+      "PRES_Viseme_O": [
+        "FACE_mouthPucker"
+      ],
+      "renamePresSmileMildToPresSmile": "DENY"
+    },
+    "schema": "NURION_ADAPT03_FACE_SEMANTIC_SNAPSHOT_V1",
+    "smileFrown": [
+      "FACE_mouthFrownLeft",
+      "FACE_mouthFrownRight",
+      "FACE_mouthSmileLeft",
+      "FACE_mouthSmileRight"
+    ],
+    "sourceIdentity": "NURION_FACE_CANONICAL_V1_NAMING_TABLE",
+    "speechOwned": [
+      "FACE_dentalLip",
+      "FACE_lipsPart",
+      "FACE_lipsTight",
+      "FACE_mouthOpen",
+      "FACE_mouthPlosive",
+      "FACE_mouthPucker",
+      "FACE_mouthWiden"
+    ]
+  },
+  "invariants": {
+    "adapt04Implementation": "NOT_STARTED",
+    "eyeCalibrationMutation": "DENY",
+    "faceAuthorityMutation": "DENY",
+    "physicalHelperRigAugmentation": "DENY_IN_ADAPT03",
+    "talkingAuthorityMutation": "DENY"
+  },
+  "revision": "R1",
+  "role": "CONSUME_ONLY cryptographically pinned FACE authority for ADAPT-03",
+  "schema": "NURION_ADAPT03_CANONICAL_FACE_BINDING_V1",
+  "snapshot": {
+    "attachmentDigest": "5ff7277baf421a9cc59fef35f8892f9c26bab765817641719682e712e0171e0f",
+    "attachmentSnapshotFile": "semantic/NURION_ADAPT03_ATTACHMENT_SNAPSHOT_V1.json",
+    "derivation": "READ_ONLY_EXTRACT",
+    "eyeTalkingDigest": "63fd641857f4c5f5255a26f721a675030e4674e9caeb718f0fdf861d6c5c011a",
+    "eyeTalkingSnapshotFile": "semantic/NURION_ADAPT03_EYE_TALKING_SNAPSHOT_V1.json",
+    "faceSemanticDigest": "eb10f6455295af2138914c15382ea8382ed8e9e4d41059ea3158f270468b8bc1",
+    "faceSemanticSnapshotFile": "semantic/NURION_ADAPT03_FACE_SEMANTIC_SNAPSHOT_V1.json"
+  },
+  "talkingStatus": "GO",
+  "upstream": {
+    "assemblyBaseline": {
+      "identity": "NURION_PRODUCT01_CHARACTER_ASSEMBLY_BASELINE_V1",
+      "repoRel": "fast_track/working/meshy_silver_starlight/semantic/NURION_PRODUCT01_CHARACTER_ASSEMBLY_BASELINE_V1.json",
+      "sha256": "1a38586905d155053f7eff6a625bb3497a2a17235892017e4ad277ce06c14605"
+    },
+    "compositionPolicy": {
+      "identity": "NURION_FACE_COMPOSITION_POLICY_V1",
+      "repoRel": "fast_track/working/meshy_silver_starlight/semantic/NURION_FACE_COMPOSITION_POLICY_V1.json",
+      "sha256": "da5b7399cc291dcf1f00fbc35052f5f69215862c26a5cf7d77c465a6778f51d3"
+    },
+    "faceBodyRuntime": {
+      "identity": "NURION_PRODUCT03_FACE_BODY_RUNTIME_V1",
+      "repoRel": "fast_track/working/meshy_silver_starlight/semantic/NURION_PRODUCT03_FACE_BODY_RUNTIME_V1.json",
+      "sha256": "917d640f10946e4b77fe5dafa8f6c649e36b95198361024fe4514c69d05f0fef"
+    },
+    "faceProductLock": {
+      "identity": "NURION_FACE_PRODUCT_LOCK_V1",
+      "repoRel": "fast_track/working/meshy_silver_starlight/semantic/NURION_FACE_PRODUCT_LOCK_V1.json",
+      "sha256": "07830e1c34ce79b1d9ff9fc15a8b456ef7e3438d05ae7709d3515c00baebcf06"
+    },
+    "namingTable": {
+      "identity": "NURION_FACE_CANONICAL_V1_NAMING_TABLE",
+      "repoRel": "fast_track/working/meshy_silver_starlight/semantic/NURION_FACE_CANONICAL_V1_NAMING_TABLE.json",
+      "sha256": "61995e5c47b1c25d17cdf8733a8d23b87a7faae667dc5724ad3ea2372fe15187"
+    }
+  }
+}

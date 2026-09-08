@@ -1,0 +1,54 @@
+{
+  "schema": "NURION_ADAPTATION_ENGINE_V2_CR04_GAP01_TRACK_V1",
+  "changeRequest": "V2-CR-04-GAP-01",
+  "parentChangeRequest": "V2-CR-04",
+  "title": "ASSET-INDEPENDENT FACIAL REGION RESOLUTION",
+  "revision": "R3",
+  "status": "HUMAN_PASS_CLOSED_INTO_CR04",
+  "phase": "CLOSED",
+  "implementationAuthority": "NONE",
+  "openStatus": "CLOSED / CONSUME ONLY / FOLDED INTO CR04 R3",
+  "GAP01_REOPEN": "DENY",
+  "updatedAtUtc": "20260830T072600Z",
+  "declaredBy": "etherean",
+  "humanSpecGate": {
+    "required": true,
+    "status": "APPROVED",
+    "approvedBy": "etherean",
+    "approvedAt": "20260830T071400Z",
+    "approvedSpecDigest": "4a8467ad945d3c56d9222075c44ae4cc12e8df5edcd833d4091b046901b903f3",
+    "specPath": "semantic/NURION_ADAPTATION_ENGINE_V2_CR04_GAP01_ASSET_INDEPENDENT_FACIAL_REGION_RESOLUTION_SPEC_R1.json"
+  },
+  "humanFinalGate": {
+    "required": true,
+    "status": "PASS",
+    "approvedBy": "etherean",
+    "approvedAt": "20260830T072600Z",
+    "parentHumanPassReceipt": "evidence/NURION-V2-CR04_R3_HUMAN_PASS_receipt.json",
+    "closes": "CR04-GENERALIZATION-HC-01"
+  },
+  "secondAsset": {
+    "status": "PRESERVED / HUMAN-AUDITED PIN",
+    "sha256": "f3f9e343c8ba3c9a503a8423293dec90bb6be50f809f1321f4f6658b1bea133e",
+    "characterFamily": "Meshy_AI_Sporty_Studio_Portrai_biped"
+  },
+  "upstream": {
+    "CR01": "CONSUME_ONLY / REOPEN DENY",
+    "CR02": "CONSUME_ONLY / REOPEN DENY",
+    "CR03": "CONSUME_ONLY / REOPEN DENY",
+    "REOPEN": "DENY"
+  },
+  "engineV2": "NOT_OPEN",
+  "pins": {
+    "secondAssetSha256": "f3f9e343c8ba3c9a503a8423293dec90bb6be50f809f1321f4f6658b1bea133e",
+    "derivedSha256": "55601949d6fc67eaebe405e683134fc516be5d6374ca748ea8809ae12dbace4d",
+    "facialDerivedSha256": "92502f6f66b82c4dc1a7138b90746b4b0e755e6e857de0c2390ae9ef6320f51a",
+    "runtimeProofDigest": "50e085ca5ce2d33583db8ec158d21fae12987795ba33fa172f609dedae179c18",
+    "headJointLocalIndexResolved": 21,
+    "headResolveProvenance": "CR01_NURION_head→skin.joints.index",
+    "hardcodedIdle15Index21": "NOT_USED",
+    "r3ZipSha256": "fbb14acf28ef3695c3cb036aedf2f976757e4f9e0046952891e8f0ec38b87d29",
+    "finalCandidateSemanticDigest": "d3294a62cce6c55d312fa9065e16160238b1c972a21924c5d371308f945c879d"
+  },
+  "next": "GAP-01 closed into CR04. Do not reopen. Integration / Release Gate next."
+}

@@ -1,0 +1,185 @@
+{
+  "AD5-G20": "PASS",
+  "ADAPT-05_CLOSED_PASS": "HUMAN_EXERCISED",
+  "ADAPT-06": "AUTHORIZED_TO_OPEN",
+  "adapt01Mutation": "NONE",
+  "adapt02Mutation": "NONE",
+  "adapt03Mutation": "NONE",
+  "adapt04Mutation": "NONE",
+  "adapt04PassReceiptSha256": "7d00bbc1c247629359785a9757694f65eef46c8148f0395cbfe2bd3797a81122",
+  "adapt06HandoffDigest": "a24d39bba4a864e1b28e18f4e3e604d9dd854238aa5e18d443b73eea82fb3b55",
+  "adapt06Implementation": "NOT_STARTED",
+  "agentStatus": "CLOSED / PASS / CONSUME ONLY",
+  "automatedGatePassCount": 19,
+  "automatedGateTotal": 19,
+  "bodyCanonicalMutation": "NONE",
+  "candidateMutationDuringAdapt05": "NONE",
+  "candidateSha": "5628f7a699d0bd6d3f293fb712fde8a056629a83afed51e47a7f98d182b6e652",
+  "candidateSha256": "5628f7a699d0bd6d3f293fb712fde8a056629a83afed51e47a7f98d182b6e652",
+  "canonicalSeal": {
+    "adapt06HandoffDigest": "a24d39bba4a864e1b28e18f4e3e604d9dd854238aa5e18d443b73eea82fb3b55",
+    "authoritativeReport": "reports/ADAPT05_report_canonical_qualified.json",
+    "candidateSha256": "5628f7a699d0bd6d3f293fb712fde8a056629a83afed51e47a7f98d182b6e652",
+    "characterId": "canonical_qualified",
+    "qualificationReportDigest": "a5362ea9339bb52c2e8e5c17b2a6c229029e5dc11f221228adf38a2b65ad0412",
+    "runtimeCompatibilityDigest": "3e35c39ee3a4132fed60ecbf6f24737b63e5c1049078d2ff39db5b472424594b"
+  },
+  "classificationSamples": {
+    "blockedSha": "BLOCKED",
+    "canonicalQualified": "QUALIFIED",
+    "fixtureMeshy": "QUALIFIED",
+    "fixtureNoAugmentation": "QUALIFIED",
+    "manualReview": "MANUAL_REVIEW_REQUIRED"
+  },
+  "criticalGates": {
+    "AD5-G01": "PASS",
+    "AD5-G02": "PASS",
+    "AD5-G03": "PASS",
+    "AD5-G05": "PASS",
+    "AD5-G06": "PASS",
+    "AD5-G07": "PASS",
+    "AD5-G08": "PASS",
+    "AD5-G09": "PASS",
+    "AD5-G12": "PASS",
+    "AD5-G13": "PASS",
+    "AD5-G14": "PASS",
+    "AD5-G15": "PASS",
+    "AD5-G17": "PASS",
+    "AD5-G18": "PASS",
+    "AD5-G19": "PASS"
+  },
+  "executionMode": "MONOREPO",
+  "faceAuthorityMutation": "NONE",
+  "fixtureEvidenceNote": "ADAPT05_report_fixture_*.json digests are NON_AUTHORITATIVE_FIXTURE_EVIDENCE",
+  "gates": {
+    "AD5-G01": {
+      "adapt04PassReceiptSha256": "7d00bbc1c247629359785a9757694f65eef46c8148f0395cbfe2bd3797a81122",
+      "adapt04PassZipPin": "dc1159c515772f4ebef3829785b6bdc6943700df0c8a7708e0ead8ac285cc5e0",
+      "runtimeBindingSha256": "617ad344b0ba179563c9e531dc503a2ff92f944d3fcb9e84ffb0fce1abefba1e",
+      "status": "PASS",
+      "verifyChecks": [
+        "adapt04_pass_receipt",
+        "ADAPT-01_pass_receipt",
+        "ADAPT-02_pass_receipt",
+        "ADAPT-03_pass_receipt",
+        "live_product01",
+        "live_product02",
+        "live_product03",
+        "live_product04",
+        "live_product05",
+        "live_product06",
+        "live_bodyCanonicalSpec",
+        "live_axisRetargetConvention",
+        "live_faceProductLock"
+      ],
+      "verifyMode": "MONOREPO_LIVE_VERIFY"
+    },
+    "AD5-G02": {
+      "adapt04PassIntegrity": "VERIFIED",
+      "status": "PASS"
+    },
+    "AD5-G03": {
+      "candidateIdentity": {
+        "adapt04AugmentationPlanDigest": "cf7cbf1e7866530d741f83a5e577b2cb197475af1c669bf6b35379caac203205",
+        "adapt04DerivedSemanticDigest": "2887aace941bb9a01adc30f124dae97266dc329c77b51430147f7d541da0d904",
+        "derivedArtifactSha256": "5628f7a699d0bd6d3f293fb712fde8a056629a83afed51e47a7f98d182b6e652",
+        "sourceAssetSha256": "a30358b310deb11a8eec27cc26d4acd96cf68a06d90dda218261619203220b8f"
+      },
+      "status": "PASS"
+    },
+    "AD5-G04": {
+      "status": "PASS"
+    },
+    "AD5-G05": {
+      "status": "PASS"
+    },
+    "AD5-G06": {
+      "status": "PASS"
+    },
+    "AD5-G07": {
+      "soleAttachment": "NURION_head \u2192 FACE_Rig_Root",
+      "status": "PASS"
+    },
+    "AD5-G08": {
+      "status": "PASS"
+    },
+    "AD5-G09": {
+      "eyeCalibration": "PRESERVE",
+      "status": "PASS"
+    },
+    "AD5-G10": {
+      "status": "PASS"
+    },
+    "AD5-G11": {
+      "status": "PASS"
+    },
+    "AD5-G12": {
+      "status": "PASS",
+      "talkingClassification": "TALKING_COMPATIBLE"
+    },
+    "AD5-G13": {
+      "status": "PASS"
+    },
+    "AD5-G14": {
+      "status": "PASS"
+    },
+    "AD5-G15": {
+      "status": "PASS"
+    },
+    "AD5-G16": {
+      "nurionV1Modify": "DENY",
+      "status": "PASS"
+    },
+    "AD5-G17": {
+      "failClosedVerified": true,
+      "qualifiedSample": "QUALIFIED",
+      "status": "PASS"
+    },
+    "AD5-G18": {
+      "adapt01Mutation": "NONE",
+      "adapt02Mutation": "NONE",
+      "adapt03Mutation": "NONE",
+      "adapt04Mutation": "NONE",
+      "adapt06Implementation": "NOT_STARTED",
+      "bodyCanonicalMutation": "NONE",
+      "candidateMutationDuringAdapt05": "NONE",
+      "faceAuthorityMutation": "NONE",
+      "nurionV1Mutation": "NONE",
+      "product01to06Mutation": "NONE",
+      "sourceOriginalMutation": "NONE",
+      "status": "PASS"
+    },
+    "AD5-G19": {
+      "adapt06HandoffDigest": "a24d39bba4a864e1b28e18f4e3e604d9dd854238aa5e18d443b73eea82fb3b55",
+      "authorityRole": "AUTHORITATIVE_CANONICAL_SEAL",
+      "candidateSha256": "5628f7a699d0bd6d3f293fb712fde8a056629a83afed51e47a7f98d182b6e652",
+      "characterId": "canonical_qualified",
+      "determinismVerified": true,
+      "executionMode": "MONOREPO",
+      "fixtureDigestsNonAuthoritative": true,
+      "qualificationReportDigest": "a5362ea9339bb52c2e8e5c17b2a6c229029e5dc11f221228adf38a2b65ad0412",
+      "runtimeCompatibilityDigest": "3e35c39ee3a4132fed60ecbf6f24737b63e5c1049078d2ff39db5b472424594b",
+      "status": "PASS"
+    },
+    "AD5-G20": {
+      "auditType": "HUMAN_FINAL_AUDIT",
+      "humanPassAuthority": "EXERCISED — PASS (R2)",
+      "passReceipt": "evidence/NURION-ADAPT-05_PASS_receipt.json",
+      "status": "PASS"
+    }
+  },
+  "humanPassAuthority": "EXERCISED — HUMAN_FINAL_AUDIT PASS (R2)",
+  "humanPassReceipt": "evidence/NURION-ADAPT-05_PASS_receipt.json",
+  "nurionV1Mutation": "NONE",
+  "pass": "PASS",
+  "product01to06Mutation": "NONE",
+  "qualificationReportDigest": "a5362ea9339bb52c2e8e5c17b2a6c229029e5dc11f221228adf38a2b65ad0412",
+  "r1Blocker": "qualificationReportDigest inconsistency across proof receipt / G19 / fixture reports",
+  "r2Fix": "Single AUTHORITATIVE canonical qualified candidate seal; fixture digests marked NON_AUTHORITATIVE",
+  "revision": "R2",
+  "runtimeCompatibilityDigest": "3e35c39ee3a4132fed60ecbf6f24737b63e5c1049078d2ff39db5b472424594b",
+  "schema": "NURION_ADAPT05_PROOF_RECEIPT_V1",
+  "sourceOriginalMutation": "NONE",
+  "stage": "ADAPT-05",
+  "track": "NURION_CHARACTER_ADAPTATION_ENGINE_V1"
+}

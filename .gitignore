@@ -1,0 +1,85 @@
+# --- secrets / env ---
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+credentials*.json
+**/secrets/
+
+# --- Python / tooling ---
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- Node (if any) ---
+node_modules/
+npm-debug.log*
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
+
+# --- Blender / temp ---
+.nurion_blender_tmp/
+_tmp*/
+**/__blender_tmp**/
+*.blend1
+*.blend2
+
+# --- large / generated binaries (not for GitHub) ---
+*.glb
+*.gltf
+*.fbx
+*.zip
+*.7z
+*.rar
+*.mp4
+*.mov
+*.webm
+*.wav
+*.mp3
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.exr
+*.hdr
+!**/examples/**/*.png
+!docs/**/*.png
+
+# --- heavy generated trees ---
+dist/
+ai-baeby/
+fast_track/intake/
+fast_track/assets/
+fast_track/working/meshy_silver_starlight/
+fast_track/working/adaptation_engine_v2/derived_*/
+fast_track/working/adaptation_engine_v2/assets_*/
+fast_track/working/adaptation_engine_v2/reports_*/
+fast_track/working/adaptation_engine_v1/derived_*/
+
+# keep authority JSON under working (semantic + evidence text only)
+# (glb/zip already ignored globally)
+
+# --- local demo outputs ---
+dist/v2_final_demo/
+
+# --- Cursor / agent local ---
+.cursor/
+agent-transcripts/

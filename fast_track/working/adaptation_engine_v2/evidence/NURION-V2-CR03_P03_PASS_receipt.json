@@ -1,0 +1,10 @@
+{
+  "receiptId": "NURION-V2-CR03_P03_PASS_receipt",
+  "changeRequestId": "V2-CR-03",
+  "stage": "P03",
+  "status": "PASS",
+  "declaredAtUtc": "20260830T053050Z",
+  "approvedSpecDigest": "3e3885335bcfd8489209a302852230ae6cdd55da89fb8328048f82d8fe4a206c",
+  "runtimeVertexProofDigest": "593bf05d1fdebb8697bdf64f06d3f910645fc79043f465a59c20ab70897321e0",
+  "reportPath": "reports_cr03/V2_CR03_P03_temporal_vertex_idle15.json"
+}

@@ -1,0 +1,13 @@
+{
+  "NURION_CHARACTER_PRODUCT_PIPELINE_V1": "CLOSED / PASS / CONSUME ONLY \u2014 untouched",
+  "adapt02Started": false,
+  "canonicalReleaseDigest_declared": "30d9f70790b6c834a3cc3283489b8ba60d2bf4b2d1ad956b74eb0e93c542fd4a",
+  "mutation": "NONE",
+  "noProductRuntimeImport": true,
+  "product06BaselineCanonicalSha_declared": "1a714e78f9c1eb3a09f498f29c94116d8afad79fb519a589d9f52a73167786ed",
+  "product06BaselineCanonicalSha_observed": "1a714e78f9c1eb3a09f498f29c94116d8afad79fb519a589d9f52a73167786ed",
+  "product06ZipSha_declared": "9aacac94e9e48024c3f5195ee445eee49fb83c655bd1864aa66ebf6e08d52192",
+  "product06ZipSha_observed": "9aacac94e9e48024c3f5195ee445eee49fb83c655bd1864aa66ebf6e08d52192",
+  "product07": "DOES NOT EXIST",
+  "verifyMode": "LIVE_CANONICAL_VERIFY"
+}

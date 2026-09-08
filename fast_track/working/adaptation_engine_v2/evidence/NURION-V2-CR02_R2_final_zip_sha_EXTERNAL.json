@@ -1,0 +1,9 @@
+{
+  "agentReportedProofDigest": "7bdbaf39893e3c5f1607321758f0e3bc4db644d8d51b4b049f543204bdf3b6db",
+  "byteLength": 14477901,
+  "derivedSha256": "1ee90420ba39cc2e74de6624230538f4416d39ec7b34656e5b175a776c171cdd",
+  "finalAuditZipSha256": "c96e2e875797f274ad44a234726e7b80b8c7a0ebe369ade1798c0626d5189ba2",
+  "independentProofDigest": "a38a8855f1f4f1c9cb3171737c7f98355cfd79bcd72c50388d1a134faebda174",
+  "payloadCanonicalDigest": "36e7a77137eb0e12f2d51842fe3917d2676664db12a80639b9ffa8765123d1a3",
+  "revision": "R2"
+}

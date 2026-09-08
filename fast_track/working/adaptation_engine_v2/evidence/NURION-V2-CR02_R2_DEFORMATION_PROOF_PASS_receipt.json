@@ -1,0 +1,18 @@
+{
+  "CR01_REOPEN": "DENY",
+  "changeRequestId": "V2-CR-02",
+  "derivedAssetSha256": "1ee90420ba39cc2e74de6624230538f4416d39ec7b34656e5b175a776c171cdd",
+  "derivedPath": "d:\\NURION Character Landmarker\\fast_track\\working\\adaptation_engine_v2\\derived_cr02\\Idle_15_R2_facial_deformation.glb",
+  "jsonOnlyTraces": "DENY",
+  "measurement": "INDEPENDENT_VERTEX_POSITION",
+  "mechanism": "MORPH_TARGET_INJECTION",
+  "morphCount": 9,
+  "next": "CR02-R2 Human Audit ZIP when READY_FOR_HUMAN_AUDIT package assembled",
+  "r1Blocker": "AUXILIARY_CONTROL_METADATA_WITHOUT_ACTUAL_FACIAL_DEFORMATION",
+  "r1BlockerAddressed": true,
+  "r2DeformationProofDigest": "7bdbaf39893e3c5f1607321758f0e3bc4db644d8d51b4b049f543204bdf3b6db",
+  "receiptId": "NURION-V2-CR02_R2_DEFORMATION_PROOF_PASS_receipt",
+  "revision": "R2",
+  "status": "PASS",
+  "v2Engine": "NOT OPEN"
+}

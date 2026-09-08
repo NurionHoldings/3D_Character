@@ -1,0 +1,12 @@
+{
+  "adapt01Mutation": "NONE",
+  "adapt02Mutation": "NONE",
+  "adapt03Mutation": "NONE",
+  "adapt04Mutation": "NONE",
+  "adapt05Mutation": "NONE",
+  "autoRepair": "DENY",
+  "candidateMutationDuringAdapt06": "NONE",
+  "candidateRepair": "DENY",
+  "nurionV1Mutation": "NONE",
+  "product01to06Mutation": "NONE"
+}

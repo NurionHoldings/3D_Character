@@ -1,0 +1,75 @@
+{
+  "schema": "NURION_ADAPT05_RUNTIME_QUALIFICATION_CONTRACT_V1",
+  "contractId": "NURION-ADAPT-05_RUNTIME_QUALIFICATION_CONTRACT_V1",
+  "track": "NURION_CHARACTER_ADAPTATION_ENGINE_V1",
+  "stage": "ADAPT-05",
+  "name": "RUNTIME QUALIFICATION",
+  "status": "CONTRACT_FROZEN / CONSUME ONLY",
+  "stageStatus": "CLOSED / PASS / CONSUME ONLY",
+  "pass": "PASS",
+  "humanPassAuthority": "EXERCISED — HUMAN_FINAL_AUDIT PASS (R2)",
+  "agentCeiling": "CLOSED — do not reopen",
+  "revision": "R2",
+  "openedAtUtc": "20260830T015100Z",
+  "agentReadyAtUtc": "20260830T015500Z",
+  "r2RepairAtUtc": "20260830T021800Z",
+  "closedAtUtc": "20260830T022600Z",
+  "declaredBy": "etherean",
+  "passReceipt": "evidence/NURION-ADAPT-05_PASS_receipt.json",
+  "proofReceipt": "evidence/NURION-ADAPT-05_runtime_qualification_proof_receipt.json",
+  "auditZip": "evidence/NURION-ADAPT-05_runtime_qualification_proof_R2.zip",
+  "authoritativeAuditZipSha256": "15dcc54f90f03c2b2e54d0dc03ae6800110a1edc2121554594db151f8fbebd3e",
+  "payloadCanonicalDigest": "8f5775611370c1b7115fdbd95af89cb4111b8b8aa4930df4978fd3ad5e886a2b",
+  "qualificationReportDigest": "a5362ea9339bb52c2e8e5c17b2a6c229029e5dc11f221228adf38a2b65ad0412",
+  "runtimeCompatibilityDigest": "3e35c39ee3a4132fed60ecbf6f24737b63e5c1049078d2ff39db5b472424594b",
+  "adapt06HandoffDigest": "a24d39bba4a864e1b28e18f4e3e604d9dd854238aa5e18d443b73eea82fb3b55",
+  "candidateSha256": "5628f7a699d0bd6d3f293fb712fde8a056629a83afed51e47a7f98d182b6e652",
+  "r1HumanAudit": "BLOCKED — qualificationReportDigest inconsistency across proof/G19/fixture reports",
+  "r2Fix": "Single AUTHORITATIVE canonical qualification seal; fixture digests NON_AUTHORITATIVE",
+  "nextAction": "ADAPT-05 CONSUME ONLY — ADAPT-06 is AUTHORIZED_TO_OPEN but not OPEN until explicit command",
+  "oneLineContract": "ADAPT-05 shall independently determine whether an ADAPT-04 PASS candidate is qualified to execute under locked NURION Character Product Runtime V1 — observe, verify, classify, qualify or reject — without repairing, augmenting, retargeting, or mutating the candidate.",
+  "primaryPrinciple": "Qualification and implementation are separate authorities; ADAPT-04 implements/augments; ADAPT-05 qualifies only; failure ≠ AUTO REPAIR",
+  "predecessor": {
+    "ADAPT-01": "CLOSED / PASS / CONSUME ONLY",
+    "ADAPT-02": "CLOSED / PASS / CONSUME ONLY",
+    "ADAPT-03": "CLOSED / PASS / CONSUME ONLY",
+    "ADAPT-04": "CLOSED / PASS / CONSUME ONLY",
+    "adapt04AuditZipSha256": "dc1159c515772f4ebef3829785b6bdc6943700df0c8a7708e0ead8ac285cc5e0"
+  },
+  "qualificationOutcomes": [
+    "QUALIFIED",
+    "QUALIFIED_WITH_LIMITATIONS",
+    "MANUAL_REVIEW_REQUIRED",
+    "BLOCKED"
+  ],
+  "allow": [
+    "Consume ADAPT-01…04 PASS / derived provenance read-only",
+    "Consume PRODUCT-01…06 / BODY / FACE / Eye / TALKING authority read-only",
+    "Structural / BODY / FACE / Eye / Expression / Jaw / TALKING qualification",
+    "Canonical motion / co-play / runtime state / behavior / product release compatibility checks",
+    "Deterministic qualification report",
+    "ADAPT-06 release handoff specification"
+  ],
+  "deny": [
+    "Repair / augment / retarget / re-rig / rename / reweight / remodel to obtain PASS",
+    "AUTO REPAIR",
+    "Silent defect fix",
+    "NURION V1 mutation",
+    "PRODUCT-01…06 mutation",
+    "ADAPT-01…04 authoritative mutation",
+    "Candidate mutation during qualification",
+    "ADAPT-06 implementation",
+    "Create missing visemes / helpers"
+  ],
+  "gates": [
+    "AD5-G01", "AD5-G02", "AD5-G03", "AD5-G04", "AD5-G05",
+    "AD5-G06", "AD5-G07", "AD5-G08", "AD5-G09", "AD5-G10",
+    "AD5-G11", "AD5-G12", "AD5-G13", "AD5-G14", "AD5-G15",
+    "AD5-G16", "AD5-G17", "AD5-G18", "AD5-G19", "AD5-G20"
+  ],
+  "criticalGates": [
+    "AD5-G01", "AD5-G02", "AD5-G03", "AD5-G05", "AD5-G06",
+    "AD5-G07", "AD5-G08", "AD5-G09", "AD5-G12", "AD5-G13",
+    "AD5-G14", "AD5-G15", "AD5-G17", "AD5-G18", "AD5-G19"
+  ]
+}

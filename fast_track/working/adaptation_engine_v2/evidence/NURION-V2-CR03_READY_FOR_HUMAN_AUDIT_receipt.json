@@ -1,0 +1,16 @@
+{
+  "receiptId": "NURION-V2-CR03_READY_FOR_HUMAN_AUDIT",
+  "changeRequestId": "V2-CR-03",
+  "status": "READY_FOR_HUMAN_AUDIT",
+  "declaredAtUtc": "20260830T053050Z",
+  "approvedSpecDigest": "3e3885335bcfd8489209a302852230ae6cdd55da89fb8328048f82d8fe4a206c",
+  "derivedSha256": "fe493789135aaa80f96a6c2377daafd0a3ed016f402ba8d8611c9e3d07c7c8ca",
+  "cr03DerivedSemanticDigest": "fd8967fb597f7d501fd8977b6bdba3f1e522288b7ca00357744e6b83fadef2d5",
+  "runtimeVertexProofDigest": "593bf05d1fdebb8697bdf64f06d3f910645fc79043f465a59c20ab70897321e0",
+  "independentGateMatrix": "reports_cr03/V2_CR03_independent_gate_matrix.json",
+  "agentCeiling": "READY_FOR_HUMAN_AUDIT",
+  "CR03-P06": "HUMAN_FINAL_ONLY",
+  "CR03-G20": "HUMAN_FINAL_ONLY",
+  "engineV2": "NOT_OPEN",
+  "next": "Human Final Gate — recompute from GLB; Agent must not declare Human PASS"
+}

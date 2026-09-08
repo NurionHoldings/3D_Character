@@ -1,0 +1,30 @@
+{
+  "CR01-G20": "HUMAN PASS",
+  "CR01-P06": "HUMAN PASS",
+  "agentReportedOnly": false,
+  "chestEvidence": [
+    "ABOVE_PELVIS",
+    "BILATERAL_SHOULDER_ATTACHMENT",
+    "CANONICAL_ORDER_VALID",
+    "CENTRAL_TORSO_CHAIN",
+    "NECK_DESCENDANT"
+  ],
+  "humanPassReceipt": "NURION-V2-CR01_R2_HUMAN_PASS_receipt.json",
+  "idle15Mapping": {
+    "NURION_chest": "Spine",
+    "NURION_head": "Head",
+    "NURION_neck": "neck",
+    "NURION_pelvis": "Hips",
+    "NURION_spine01": "Spine02",
+    "NURION_spine02": "Spine01"
+  },
+  "pass": "PROTOTYPE HUMAN PASS",
+  "receiptId": "NURION-V2-CR01_HUMAN_PASS_AUTHORITY_R2",
+  "revision": "R2",
+  "semanticAdapterDigest": "c6aecfa1a90e81afa878a08ca7cdfc0ed34135b60bbdd2d48e597955d485393d",
+  "status": "PROTOTYPE HUMAN PASS / TECHNICAL BASIS CONFIRMED",
+  "supersedes": "NURION-V2-CR01_READY_FOR_HUMAN_AUDIT_R2",
+  "technicalBasis": "CONFIRMED",
+  "v2Cr01": "PROTOTYPE HUMAN PASS / TECHNICAL BASIS CONFIRMED",
+  "v2Engine": "NOT OPEN"
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "NURION_ADAPTATION_ENGINE_V2_CR03_TRACK_V1",
+  "changeRequest": "V2-CR-03",
+  "title": "MORPH-WEIGHT RUNTIME TALKING SEQUENCE",
+  "revision": "R2",
+  "status": "HUMAN_PASS_CONSUME_ONLY",
+  "phase": "CLOSED",
+  "implementationAuthority": "NONE",
+  "openStatus": "CLOSED / CONSUME ONLY",
+  "CR03_REOPEN": "DENY",
+  "updatedAtUtc": "20260830T053800Z",
+  "declaredBy": "etherean",
+  "humanSpecGate": {
+    "required": true,
+    "status": "APPROVED",
+    "approvedSpecDigest": "3e3885335bcfd8489209a302852230ae6cdd55da89fb8328048f82d8fe4a206c"
+  },
+  "humanFinalGate": {
+    "required": true,
+    "status": "PASS",
+    "approvedBy": "etherean",
+    "approvedAt": "20260830T053800Z",
+    "humanPassReceipt": "evidence/NURION-V2-CR03_R2_HUMAN_PASS_receipt.json",
+    "consumeOnlySeal": "evidence/NURION-V2-CR03_R2_CONSUME_ONLY_SEAL.json"
+  },
+  "upstream": {
+    "CR01": "CONSUME_ONLY",
+    "CR02": "CONSUME_ONLY",
+    "REOPEN": "DENY"
+  },
+  "engineV2": "NOT_OPEN",
+  "pins": {
+    "derivedSha256": "fe493789135aaa80f96a6c2377daafd0a3ed016f402ba8d8611c9e3d07c7c8ca",
+    "runtimeVertexProofDigest": "593bf05d1fdebb8697bdf64f06d3f910645fc79043f465a59c20ab70897321e0",
+    "humanAuditedZipSha256": "701cad15f849558944413f16152c4c895d258bbb93c580e27c6ccec3a4fd58fb"
+  },
+  "stages": {
+    "CR03-P01": "PASS / CONSUME ONLY",
+    "CR03-P02": "PASS / CONSUME ONLY",
+    "CR03-P03": "PASS / CONSUME ONLY",
+    "CR03-P04": "PASS / CONSUME ONLY",
+    "CR03-P05": "PASS / CONSUME ONLY",
+    "CR03-P06": "HUMAN PASS"
+  },
+  "packaging": {
+    "R1": "HUMAN AUDIT BLOCKED / HISTORICAL / PRESERVED",
+    "R2": "HUMAN-AUDITED PASS"
+  },
+  "next": "CR03 closed. CR04 remains CANDIDATE / NOT OPEN until Human Spec Gate. Engine V2 NOT OPEN."
+}

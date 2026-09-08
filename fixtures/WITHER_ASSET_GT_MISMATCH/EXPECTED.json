@@ -1,0 +1,17 @@
+{
+  "schema": "NURION_FIXTURE_EXPECTED",
+  "id": "WITHER_ASSET_GT_MISMATCH",
+  "assetEligible": false,
+  "blocker": true,
+  "reasonCode": "MESH_GT_MISMATCH",
+  "evaluationExcluded": ["ankle.L", "ankle.R"],
+  "blockedJoints": ["ankle.L", "ankle.R"],
+  "evaluationAllowed": false,
+  "autoRigAllowed": false,
+  "checksMustFail": ["gtInsideMeshReachable"],
+  "ankleBestInsideError_cm": {
+    "ankle.R": {"min": 15.0, "note": "Observed 16.107cm on frozen Alpha3 evidence"},
+    "ankle.L": {"min": 10.0, "note": "Observed 11.404cm on frozen Alpha3 evidence"}
+  },
+  "evidenceSha256": "302ccdd62c06c8315e91f8e1b32d931493e75c802120c1d1d9383e5f2f30d88b"
+}

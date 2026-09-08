@@ -1,0 +1,56 @@
+{
+  "canonicalMutation": "DENY",
+  "characterId": "raat01_idle15",
+  "engineV1": "CLOSED / PASS / CONSUME ONLY",
+  "executedAtUtc": "20260830T025103Z",
+  "firstStopStage": "ADAPT-02",
+  "fullReport": "reports/RAAT01_report_raat01_idle15.json",
+  "pipelineStatus": "BLOCKED",
+  "policy": "Consumer acceptance \u2014 does not modify Engine V1 authority",
+  "preservation": {
+    "adaptStageMutation": "NONE",
+    "engineV1Mutation": "NONE",
+    "sourceBytesUnchanged": true
+  },
+  "schema": "NURION_RAAT01_ACCEPTANCE_RECEIPT_V1",
+  "sourceAssetSha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+  "stages": {
+    "ADAPT-01": {
+      "blockerCount": 0,
+      "classification": "CLASS_C",
+      "manualReviewCount": 0,
+      "status": "PASS"
+    },
+    "ADAPT-02": {
+      "blockerCount": 1,
+      "classification": "BLOCKED",
+      "manualReviewCount": 0,
+      "status": "BLOCKED"
+    },
+    "ADAPT-03": {
+      "blockerCount": 1,
+      "classification": "BLOCKED",
+      "manualReviewCount": 0,
+      "status": "BLOCKED"
+    },
+    "ADAPT-04": {
+      "blockerCount": 1,
+      "classification": "BLOCKED",
+      "manualReviewCount": 0,
+      "status": "BLOCKED"
+    },
+    "ADAPT-05": {
+      "blockerCount": 1,
+      "classification": "BLOCKED",
+      "manualReviewCount": 0,
+      "status": "BLOCKED"
+    },
+    "ADAPT-06": {
+      "blockerCount": 1,
+      "classification": "BLOCKED",
+      "manualReviewCount": 0,
+      "status": "BLOCKED"
+    }
+  },
+  "testId": "RAAT-01"
+}

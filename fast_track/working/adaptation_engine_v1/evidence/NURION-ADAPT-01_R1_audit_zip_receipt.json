@@ -1,0 +1,22 @@
+{
+  "AD1-G16": "HUMAN_FINAL_ONLY",
+  "ADAPT-02": "NOT_STARTED",
+  "agentStatus": "READY_FOR_HUMAN_AUDIT",
+  "byteLength": 47735,
+  "entryCount": 30,
+  "finalAuditZipSha256": "dff9ac13c36916903523d55096d76ed2e0c8f387720160f21f0026006a4d7f8b",
+  "nurionV1Mutation": "NONE",
+  "pass": "NOT_DECLARED",
+  "payloadCanonicalDigest": "e8530d6f9af0ac2ed69b3f9ad0ca1f5b9c7a4f1c1d0a5020d0b50f60c5e52903",
+  "provenanceNote": "finalAuditZipSha256 is authoritative and EXTERNAL to the ZIP. Inside-ZIP READY.finalAuditZipSha256 is null by design (no self-hash).",
+  "r0MismatchCorrected": {
+    "cause": "READY updated after pack then re-packed; embedded SHA could not equal final ZIP",
+    "r0EmbeddedReadySha": "e3a7aeb0ef0c92078206127dfa22b802427315f03d44f0b48c877ae8458186cc",
+    "r0SubmittedZipSha": "161676ea894e891921182dcaa9daff92b09c3c18b227e21f569f1f4cc5027be9",
+    "r1Rule": "Never embed final ZIP SHA inside ZIP payload files"
+  },
+  "revision": "R1",
+  "schema": "NURION_ADAPT01_R1_AUDIT_ZIP_RECEIPT_V1",
+  "zip": "d:\\NURION Character Landmarker\\fast_track\\working\\adaptation_engine_v1\\evidence\\NURION-ADAPT-01_intake_inspection_proof_R1.zip",
+  "zipRel": "fast_track/working/adaptation_engine_v1/evidence/NURION-ADAPT-01_intake_inspection_proof_R1.zip"
+}

@@ -1,0 +1,1 @@
+"""NURION Character Profile serialization."""

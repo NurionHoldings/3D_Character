@@ -1,0 +1,994 @@
+{
+  "adaptationClassification": {
+    "adaptationClass": "CLASS_A",
+    "body": "COMPATIBLE",
+    "bodyCoreHits": 9,
+    "evidenceBased": true,
+    "eye": "COMPATIBLE",
+    "face": "COMPATIBLE",
+    "jaw": "COMPATIBLE",
+    "rationale": [
+      "body_hits=9",
+      "blendshapes=32",
+      "eyes=True/True",
+      "jaw=True",
+      "viseme=True",
+      "near_complete_capabilities"
+    ],
+    "talking": "COMPATIBLE"
+  },
+  "animationCapabilities": {
+    "clipCount": 1,
+    "clips": [
+      {
+        "channelCount": 1,
+        "index": 0,
+        "name": "Idle",
+        "samplerCount": 1
+      }
+    ],
+    "status": "DETECTED"
+  },
+  "axisAndScale": {
+    "assetVersion": "2.0",
+    "forwardAxis": "Z",
+    "generator": "ADAPT01_FIXTURE",
+    "gltfExtrasKeys": [
+      "forwardAxis",
+      "upAxis"
+    ],
+    "nodeScaleSamples": [],
+    "note": "Axis inferred only from declared extras; silent invention DENY",
+    "status": "OBSERVED",
+    "upAxis": "Y"
+  },
+  "characterId": "fixture_positive_rigged",
+  "expressionCapabilities": {
+    "blendshapeCount": 32,
+    "blendshapes": {
+      "status": "DETECTED"
+    },
+    "targetNames": [
+      "eyeBlinkLeft",
+      "eyeBlinkRight",
+      "jawOpen",
+      "mouthSmile",
+      "viseme_aa",
+      "viseme_oh",
+      "viseme_ou",
+      "viseme_ee",
+      "viseme_sil",
+      "browInnerUp",
+      "mouthFunnel",
+      "cheekPuff",
+      "expr_0",
+      "expr_1",
+      "expr_2",
+      "expr_3",
+      "expr_4",
+      "expr_5",
+      "expr_6",
+      "expr_7",
+      "expr_8",
+      "expr_9",
+      "expr_10",
+      "expr_11",
+      "expr_12",
+      "expr_13",
+      "expr_14",
+      "expr_15",
+      "expr_16",
+      "expr_17",
+      "expr_18",
+      "expr_19"
+    ],
+    "targetNamesTruncated": false
+  },
+  "eyeCapabilities": {
+    "leftEyeBone": {
+      "confidence": 0.9,
+      "nodeIndex": 20,
+      "observedSourceNodeName": "LeftEye",
+      "reason": "exact_alias:lefteye;side_token_match",
+      "status": "DETECTED"
+    },
+    "rightEyeBone": {
+      "confidence": 0.9,
+      "nodeIndex": 21,
+      "observedSourceNodeName": "RightEye",
+      "reason": "exact_alias:righteye;side_token_match",
+      "status": "DETECTED"
+    }
+  },
+  "faceCapabilities": {
+    "blendshapesDetected": true,
+    "facialBones": {
+      "count": 0,
+      "samples": [],
+      "status": "NOT_DETECTED"
+    }
+  },
+  "issues": [],
+  "jawCapabilities": {
+    "bone": {
+      "confidence": 0.85,
+      "nodeIndex": 22,
+      "observedSourceNodeName": "Jaw",
+      "reason": "exact_alias:jaw",
+      "status": "DETECTED"
+    }
+  },
+  "materials": {
+    "count": 1,
+    "names": [
+      "BodyMat"
+    ],
+    "status": "DETECTED"
+  },
+  "meshes": {
+    "count": 1,
+    "entries": [
+      {
+        "index": 0,
+        "morphTargetCount": 32,
+        "name": "BodyMesh",
+        "primitiveCount": 1,
+        "targetNamesDeclared": [
+          "eyeBlinkLeft",
+          "eyeBlinkRight",
+          "jawOpen",
+          "mouthSmile",
+          "viseme_aa",
+          "viseme_oh",
+          "viseme_ou",
+          "viseme_ee",
+          "viseme_sil",
+          "browInnerUp",
+          "mouthFunnel",
+          "cheekPuff",
+          "expr_0",
+          "expr_1",
+          "expr_2",
+          "expr_3",
+          "expr_4",
+          "expr_5",
+          "expr_6",
+          "expr_7",
+          "expr_8",
+          "expr_9",
+          "expr_10",
+          "expr_11",
+          "expr_12",
+          "expr_13",
+          "expr_14",
+          "expr_15",
+          "expr_16",
+          "expr_17",
+          "expr_18",
+          "expr_19"
+        ]
+      }
+    ],
+    "status": "DETECTED"
+  },
+  "nurionV1Boundary": {
+    "consume": "REFERENCE_ONLY",
+    "mutation": "NONE",
+    "productPipeline": "CLOSED / PASS / CONSUME ONLY"
+  },
+  "parseStatus": "OK",
+  "preservation": {
+    "autoRepair": "DENY",
+    "mode": "READ_ONLY",
+    "mutationsApplied": [],
+    "sourceBytesUnchanged": true
+  },
+  "reportCanonicalSha256": "7d64d08c9aac281b29b68140681a03112d80e0a130e78ecc2d401661dac2872c",
+  "scene": {
+    "assetGenerator": "ADAPT01_FIXTURE",
+    "assetVersion": "2.0",
+    "cyclicHierarchy": false,
+    "defaultScene": 0,
+    "nodeCount": 23,
+    "nodes": [
+      {
+        "children": [
+          1
+        ],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 0,
+        "mesh": 0,
+        "name": "Root",
+        "skin": 0
+      },
+      {
+        "children": [
+          2,
+          14,
+          17
+        ],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 1,
+        "mesh": null,
+        "name": "Hips",
+        "skin": null
+      },
+      {
+        "children": [
+          3
+        ],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 2,
+        "mesh": null,
+        "name": "Spine",
+        "skin": null
+      },
+      {
+        "children": [
+          4,
+          6,
+          10
+        ],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 3,
+        "mesh": null,
+        "name": "Chest",
+        "skin": null
+      },
+      {
+        "children": [
+          5
+        ],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 4,
+        "mesh": null,
+        "name": "Neck",
+        "skin": null
+      },
+      {
+        "children": [
+          20,
+          21,
+          22
+        ],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 5,
+        "mesh": null,
+        "name": "Head",
+        "skin": null
+      },
+      {
+        "children": [
+          7
+        ],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 6,
+        "mesh": null,
+        "name": "LeftShoulder",
+        "skin": null
+      },
+      {
+        "children": [
+          8
+        ],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 7,
+        "mesh": null,
+        "name": "LeftArm",
+        "skin": null
+      },
+      {
+        "children": [
+          9
+        ],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 8,
+        "mesh": null,
+        "name": "LeftForeArm",
+        "skin": null
+      },
+      {
+        "children": [],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 9,
+        "mesh": null,
+        "name": "LeftHand",
+        "skin": null
+      },
+      {
+        "children": [
+          11
+        ],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 10,
+        "mesh": null,
+        "name": "RightShoulder",
+        "skin": null
+      },
+      {
+        "children": [
+          12
+        ],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 11,
+        "mesh": null,
+        "name": "RightArm",
+        "skin": null
+      },
+      {
+        "children": [
+          13
+        ],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 12,
+        "mesh": null,
+        "name": "RightForeArm",
+        "skin": null
+      },
+      {
+        "children": [],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 13,
+        "mesh": null,
+        "name": "RightHand",
+        "skin": null
+      },
+      {
+        "children": [
+          15
+        ],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 14,
+        "mesh": null,
+        "name": "LeftUpLeg",
+        "skin": null
+      },
+      {
+        "children": [
+          16
+        ],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 15,
+        "mesh": null,
+        "name": "LeftLeg",
+        "skin": null
+      },
+      {
+        "children": [],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 16,
+        "mesh": null,
+        "name": "LeftFoot",
+        "skin": null
+      },
+      {
+        "children": [
+          18
+        ],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 17,
+        "mesh": null,
+        "name": "RightUpLeg",
+        "skin": null
+      },
+      {
+        "children": [
+          19
+        ],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 18,
+        "mesh": null,
+        "name": "RightLeg",
+        "skin": null
+      },
+      {
+        "children": [],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 19,
+        "mesh": null,
+        "name": "RightFoot",
+        "skin": null
+      },
+      {
+        "children": [],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 20,
+        "mesh": null,
+        "name": "LeftEye",
+        "skin": null
+      },
+      {
+        "children": [],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 21,
+        "mesh": null,
+        "name": "RightEye",
+        "skin": null
+      },
+      {
+        "children": [],
+        "hasMatrix": false,
+        "hasRotation": false,
+        "hasScale": false,
+        "hasTranslation": false,
+        "index": 22,
+        "mesh": null,
+        "name": "Jaw",
+        "skin": null
+      }
+    ],
+    "sceneCount": 1
+  },
+  "schema": "NURION_ADAPT01_INSPECTION_REPORT_V1",
+  "semanticBoneCandidates": {
+    "candidates": {
+      "calf_L": {
+        "alternates": [],
+        "selected": {
+          "confidence": 1.0,
+          "nodeIndex": 15,
+          "observedSourceNodeName": "LeftLeg",
+          "reason": "exact_alias:leftleg;skin_joint_member;side_token_match"
+        },
+        "status": "DETECTED"
+      },
+      "calf_R": {
+        "alternates": [],
+        "selected": {
+          "confidence": 1.0,
+          "nodeIndex": 18,
+          "observedSourceNodeName": "RightLeg",
+          "reason": "exact_alias:rightleg;skin_joint_member;side_token_match"
+        },
+        "status": "DETECTED"
+      },
+      "chest": {
+        "alternates": [],
+        "selected": {
+          "confidence": 1.0,
+          "nodeIndex": 3,
+          "observedSourceNodeName": "Chest",
+          "reason": "exact_alias:chest;skin_joint_member;hierarchy_chain_ok"
+        },
+        "status": "DETECTED"
+      },
+      "clavicle_L": {
+        "alternates": [],
+        "selected": {
+          "confidence": 0.95,
+          "nodeIndex": 6,
+          "observedSourceNodeName": "LeftShoulder",
+          "reason": "exact_alias:leftshoulder;skin_joint_member"
+        },
+        "status": "DETECTED"
+      },
+      "clavicle_R": {
+        "alternates": [],
+        "selected": {
+          "confidence": 1.0,
+          "nodeIndex": 10,
+          "observedSourceNodeName": "RightShoulder",
+          "reason": "exact_alias:rightshoulder;skin_joint_member;side_token_match"
+        },
+        "status": "DETECTED"
+      },
+      "eye_L": {
+        "alternates": [],
+        "selected": {
+          "confidence": 0.9,
+          "nodeIndex": 20,
+          "observedSourceNodeName": "LeftEye",
+          "reason": "exact_alias:lefteye;side_token_match"
+        },
+        "status": "DETECTED"
+      },
+      "eye_R": {
+        "alternates": [],
+        "selected": {
+          "confidence": 0.9,
+          "nodeIndex": 21,
+          "observedSourceNodeName": "RightEye",
+          "reason": "exact_alias:righteye;side_token_match"
+        },
+        "status": "DETECTED"
+      },
+      "foot_L": {
+        "alternates": [],
+        "selected": {
+          "confidence": 1.0,
+          "nodeIndex": 16,
+          "observedSourceNodeName": "LeftFoot",
+          "reason": "exact_alias:leftfoot;skin_joint_member;side_token_match"
+        },
+        "status": "DETECTED"
+      },
+      "foot_R": {
+        "alternates": [],
+        "selected": {
+          "confidence": 1.0,
+          "nodeIndex": 19,
+          "observedSourceNodeName": "RightFoot",
+          "reason": "exact_alias:rightfoot;skin_joint_member;side_token_match"
+        },
+        "status": "DETECTED"
+      },
+      "hand_L": {
+        "alternates": [],
+        "selected": {
+          "confidence": 1.0,
+          "nodeIndex": 9,
+          "observedSourceNodeName": "LeftHand",
+          "reason": "exact_alias:lefthand;skin_joint_member;side_token_match"
+        },
+        "status": "DETECTED"
+      },
+      "hand_R": {
+        "alternates": [],
+        "selected": {
+          "confidence": 1.0,
+          "nodeIndex": 13,
+          "observedSourceNodeName": "RightHand",
+          "reason": "exact_alias:righthand;skin_joint_member;side_token_match"
+        },
+        "status": "DETECTED"
+      },
+      "head": {
+        "alternates": [],
+        "selected": {
+          "confidence": 1.0,
+          "nodeIndex": 5,
+          "observedSourceNodeName": "Head",
+          "reason": "exact_alias:head;skin_joint_member;hierarchy_chain_ok"
+        },
+        "status": "DETECTED"
+      },
+      "jaw": {
+        "alternates": [],
+        "selected": {
+          "confidence": 0.85,
+          "nodeIndex": 22,
+          "observedSourceNodeName": "Jaw",
+          "reason": "exact_alias:jaw"
+        },
+        "status": "DETECTED"
+      },
+      "lowerArm_L": {
+        "alternates": [],
+        "selected": {
+          "confidence": 1.0,
+          "nodeIndex": 8,
+          "observedSourceNodeName": "LeftForeArm",
+          "reason": "exact_alias:leftforearm;skin_joint_member;side_token_match"
+        },
+        "status": "DETECTED"
+      },
+      "lowerArm_R": {
+        "alternates": [],
+        "selected": {
+          "confidence": 1.0,
+          "nodeIndex": 12,
+          "observedSourceNodeName": "RightForeArm",
+          "reason": "exact_alias:rightforearm;skin_joint_member;side_token_match"
+        },
+        "status": "DETECTED"
+      },
+      "neck": {
+        "alternates": [],
+        "selected": {
+          "confidence": 1.0,
+          "nodeIndex": 4,
+          "observedSourceNodeName": "Neck",
+          "reason": "exact_alias:neck;skin_joint_member;hierarchy_chain_ok"
+        },
+        "status": "DETECTED"
+      },
+      "pelvis": {
+        "alternates": [],
+        "selected": {
+          "confidence": 1.0,
+          "nodeIndex": 1,
+          "observedSourceNodeName": "Hips",
+          "reason": "exact_alias:hips;skin_joint_member;hierarchy_chain_ok"
+        },
+        "status": "DETECTED"
+      },
+      "root": {
+        "alternates": [],
+        "selected": {
+          "confidence": 0.95,
+          "nodeIndex": 0,
+          "observedSourceNodeName": "Root",
+          "reason": "exact_alias:root;skin_joint_member"
+        },
+        "status": "DETECTED"
+      },
+      "spine": {
+        "alternates": [],
+        "selected": {
+          "confidence": 1.0,
+          "nodeIndex": 2,
+          "observedSourceNodeName": "Spine",
+          "reason": "exact_alias:spine;skin_joint_member;hierarchy_chain_ok"
+        },
+        "status": "DETECTED"
+      },
+      "thigh_L": {
+        "alternates": [],
+        "selected": {
+          "confidence": 1.0,
+          "nodeIndex": 14,
+          "observedSourceNodeName": "LeftUpLeg",
+          "reason": "exact_alias:leftupleg;skin_joint_member;side_token_match"
+        },
+        "status": "DETECTED"
+      },
+      "thigh_R": {
+        "alternates": [],
+        "selected": {
+          "confidence": 1.0,
+          "nodeIndex": 17,
+          "observedSourceNodeName": "RightUpLeg",
+          "reason": "exact_alias:rightupleg;skin_joint_member;side_token_match"
+        },
+        "status": "DETECTED"
+      },
+      "toe_L": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "toe_R": {
+        "alternates": [],
+        "selected": null,
+        "status": "NOT_DETECTED"
+      },
+      "upperArm_L": {
+        "alternates": [],
+        "selected": {
+          "confidence": 1.0,
+          "nodeIndex": 7,
+          "observedSourceNodeName": "LeftArm",
+          "reason": "exact_alias:leftarm;skin_joint_member;side_token_match"
+        },
+        "status": "DETECTED"
+      },
+      "upperArm_R": {
+        "alternates": [],
+        "selected": {
+          "confidence": 1.0,
+          "nodeIndex": 11,
+          "observedSourceNodeName": "RightArm",
+          "reason": "exact_alias:rightarm;skin_joint_member;side_token_match"
+        },
+        "status": "DETECTED"
+      }
+    },
+    "detectionPolicy": "name_alias+skin_joint+side+hierarchy \u2014 not name-only",
+    "jointNodeCount": 23,
+    "nodeCount": 23
+  },
+  "skeleton": {
+    "hierarchyEdgeCount": 22,
+    "hierarchyEdgesSample": [
+      {
+        "childIndex": 1,
+        "childName": "Hips",
+        "parentIndex": 0,
+        "parentName": "Root"
+      },
+      {
+        "childIndex": 2,
+        "childName": "Spine",
+        "parentIndex": 1,
+        "parentName": "Hips"
+      },
+      {
+        "childIndex": 14,
+        "childName": "LeftUpLeg",
+        "parentIndex": 1,
+        "parentName": "Hips"
+      },
+      {
+        "childIndex": 17,
+        "childName": "RightUpLeg",
+        "parentIndex": 1,
+        "parentName": "Hips"
+      },
+      {
+        "childIndex": 3,
+        "childName": "Chest",
+        "parentIndex": 2,
+        "parentName": "Spine"
+      },
+      {
+        "childIndex": 4,
+        "childName": "Neck",
+        "parentIndex": 3,
+        "parentName": "Chest"
+      },
+      {
+        "childIndex": 6,
+        "childName": "LeftShoulder",
+        "parentIndex": 3,
+        "parentName": "Chest"
+      },
+      {
+        "childIndex": 10,
+        "childName": "RightShoulder",
+        "parentIndex": 3,
+        "parentName": "Chest"
+      },
+      {
+        "childIndex": 5,
+        "childName": "Head",
+        "parentIndex": 4,
+        "parentName": "Neck"
+      },
+      {
+        "childIndex": 20,
+        "childName": "LeftEye",
+        "parentIndex": 5,
+        "parentName": "Head"
+      },
+      {
+        "childIndex": 21,
+        "childName": "RightEye",
+        "parentIndex": 5,
+        "parentName": "Head"
+      },
+      {
+        "childIndex": 22,
+        "childName": "Jaw",
+        "parentIndex": 5,
+        "parentName": "Head"
+      },
+      {
+        "childIndex": 7,
+        "childName": "LeftArm",
+        "parentIndex": 6,
+        "parentName": "LeftShoulder"
+      },
+      {
+        "childIndex": 8,
+        "childName": "LeftForeArm",
+        "parentIndex": 7,
+        "parentName": "LeftArm"
+      },
+      {
+        "childIndex": 9,
+        "childName": "LeftHand",
+        "parentIndex": 8,
+        "parentName": "LeftForeArm"
+      },
+      {
+        "childIndex": 11,
+        "childName": "RightArm",
+        "parentIndex": 10,
+        "parentName": "RightShoulder"
+      },
+      {
+        "childIndex": 12,
+        "childName": "RightForeArm",
+        "parentIndex": 11,
+        "parentName": "RightArm"
+      },
+      {
+        "childIndex": 13,
+        "childName": "RightHand",
+        "parentIndex": 12,
+        "parentName": "RightForeArm"
+      },
+      {
+        "childIndex": 15,
+        "childName": "LeftLeg",
+        "parentIndex": 14,
+        "parentName": "LeftUpLeg"
+      },
+      {
+        "childIndex": 16,
+        "childName": "LeftFoot",
+        "parentIndex": 15,
+        "parentName": "LeftLeg"
+      },
+      {
+        "childIndex": 18,
+        "childName": "RightLeg",
+        "parentIndex": 17,
+        "parentName": "RightUpLeg"
+      },
+      {
+        "childIndex": 19,
+        "childName": "RightFoot",
+        "parentIndex": 18,
+        "parentName": "RightLeg"
+      }
+    ],
+    "jointCount": 23,
+    "jointIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "skinCount": 1,
+    "skins": [
+      {
+        "index": 0,
+        "jointCount": 23,
+        "joints": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "name": "Armature",
+        "skeletonRoot": 0
+      }
+    ],
+    "skinsDetected": true,
+    "status": "DETECTED"
+  },
+  "skinning": {
+    "skinnedMeshNodes": [
+      0
+    ],
+    "status": "DETECTED"
+  },
+  "sourceAsset": {
+    "byteLength": 2432,
+    "exists": true,
+    "format": "glb",
+    "path": "d:\\NURION Character Landmarker\\fast_track\\adaptation\\fixtures\\positive_rigged_with_face.glb",
+    "sha256": "3fdff18511d42c71194bc051c6510b405537e72052fc46d4bbb05dc11c71d4f2",
+    "suffix": ".glb",
+    "supported": true
+  },
+  "talkingCapabilities": {
+    "visemeCandidates": {
+      "matchedNames": [
+        "eyeBlinkLeft",
+        "eyeBlinkRight",
+        "jawOpen",
+        "mouthSmile",
+        "viseme_aa",
+        "viseme_oh",
+        "viseme_ou",
+        "viseme_ee",
+        "viseme_sil",
+        "browInnerUp",
+        "mouthFunnel",
+        "cheekPuff",
+        "expr_0",
+        "expr_1",
+        "expr_2",
+        "expr_3",
+        "expr_4",
+        "expr_5",
+        "expr_6",
+        "expr_7",
+        "expr_8",
+        "expr_9",
+        "expr_10",
+        "expr_11",
+        "expr_12",
+        "expr_13",
+        "expr_14",
+        "expr_15",
+        "expr_16",
+        "expr_17",
+        "expr_18",
+        "expr_19"
+      ],
+      "status": "DETECTED"
+    }
+  },
+  "textures": {
+    "imageCount": 0,
+    "status": "NOT_DETECTED",
+    "textureCount": 0
+  }
+}

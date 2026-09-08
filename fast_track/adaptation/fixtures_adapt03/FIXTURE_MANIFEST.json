@@ -1,0 +1,41 @@
+{
+  "fixtures": {
+    "blendshape_renamed.glb": {
+      "byteLength": 1628,
+      "sha256": "209f1c6a0064463dca0e0e8dd5eb675ce4bedacea6afc69ecc410832828a0b86"
+    },
+    "body_minimal_face.glb": {
+      "byteLength": 1236,
+      "sha256": "a30358b310deb11a8eec27cc26d4acd96cf68a06d90dda218261619203220b8f"
+    },
+    "expression_mapping_required.glb": {
+      "byteLength": 1448,
+      "sha256": "46e380c18796f5e50b35e757975638a3defd511117aea2ab50b5722637c438e7"
+    },
+    "eye_adaptation_required.glb": {
+      "byteLength": 1388,
+      "sha256": "09acab758624c203ebe659d8e8a9a62254260c6b005191043dcfe068d7b80165"
+    },
+    "eye_jaw_no_visemes.glb": {
+      "byteLength": 1432,
+      "sha256": "dc0ccce70ed5ae1eb665ff9bffe5dbd06c78f3028682b2d2dc902abbafc8df35"
+    },
+    "malformed_face_metadata.glb": {
+      "byteLength": 1192,
+      "sha256": "01213513e2484e667f333300c02ebfdf1e1d302c26aa4b9f5f8c6beec71bd735"
+    },
+    "meshy_style.glb": {
+      "byteLength": 1488,
+      "sha256": "b134f9448dba52a0428aaa2fbbdabd98250ac0fc79746f24be068c50e67cf3a3"
+    },
+    "rich_facial_morphs.glb": {
+      "byteLength": 2028,
+      "sha256": "a1bc80d6ee225aa75d8e88f6998cfb382f649f4a0397346730af7724b7b03ec8"
+    },
+    "talking_augmentation_required.glb": {
+      "byteLength": 1376,
+      "sha256": "5062cebae558e1ebe6a9e2ac83c9151d61e00f95067469379bc75af80cf6dd20"
+    }
+  },
+  "schema": "NURION_ADAPT03_FIXTURE_MANIFEST_V1"
+}

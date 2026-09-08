@@ -1,0 +1,57 @@
+{
+  "receiptId": "NURION-V2-CR04_R3_CONSUME_ONLY_SEAL",
+  "changeRequestId": "V2-CR-04",
+  "corrective": "V2-CR-04-GAP-01",
+  "revision": "R3",
+  "status": "PROTOTYPE HUMAN PASS / SECOND REAL MESHY ASSET GENERALIZATION TECHNICAL BASIS CONFIRMED / CONSUME ONLY",
+  "disposition": "CLOSED AS TECHNICAL BASIS — DO NOT REOPEN",
+  "CR04_REOPEN": "DENY",
+  "GAP01_REOPEN": "DENY",
+  "declaredAtUtc": "20260830T072600Z",
+  "declaredBy": "etherean",
+  "r1": "HUMAN AUDIT BLOCKED / HISTORICAL / PRESERVED — Bolt Voyager",
+  "r2": "FUNCTIONAL PASS / HUMAN AUDIT BLOCKED / HISTORICAL / PRESERVED — Sporty / HC-01",
+  "r2BlockerDisposition": "HC-01 CLOSED BY R3",
+  "humanPassReceipt": "NURION-V2-CR04_R3_HUMAN_PASS_receipt.json",
+  "pins": {
+    "secondAssetSha256": "f3f9e343c8ba3c9a503a8423293dec90bb6be50f809f1321f4f6658b1bea133e",
+    "facialDerivedSha256": "92502f6f66b82c4dc1a7138b90746b4b0e755e6e857de0c2390ae9ef6320f51a",
+    "talkingDerivedSha256": "55601949d6fc67eaebe405e683134fc516be5d6374ca748ea8809ae12dbace4d",
+    "runtimeProofDigest": "50e085ca5ce2d33583db8ec158d21fae12987795ba33fa172f609dedae179c18",
+    "finalCandidateSemanticDigest": "d3294a62cce6c55d312fa9065e16160238b1c972a21924c5d371308f945c879d",
+    "humanAuditedZipSha256": "fbb14acf28ef3695c3cb036aedf2f976757e4f9e0046952891e8f0ec38b87d29",
+    "approvedCr04SpecDigest": "203466befd67d01a4acf42a60048d6b2ac01c42b4dd2ffea49da73f0c8edface",
+    "approvedGap01SpecDigest": "4a8467ad945d3c56d9222075c44ae4cc12e8df5edcd833d4091b046901b903f3"
+  },
+  "proven": {
+    "secondIndependentMeshyAsset": true,
+    "sportyPinPreserved": true,
+    "cr01HeadSemanticResolve": true,
+    "dynamicSkinJointsLocalIndex": true,
+    "noHeadSkinLocal21SoT": true,
+    "noFaceYMinSoT": true,
+    "didNotCallCr02SelectFacialVertices": true,
+    "bodySkinPreservation": true,
+    "idleClipPreservation": true,
+    "talkingTemporalVertexDeformation": true,
+    "neutralRestoration": true,
+    "expandedHardcodingScan": true
+  },
+  "authorityExpansionDeny": [
+    "NURION ADAPTATION ENGINE V2 OPEN without Integration/Release Gate",
+    "V2 CLOSED / PASS / 100% without Integration/Release Gate",
+    "reopen of CR01/CR02/CR03/CR04"
+  ],
+  "nextWorkPolicy": "Separate Change Request for Integration / Release Gate only — do not reopen CR01–CR04",
+  "candidateNextCR": "V2-INTEGRATION-RELEASE-GATE (or equivalent Human-authorized Integration CR)",
+  "authority": {
+    "V2-CR-01": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-02": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-03": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-04": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "Engine V1": "CLOSED / PASS / CONSUME ONLY",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN"
+  },
+  "combinedTechnicalBasis": "CR01 BODY semantic + CR02 FACE morph (Idle_15 basis) + CR03 morph-weight TALKING + CR04 second Meshy generalization with GAP-01 asset-independent facial resolve — all Human-audited",
+  "completionEstimateNote": "~96–97%; remaining = V2 Integration / Release Gate only"
+}

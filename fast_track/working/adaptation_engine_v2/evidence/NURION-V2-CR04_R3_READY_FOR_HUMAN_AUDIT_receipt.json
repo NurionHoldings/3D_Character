@@ -1,0 +1,20 @@
+{
+  "receiptId": "NURION-V2-CR04_R3_READY_FOR_HUMAN_AUDIT",
+  "changeRequestId": "V2-CR-04",
+  "corrective": "V2-CR-04-GAP-01",
+  "status": "READY_FOR_HUMAN_AUDIT",
+  "declaredAtUtc": "20260830T071932Z",
+  "secondAssetSha256": "f3f9e343c8ba3c9a503a8423293dec90bb6be50f809f1321f4f6658b1bea133e",
+  "derivedSha256": "55601949d6fc67eaebe405e683134fc516be5d6374ca748ea8809ae12dbace4d",
+  "facialDerivedSha256": "92502f6f66b82c4dc1a7138b90746b4b0e755e6e857de0c2390ae9ef6320f51a",
+  "headJointLocalIndexResolved": 21,
+  "headResolveProvenance": "CR01_NURION_head\u2192skin.joints.index",
+  "finalCandidateSemanticDigest": "d3294a62cce6c55d312fa9065e16160238b1c972a21924c5d371308f945c879d",
+  "runtimeProofDigest": "50e085ca5ce2d33583db8ec158d21fae12987795ba33fa172f609dedae179c18",
+  "hardcodingScan": "PASS",
+  "agentCeiling": "READY_FOR_HUMAN_AUDIT",
+  "CR04-P07": "HUMAN_FINAL_ONLY",
+  "CR04-G20": "HUMAN_FINAL_ONLY",
+  "engineV2": "NOT_OPEN",
+  "note": "GAP-01 resolved facial regions; CR02 Idle_15 literals unused by CR04 consume path"
+}

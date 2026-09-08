@@ -1,0 +1,413 @@
+{
+  "adapt05": {
+    "adapt06Handoff": {
+      "adapt06Implementation": "NOT_STARTED",
+      "candidateIdentity": {
+        "adapt01InspectionDigest": "bd9de64ff5ad4b08a4f4e5eb04d28b7e0856b0bf7e75588b138132c4f1c86d61",
+        "adapt02MappingDigest": "b920ae4b395d9f1d3b808e6a002995c1d8f9af4ddaaceaa0a9595ff055a4179a",
+        "adapt03FaceAdaptationDigest": "fab6176347530d4968315d23b8954505ca284f9db2784e7172fe756ff382392f",
+        "adapt04AugmentationPlanDigest": "14f333214546799b83209b13d44e18331d7d4f90746ef1392eb61ac122e77326",
+        "adapt04DerivedSemanticDigest": "dbe76f7a6c04d1c7aa60169e5929bb6deebf8663440307df4fe945ca669ac0cb",
+        "derivedArtifactSha256": "56a07a2b832fe15e276d712582d3108d463ea310e4325d24bc65be98f77afb25",
+        "sourceAssetSha256": "b134f9448dba52a0428aaa2fbbdabd98250ac0fc79746f24be068c50e67cf3a3"
+      },
+      "handoffDigest": "8865e07508f20e319155540af0a075eaab1366b14c0d1f53c02aa919e8c67fdf",
+      "limitations": [],
+      "policy": "ADAPT-05 does not package final adapted-character release",
+      "qualificationClassification": "QUALIFIED",
+      "qualificationReportDigest": "38b3152384aeb66dd60a2defccd6ca84dec90ffd406001babe83bb760cf0bc19",
+      "releaseEligible": true,
+      "requiredDownstreamMetadata": {
+        "consumeAdapt05Report": true,
+        "nurionV1Modify": "DENY",
+        "packagingAuthority": "ADAPT-06"
+      },
+      "runtimeCompatibilityMatrix": {
+        "behaviorMap": {
+          "behaviorMap": {
+            "CELEBRATION": "Dance",
+            "FORMAL_GREETING": "LargeBow",
+            "GREETING": "Bow",
+            "HANDSHAKE": "Handshake",
+            "IDLE": "Idle"
+          },
+          "directCrossMotion": "DENY"
+        },
+        "coPlay": {
+          "combinations": {
+            "Bow+FACE": "PASS",
+            "Dance+FACE": "PASS",
+            "Handshake+FACE": "PASS",
+            "Idle+FACE": "PASS",
+            "Idle+TALKING": "PASS"
+          }
+        },
+        "entranceStates": {
+          "compatibility": "COMPATIBLE",
+          "liveIdleAuthority": "PRODUCT-03",
+          "states": [
+            "BOOTSTRAP",
+            "PRELOAD",
+            "ENTRANCE_READY",
+            "ENTRANCE_PLAYING",
+            "RUNTIME_HANDOFF",
+            "LIVE_IDLE",
+            "RECOVERY",
+            "BLOCKED"
+          ]
+        },
+        "motions": {
+          "compatibility": "COMPATIBLE",
+          "requiredMotions": [
+            "Idle",
+            "Bow",
+            "LargeBow",
+            "Handshake",
+            "Dance"
+          ]
+        },
+        "productRelease": {
+          "candidateArtifactsOutsideCanonicalV1": true,
+          "nurionV1Copy": "ALLOW",
+          "nurionV1Modify": "DENY"
+        },
+        "talking": "TALKING_COMPATIBLE"
+      },
+      "schema": "NURION_ADAPT06_RELEASE_HANDOFF_V1"
+    },
+    "adapt06HandoffDigest": "8865e07508f20e319155540af0a075eaab1366b14c0d1f53c02aa919e8c67fdf",
+    "autoRepair": "DENY",
+    "behaviorRuntimeCompatibility": {
+      "blockers": [],
+      "decision": "PASS",
+      "inference": "NONE",
+      "inheritedAuthority": "PRODUCT-05 Interaction & Behavior Runtime",
+      "observed": {
+        "behaviorMap": {
+          "CELEBRATION": "Dance",
+          "FORMAL_GREETING": "LargeBow",
+          "GREETING": "Bow",
+          "HANDSHAKE": "Handshake",
+          "IDLE": "Idle"
+        },
+        "directCrossMotion": "DENY"
+      },
+      "status": "PASS"
+    },
+    "blockers": [],
+    "bodyQualification": {
+      "blockers": [],
+      "decision": "PASS",
+      "inference": "NONE",
+      "inheritedAuthority": "BODY Canonical Bone Spec + ADAPT-02 mapping",
+      "invariants": {
+        "NURION_root_neq_NURION_pelvis": true
+      },
+      "observed": {
+        "mappingPresent": true,
+        "rootPelvisDistinct": true,
+        "rootPelvisStatus": "PASS"
+      },
+      "status": "PASS"
+    },
+    "candidateIdentity": {
+      "adapt01InspectionDigest": "bd9de64ff5ad4b08a4f4e5eb04d28b7e0856b0bf7e75588b138132c4f1c86d61",
+      "adapt02MappingDigest": "b920ae4b395d9f1d3b808e6a002995c1d8f9af4ddaaceaa0a9595ff055a4179a",
+      "adapt03FaceAdaptationDigest": "fab6176347530d4968315d23b8954505ca284f9db2784e7172fe756ff382392f",
+      "adapt04AugmentationPlanDigest": "14f333214546799b83209b13d44e18331d7d4f90746ef1392eb61ac122e77326",
+      "adapt04DerivedSemanticDigest": "dbe76f7a6c04d1c7aa60169e5929bb6deebf8663440307df4fe945ca669ac0cb",
+      "derivedArtifactSha256": "56a07a2b832fe15e276d712582d3108d463ea310e4325d24bc65be98f77afb25",
+      "sourceAssetSha256": "b134f9448dba52a0428aaa2fbbdabd98250ac0fc79746f24be068c50e67cf3a3"
+    },
+    "candidatePath": "D:\\NURION Character Landmarker\\fast_track\\working\\adaptation_engine_v1\\derived_adapt05\\meshy\\meshy_style_adapt04_derived.glb",
+    "contractCanonicalSha256": "38b3152384aeb66dd60a2defccd6ca84dec90ffd406001babe83bb760cf0bc19",
+    "evidenceLayers": {
+      "inference": "DENIED_FOR_REQUIRED_CAPABILITY",
+      "inheritedAuthority": true,
+      "observedEvidence": true,
+      "qualificationDecision": "QUALIFIED"
+    },
+    "expressionQualification": {
+      "blockers": [],
+      "decision": "PASS",
+      "inference": "NONE \u2014 observe final candidate/handoff only",
+      "inheritedAuthority": "FACE Product Lock + ADAPT-03/04 handoff evidence",
+      "observed": {
+        "capabilities": {
+          "blink": "AVAILABLE",
+          "brow": "AVAILABLE",
+          "smile": "AVAILABLE"
+        }
+      },
+      "requiredSemantics": [
+        "blink",
+        "brow",
+        "smile",
+        "frown",
+        "cheek",
+        "mouth-expression"
+      ],
+      "section": "expressionQualification",
+      "status": "PASS"
+    },
+    "eyeQualification": {
+      "blockers": [],
+      "decision": "PASS",
+      "inference": "NONE",
+      "inheritedAuthority": "Eye Calibration (PRESERVE)",
+      "observed": {
+        "blink": "AVAILABLE",
+        "eyeCalibration": "PRESERVE",
+        "leftRightIdentity": "PRESERVED"
+      },
+      "status": "PASS"
+    },
+    "faceAttachmentQualification": {
+      "blockers": [],
+      "decision": "PASS",
+      "inference": "NONE",
+      "inheritedAuthority": "FACE/BODY sole attachment contract",
+      "observed": {
+        "adapt03Status": "COMPATIBLE",
+        "expected": "NURION_head \u2192 FACE_Rig_Root",
+        "handoffAttachment": "COMPATIBLE",
+        "soleAttachment": "NURION_head \u2192 FACE_Rig_Root"
+      },
+      "status": "PASS"
+    },
+    "faceBodyCoPlay": {
+      "blockers": [],
+      "decision": "PASS",
+      "inference": "compatibility only",
+      "inheritedAuthority": "PRODUCT-03 FACE/BODY runtime",
+      "observed": {
+        "combinations": {
+          "Bow+FACE": "PASS",
+          "Dance+FACE": "PASS",
+          "Handshake+FACE": "PASS",
+          "Idle+FACE": "PASS",
+          "Idle+TALKING": "PASS"
+        }
+      },
+      "status": "PASS"
+    },
+    "faceQualification": {
+      "blockers": [],
+      "decision": "PASS",
+      "inference": "NONE \u2014 observe final candidate/handoff only",
+      "inheritedAuthority": "FACE Product Lock + ADAPT-03/04 handoff evidence",
+      "observed": {
+        "capabilities": {
+          "blink": "AVAILABLE",
+          "brow": "AVAILABLE",
+          "smile": "AVAILABLE"
+        }
+      },
+      "status": "PASS"
+    },
+    "finalClassification": "QUALIFIED",
+    "jawMouthQualification": {
+      "blockers": [],
+      "decision": "PASS",
+      "inference": "NONE",
+      "inheritedAuthority": "FACE mouth/jaw semantics",
+      "observed": {
+        "jawOpen": "AVAILABLE",
+        "mouthOpen": "AVAILABLE"
+      },
+      "status": "PASS"
+    },
+    "limitations": [],
+    "manualReviewItems": [],
+    "motionCompatibility": {
+      "blockers": [],
+      "decision": "PASS",
+      "inference": "compatibility only \u2014 no retarget/fix",
+      "inheritedAuthority": "PRODUCT-02 Motion Library",
+      "observed": {
+        "compatibility": "COMPATIBLE",
+        "requiredMotions": [
+          "Idle",
+          "Bow",
+          "LargeBow",
+          "Handshake",
+          "Dance"
+        ]
+      },
+      "status": "PASS"
+    },
+    "policy": "observe \u2192 verify \u2192 classify \u2192 qualify or reject; no fix-then-PASS",
+    "preservation": {
+      "adapt01Mutation": "NONE",
+      "adapt02Mutation": "NONE",
+      "adapt03Mutation": "NONE",
+      "adapt04Mutation": "NONE",
+      "adapt06Implementation": "NOT_STARTED",
+      "autoRepair": "DENY",
+      "bodyCanonicalMutation": "NONE",
+      "candidateMutationDuringAdapt05": "NONE",
+      "faceAuthorityMutation": "NONE",
+      "nurionV1Mutation": "NONE",
+      "product01to06Mutation": "NONE",
+      "sourceOriginalMutation": "NONE"
+    },
+    "productReleaseCompatibility": {
+      "blockers": [],
+      "decision": "PASS",
+      "inference": "NONE",
+      "inheritedAuthority": "PRODUCT-06 + Character Product Release V1",
+      "observed": {
+        "candidateArtifactsOutsideCanonicalV1": true,
+        "nurionV1Copy": "ALLOW",
+        "nurionV1Modify": "DENY"
+      },
+      "status": "PASS"
+    },
+    "qualificationReportDigest": "38b3152384aeb66dd60a2defccd6ca84dec90ffd406001babe83bb760cf0bc19",
+    "runtimeCompatibilityDigest": "3e35c39ee3a4132fed60ecbf6f24737b63e5c1049078d2ff39db5b472424594b",
+    "runtimeCompatibilityMatrix": {
+      "behaviorMap": {
+        "behaviorMap": {
+          "CELEBRATION": "Dance",
+          "FORMAL_GREETING": "LargeBow",
+          "GREETING": "Bow",
+          "HANDSHAKE": "Handshake",
+          "IDLE": "Idle"
+        },
+        "directCrossMotion": "DENY"
+      },
+      "coPlay": {
+        "combinations": {
+          "Bow+FACE": "PASS",
+          "Dance+FACE": "PASS",
+          "Handshake+FACE": "PASS",
+          "Idle+FACE": "PASS",
+          "Idle+TALKING": "PASS"
+        }
+      },
+      "entranceStates": {
+        "compatibility": "COMPATIBLE",
+        "liveIdleAuthority": "PRODUCT-03",
+        "states": [
+          "BOOTSTRAP",
+          "PRELOAD",
+          "ENTRANCE_READY",
+          "ENTRANCE_PLAYING",
+          "RUNTIME_HANDOFF",
+          "LIVE_IDLE",
+          "RECOVERY",
+          "BLOCKED"
+        ]
+      },
+      "motions": {
+        "compatibility": "COMPATIBLE",
+        "requiredMotions": [
+          "Idle",
+          "Bow",
+          "LargeBow",
+          "Handshake",
+          "Dance"
+        ]
+      },
+      "productRelease": {
+        "candidateArtifactsOutsideCanonicalV1": true,
+        "nurionV1Copy": "ALLOW",
+        "nurionV1Modify": "DENY"
+      },
+      "talking": "TALKING_COMPATIBLE"
+    },
+    "runtimeStateCompatibility": {
+      "blockers": [],
+      "decision": "PASS",
+      "inference": "NONE",
+      "inheritedAuthority": "PRODUCT-04 Character Entrance State",
+      "observed": {
+        "compatibility": "COMPATIBLE",
+        "liveIdleAuthority": "PRODUCT-03",
+        "states": [
+          "BOOTSTRAP",
+          "PRELOAD",
+          "ENTRANCE_READY",
+          "ENTRANCE_PLAYING",
+          "RUNTIME_HANDOFF",
+          "LIVE_IDLE",
+          "RECOVERY",
+          "BLOCKED"
+        ]
+      },
+      "status": "PASS"
+    },
+    "schema": "NURION_ADAPT05_QUALIFICATION_REPORT_V1",
+    "sourceAssetPath": "D:\\NURION Character Landmarker\\fast_track\\adaptation\\fixtures_adapt05\\meshy_style.glb",
+    "sourceIdentity": {
+      "adapt04Classification": "AUGMENTED",
+      "characterId": "meshy",
+      "sourceAssetSha256": "b134f9448dba52a0428aaa2fbbdabd98250ac0fc79746f24be068c50e67cf3a3"
+    },
+    "stage": "ADAPT-05",
+    "structuralQualification": {
+      "blockers": [],
+      "decision": "PASS",
+      "inference": "NONE",
+      "inheritedAuthority": "ADAPT-04 derived artifact",
+      "observed": {
+        "candidateSha256": "56a07a2b832fe15e276d712582d3108d463ea310e4325d24bc65be98f77afb25",
+        "hasScene": true,
+        "meshCount": 1,
+        "nodeCount": 53,
+        "readable": true
+      },
+      "status": "PASS"
+    },
+    "talkingQualification": {
+      "blockers": [],
+      "decision": "PASS",
+      "inference": "NONE \u2014 do not create missing visemes",
+      "inheritedAuthority": "locked TALKING authority",
+      "observed": {
+        "matrixKeys": [
+          "rows",
+          "status"
+        ]
+      },
+      "status": "PASS",
+      "talkingClassification": "TALKING_COMPATIBLE"
+    },
+    "upstreamAuthorityPins": {
+      "faceAuthorityPins": {
+        "assemblyBaselineSha256": "1a38586905d155053f7eff6a625bb3497a2a17235892017e4ad277ce06c14605",
+        "compositionPolicySha256": "da5b7399cc291dcf1f00fbc35052f5f69215862c26a5cf7d77c465a6778f51d3",
+        "eyeCalibrationFingerprintSha256": "2d1dbb6772cd74c2a7dc991cf497d58dc5b803359f5430105dbe4ff9e513ff19",
+        "faceBodyRuntimeSha256": "917d640f10946e4b77fe5dafa8f6c649e36b95198361024fe4514c69d05f0fef",
+        "faceProductLockSha256": "07830e1c34ce79b1d9ff9fc15a8b456ef7e3438d05ae7709d3515c00baebcf06",
+        "namingTableSha256": "61995e5c47b1c25d17cdf8733a8d23b87a7faae667dc5724ad3ea2372fe15187"
+      },
+      "predecessorPass": {
+        "adapt01AuditZipSha256": "dff9ac13c36916903523d55096d76ed2e0c8f387720160f21f0026006a4d7f8b",
+        "adapt01PassReceipt": "evidence/NURION-ADAPT-01_PASS_receipt.json",
+        "adapt01Status": "CLOSED / PASS / CONSUME ONLY",
+        "adapt02AuditZipSha256": "4cf33689131f4093e682120953c6d2fa99a931e90f4716dc8cd06f19694e1e46",
+        "adapt02PassReceipt": "evidence/NURION-ADAPT-02_PASS_receipt.json",
+        "adapt02Status": "CLOSED / PASS / CONSUME ONLY",
+        "adapt03AuditZipSha256": "1b960bc3dac3930365724d12a4ab1944e81a1b77afbf97d996e88e1c8d4672b7",
+        "adapt03PassReceipt": "evidence/NURION-ADAPT-03_PASS_receipt.json",
+        "adapt03Status": "CLOSED / PASS / CONSUME ONLY",
+        "adapt04AuditZipSha256": "dc1159c515772f4ebef3829785b6bdc6943700df0c8a7708e0ead8ac285cc5e0",
+        "adapt04PassReceipt": "evidence/NURION-ADAPT-04_PASS_receipt.json",
+        "adapt04PassReceiptSha256": "7d00bbc1c247629359785a9757694f65eef46c8148f0395cbfe2bd3797a81122",
+        "adapt04Status": "CLOSED / PASS / CONSUME ONLY"
+      },
+      "runtimeAuthorityPins": {
+        "axisRetargetConventionSha256": "19da5a00f4943a144426efaf675d364f64d244773dc60ede7db81be5bb8c6d9a",
+        "bodyCanonicalSpecSha256": "c73b5c540e29fcbf4ef4477c51f869eead9640194cec21110c6d60e55d1f900a",
+        "faceProductLockSha256": "07830e1c34ce79b1d9ff9fc15a8b456ef7e3438d05ae7709d3515c00baebcf06",
+        "product01AssemblySha256": "1a38586905d155053f7eff6a625bb3497a2a17235892017e4ad277ce06c14605",
+        "product02MotionLibrarySha256": "37504c8c28545f7d486aba453cfc6afc66fe21f14500e8d2ac9be2affa56051f",
+        "product03FaceBodyRuntimeSha256": "917d640f10946e4b77fe5dafa8f6c649e36b95198361024fe4514c69d05f0fef",
+        "product04EntranceStateSha256": "ad2199932100a990f9e0ad387852ff67856d9865b927d3983ff7da7301c545d7",
+        "product05BehaviorRuntimeSha256": "5ae2e6c0169e51cecd8b9d2c7855d05add27738acf356ff0809e4addb3321a07",
+        "product06ReleaseBaselineSha256": "76741d7dd0df1748468c32ebbfaf174c00e401a4e375419d8f56cec46a7603ee"
+      }
+    }
+  }
+}

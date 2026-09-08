@@ -1,0 +1,43 @@
+{
+  "schema": "NURION_CHANGE_CONTROL_GATE_V1",
+  "title": "NURION Change Control Gate",
+  "purpose": "Reusable Human Spec Gate / Human Final Gate separation for V2 CRs",
+  "statusMachine": [
+    "CANDIDATE",
+    "SPEC_PROPOSED",
+    "HUMAN_SPEC_REVIEW",
+    "REJECTED",
+    "OPEN_PROTOTYPE",
+    "READY_FOR_HUMAN_AUDIT",
+    "HUMAN_PASS",
+    "CONSUME_ONLY"
+  ],
+  "transitions": {
+    "CANDIDATE→SPEC_PROPOSED": "SPEC artifact created",
+    "SPEC_PROPOSED→HUMAN_SPEC_REVIEW": "await Human Spec Gate",
+    "HUMAN_SPEC_REVIEW→REJECTED": "Human reject → return CANDIDATE",
+    "HUMAN_SPEC_REVIEW→OPEN_PROTOTYPE": "Human Spec Gate APPROVED + approvedSpecDigest pinned",
+    "OPEN_PROTOTYPE→READY_FOR_HUMAN_AUDIT": "automated proof ceiling",
+    "READY_FOR_HUMAN_AUDIT→HUMAN_PASS": "Human Final Gate only"
+  },
+  "humanSpecGate": {
+    "grants": "IMPLEMENTATION AUTHORITY",
+    "requires": [
+      "humanSpecGate.status == APPROVED",
+      "approvedSpecDigest == sha256(SPEC bytes)",
+      "status == OPEN_PROTOTYPE",
+      "implementationAuthority == GRANTED"
+    ],
+    "agentMayNotSelfApprove": true
+  },
+  "humanFinalGate": {
+    "grants": "HUMAN PASS / technical confirmation",
+    "agentMayNotDeclarePass": true,
+    "doesNotOpenEngineV2": true
+  },
+  "invariants": {
+    "Spec PASS ≠ technical PASS ≠ Engine V2 OPEN": true,
+    "upstreamMutation": "DENY while consuming prior CRs"
+  },
+  "module": "fast_track/change_control/nurion_change_control_gate_v1.py"
+}

@@ -1,0 +1,25 @@
+{
+  "receiptId": "NURION-V2_AUTHORITY_LINE_FINAL_FIXED",
+  "declaredBy": "etherean",
+  "declaredAtUtc": "20260830T050800Z",
+  "authorityLine": "FINAL FIXED",
+  "CR01": "CONSUME ONLY / REOPEN DENY",
+  "CR02": "CONSUME ONLY / REOPEN DENY",
+  "V2-CR-03": {
+    "title": "MORPH-WEIGHT RUNTIME TALKING SEQUENCE",
+    "status": "CANDIDATE ONLY / NOT OPEN",
+    "implementationAuthority": "NONE until formally OPEN via Human Spec Gate"
+  },
+  "V2-CR-04": {
+    "title": "SECOND REAL MESHY ASSET GENERALIZATION",
+    "status": "CANDIDATE ONLY / NOT OPEN",
+    "opensOnlyAfter": "V2-CR-03 HUMAN-AUDITED PROOF CLOSED"
+  },
+  "executionOrder": "CR03 → CR04",
+  "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN",
+  "policy": {
+    "reProveOrModifyCR01CR02": "DENY",
+    "consumeCR01CR02": "ALLOW",
+    "subsequentCRScope": "newly unproven risks only — minimum range"
+  }
+}

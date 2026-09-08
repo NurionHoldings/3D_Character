@@ -1,0 +1,156 @@
+{
+  "adapt01RoleToCanonical": {
+    "calf_L": "NURION_calf_L",
+    "calf_R": "NURION_calf_R",
+    "chest": "NURION_chest",
+    "clavicle_L": "NURION_clavicle_L",
+    "clavicle_R": "NURION_clavicle_R",
+    "foot_L": "NURION_foot_L",
+    "foot_R": "NURION_foot_R",
+    "hand_L": "NURION_hand_L",
+    "hand_R": "NURION_hand_R",
+    "head": "NURION_head",
+    "lowerArm_L": "NURION_lowerArm_L",
+    "lowerArm_R": "NURION_lowerArm_R",
+    "neck": "NURION_neck",
+    "pelvis": "NURION_pelvis",
+    "root": "NURION_root",
+    "spine": "NURION_spine01",
+    "thigh_L": "NURION_thigh_L",
+    "thigh_R": "NURION_thigh_R",
+    "toe_L": "NURION_toe_L",
+    "toe_R": "NURION_toe_R",
+    "upperArm_L": "NURION_upperArm_L",
+    "upperArm_R": "NURION_upperArm_R"
+  },
+  "bodyCore23": [
+    "NURION_root",
+    "NURION_pelvis",
+    "NURION_spine01",
+    "NURION_spine02",
+    "NURION_chest",
+    "NURION_neck",
+    "NURION_head",
+    "NURION_clavicle_L",
+    "NURION_upperArm_L",
+    "NURION_lowerArm_L",
+    "NURION_hand_L",
+    "NURION_clavicle_R",
+    "NURION_upperArm_R",
+    "NURION_lowerArm_R",
+    "NURION_hand_R",
+    "NURION_thigh_L",
+    "NURION_calf_L",
+    "NURION_foot_L",
+    "NURION_toe_L",
+    "NURION_thigh_R",
+    "NURION_calf_R",
+    "NURION_foot_R",
+    "NURION_toe_R"
+  ],
+  "canonicalAxis": {
+    "forward": "+Z",
+    "handedness": "right-handed",
+    "right": "+X",
+    "up": "+Y"
+  },
+  "hierarchy": {
+    "NURION_calf_L": [
+      "NURION_foot_L"
+    ],
+    "NURION_calf_R": [
+      "NURION_foot_R"
+    ],
+    "NURION_chest": [
+      "NURION_clavicle_L",
+      "NURION_clavicle_R",
+      "NURION_neck"
+    ],
+    "NURION_clavicle_L": [
+      "NURION_upperArm_L"
+    ],
+    "NURION_clavicle_R": [
+      "NURION_upperArm_R"
+    ],
+    "NURION_foot_L": [
+      "NURION_toe_L"
+    ],
+    "NURION_foot_R": [
+      "NURION_toe_R"
+    ],
+    "NURION_lowerArm_L": [
+      "NURION_hand_L"
+    ],
+    "NURION_lowerArm_R": [
+      "NURION_hand_R"
+    ],
+    "NURION_neck": [
+      "NURION_head"
+    ],
+    "NURION_pelvis": [
+      "NURION_thigh_L",
+      "NURION_thigh_R",
+      "NURION_spine01"
+    ],
+    "NURION_root": [
+      "NURION_pelvis"
+    ],
+    "NURION_spine01": [
+      "NURION_spine02"
+    ],
+    "NURION_spine02": [
+      "NURION_chest"
+    ],
+    "NURION_thigh_L": [
+      "NURION_calf_L"
+    ],
+    "NURION_thigh_R": [
+      "NURION_calf_R"
+    ],
+    "NURION_upperArm_L": [
+      "NURION_lowerArm_L"
+    ],
+    "NURION_upperArm_R": [
+      "NURION_lowerArm_R"
+    ]
+  },
+  "invariants": {
+    "faceRigCreation": "DENY_IN_ADAPT02",
+    "rootPelvisDistinct": true,
+    "rootPelvisNeverMerge": true
+  },
+  "requiredMajorSemantics": [
+    "NURION_root",
+    "NURION_pelvis",
+    "NURION_spine01",
+    "NURION_chest",
+    "NURION_neck",
+    "NURION_head",
+    "NURION_upperArm_L",
+    "NURION_upperArm_R",
+    "NURION_thigh_L",
+    "NURION_thigh_R"
+  ],
+  "revision": "R2",
+  "role": "CONSUME_ONLY cryptographically pinned snapshot binding for ADAPT-02",
+  "schema": "NURION_ADAPT02_CANONICAL_BODY_BINDING_V1",
+  "snapshot": {
+    "axisConventionDigest": "92f838aca6716ccad4f9213f2262836ed26a52ee6605519911bb4ffd3b8a50e0",
+    "axisSnapshotFile": "semantic/NURION_ADAPT02_AXIS_SNAPSHOT_V1.json",
+    "bodyCoreDigest": "edfa882498efa95f251c6c0cf21a4f19f8a5f7ced232712709c8c15fe4b87456",
+    "bodyCoreSnapshotFile": "semantic/NURION_ADAPT02_BODY_CORE_SNAPSHOT_V1.json",
+    "derivation": "READ_ONLY_EXTRACT"
+  },
+  "upstream": {
+    "axisRetargetConvention": {
+      "identity": "NURION_BODY_AXIS_RETARGET_CONVENTION_V1",
+      "repoRel": "fast_track/working/meshy_silver_starlight/semantic/NURION_BODY_AXIS_RETARGET_CONVENTION_V1.json",
+      "sha256": "19da5a00f4943a144426efaf675d364f64d244773dc60ede7db81be5bb8c6d9a"
+    },
+    "bodyCanonicalSpec": {
+      "identity": "NURION_BODY_CANONICAL_BONE_SPEC_V1",
+      "repoRel": "fast_track/working/meshy_silver_starlight/semantic/NURION_BODY_CANONICAL_BONE_SPEC_V1.json",
+      "sha256": "c73b5c540e29fcbf4ef4477c51f869eead9640194cec21110c6d60e55d1f900a"
+    }
+  }
+}

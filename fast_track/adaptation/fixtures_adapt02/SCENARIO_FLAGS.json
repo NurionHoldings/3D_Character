@@ -1,0 +1,44 @@
+{
+  "ambiguous_arm": {
+    "force": {
+      "impossibleArmInLeg": true
+    },
+    "note": "force via proof flags"
+  },
+  "axis_adapter": {
+    "asset": "axis_z_up_adapter.glb",
+    "force": {
+      "axisMismatchAdapter": true
+    }
+  },
+  "digest_mismatch": {
+    "force": {
+      "digestMismatch": true
+    }
+  },
+  "laterality_inversion": {
+    "force": {
+      "invertLaterality": true
+    }
+  },
+  "malformed_adapt01": {
+    "force": {
+      "malformedAdapt01": true
+    }
+  },
+  "missing_limb": {
+    "force": {
+      "missingLimb": true
+    }
+  },
+  "retarget_blocked": {
+    "force": {
+      "retargetBlocked": true
+    }
+  },
+  "root_pelvis_ambiguity": {
+    "force": {
+      "rootPelvisSame": true
+    }
+  }
+}

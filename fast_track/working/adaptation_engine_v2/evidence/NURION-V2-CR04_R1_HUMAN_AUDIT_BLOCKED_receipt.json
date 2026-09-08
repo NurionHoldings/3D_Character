@@ -1,0 +1,58 @@
+{
+  "receiptId": "NURION-V2-CR04_R1_HUMAN_AUDIT_BLOCKED",
+  "schema": "NURION_V2_CR04_HUMAN_AUDIT_BLOCKED_RECEIPT_V1",
+  "authority": "HUMAN_FINAL_GATE",
+  "changeRequestId": "V2-CR-04",
+  "packagingRevision": "R1_BOLT_VOYAGER",
+  "result": "HUMAN AUDIT BLOCKED",
+  "CR04-P07": "HUMAN AUDIT BLOCKED",
+  "CR04-G20": "HUMAN AUDIT BLOCKED",
+  "declaredAtUtc": "20260830T060600Z",
+  "declaredBy": "etherean",
+  "technicalTalkingFailure": false,
+  "generalizationFailure": true,
+  "agentStages": {
+    "CR04-P01_to_P06": "AGENT PASS / PRESERVED",
+    "secondAssetGlbExecution": "FUNCTIONALLY PASS",
+    "bodySkinPreservation": "PASS",
+    "faceDeformation": "ACTUAL / PASS",
+    "runtimeTalking": "ACTUAL / PASS"
+  },
+  "humanVerifiedFunctional": {
+    "zipSha256": "741bd7b012cfbd2ee2ce5336ce3ff7672612335ef601d95f97233e7009d7db46",
+    "secondAssetSha256": "40b7783f5ca70f9dac23404564f90ac8749c97762299300ae85bbc4b88e5f88b",
+    "derivedSha256": "a20069f9a05f21e50204fd20e3a43079418f7d28d0d58236f915faa00acc6405",
+    "cleanExtractionRunner": "exit 0 / PASS",
+    "weightsChannel": true,
+    "sequence": "Neutral→AA→OH→EE→Neutral",
+    "peakDisplacement": {"AA": 0.013416408, "OH": 0.016613248, "EE": 0.008},
+    "stateDistinctness": {"AA_vs_OH": 0.009797959, "AA_vs_EE": 0.0156205, "OH_vs_EE": 0.020099752},
+    "restoration": {"start": 0.0, "end": 0.0},
+    "bodySkinByteEqual": true,
+    "cr02ToCr03MorphPositionUnchanged": true
+  },
+  "blocker": {
+    "code": "UPSTREAM_CR02_ASSET_SPECIFIC_FACIAL_SELECTION_CONSTANTS_PLUS_INCOMPLETE_HARDCODING_SCAN",
+    "detail": [
+      "facial_deformation.py HEAD_SKIN_LOCAL=21 annotated as Idle_15 Head joint index",
+      "FACE_Y_MIN=1.28 absolute coordinate constant",
+      "Bolt Voyager coincidentally also has skin local index 21 = Head — coincidence not proof of generalization",
+      "CR04 hardcoding_scan only covered v2_cr04/fasttrack.py control-flow; did not scan consumed CR02 production logic"
+    ]
+  },
+  "upstream": {
+    "CR01": "HUMAN PASS / CONSUME ONLY / REOPEN DENY — DO NOT REOPEN",
+    "CR02": "HUMAN PASS / CONSUME ONLY / REOPEN DENY — Idle_15 deformation basis remains valid; DO NOT REOPEN",
+    "CR03": "HUMAN PASS / CONSUME ONLY / REOPEN DENY — DO NOT REOPEN"
+  },
+  "secondAsset": {
+    "status": "PRESERVED / DO NOT RESELECT",
+    "sha256": "40b7783f5ca70f9dac23404564f90ac8749c97762299300ae85bbc4b88e5f88b",
+    "characterFamily": "Meshy_AI_Bolt_Voyager_biped"
+  },
+  "sportyExploratoryR2": "NOT Human Final SoT — preserved separately; do not use as silent reselection",
+  "correctiveScope": "CR04-GAP-01 ASSET-INDEPENDENT FACIAL REGION RESOLUTION (do not reopen CR02)",
+  "completionEstimateNote": "~94–95%; gap narrowed to CR02 facial selection constants + scan coverage",
+  "engineV2": "NOT_OPEN",
+  "next": "CR04-GAP-01 SPEC → Human Spec Gate → same Bolt Voyager pin re-verification"
+}

@@ -1,0 +1,8 @@
+{
+  "packagingRevision": "R3",
+  "zipSha256": "fbb14acf28ef3695c3cb036aedf2f976757e4f9e0046952891e8f0ec38b87d29",
+  "derivedSha256": "55601949d6fc67eaebe405e683134fc516be5d6374ca748ea8809ae12dbace4d",
+  "facialDerivedSha256": "92502f6f66b82c4dc1a7138b90746b4b0e755e6e857de0c2390ae9ef6320f51a",
+  "secondAssetSha256": "f3f9e343c8ba3c9a503a8423293dec90bb6be50f809f1321f4f6658b1bea133e",
+  "corrective": "V2-CR-04-GAP-01"
+}

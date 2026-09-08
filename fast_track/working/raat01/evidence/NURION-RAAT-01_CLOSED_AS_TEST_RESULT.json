@@ -1,0 +1,54 @@
+{
+  "schema": "NURION_RAAT01_TEST_RESULT_V1",
+  "testId": "RAAT-01",
+  "status": "CLOSED AS TEST RESULT",
+  "closedAtUtc": "20260830T025500Z",
+  "engineV1": "CLOSED / PASS / CONSUME ONLY",
+  "canonicalMutation": "DENY",
+  "subject": {
+    "label": "Idle_15_withSkin_WORKING_BASELINE",
+    "characterId": "raat01_idle15",
+    "path": "fast_track/working/meshy_silver_starlight/baseline/Idle_15_withSkin_WORKING_BASELINE.glb",
+    "sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+    "byteLength": 7543428
+  },
+  "pipelineStatus": "BLOCKED",
+  "firstStopStage": "ADAPT-02",
+  "automaticStagesPassed": ["ADAPT-01"],
+  "manualReviewRequired": false,
+  "blockedReasons": [
+    {
+      "stage": "ADAPT-02",
+      "code": "CHAIN_VALIDATION",
+      "detail": "ancestry_break:NURION_spine01->NURION_chest",
+      "armsLegsChains": "PASS"
+    }
+  ],
+  "sourceMutation": "NONE",
+  "engineV1Mutation": "NONE",
+  "releaseCandidateSha256": null,
+  "reinterpretation": {
+    "v1Verdict": "ADAPT-02 BLOCKED — per frozen V1 contract (valid envelope measurement)",
+    "productVerdict": "POTENTIAL FALSE BLOCK — Meshy naming/depth inversion, not broken rig",
+    "gapId": "MESHY-COMPATIBILITY-GAP-01",
+    "v2ChangeRequest": "V2-CR-01 Flexible Meshy Skeleton Semantic Adapter",
+    "analysisArtifact": "evidence/NURION-MESHY-IDLE15_SEMANTIC_ADAPTER_ANALYSIS.json"
+  },
+  "v2ChangeControlCandidates": [
+    {
+      "id": "V2-CANDIDATE-ADAPT02-SPINE-ANCESTRY-MESHY",
+      "issue": "Meshy Idle_15 torso uses inverted spine naming depth; V1 exact ancestry rejects valid commercial input",
+      "observedOn": "RAAT-01",
+      "actionNow": "ACCUMULATE ONLY — do not reopen ADAPT-02 / Engine V1",
+      "status": "DEFERRED_TO_V2_OR_CHANGE_CONTROL",
+      "supersedes": "MESHY-COMPATIBILITY-GAP-01"
+    }
+  ],
+  "policy": "RAAT-01 preserved as blocked-case measurement of realistic V1 support boundary; no AUTO REPAIR",
+  "artifacts": {
+    "fullReport": "reports/RAAT01_report_raat01_idle15.json",
+    "receipt": "evidence/NURION-RAAT-01_raat01_idle15_acceptance_receipt.json",
+    "firstRunSummary": "evidence/NURION-RAAT-01_first_run_summary.json"
+  },
+  "next": "MESHY-COMPATIBILITY-GAP-01 analysis → V2-CR-01 Flexible Meshy Skeleton Semantic Adapter review; RAAT-02 deferred"
+}

@@ -1,0 +1,31 @@
+{
+  "auditType": "HUMAN_FINAL_AUDIT",
+  "blocker": "SHOULDER_SIDE_AMBIGUOUS DOES NOT FAIL CLOSED",
+  "changeRequestId": "V2-CR-01",
+  "cr01G20": "HUMAN BLOCKED",
+  "cr01P06": "HUMAN BLOCKED",
+  "cr01P01toP05": "AUTOMATED PROOF VERIFIED",
+  "declaredAtUtc": "20260830T031500Z",
+  "engineV1": "CLOSED / PASS / CONSUME ONLY",
+  "finding": {
+    "code": "SHOULDER_SIDE_AMBIGUOUS",
+    "detail": "torso_chain.py recorded ambiguity but allowed shoulder_cands[0/1] fallback instead of fail-closed",
+    "file": "fast_track/v2_cr01/torso_chain.py"
+  },
+  "g13Gap": "R1 G13 proved name-hardcoding counter only, not ambiguity fail-closed",
+  "humanAuditor": "etherean",
+  "packageVerified": {
+    "cleanExtractionExit0": true,
+    "finalAuditZipSha256": "eea627cc6bd71c48fa9a655ed38ffa8e77fb3b92dedca87c8a48813709da5a67",
+    "gatesG01G19RunnerPass": true,
+    "idle15Sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+    "semanticAdapterDigest": "c6aecfa1a90e81afa878a08ca7cdfc0ed34135b60bbdd2d48e597955d485393d"
+  },
+  "next": "V2-CR-01 R2 ambiguity hardening + G13 negative fixtures",
+  "receiptId": "NURION-V2-CR01_R1_HUMAN_AUDIT_BLOCKED_R1",
+  "revision": "R1",
+  "r2Scope": "AMBIGUITY_HARDENING_ONLY — V1 mutation NONE",
+  "status": "HUMAN AUDIT BLOCKED",
+  "v2Cr01": "HUMAN AUDIT BLOCKED",
+  "v2Engine": "NOT OPEN"
+}

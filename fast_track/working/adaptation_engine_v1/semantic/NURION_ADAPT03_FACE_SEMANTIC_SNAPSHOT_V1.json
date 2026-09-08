@@ -1,0 +1,92 @@
+{
+  "canonicalContract": "NURION_FACE_CANONICAL_V1",
+  "essentialCount": 25,
+  "essentialExpressions": [
+    "FACE_browDownLeft",
+    "FACE_browDownRight",
+    "FACE_browInnerUpLeft",
+    "FACE_browInnerUpRight",
+    "FACE_browOuterUpLeft",
+    "FACE_browOuterUpRight",
+    "FACE_cheekRaiseLeft",
+    "FACE_cheekRaiseRight",
+    "FACE_dentalLip",
+    "FACE_eyeBlinkLeft",
+    "FACE_eyeBlinkRight",
+    "FACE_eyeSquintLeft",
+    "FACE_eyeSquintRight",
+    "FACE_eyeWideLeft",
+    "FACE_eyeWideRight",
+    "FACE_lipsPart",
+    "FACE_lipsTight",
+    "FACE_mouthFrownLeft",
+    "FACE_mouthFrownRight",
+    "FACE_mouthOpen",
+    "FACE_mouthPlosive",
+    "FACE_mouthPucker",
+    "FACE_mouthSmileLeft",
+    "FACE_mouthSmileRight",
+    "FACE_mouthWiden"
+  ],
+  "expressionOwned": [
+    "FACE_browDownLeft",
+    "FACE_browDownRight",
+    "FACE_browInnerUpLeft",
+    "FACE_browInnerUpRight",
+    "FACE_browOuterUpLeft",
+    "FACE_browOuterUpRight",
+    "FACE_cheekRaiseLeft",
+    "FACE_cheekRaiseRight",
+    "FACE_eyeBlinkLeft",
+    "FACE_eyeBlinkRight",
+    "FACE_eyeSquintLeft",
+    "FACE_eyeSquintRight",
+    "FACE_eyeWideLeft",
+    "FACE_eyeWideRight"
+  ],
+  "legacyAdapterContract": {
+    "PRES_Blink_L": [
+      "FACE_eyeBlinkLeft"
+    ],
+    "PRES_Blink_R": [
+      "FACE_eyeBlinkRight"
+    ],
+    "PRES_JawOpen": [
+      "FACE_mouthOpen"
+    ],
+    "PRES_SmileMild": [
+      "FACE_mouthSmileLeft",
+      "FACE_mouthSmileRight"
+    ],
+    "PRES_Viseme_A": [
+      "FACE_mouthOpen"
+    ],
+    "PRES_Viseme_E": [
+      "FACE_mouthWiden"
+    ],
+    "PRES_Viseme_M": [
+      "FACE_mouthPlosive"
+    ],
+    "PRES_Viseme_O": [
+      "FACE_mouthPucker"
+    ],
+    "renamePresSmileMildToPresSmile": "DENY"
+  },
+  "schema": "NURION_ADAPT03_FACE_SEMANTIC_SNAPSHOT_V1",
+  "smileFrown": [
+    "FACE_mouthFrownLeft",
+    "FACE_mouthFrownRight",
+    "FACE_mouthSmileLeft",
+    "FACE_mouthSmileRight"
+  ],
+  "sourceIdentity": "NURION_FACE_CANONICAL_V1_NAMING_TABLE",
+  "speechOwned": [
+    "FACE_dentalLip",
+    "FACE_lipsPart",
+    "FACE_lipsTight",
+    "FACE_mouthOpen",
+    "FACE_mouthPlosive",
+    "FACE_mouthPucker",
+    "FACE_mouthWiden"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "assemblyBaselineChild": "FACE_Rig_Root",
+  "assemblyBaselineParent": "NURION_head",
+  "child": "FACE_Rig_Root",
+  "crossBoundaryOwnershipCollision": "DENY",
+  "parent": "NURION_head",
+  "schema": "NURION_ADAPT03_ATTACHMENT_SNAPSHOT_V1",
+  "sourceIdentity": "NURION_PRODUCT03_FACE_BODY_RUNTIME_V1",
+  "type": "SOLE_ATTACHMENT"
+}

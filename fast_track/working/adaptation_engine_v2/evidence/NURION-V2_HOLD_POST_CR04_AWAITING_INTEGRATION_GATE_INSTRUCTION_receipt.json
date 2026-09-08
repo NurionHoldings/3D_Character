@@ -1,0 +1,20 @@
+{
+  "receiptId": "NURION-V2_HOLD_POST_CR04_AWAITING_INTEGRATION_GATE_INSTRUCTION",
+  "declaredBy": "etherean",
+  "declaredAtUtc": "20260830T072800Z",
+  "authorityLine": "FIXED / PRESERVED",
+  "CR01": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+  "CR02": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+  "CR03": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+  "CR04": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+  "HC-01": "CLOSED BY CR04 R3",
+  "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN",
+  "completionEstimate": "~96–97%",
+  "policy": {
+    "autoOpenNextGate": false,
+    "candidateNext": "V2 Integration / Release Gate",
+    "openTrigger": "Explicit Human instruction to start SPEC proposal",
+    "untilThen": "HOLD — no SPEC drafting, no CR reopen, no Engine V2 CLOSED/PASS/100%"
+  },
+  "gatePurposeWhenOpened": "Consume CR01–CR04 Human-PASS unchanged; verify single authoritative V2 release candidate linkage"
+}

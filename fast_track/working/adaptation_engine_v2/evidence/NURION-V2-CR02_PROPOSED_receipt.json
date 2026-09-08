@@ -1,0 +1,43 @@
+{
+  "receiptId": "NURION-V2-CR02_PROPOSED_R1",
+  "schema": "NURION_V2_CR02_PROPOSED_RECEIPT_V1",
+  "changeRequestId": "V2-CR-02",
+  "title": "MESHY FACE / EYE / JAW / TALKING AUGMENTATION",
+  "status": "PROPOSED",
+  "specStatus": "AWAITING HUMAN REVIEW",
+  "prototypeStatus": "NOT STARTED",
+  "revision": "R1",
+  "declaredAtUtc": "20260830T043000Z",
+  "declaredBy": "etherean",
+  "authority": {
+    "NURION_CHARACTER_ADAPTATION_ENGINE_V1": "CLOSED / PASS / CONSUME ONLY",
+    "V1_MUTATION": "DENY",
+    "V2-CR-01": "PROTOTYPE HUMAN PASS / TECHNICAL BASIS CONFIRMED / CONSUME ONLY",
+    "CR01_REOPEN": "DENY",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN"
+  },
+  "input": "CR01 semantic-adaptable Meshy character",
+  "firstProofAsset": {
+    "path": "fast_track/working/meshy_silver_starlight/baseline/Idle_15_withSkin_WORKING_BASELINE.glb",
+    "sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+    "role": "FIRST_PROOF_ASSET_ONLY"
+  },
+  "successCriteria": {
+    "Idle_15_original_BODY_skin": "UNCHANGED",
+    "NURION_head_to_FACE_Rig_Root": "VALID",
+    "Eye_Blink": "FUNCTIONAL",
+    "Jaw_Mouth": "FUNCTIONAL",
+    "Expression": "FUNCTIONAL",
+    "TALKING": "FUNCTIONAL",
+    "Runtime_qualification": "POSSIBLE"
+  },
+  "contract": "semantic/NURION_ADAPTATION_ENGINE_V2_CR02_MESHY_FACE_EYE_JAW_TALKING_AUGMENTATION_V1.json",
+  "agentCeiling": "SPEC_REVIEW_ONLY",
+  "CR02-G20": "HUMAN_FINAL_ONLY",
+  "authorityTransition": {
+    "current": "V2-CR-02 = PROPOSED",
+    "v2Engine": "NOT OPEN",
+    "onHumanSpecApproval": "V2-CR-02 = OPEN / PROTOTYPE → CR02-P01; Idle_15 first proof"
+  },
+  "next": "Human review of V2-CR-02 R1 SPEC — approve to OPEN / PROTOTYPE; no implementation until then"
+}

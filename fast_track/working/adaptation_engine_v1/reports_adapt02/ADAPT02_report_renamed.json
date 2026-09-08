@@ -1,0 +1,596 @@
+{
+  "adapt01": {
+    "reportCanonicalSha256": "d3a53dab59d7e45302e2c0062cbe0cab91100c3264ad0dc836b560121699dc94"
+  },
+  "adapt02": {
+    "adapt01InspectionDigest": "d3a53dab59d7e45302e2c0062cbe0cab91100c3264ad0dc836b560121699dc94",
+    "adapterMetadata": {
+      "axisConversion": {
+        "nonDestructive": true,
+        "upConversion": "IDENTITY_PENDING_RUNTIME"
+      },
+      "correspondence": {
+        "NURION_calf_L": {
+          "sourceNode": "L_Shin",
+          "status": "RESOLVED"
+        },
+        "NURION_calf_R": {
+          "sourceNode": "R_Shin",
+          "status": "RESOLVED"
+        },
+        "NURION_chest": {
+          "sourceNode": "Thorax",
+          "status": "RESOLVED"
+        },
+        "NURION_clavicle_L": {
+          "sourceNode": "L_Collar",
+          "status": "RESOLVED"
+        },
+        "NURION_clavicle_R": {
+          "sourceNode": "R_Collar",
+          "status": "RESOLVED"
+        },
+        "NURION_foot_L": {
+          "sourceNode": "L_Ankle",
+          "status": "RESOLVED"
+        },
+        "NURION_foot_R": {
+          "sourceNode": "R_Ankle",
+          "status": "RESOLVED"
+        },
+        "NURION_hand_L": {
+          "sourceNode": "L_Palm",
+          "status": "RESOLVED"
+        },
+        "NURION_hand_R": {
+          "sourceNode": "R_Palm",
+          "status": "RESOLVED"
+        },
+        "NURION_head": {
+          "sourceNode": "Cranium",
+          "status": "RESOLVED"
+        },
+        "NURION_lowerArm_L": {
+          "sourceNode": "L_ForeLimb",
+          "status": "RESOLVED"
+        },
+        "NURION_lowerArm_R": {
+          "sourceNode": "R_ForeLimb",
+          "status": "RESOLVED"
+        },
+        "NURION_neck": {
+          "sourceNode": "NeckLink",
+          "status": "RESOLVED"
+        },
+        "NURION_pelvis": {
+          "sourceNode": "HipBone",
+          "status": "RESOLVED"
+        },
+        "NURION_root": {
+          "sourceNode": "CharacterRoot",
+          "status": "RESOLVED"
+        },
+        "NURION_spine01": {
+          "sourceNode": "Back_01",
+          "status": "RESOLVED"
+        },
+        "NURION_thigh_L": {
+          "sourceNode": "L_UpperLeg",
+          "status": "RESOLVED"
+        },
+        "NURION_thigh_R": {
+          "sourceNode": "R_UpperLeg",
+          "status": "RESOLVED"
+        },
+        "NURION_upperArm_L": {
+          "sourceNode": "L_UpperLimb",
+          "status": "RESOLVED"
+        },
+        "NURION_upperArm_R": {
+          "sourceNode": "R_UpperLimb",
+          "status": "RESOLVED"
+        }
+      },
+      "destructive": false,
+      "faceGeneration": "DENY",
+      "helperRigGeneration": "DENY",
+      "scaleNormalization": {
+        "mode": "REPORT_ONLY",
+        "samples": []
+      },
+      "skinWeightMutation": "DENY",
+      "sourceBoneDelete": "DENY",
+      "sourceBoneInsert": "DENY",
+      "sourceBoneRename": "DENY"
+    },
+    "ambiguousMappings": [],
+    "axisConventionIdentity": {
+      "forward": "+Z",
+      "handedness": "right-handed",
+      "right": "+X",
+      "up": "+Y"
+    },
+    "axisObservation": {
+      "assetVersion": "2.0",
+      "forwardAxis": "NOT_DECLARED",
+      "generator": "ADAPT01_FIXTURE_RENAMED",
+      "gltfExtrasKeys": [],
+      "nodeScaleSamples": [],
+      "note": "Axis inferred only from declared extras; silent invention DENY",
+      "status": "OBSERVED",
+      "upAxis": "NOT_DECLARED"
+    },
+    "blockers": [],
+    "canonicalBoneSpecIdentity": {
+      "bindingSchema": "NURION_ADAPT02_CANONICAL_BODY_BINDING_V1",
+      "bodyCoreCount": 23
+    },
+    "chainValidation": {
+      "armL": {
+        "chain": "armL",
+        "resolvedCount": 5,
+        "status": "PASS"
+      },
+      "armR": {
+        "chain": "armR",
+        "resolvedCount": 5,
+        "status": "PASS"
+      },
+      "legL": {
+        "chain": "legL",
+        "resolvedCount": 4,
+        "status": "PASS"
+      },
+      "legR": {
+        "chain": "legR",
+        "resolvedCount": 4,
+        "status": "PASS"
+      },
+      "spineHead": {
+        "chain": "spineHead",
+        "resolvedCount": 5,
+        "status": "PASS"
+      }
+    },
+    "characterIdentity": "renamed",
+    "classification": "MAPPED",
+    "contractCanonicalSha256": "111bdb0b8da82af5b70725d03f1d5fa26fb3ed86cabc7ef1aaeca03ea7522712",
+    "fingerMappings": {
+      "entries": [],
+      "note": "HAND_EXTENSION_V1 not required for ADAPT-02 BODY_CORE mapping; FACE/hand detail deferred",
+      "status": "NOT_APPLICABLE"
+    },
+    "hierarchyValidation": {
+      "assignedNodeCount": 20,
+      "status": "PASS"
+    },
+    "issues": [],
+    "lateralityValidation": {
+      "issues": [],
+      "status": "PASS"
+    },
+    "leftArmChain": {
+      "chain": "armL",
+      "resolvedCount": 5,
+      "status": "PASS"
+    },
+    "leftLegChain": {
+      "chain": "legL",
+      "resolvedCount": 4,
+      "status": "PASS"
+    },
+    "pelvisMapping": {
+      "confidence": 0.73,
+      "evidence": [
+        "substring_alias:hip;skin_joint_member;hierarchy_chain_ok",
+        "multi_evidence_required",
+        "hierarchy",
+        "laterality_pending",
+        "adapt01_confidence"
+      ],
+      "nodeIndex": 1,
+      "semantic": "NURION_pelvis",
+      "sourceNode": "HipBone",
+      "status": "RESOLVED"
+    },
+    "preservationEvidence": {
+      "adapt01Mutation": "NONE",
+      "autoRepair": "DENY",
+      "faceGeneration": "DENY",
+      "helperRig": "DENY",
+      "nurionV1Mutation": "NONE",
+      "sourceMeshMutation": "NONE",
+      "sourceSkeletonMutation": "NONE"
+    },
+    "restPoseObservation": {
+      "mode": "REPORT_ONLY",
+      "status": "NOT_DECLARED_IN_ADAPT01"
+    },
+    "retargetCompatibility": {
+      "adapter": {
+        "nonDestructive": true,
+        "upConversion": "IDENTITY_PENDING_RUNTIME"
+      },
+      "canonicalForward": "+Z",
+      "canonicalUp": "+Y",
+      "observedForward": "NOT_DECLARED",
+      "observedUp": "NOT_DECLARED",
+      "reason": [
+        "undeclared_axis_assume_adapter_identity"
+      ],
+      "status": "COMPATIBLE_WITH_ADAPTER"
+    },
+    "rightArmChain": {
+      "chain": "armR",
+      "resolvedCount": 5,
+      "status": "PASS"
+    },
+    "rightLegChain": {
+      "chain": "legR",
+      "resolvedCount": 4,
+      "status": "PASS"
+    },
+    "rootMapping": {
+      "confidence": 0.65,
+      "evidence": [
+        "substring_alias:root;skin_joint_member",
+        "multi_evidence_required",
+        "hierarchy",
+        "laterality_pending",
+        "adapt01_confidence"
+      ],
+      "nodeIndex": 0,
+      "semantic": "NURION_root",
+      "sourceNode": "CharacterRoot",
+      "status": "RESOLVED"
+    },
+    "rootPelvisValidation": {
+      "distinct": true,
+      "pelvis": {
+        "confidence": 0.73,
+        "evidence": [
+          "substring_alias:hip;skin_joint_member;hierarchy_chain_ok",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 1,
+        "semantic": "NURION_pelvis",
+        "sourceNode": "HipBone",
+        "status": "RESOLVED"
+      },
+      "root": {
+        "confidence": 0.65,
+        "evidence": [
+          "substring_alias:root;skin_joint_member",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 0,
+        "semantic": "NURION_root",
+        "sourceNode": "CharacterRoot",
+        "status": "RESOLVED"
+      },
+      "status": "PASS"
+    },
+    "scaleObservation": {
+      "nodeScaleSamples": []
+    },
+    "schema": "NURION_ADAPT02_SKELETON_ADAPTATION_CONTRACT_OUTPUT_V1",
+    "semanticMappings": {
+      "NURION_calf_L": {
+        "confidence": 1.0,
+        "evidence": [
+          "exact_alias:lshin;skin_joint_member;side_token_match",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 15,
+        "semantic": "NURION_calf_L",
+        "sourceNode": "L_Shin",
+        "status": "RESOLVED"
+      },
+      "NURION_calf_R": {
+        "confidence": 1.0,
+        "evidence": [
+          "exact_alias:rshin;skin_joint_member;side_token_match",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 18,
+        "semantic": "NURION_calf_R",
+        "sourceNode": "R_Shin",
+        "status": "RESOLVED"
+      },
+      "NURION_chest": {
+        "confidence": 1.0,
+        "evidence": [
+          "exact_alias:thorax;skin_joint_member;hierarchy_chain_ok",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 3,
+        "semantic": "NURION_chest",
+        "sourceNode": "Thorax",
+        "status": "RESOLVED"
+      },
+      "NURION_clavicle_L": {
+        "confidence": 0.95,
+        "evidence": [
+          "exact_alias:lcollar;skin_joint_member",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 6,
+        "semantic": "NURION_clavicle_L",
+        "sourceNode": "L_Collar",
+        "status": "RESOLVED"
+      },
+      "NURION_clavicle_R": {
+        "confidence": 1.0,
+        "evidence": [
+          "exact_alias:rcollar;skin_joint_member;side_token_match",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 10,
+        "semantic": "NURION_clavicle_R",
+        "sourceNode": "R_Collar",
+        "status": "RESOLVED"
+      },
+      "NURION_foot_L": {
+        "confidence": 1.0,
+        "evidence": [
+          "exact_alias:lankle;skin_joint_member;side_token_match",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 16,
+        "semantic": "NURION_foot_L",
+        "sourceNode": "L_Ankle",
+        "status": "RESOLVED"
+      },
+      "NURION_foot_R": {
+        "confidence": 1.0,
+        "evidence": [
+          "exact_alias:rankle;skin_joint_member;side_token_match",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 19,
+        "semantic": "NURION_foot_R",
+        "sourceNode": "R_Ankle",
+        "status": "RESOLVED"
+      },
+      "NURION_hand_L": {
+        "confidence": 1.0,
+        "evidence": [
+          "exact_alias:lpalm;skin_joint_member;side_token_match",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 9,
+        "semantic": "NURION_hand_L",
+        "sourceNode": "L_Palm",
+        "status": "RESOLVED"
+      },
+      "NURION_hand_R": {
+        "confidence": 1.0,
+        "evidence": [
+          "exact_alias:rpalm;skin_joint_member;side_token_match",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 13,
+        "semantic": "NURION_hand_R",
+        "sourceNode": "R_Palm",
+        "status": "RESOLVED"
+      },
+      "NURION_head": {
+        "confidence": 1.0,
+        "evidence": [
+          "exact_alias:cranium;skin_joint_member;hierarchy_chain_ok",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 5,
+        "semantic": "NURION_head",
+        "sourceNode": "Cranium",
+        "status": "RESOLVED"
+      },
+      "NURION_lowerArm_L": {
+        "confidence": 1.0,
+        "evidence": [
+          "exact_alias:lforelimb;skin_joint_member;side_token_match",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 8,
+        "semantic": "NURION_lowerArm_L",
+        "sourceNode": "L_ForeLimb",
+        "status": "RESOLVED"
+      },
+      "NURION_lowerArm_R": {
+        "confidence": 1.0,
+        "evidence": [
+          "exact_alias:rforelimb;skin_joint_member;side_token_match",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 12,
+        "semantic": "NURION_lowerArm_R",
+        "sourceNode": "R_ForeLimb",
+        "status": "RESOLVED"
+      },
+      "NURION_neck": {
+        "confidence": 0.73,
+        "evidence": [
+          "substring_alias:neck;skin_joint_member;hierarchy_chain_ok",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 4,
+        "semantic": "NURION_neck",
+        "sourceNode": "NeckLink",
+        "status": "RESOLVED"
+      },
+      "NURION_pelvis": {
+        "confidence": 0.73,
+        "evidence": [
+          "substring_alias:hip;skin_joint_member;hierarchy_chain_ok",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 1,
+        "semantic": "NURION_pelvis",
+        "sourceNode": "HipBone",
+        "status": "RESOLVED"
+      },
+      "NURION_root": {
+        "confidence": 0.65,
+        "evidence": [
+          "substring_alias:root;skin_joint_member",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 0,
+        "semantic": "NURION_root",
+        "sourceNode": "CharacterRoot",
+        "status": "RESOLVED"
+      },
+      "NURION_spine01": {
+        "confidence": 1.0,
+        "evidence": [
+          "exact_alias:back01;skin_joint_member;hierarchy_chain_ok",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 2,
+        "semantic": "NURION_spine01",
+        "sourceNode": "Back_01",
+        "status": "RESOLVED"
+      },
+      "NURION_thigh_L": {
+        "confidence": 1.0,
+        "evidence": [
+          "exact_alias:lupperleg;skin_joint_member;side_token_match",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 14,
+        "semantic": "NURION_thigh_L",
+        "sourceNode": "L_UpperLeg",
+        "status": "RESOLVED"
+      },
+      "NURION_thigh_R": {
+        "confidence": 1.0,
+        "evidence": [
+          "exact_alias:rupperleg;skin_joint_member;side_token_match",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 17,
+        "semantic": "NURION_thigh_R",
+        "sourceNode": "R_UpperLeg",
+        "status": "RESOLVED"
+      },
+      "NURION_toe_L": {
+        "confidence": null,
+        "evidence": [
+          "optional_or_unresolved"
+        ],
+        "nodeIndex": null,
+        "semantic": "NURION_toe_L",
+        "sourceNode": null,
+        "status": "MISSING"
+      },
+      "NURION_toe_R": {
+        "confidence": null,
+        "evidence": [
+          "optional_or_unresolved"
+        ],
+        "nodeIndex": null,
+        "semantic": "NURION_toe_R",
+        "sourceNode": null,
+        "status": "MISSING"
+      },
+      "NURION_upperArm_L": {
+        "confidence": 1.0,
+        "evidence": [
+          "exact_alias:lupperlimb;skin_joint_member;side_token_match",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 7,
+        "semantic": "NURION_upperArm_L",
+        "sourceNode": "L_UpperLimb",
+        "status": "RESOLVED"
+      },
+      "NURION_upperArm_R": {
+        "confidence": 1.0,
+        "evidence": [
+          "exact_alias:rupperlimb;skin_joint_member;side_token_match",
+          "multi_evidence_required",
+          "hierarchy",
+          "laterality_pending",
+          "adapt01_confidence"
+        ],
+        "nodeIndex": 11,
+        "semantic": "NURION_upperArm_R",
+        "sourceNode": "R_UpperLimb",
+        "status": "RESOLVED"
+      }
+    },
+    "sourceAssetDigest": "7bee762d4710b4673e38ca2cff349f86a960245d771b3485dcc0ae4ed221b2c8",
+    "spineChain": {
+      "chain": "spineHead",
+      "resolvedCount": 5,
+      "status": "PASS"
+    },
+    "unresolvedSemantics": [
+      "NURION_toe_L",
+      "NURION_toe_R"
+    ]
+  }
+}

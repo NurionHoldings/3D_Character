@@ -1,0 +1,13 @@
+{
+  "receiptId": "NURION-V2-CR02_R2_READY_FOR_HUMAN_AUDIT_SUPERSEDED",
+  "CR02-R2-G20": "HUMAN PASS",
+  "agentReportedOnly": false,
+  "humanPassReceipt": "NURION-V2-CR02_R2_HUMAN_PASS_receipt.json",
+  "independentProofDigest": "a38a8855f1f4f1c9cb3171737c7f98355cfd79bcd72c50388d1a134faebda174",
+  "pass": "PROTOTYPE HUMAN PASS",
+  "revision": "R2",
+  "status": "PROTOTYPE HUMAN PASS / ACTUAL FACIAL DEFORMATION TECHNICAL BASIS CONFIRMED",
+  "supersedes": "NURION-V2-CR02_R2_READY_FOR_HUMAN_AUDIT_R1",
+  "technicalBasis": "ACTUAL FACIAL DEFORMATION CONFIRMED",
+  "v2Engine": "NOT OPEN"
+}

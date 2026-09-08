@@ -1,0 +1,31 @@
+{
+  "CR01_REOPEN": "DENY",
+  "changeRequestId": "V2-CR-02",
+  "derivedAssetSha256": "b88afef253af32995a6915c5d7be247b79c2fc0c0ed8e54e1bf93367d20736b2",
+  "derivedPath": "d:\\NURION Character Landmarker\\fast_track\\working\\adaptation_engine_v2\\derived_cr02\\Idle_15_P04_jaw_expression_talking.glb",
+  "functionalEvidenceDigest": "dd51a0732217acf6d16076456f0836ec4efa5664aacafae2013845b4e794fbc8",
+  "idle15Sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+  "inputP03Sha256": "a0f3b76c12b1055170f1330bda402be6c6073783c182fd92bfffea6ddbfa5fc7",
+  "next": "CR02-P05 BODY+FACE Coexistence / Runtime Qualification",
+  "originalSourceImmutable": true,
+  "p03DerivedSemanticDigest": "8dca89f8061fa05539eb06e670ceb813bb269dc97b357d0f53b35235b9772b04",
+  "p03Preserved": [
+    "Blink_L",
+    "Blink_R",
+    "Eye_L",
+    "Eye_R"
+  ],
+  "p03Regression": "PASS",
+  "p04DerivedSemanticDigest": "2405040cbf0bcb63f8cf7491fd2ce39a70c178bc1cb997a6a5bd203faf936fe5",
+  "p04ResultDigest": "dbdca2e4c1477eab54bfb1534f6b2ceb4958928d52eb80be02e1247b5d5fab2b",
+  "receiptId": "NURION-V2-CR02_P04_PASS_receipt",
+  "revision": "R1",
+  "scope": [
+    "Expression",
+    "Jaw_Mouth",
+    "TALKING"
+  ],
+  "stage": "CR02-P04",
+  "status": "PASS",
+  "v2Engine": "NOT OPEN"
+}

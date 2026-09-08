@@ -1,0 +1,228 @@
+{
+  "schema": "NURION_ADAPTATION_ENGINE_V2_CR02_MESHY_FACE_EYE_JAW_TALKING_AUGMENTATION_V1",
+  "changeRequestId": "V2-CR-02",
+  "title": "MESHY FACE / EYE / JAW / TALKING AUGMENTATION",
+  "engineVersion": "V2",
+  "status": "READY_FOR_HUMAN_AUDIT",
+  "specStatus": "HUMAN REVIEW PASS / APPROVED",
+  "prototypeStatus": "READY_FOR_HUMAN_AUDIT",
+  "revision": "R1",
+  "proposedAtUtc": "20260830T043000Z",
+  "approvedAtUtc": "20260830T043200Z",
+  "openedAtUtc": "20260830T043200Z",
+  "declaredBy": "etherean",
+  "agentCeiling": "READY_FOR_HUMAN_AUDIT",
+  "humanFinalGate": "CR02-G20",
+  "pass": "NOT_DECLARED",
+  "authorizedStage": "CR02-P07",
+  "purpose": {
+    "oneLine": "비파괴적으로 Meshy BODY+skin 캐릭터에 NURION FACE capability를 생성·결합한다",
+    "notSufficient": "얼굴용 bone/helper 존재만으로 PASS 금지",
+    "humanBlocker": "기능이 있다고 기록되어 있지만 실제 deformation이 없는 경우 → 무조건 BLOCKED"
+  },
+  "requiredAuthority": {
+    "PURPOSE": "Meshy BODY+skin character에 NURION FACE capability를 비파괴 증강",
+    "SOURCE_BODY_SKIN": "IMMUTABLE",
+    "CR01_SEMANTIC_ADAPTER": "CONSUME ONLY",
+    "FACE_BODY_INTERFACE": "NURION_head → FACE_Rig_Root",
+    "Eye": {
+      "laterality": "LEFT/RIGHT deterministic",
+      "motion": "independent motion observable"
+    },
+    "Blink": {
+      "deformation": "eyelid/eye-region deformation observable",
+      "cycle": "neutral → activation → neutral restoration REQUIRED"
+    },
+    "Jaw_Mouth": {
+      "deformation": "jaw/open-close deformation observable",
+      "cycle": "neutral → activation → neutral restoration REQUIRED"
+    },
+    "Expression": {
+      "minimumSet": "defined expression set must produce distinct observable facial deformation",
+      "cycle": "neutral → activation → neutral restoration REQUIRED"
+    },
+    "TALKING": {
+      "requirement": "timed speech/viseme sequence must produce changing mouth states",
+      "staticMouthOpenIsNotPass": true,
+      "cycle": "neutral → timed sequence → neutral restoration REQUIRED"
+    },
+    "Runtime": "BODY motion + FACE capability coexistence REQUIRED",
+    "SOURCE_MUTATION": "DENY",
+    "AUTO_BODY_RE_RIG": "DENY",
+    "GLOBAL_AUTO_WEIGHT": "DENY",
+    "CR01_REOPEN": "DENY"
+  },
+  "functionalDefinition": {
+    "FUNCTIONAL_means": "Machine-verifiable observable deformation with neutral→activation→neutral cycle — not helper-bone presence",
+    "perCapabilityRequiredCycle": ["NEUTRAL", "ACTIVATION", "NEUTRAL_RESTORATION"],
+    "declaredWithoutDeformation": "BLOCKED",
+    "staticPoseAsTalking": "BLOCKED"
+  },
+  "provenanceRequirement": {
+    "required": true,
+    "reason": "Idle_15 blendshapeCount=0 — deformation mechanism must be explicit",
+    "recordSchema": "NURION_V2_CR02_CAPABILITY_PROVENANCE_V1",
+    "requiredFields": [
+      "capability",
+      "mechanism",
+      "affectedRegion",
+      "driver",
+      "weightAdjustment",
+      "beforeDigest",
+      "augmentedDigest",
+      "functionalTest"
+    ],
+    "example": {
+      "capability": "BLINK",
+      "mechanism": "AUXILIARY_RIG",
+      "affectedRegion": "LEFT_EYELID",
+      "driver": "...",
+      "weightAdjustment": "LOCAL_ONLY",
+      "beforeDigest": "...",
+      "augmentedDigest": "...",
+      "functionalTest": "PASS"
+    },
+    "allowedMechanisms": [
+      "AUXILIARY_RIG",
+      "LOCAL_DEFORMER",
+      "LOCAL_WEIGHT_PAINT",
+      "MORPH_TARGET_INJECTION",
+      "HYBRID"
+    ],
+    "forbiddenMechanisms": [
+      "GLOBAL_AUTO_WEIGHT",
+      "AUTO_BODY_RE_RIG",
+      "SOURCE_REWRITE",
+      "CLAIM_WITHOUT_DEFORMATION"
+    ]
+  },
+  "authority": {
+    "NURION_CHARACTER_ADAPTATION_ENGINE_V1": "CLOSED / PASS / CONSUME ONLY",
+    "V1_MUTATION": "DENY",
+    "V2-CR-01": "PROTOTYPE HUMAN PASS / TECHNICAL BASIS CONFIRMED / CONSUME ONLY",
+    "CR01_REOPEN": "DENY",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN"
+  },
+  "consumes": {
+    "V2-CR-01": {
+      "role": "BODY semantic adapter — CONSUME ONLY",
+      "humanPassReceipt": "evidence/NURION-V2-CR01_R2_HUMAN_PASS_receipt.json",
+      "semanticAdapterDigest": "c6aecfa1a90e81afa878a08ca7cdfc0ed34135b60bbdd2d48e597955d485393d",
+      "mutation": "DENY"
+    }
+  },
+  "firstProofAsset": {
+    "label": "Idle_15_withSkin_WORKING_BASELINE",
+    "path": "fast_track/working/meshy_silver_starlight/baseline/Idle_15_withSkin_WORKING_BASELINE.glb",
+    "sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+    "blendshapeCount": 0,
+    "why": "CR01 BODY Human-audited; FACE/Jaw/TALKING/blendshape MISSING — product test surface",
+    "role": "FIRST_PROOF_ASSET_ONLY",
+    "sourceAssetMutation": "DENY",
+    "specialCaseHardcoding": "DENY"
+  },
+  "stages": {
+    "CR02-P01": {
+      "title": "Capability Gap Inspection",
+      "status": "PASS",
+      "passReceipt": "evidence/NURION-V2-CR02_P01_PASS_receipt.json",
+      "gapInspectionDigest": "fb7ba2dfd0471482e9ad44f881e44306550fb39138bb2cf010d3dabd2ef727ab",
+      "deliverable": "Machine-readable gap inventory: present BODY vs missing FACE/Eye/Blink/Jaw/Expression/TALKING; CR01 consume pin; source SHA; blendshapeCount"
+    },
+    "CR02-P02": {
+      "title": "FACE Attachment / Augmentation Plan",
+      "status": "PASS",
+      "passReceipt": "evidence/NURION-V2-CR02_P02_PASS_receipt.json",
+      "augmentationPlanDigest": "857438ca4948ee53d61d71d4ae012ae4b0a7d4df1ae10a41e102282b94fdc170",
+      "planOnly": true,
+      "weightApply": "DENY",
+      "deliverable": "NURION_head→FACE_Rig_Root plan + per-capability mechanism/provenance plan (no unrequested work)"
+    },
+    "CR02-P03": {
+      "title": "Eye / Blink Augmentation",
+      "status": "PASS",
+      "passReceipt": "evidence/NURION-V2-CR02_P03_PASS_receipt.json",
+      "scope": ["Eye_L", "Eye_R", "Blink_L", "Blink_R"],
+      "forbiddenInStage": ["Jaw_Mouth", "Expression", "TALKING"],
+      "derivedArtifact": "derived_cr02/Idle_15_P03_eye_blink.glb",
+      "p03DerivedSemanticDigest": "8dca89f8061fa05539eb06e670ceb813bb269dc97b357d0f53b35235b9772b04",
+      "deliverable": "FIRST derived character — Eye/Blink only with N→A→N functional evidence"
+    },
+    "CR02-P04": {
+      "title": "Jaw / Expression / TALKING Augmentation",
+      "status": "PASS",
+      "passReceipt": "evidence/NURION-V2-CR02_P04_PASS_receipt.json",
+      "input": "derived_cr02/Idle_15_P03_eye_blink.glb",
+      "scope": ["Jaw_Mouth", "Expression", "TALKING"],
+      "p03Regression": "PASS",
+      "derivedArtifact": "derived_cr02/Idle_15_P04_jaw_expression_talking.glb",
+      "p04DerivedSemanticDigest": "2405040cbf0bcb63f8cf7491fd2ce39a70c178bc1cb997a6a5bd203faf936fe5",
+      "deliverable": "Jaw/Mouth + Expression set + timed TALKING; P03 Eye/Blink preserved"
+    },
+    "CR02-P05": {
+      "title": "BODY + FACE Coexistence / Runtime Qualification",
+      "status": "PASS",
+      "classification": "QUALIFIED_WITH_LIMITATIONS",
+      "passReceipt": "evidence/NURION-V2-CR02_P05_PASS_receipt.json",
+      "qualificationDigest": "1ef31c55e225a48c06bd871726804f6ef3a6bd7d8ca25c238921357625fde5a7",
+      "policy": "NO new capability / auto-repair / re-rig / re-weight",
+      "limitations": "Bow/LargeBow/Handshake/Dance use qualification profile sim — no embedded clips",
+      "deliverable": "BODY+FACE coexistence; TALKING while moving; read-only qualification"
+    },
+    "CR02-P06": {
+      "title": "Real-Asset Proof Package",
+      "status": "PASS",
+      "agentCeiling": "READY_FOR_HUMAN_AUDIT",
+      "passReceipt": "evidence/NURION-V2-CR02_P06_PASS_receipt.json",
+      "realAssetProofDigest": "803d3f614233a315e6aa2900da9cbe0f10da46dfed6c028ab46978711fc4504f",
+      "runtimeQualificationCarriedForward": "QUALIFIED_WITH_LIMITATIONS",
+      "promotionDenied": true,
+      "deliverable": "Idle_15 end-to-end provenance seal + independent Human Audit ZIP"
+    },
+    "CR02-P07": {
+      "title": "Human Final Audit",
+      "status": "HUMAN_FINAL_ONLY",
+      "agentMayNotPass": true
+    }
+  },
+  "gates": {
+    "CR02-G01": "Idle_15 SHA match",
+    "CR02-G02": "CR01 semanticAdapterDigest consume / match",
+    "CR02-G03": "SOURCE BODY/SKIN IMMUTABLE (before/after)",
+    "CR02-G04": "Capability gap inventory complete (P01)",
+    "CR02-G05": "NURION_head → FACE_Rig_Root VALID",
+    "CR02-G06": "Eye LEFT/RIGHT deterministic + independent motion observable",
+    "CR02-G07": "Blink deformation observable + N→A→N restoration",
+    "CR02-G08": "Jaw/Mouth deformation observable + N→A→N restoration",
+    "CR02-G09": "Expression distinct deformation + N→A→N restoration",
+    "CR02-G10": "TALKING timed changing mouth states (static open ≠ PASS) + N→A→N",
+    "CR02-G11": "Per-capability provenance complete (capability→mechanism→region→evidence)",
+    "CR02-G12": "No GLOBAL_AUTO_WEIGHT / AUTO_BODY_RE_RIG / SOURCE_MUTATION",
+    "CR02-G13": "Declared FUNCTIONAL without deformation → BLOCKED proven by counter",
+    "CR02-G14": "Determinism (repeat identical augmentation digest)",
+    "CR02-G15": "BODY motion + FACE coexistence",
+    "CR02-G16": "Runtime qualification POSSIBLE",
+    "CR02-G17": "Idle_15 product end-to-end proof",
+    "CR02-G18": "V1 mutation NONE + CR01 mutation NONE",
+    "CR02-G19": "Independent extracted proof ZIP",
+    "CR02-G20": "HUMAN_FINAL_ONLY"
+  },
+  "hardBlockers": [
+    "SOURCE BODY/SKIN mutation",
+    "AUTO BODY RE-RIG",
+    "GLOBAL AUTO-WEIGHT",
+    "CR01 REOPEN / CR01 digest bypass",
+    "Idle_15 SHA special-case hardcoding",
+    "FACE_Rig_Root without CR01-resolved NURION_head",
+    "Declared FUNCTIONAL without observable deformation",
+    "Static mouth-open claimed as TALKING PASS",
+    "Missing provenance for capability that claims FUNCTIONAL",
+    "V2 engine auto-open on CR02 PASS"
+  ],
+  "humanPassCeiling": {
+    "onPass": "V2-CR-02 = PROTOTYPE HUMAN PASS / TECHNICAL BASIS CONFIRMED",
+    "doesNotMean": "NURION ADAPTATION ENGINE V2 = OPEN / PASS",
+    "productClaimCeiling": "Meshy skin+rig → NURION FACE/Eye/Jaw/TALKING non-destructive augmentation proven on Idle_15"
+  },
+  "next": "CR02-P07 / CR02-G20 HUMAN FINAL AUDIT — V2 engine remains NOT OPEN"
+}

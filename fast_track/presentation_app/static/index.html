@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NURION Presentation Character v0</title>
+  <link rel="stylesheet" href="/style.css" />
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>NURION PRESENTATION CHARACTER v0</h1>
+    <span id="status-badge">READY</span>
+  </header>
+  <div id="viewport-wrap">
+    <div id="boot-msg">Character loading…</div>
+    <canvas id="viewport"></canvas>
+    <div id="state-overlay">FULL_IDLE</div>
+  </div>
+  <div id="menu-bar">
+    <button class="menu-btn" data-menu="company_intro">회사소개</button>
+    <button class="menu-btn" data-menu="service_intro">서비스</button>
+    <button class="menu-btn" data-menu="product_intro">제품소개</button>
+    <button class="menu-btn" data-menu="replay">다시듣기</button>
+  </div>
+  <script type="module" src="/app.js?v=fast06r15"></script>
+</body>
+</html>

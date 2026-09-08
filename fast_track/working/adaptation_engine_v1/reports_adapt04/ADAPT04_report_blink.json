@@ -1,0 +1,2480 @@
+{
+  "adapt04": {
+    "adapt01InspectionDigest": "935e74cff6cfe50cdb4a775b88da784cf89f38641ab7c8d052585664381e7ad1",
+    "adapt02MappingDigest": "c18d49716d645b66fc77b5b8ce120a58620b2ccde9d3e46568160d35bb4726f5",
+    "adapt03FaceAdaptationDigest": "5b8ba3fd1a455b5ae9ef1f42d4e6524cd959a462d5dd8a134a14f27c6cf1be9a",
+    "adapt03RequirementsDigest": "86072838b4563ea90ada72d5648cc03c9157052cd1018743984c3cb180260e4d",
+    "adapt05Handoff": {
+      "adapt05Qualification": "NOT_STARTED",
+      "appliedOperations": [
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EYELID_CONTROL",
+          "authoritativeSemantic": "FACE_eyeBlinkLeft",
+          "authority": "NURION_EYE_CALIBRATION",
+          "capability": "FACE_eyeBlinkLeft",
+          "confidence": 0.85,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeBlinkLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_LEFT_EYE_EYELID_CONTROL",
+          "geometryDependency": "EYE_REGION",
+          "laterality": "LEFT",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0000-FACE_eyeBlinkLeft",
+          "requiresWeightBinding": true,
+          "safetyConstraints": [
+            "PRESERVE_EYE_CALIBRATION",
+            "NO_BODY_OWNERSHIP"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "LEFT_EYELID"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EYELID_CONTROL",
+          "authoritativeSemantic": "FACE_eyeBlinkRight",
+          "authority": "NURION_EYE_CALIBRATION",
+          "capability": "FACE_eyeBlinkRight",
+          "confidence": 0.85,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeBlinkRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_RIGHT_EYE_EYELID_CONTROL",
+          "geometryDependency": "EYE_REGION",
+          "laterality": "RIGHT",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0001-FACE_eyeBlinkRight",
+          "requiresWeightBinding": true,
+          "safetyConstraints": [
+            "PRESERVE_EYE_CALIBRATION",
+            "NO_BODY_OWNERSHIP"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "RIGHT_EYELID"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EYE_HELPER",
+          "authoritativeSemantic": "FACE_eyeSquintLeft",
+          "authority": "NURION_EYE_CALIBRATION",
+          "capability": "FACE_eyeSquintLeft",
+          "confidence": 0.85,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeSquintLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_LEFT_EYE_EYE_HELPER",
+          "geometryDependency": "EYE_REGION",
+          "laterality": "LEFT",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0002-FACE_eyeSquintLeft",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "PRESERVE_EYE_CALIBRATION",
+            "NO_BODY_OWNERSHIP"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "LEFT_EYELID"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EYE_HELPER",
+          "authoritativeSemantic": "FACE_eyeSquintRight",
+          "authority": "NURION_EYE_CALIBRATION",
+          "capability": "FACE_eyeSquintRight",
+          "confidence": 0.85,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeSquintRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_RIGHT_EYE_EYE_HELPER",
+          "geometryDependency": "EYE_REGION",
+          "laterality": "RIGHT",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0003-FACE_eyeSquintRight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "PRESERVE_EYE_CALIBRATION",
+            "NO_BODY_OWNERSHIP"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "RIGHT_EYELID"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EYE_HELPER",
+          "authoritativeSemantic": "FACE_eyeWideLeft",
+          "authority": "NURION_EYE_CALIBRATION",
+          "capability": "FACE_eyeWideLeft",
+          "confidence": 0.85,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeWideLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_LEFT_EYE_EYE_HELPER",
+          "geometryDependency": "EYE_REGION",
+          "laterality": "LEFT",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0004-FACE_eyeWideLeft",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "PRESERVE_EYE_CALIBRATION",
+            "NO_BODY_OWNERSHIP"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "LEFT_EYELID"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EYE_HELPER",
+          "authoritativeSemantic": "FACE_eyeWideRight",
+          "authority": "NURION_EYE_CALIBRATION",
+          "capability": "FACE_eyeWideRight",
+          "confidence": 0.85,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeWideRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_RIGHT_EYE_EYE_HELPER",
+          "geometryDependency": "EYE_REGION",
+          "laterality": "RIGHT",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0005-FACE_eyeWideRight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "PRESERVE_EYE_CALIBRATION",
+            "NO_BODY_OWNERSHIP"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "RIGHT_EYELID"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_dentalLip",
+          "authority": "NURION_TALKING",
+          "capability": "FACE_dentalLip",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_dentalLip",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_dentalLip",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0006-FACE_dentalLip",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "MOUTH"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_lipsPart",
+          "authority": "NURION_TALKING",
+          "capability": "FACE_lipsPart",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_lipsPart",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_lipsPart",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0007-FACE_lipsPart",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "MOUTH"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_lipsTight",
+          "authority": "NURION_TALKING",
+          "capability": "FACE_lipsTight",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_lipsTight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_lipsTight",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0008-FACE_lipsTight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "MOUTH"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "JAW_HELPER",
+          "authoritativeSemantic": "FACE_mouthOpen",
+          "authority": "NURION_TALKING",
+          "capability": "FACE_mouthOpen",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthOpen",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_JAW_HELPER_mouthOpen",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0009-FACE_mouthOpen",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "MOUTH"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_mouthPlosive",
+          "authority": "NURION_TALKING",
+          "capability": "FACE_mouthPlosive",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthPlosive",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_mouthPlosive",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0010-FACE_mouthPlosive",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "MOUTH"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_mouthPucker",
+          "authority": "NURION_TALKING",
+          "capability": "FACE_mouthPucker",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthPucker",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_mouthPucker",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0011-FACE_mouthPucker",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "MOUTH"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_mouthWiden",
+          "authority": "NURION_TALKING",
+          "capability": "FACE_mouthWiden",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthWiden",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_mouthWiden",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0012-FACE_mouthWiden",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "MOUTH"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_browDownLeft",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_browDownLeft",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_browDownLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_browDownLeft",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0013-FACE_browDownLeft",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_browDownRight",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_browDownRight",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_browDownRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_browDownRight",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0014-FACE_browDownRight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_browInnerUpLeft",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_browInnerUpLeft",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_browInnerUpLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_browInnerUpLeft",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0015-FACE_browInnerUpLeft",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_browInnerUpRight",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_browInnerUpRight",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_browInnerUpRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_browInnerUpRight",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0016-FACE_browInnerUpRight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_browOuterUpLeft",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_browOuterUpLeft",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_browOuterUpLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_browOuterUpLeft",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0017-FACE_browOuterUpLeft",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_browOuterUpRight",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_browOuterUpRight",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_browOuterUpRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_browOuterUpRight",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0018-FACE_browOuterUpRight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_cheekRaiseLeft",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_cheekRaiseLeft",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_cheekRaiseLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_cheekRaiseLeft",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0019-FACE_cheekRaiseLeft",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_cheekRaiseRight",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_cheekRaiseRight",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_cheekRaiseRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_cheekRaiseRight",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0020-FACE_cheekRaiseRight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_dentalLip",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_dentalLip",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_dentalLip",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_dentalLip",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0021-FACE_dentalLip",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EYELID_CONTROL",
+          "authoritativeSemantic": "FACE_eyeBlinkLeft",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_eyeBlinkLeft",
+          "confidence": 0.85,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeBlinkLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_LEFT_EYE_EYELID_CONTROL",
+          "geometryDependency": "EYE_REGION",
+          "laterality": "LEFT",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0022-FACE_eyeBlinkLeft",
+          "requiresWeightBinding": true,
+          "safetyConstraints": [
+            "PRESERVE_EYE_CALIBRATION",
+            "NO_BODY_OWNERSHIP"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EYELID_CONTROL",
+          "authoritativeSemantic": "FACE_eyeBlinkRight",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_eyeBlinkRight",
+          "confidence": 0.85,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeBlinkRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_RIGHT_EYE_EYELID_CONTROL",
+          "geometryDependency": "EYE_REGION",
+          "laterality": "RIGHT",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0023-FACE_eyeBlinkRight",
+          "requiresWeightBinding": true,
+          "safetyConstraints": [
+            "PRESERVE_EYE_CALIBRATION",
+            "NO_BODY_OWNERSHIP"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_eyeSquintLeft",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_eyeSquintLeft",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeSquintLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_eyeSquintLeft",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0024-FACE_eyeSquintLeft",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_eyeSquintRight",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_eyeSquintRight",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeSquintRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_eyeSquintRight",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0025-FACE_eyeSquintRight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_eyeWideLeft",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_eyeWideLeft",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeWideLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_eyeWideLeft",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0026-FACE_eyeWideLeft",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_eyeWideRight",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_eyeWideRight",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeWideRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_eyeWideRight",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0027-FACE_eyeWideRight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_lipsPart",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_lipsPart",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_lipsPart",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_lipsPart",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0028-FACE_lipsPart",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_lipsTight",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_lipsTight",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_lipsTight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_lipsTight",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0029-FACE_lipsTight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "TALKING_CONTROL",
+          "authoritativeSemantic": "FACE_mouthFrownLeft",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_mouthFrownLeft",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthFrownLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_mouthFrownLeft",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0030-FACE_mouthFrownLeft",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "TALKING_CONTROL",
+          "authoritativeSemantic": "FACE_mouthFrownRight",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_mouthFrownRight",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthFrownRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_mouthFrownRight",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0031-FACE_mouthFrownRight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "JAW_HELPER",
+          "authoritativeSemantic": "FACE_mouthOpen",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_mouthOpen",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthOpen",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_JAW_HELPER_mouthOpen",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0032-FACE_mouthOpen",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_mouthPlosive",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_mouthPlosive",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthPlosive",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_mouthPlosive",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0033-FACE_mouthPlosive",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_mouthPucker",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_mouthPucker",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthPucker",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_mouthPucker",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0034-FACE_mouthPucker",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "TALKING_CONTROL",
+          "authoritativeSemantic": "FACE_mouthSmileLeft",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_mouthSmileLeft",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthSmileLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_mouthSmileLeft",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0035-FACE_mouthSmileLeft",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "TALKING_CONTROL",
+          "authoritativeSemantic": "FACE_mouthSmileRight",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_mouthSmileRight",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthSmileRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_mouthSmileRight",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0036-FACE_mouthSmileRight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_mouthWiden",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_mouthWiden",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthWiden",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_mouthWiden",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0037-FACE_mouthWiden",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        }
+      ],
+      "augmentationPlanDigest": "cf7cbf1e7866530d741f83a5e577b2cb197475af1c669bf6b35379caac203205",
+      "bodyPreservation": {
+        "adapt02Digest": "c18d49716d645b66fc77b5b8ce120a58620b2ccde9d3e46568160d35bb4726f5",
+        "status": "PRESERVED"
+      },
+      "capabilityMatrices": {
+        "expression": {
+          "rowCount": 12
+        },
+        "eye": {
+          "rows": [
+            {
+              "capability": "FACE_eyeBlinkLeft",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeBlinkRight",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeSquintLeft",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeSquintRight",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeWideLeft",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeWideRight",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeBlinkLeft",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeBlinkRight",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeSquintLeft",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeSquintRight",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeWideLeft",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeWideRight",
+              "status": "AUGMENTED"
+            }
+          ],
+          "status": "PASS"
+        },
+        "talking": {
+          "rows": [
+            {
+              "capability": "FACE_dentalLip",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_lipsPart",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_lipsTight",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_mouthOpen",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_mouthPlosive",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_mouthPucker",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_mouthWiden",
+              "status": "AUGMENTED"
+            }
+          ],
+          "status": "PASS"
+        }
+      },
+      "classification": "AUGMENTED",
+      "derivedArtifactIdentity": {
+        "derivedArtifactSha256": "5628f7a699d0bd6d3f293fb712fde8a056629a83afed51e47a7f98d182b6e652"
+      },
+      "faceBodyAttachment": {
+        "child": "FACE_Rig_Root",
+        "evidence": [
+          "adapt02_head_resolved",
+          "locked_attachment_contract"
+        ],
+        "metadata": {
+          "mode": "ATTACHMENT_SPECIFICATION_ONLY",
+          "mutateFaceAuthority": "DENY",
+          "mutateNURIONHead": "DENY"
+        },
+        "parent": "NURION_head",
+        "status": "COMPATIBLE",
+        "targetHeadNode": "Head",
+        "type": "SOLE_ATTACHMENT"
+      },
+      "handoffDigest": "2f159e14df0064cb8ba622b413b5df9414bb66b03a3c004bd2d409a5acf9aa75",
+      "schema": "NURION_ADAPT05_QUALIFICATION_HANDOFF_V1",
+      "sourceIdentity": {
+        "adapt01InspectionDigest": "935e74cff6cfe50cdb4a775b88da784cf89f38641ab7c8d052585664381e7ad1",
+        "adapt02MappingDigest": "c18d49716d645b66fc77b5b8ce120a58620b2ccde9d3e46568160d35bb4726f5",
+        "adapt03FaceAdaptationDigest": "5b8ba3fd1a455b5ae9ef1f42d4e6524cd959a462d5dd8a134a14f27c6cf1be9a",
+        "characterId": "blink",
+        "sourceAssetSha256": "a30358b310deb11a8eec27cc26d4acd96cf68a06d90dda218261619203220b8f"
+      },
+      "unresolvedConditions": []
+    },
+    "appliedAugmentation": {
+      "capabilityMatrices": {
+        "expression": {
+          "rowCount": 12
+        },
+        "eye": {
+          "rows": [
+            {
+              "capability": "FACE_eyeBlinkLeft",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeBlinkRight",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeSquintLeft",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeSquintRight",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeWideLeft",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeWideRight",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeBlinkLeft",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeBlinkRight",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeSquintLeft",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeSquintRight",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeWideLeft",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_eyeWideRight",
+              "status": "AUGMENTED"
+            }
+          ],
+          "status": "PASS"
+        },
+        "talking": {
+          "rows": [
+            {
+              "capability": "FACE_dentalLip",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_lipsPart",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_lipsTight",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_mouthOpen",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_mouthPlosive",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_mouthPucker",
+              "status": "AUGMENTED"
+            },
+            {
+              "capability": "FACE_mouthWiden",
+              "status": "AUGMENTED"
+            }
+          ],
+          "status": "PASS"
+        }
+      },
+      "structures": [
+        {
+          "laterality": "LEFT",
+          "nodeName": "AUX_LEFT_EYE_EYELID_CONTROL",
+          "parent": "FACE_Rig_Root",
+          "semantic": "FACE_eyeBlinkLeft",
+          "status": "APPLIED",
+          "type": "EYELID_CONTROL"
+        },
+        {
+          "laterality": "RIGHT",
+          "nodeName": "AUX_RIGHT_EYE_EYELID_CONTROL",
+          "parent": "FACE_Rig_Root",
+          "semantic": "FACE_eyeBlinkRight",
+          "status": "APPLIED",
+          "type": "EYELID_CONTROL"
+        },
+        {
+          "laterality": "LEFT",
+          "nodeName": "AUX_LEFT_EYE_EYE_HELPER",
+          "parent": "FACE_Rig_Root",
+          "semantic": "FACE_eyeSquintLeft",
+          "status": "APPLIED",
+          "type": "EYE_HELPER"
+        },
+        {
+          "laterality": "RIGHT",
+          "nodeName": "AUX_RIGHT_EYE_EYE_HELPER",
+          "parent": "FACE_Rig_Root",
+          "semantic": "FACE_eyeSquintRight",
+          "status": "APPLIED",
+          "type": "EYE_HELPER"
+        },
+        {
+          "laterality": "LEFT",
+          "nodeName": "AUX_LEFT_EYE_EYE_HELPER",
+          "parent": "FACE_Rig_Root",
+          "semantic": "FACE_eyeWideLeft",
+          "status": "APPLIED",
+          "type": "EYE_HELPER"
+        },
+        {
+          "laterality": "RIGHT",
+          "nodeName": "AUX_RIGHT_EYE_EYE_HELPER",
+          "parent": "FACE_Rig_Root",
+          "semantic": "FACE_eyeWideRight",
+          "status": "APPLIED",
+          "type": "EYE_HELPER"
+        },
+        {
+          "laterality": "LEFT",
+          "nodeName": "AUX_LEFT_EYE_EYELID_CONTROL",
+          "parent": "FACE_Rig_Root",
+          "semantic": "FACE_eyeBlinkLeft",
+          "status": "APPLIED",
+          "type": "EYELID_CONTROL"
+        },
+        {
+          "laterality": "RIGHT",
+          "nodeName": "AUX_RIGHT_EYE_EYELID_CONTROL",
+          "parent": "FACE_Rig_Root",
+          "semantic": "FACE_eyeBlinkRight",
+          "status": "APPLIED",
+          "type": "EYELID_CONTROL"
+        },
+        {
+          "nodeName": "AUX_JAW_HELPER_mouthOpen",
+          "parent": "FACE_Rig_Root",
+          "semantic": "FACE_mouthOpen",
+          "status": "APPLIED",
+          "type": "JAW_HELPER"
+        },
+        {
+          "nodeName": "AUX_JAW_HELPER_mouthOpen",
+          "parent": "FACE_Rig_Root",
+          "semantic": "FACE_mouthOpen",
+          "status": "APPLIED",
+          "type": "JAW_HELPER"
+        },
+        {
+          "controlName": "AUX_EXPR_browDownLeft",
+          "semantic": "FACE_browDownLeft",
+          "status": "APPLIED",
+          "type": "EXPRESSION_CONTROL"
+        },
+        {
+          "controlName": "AUX_EXPR_browDownRight",
+          "semantic": "FACE_browDownRight",
+          "status": "APPLIED",
+          "type": "EXPRESSION_CONTROL"
+        },
+        {
+          "controlName": "AUX_EXPR_browInnerUpLeft",
+          "semantic": "FACE_browInnerUpLeft",
+          "status": "APPLIED",
+          "type": "EXPRESSION_CONTROL"
+        },
+        {
+          "controlName": "AUX_EXPR_browInnerUpRight",
+          "semantic": "FACE_browInnerUpRight",
+          "status": "APPLIED",
+          "type": "EXPRESSION_CONTROL"
+        },
+        {
+          "controlName": "AUX_EXPR_browOuterUpLeft",
+          "semantic": "FACE_browOuterUpLeft",
+          "status": "APPLIED",
+          "type": "EXPRESSION_CONTROL"
+        },
+        {
+          "controlName": "AUX_EXPR_browOuterUpRight",
+          "semantic": "FACE_browOuterUpRight",
+          "status": "APPLIED",
+          "type": "EXPRESSION_CONTROL"
+        },
+        {
+          "controlName": "AUX_EXPR_cheekRaiseLeft",
+          "semantic": "FACE_cheekRaiseLeft",
+          "status": "APPLIED",
+          "type": "EXPRESSION_CONTROL"
+        },
+        {
+          "controlName": "AUX_EXPR_cheekRaiseRight",
+          "semantic": "FACE_cheekRaiseRight",
+          "status": "APPLIED",
+          "type": "EXPRESSION_CONTROL"
+        },
+        {
+          "controlName": "AUX_EXPR_eyeSquintLeft",
+          "semantic": "FACE_eyeSquintLeft",
+          "status": "APPLIED",
+          "type": "EXPRESSION_CONTROL"
+        },
+        {
+          "controlName": "AUX_EXPR_eyeSquintRight",
+          "semantic": "FACE_eyeSquintRight",
+          "status": "APPLIED",
+          "type": "EXPRESSION_CONTROL"
+        },
+        {
+          "controlName": "AUX_EXPR_eyeWideLeft",
+          "semantic": "FACE_eyeWideLeft",
+          "status": "APPLIED",
+          "type": "EXPRESSION_CONTROL"
+        },
+        {
+          "controlName": "AUX_EXPR_eyeWideRight",
+          "semantic": "FACE_eyeWideRight",
+          "status": "APPLIED",
+          "type": "EXPRESSION_CONTROL"
+        },
+        {
+          "controlName": "AUX_TALK_dentalLip",
+          "semantic": "FACE_dentalLip",
+          "status": "APPLIED",
+          "type": "VISEME_SUPPORT"
+        },
+        {
+          "controlName": "AUX_TALK_lipsPart",
+          "semantic": "FACE_lipsPart",
+          "status": "APPLIED",
+          "type": "VISEME_SUPPORT"
+        },
+        {
+          "controlName": "AUX_TALK_lipsTight",
+          "semantic": "FACE_lipsTight",
+          "status": "APPLIED",
+          "type": "VISEME_SUPPORT"
+        },
+        {
+          "controlName": "AUX_TALK_mouthPlosive",
+          "semantic": "FACE_mouthPlosive",
+          "status": "APPLIED",
+          "type": "VISEME_SUPPORT"
+        },
+        {
+          "controlName": "AUX_TALK_mouthPucker",
+          "semantic": "FACE_mouthPucker",
+          "status": "APPLIED",
+          "type": "VISEME_SUPPORT"
+        },
+        {
+          "controlName": "AUX_TALK_mouthWiden",
+          "semantic": "FACE_mouthWiden",
+          "status": "APPLIED",
+          "type": "VISEME_SUPPORT"
+        },
+        {
+          "controlName": "AUX_TALK_dentalLip",
+          "semantic": "FACE_dentalLip",
+          "status": "APPLIED",
+          "type": "VISEME_SUPPORT"
+        },
+        {
+          "controlName": "AUX_TALK_lipsPart",
+          "semantic": "FACE_lipsPart",
+          "status": "APPLIED",
+          "type": "VISEME_SUPPORT"
+        },
+        {
+          "controlName": "AUX_TALK_lipsTight",
+          "semantic": "FACE_lipsTight",
+          "status": "APPLIED",
+          "type": "VISEME_SUPPORT"
+        },
+        {
+          "controlName": "AUX_TALK_mouthFrownLeft",
+          "semantic": "FACE_mouthFrownLeft",
+          "status": "APPLIED",
+          "type": "TALKING_CONTROL"
+        },
+        {
+          "controlName": "AUX_TALK_mouthFrownRight",
+          "semantic": "FACE_mouthFrownRight",
+          "status": "APPLIED",
+          "type": "TALKING_CONTROL"
+        },
+        {
+          "controlName": "AUX_TALK_mouthPlosive",
+          "semantic": "FACE_mouthPlosive",
+          "status": "APPLIED",
+          "type": "VISEME_SUPPORT"
+        },
+        {
+          "controlName": "AUX_TALK_mouthPucker",
+          "semantic": "FACE_mouthPucker",
+          "status": "APPLIED",
+          "type": "VISEME_SUPPORT"
+        },
+        {
+          "controlName": "AUX_TALK_mouthSmileLeft",
+          "semantic": "FACE_mouthSmileLeft",
+          "status": "APPLIED",
+          "type": "TALKING_CONTROL"
+        },
+        {
+          "controlName": "AUX_TALK_mouthSmileRight",
+          "semantic": "FACE_mouthSmileRight",
+          "status": "APPLIED",
+          "type": "TALKING_CONTROL"
+        },
+        {
+          "controlName": "AUX_TALK_mouthWiden",
+          "semantic": "FACE_mouthWiden",
+          "status": "APPLIED",
+          "type": "VISEME_SUPPORT"
+        }
+      ],
+      "targetHeadNode": "Head",
+      "unresolvedConditions": [],
+      "weightAdjustments": [
+        {
+          "region": "LEFT_EYELID",
+          "requirementId": "REQ-0000-FACE_eyeBlinkLeft",
+          "reversibleFromSource": true,
+          "scope": "AUGMENTATION_REGION_ONLY",
+          "sourceOverwrite": false
+        },
+        {
+          "region": "RIGHT_EYELID",
+          "requirementId": "REQ-0001-FACE_eyeBlinkRight",
+          "reversibleFromSource": true,
+          "scope": "AUGMENTATION_REGION_ONLY",
+          "sourceOverwrite": false
+        },
+        {
+          "region": "FACE",
+          "requirementId": "REQ-0022-FACE_eyeBlinkLeft",
+          "reversibleFromSource": true,
+          "scope": "AUGMENTATION_REGION_ONLY",
+          "sourceOverwrite": false
+        },
+        {
+          "region": "FACE",
+          "requirementId": "REQ-0023-FACE_eyeBlinkRight",
+          "reversibleFromSource": true,
+          "scope": "AUGMENTATION_REGION_ONLY",
+          "sourceOverwrite": false
+        }
+      ]
+    },
+    "augmentationPlan": {
+      "augmentationPlanDigest": "cf7cbf1e7866530d741f83a5e577b2cb197475af1c669bf6b35379caac203205",
+      "operations": [
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EYELID_CONTROL",
+          "authoritativeSemantic": "FACE_eyeBlinkLeft",
+          "authority": "NURION_EYE_CALIBRATION",
+          "capability": "FACE_eyeBlinkLeft",
+          "confidence": 0.85,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeBlinkLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_LEFT_EYE_EYELID_CONTROL",
+          "geometryDependency": "EYE_REGION",
+          "laterality": "LEFT",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0000-FACE_eyeBlinkLeft",
+          "requiresWeightBinding": true,
+          "safetyConstraints": [
+            "PRESERVE_EYE_CALIBRATION",
+            "NO_BODY_OWNERSHIP"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "LEFT_EYELID"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EYELID_CONTROL",
+          "authoritativeSemantic": "FACE_eyeBlinkRight",
+          "authority": "NURION_EYE_CALIBRATION",
+          "capability": "FACE_eyeBlinkRight",
+          "confidence": 0.85,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeBlinkRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_RIGHT_EYE_EYELID_CONTROL",
+          "geometryDependency": "EYE_REGION",
+          "laterality": "RIGHT",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0001-FACE_eyeBlinkRight",
+          "requiresWeightBinding": true,
+          "safetyConstraints": [
+            "PRESERVE_EYE_CALIBRATION",
+            "NO_BODY_OWNERSHIP"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "RIGHT_EYELID"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EYE_HELPER",
+          "authoritativeSemantic": "FACE_eyeSquintLeft",
+          "authority": "NURION_EYE_CALIBRATION",
+          "capability": "FACE_eyeSquintLeft",
+          "confidence": 0.85,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeSquintLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_LEFT_EYE_EYE_HELPER",
+          "geometryDependency": "EYE_REGION",
+          "laterality": "LEFT",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0002-FACE_eyeSquintLeft",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "PRESERVE_EYE_CALIBRATION",
+            "NO_BODY_OWNERSHIP"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "LEFT_EYELID"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EYE_HELPER",
+          "authoritativeSemantic": "FACE_eyeSquintRight",
+          "authority": "NURION_EYE_CALIBRATION",
+          "capability": "FACE_eyeSquintRight",
+          "confidence": 0.85,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeSquintRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_RIGHT_EYE_EYE_HELPER",
+          "geometryDependency": "EYE_REGION",
+          "laterality": "RIGHT",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0003-FACE_eyeSquintRight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "PRESERVE_EYE_CALIBRATION",
+            "NO_BODY_OWNERSHIP"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "RIGHT_EYELID"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EYE_HELPER",
+          "authoritativeSemantic": "FACE_eyeWideLeft",
+          "authority": "NURION_EYE_CALIBRATION",
+          "capability": "FACE_eyeWideLeft",
+          "confidence": 0.85,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeWideLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_LEFT_EYE_EYE_HELPER",
+          "geometryDependency": "EYE_REGION",
+          "laterality": "LEFT",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0004-FACE_eyeWideLeft",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "PRESERVE_EYE_CALIBRATION",
+            "NO_BODY_OWNERSHIP"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "LEFT_EYELID"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EYE_HELPER",
+          "authoritativeSemantic": "FACE_eyeWideRight",
+          "authority": "NURION_EYE_CALIBRATION",
+          "capability": "FACE_eyeWideRight",
+          "confidence": 0.85,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeWideRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_RIGHT_EYE_EYE_HELPER",
+          "geometryDependency": "EYE_REGION",
+          "laterality": "RIGHT",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0005-FACE_eyeWideRight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "PRESERVE_EYE_CALIBRATION",
+            "NO_BODY_OWNERSHIP"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "RIGHT_EYELID"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_dentalLip",
+          "authority": "NURION_TALKING",
+          "capability": "FACE_dentalLip",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_dentalLip",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_dentalLip",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0006-FACE_dentalLip",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "MOUTH"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_lipsPart",
+          "authority": "NURION_TALKING",
+          "capability": "FACE_lipsPart",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_lipsPart",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_lipsPart",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0007-FACE_lipsPart",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "MOUTH"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_lipsTight",
+          "authority": "NURION_TALKING",
+          "capability": "FACE_lipsTight",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_lipsTight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_lipsTight",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0008-FACE_lipsTight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "MOUTH"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "JAW_HELPER",
+          "authoritativeSemantic": "FACE_mouthOpen",
+          "authority": "NURION_TALKING",
+          "capability": "FACE_mouthOpen",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthOpen",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_JAW_HELPER_mouthOpen",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0009-FACE_mouthOpen",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "MOUTH"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_mouthPlosive",
+          "authority": "NURION_TALKING",
+          "capability": "FACE_mouthPlosive",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthPlosive",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_mouthPlosive",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0010-FACE_mouthPlosive",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "MOUTH"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_mouthPucker",
+          "authority": "NURION_TALKING",
+          "capability": "FACE_mouthPucker",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthPucker",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_mouthPucker",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0011-FACE_mouthPucker",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "MOUTH"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_mouthWiden",
+          "authority": "NURION_TALKING",
+          "capability": "FACE_mouthWiden",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthWiden",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_mouthWiden",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0012-FACE_mouthWiden",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "MOUTH"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_browDownLeft",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_browDownLeft",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_browDownLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_browDownLeft",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0013-FACE_browDownLeft",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_browDownRight",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_browDownRight",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_browDownRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_browDownRight",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0014-FACE_browDownRight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_browInnerUpLeft",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_browInnerUpLeft",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_browInnerUpLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_browInnerUpLeft",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0015-FACE_browInnerUpLeft",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_browInnerUpRight",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_browInnerUpRight",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_browInnerUpRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_browInnerUpRight",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0016-FACE_browInnerUpRight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_browOuterUpLeft",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_browOuterUpLeft",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_browOuterUpLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_browOuterUpLeft",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0017-FACE_browOuterUpLeft",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_browOuterUpRight",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_browOuterUpRight",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_browOuterUpRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_browOuterUpRight",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0018-FACE_browOuterUpRight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_cheekRaiseLeft",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_cheekRaiseLeft",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_cheekRaiseLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_cheekRaiseLeft",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0019-FACE_cheekRaiseLeft",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_cheekRaiseRight",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_cheekRaiseRight",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_cheekRaiseRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_cheekRaiseRight",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0020-FACE_cheekRaiseRight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_dentalLip",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_dentalLip",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_dentalLip",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_dentalLip",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0021-FACE_dentalLip",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EYELID_CONTROL",
+          "authoritativeSemantic": "FACE_eyeBlinkLeft",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_eyeBlinkLeft",
+          "confidence": 0.85,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeBlinkLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_LEFT_EYE_EYELID_CONTROL",
+          "geometryDependency": "EYE_REGION",
+          "laterality": "LEFT",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0022-FACE_eyeBlinkLeft",
+          "requiresWeightBinding": true,
+          "safetyConstraints": [
+            "PRESERVE_EYE_CALIBRATION",
+            "NO_BODY_OWNERSHIP"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EYELID_CONTROL",
+          "authoritativeSemantic": "FACE_eyeBlinkRight",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_eyeBlinkRight",
+          "confidence": 0.85,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeBlinkRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_RIGHT_EYE_EYELID_CONTROL",
+          "geometryDependency": "EYE_REGION",
+          "laterality": "RIGHT",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0023-FACE_eyeBlinkRight",
+          "requiresWeightBinding": true,
+          "safetyConstraints": [
+            "PRESERVE_EYE_CALIBRATION",
+            "NO_BODY_OWNERSHIP"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_eyeSquintLeft",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_eyeSquintLeft",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeSquintLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_eyeSquintLeft",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0024-FACE_eyeSquintLeft",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_eyeSquintRight",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_eyeSquintRight",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeSquintRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_eyeSquintRight",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0025-FACE_eyeSquintRight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_eyeWideLeft",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_eyeWideLeft",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeWideLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_eyeWideLeft",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0026-FACE_eyeWideLeft",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "EXPRESSION_CONTROL",
+          "authoritativeSemantic": "FACE_eyeWideRight",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_eyeWideRight",
+          "confidence": 0.75,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_eyeWideRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_EXPR_eyeWideRight",
+          "geometryDependency": "FACIAL_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0027-FACE_eyeWideRight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_EXPRESSION_SEMANTICS",
+            "NO_ARBITRARY_EXPRESSION"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_lipsPart",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_lipsPart",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_lipsPart",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_lipsPart",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0028-FACE_lipsPart",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_lipsTight",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_lipsTight",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_lipsTight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_lipsTight",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0029-FACE_lipsTight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "TALKING_CONTROL",
+          "authoritativeSemantic": "FACE_mouthFrownLeft",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_mouthFrownLeft",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthFrownLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_mouthFrownLeft",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0030-FACE_mouthFrownLeft",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "TALKING_CONTROL",
+          "authoritativeSemantic": "FACE_mouthFrownRight",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_mouthFrownRight",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthFrownRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_mouthFrownRight",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0031-FACE_mouthFrownRight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "JAW_HELPER",
+          "authoritativeSemantic": "FACE_mouthOpen",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_mouthOpen",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthOpen",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_JAW_HELPER_mouthOpen",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0032-FACE_mouthOpen",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_mouthPlosive",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_mouthPlosive",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthPlosive",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_mouthPlosive",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0033-FACE_mouthPlosive",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_mouthPucker",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_mouthPucker",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthPucker",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_mouthPucker",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0034-FACE_mouthPucker",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "TALKING_CONTROL",
+          "authoritativeSemantic": "FACE_mouthSmileLeft",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_mouthSmileLeft",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthSmileLeft",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_mouthSmileLeft",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0035-FACE_mouthSmileLeft",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "TALKING_CONTROL",
+          "authoritativeSemantic": "FACE_mouthSmileRight",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_mouthSmileRight",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthSmileRight",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_mouthSmileRight",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0036-FACE_mouthSmileRight",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        },
+        {
+          "attachment": "NURION_head \u2192 FACE_Rig_Root",
+          "augmentationType": "VISEME_SUPPORT",
+          "authoritativeSemantic": "FACE_mouthWiden",
+          "authority": "NURION_FACE_SEMANTIC",
+          "capability": "FACE_mouthWiden",
+          "confidence": 0.8,
+          "createsCompetingFaceRoot": false,
+          "deformationDependency": "FACE_mouthWiden",
+          "deformationScope": "AUGMENTATION_REGION_ONLY",
+          "expectedOutput": "AUX_TALK_mouthWiden",
+          "geometryDependency": "MOUTH_SPEECH_REGION",
+          "mutatesBodyHierarchy": false,
+          "overwritesSourceWeights": false,
+          "parent": "FACE_Rig_Root",
+          "reason": "NO_TARGET_CONTROL",
+          "requirementId": "REQ-0037-FACE_mouthWiden",
+          "requiresWeightBinding": false,
+          "safetyConstraints": [
+            "LOCKED_TALKING_VOCABULARY",
+            "NO_NEW_VISEME_SEMANTICS"
+          ],
+          "status": "PLANNED",
+          "targetRegion": "FACE"
+        }
+      ],
+      "requirementCount": 38,
+      "requirementsDigest": "86072838b4563ea90ada72d5648cc03c9157052cd1018743984c3cb180260e4d",
+      "schema": "NURION_ADAPT04_AUGMENTATION_PLAN_V1"
+    },
+    "augmentationPlanDigest": "cf7cbf1e7866530d741f83a5e577b2cb197475af1c669bf6b35379caac203205",
+    "blockers": [],
+    "bodyPreservationValidation": {
+      "blockers": [],
+      "bodySemanticPreserved": true,
+      "rootPelvisDistinct": true,
+      "status": "PASS"
+    },
+    "characterIdentity": "blink",
+    "classification": "AUGMENTED",
+    "contractCanonicalSha256": "5b87cfe27148dae1087bc8df172b78600c6cd0af9bd1fcd54ccf11eda88cc7e7",
+    "deformationScopeValidation": {
+      "blockers": [],
+      "derivedAdjustmentsScoped": true,
+      "sourceWeightsPreservedAsEvidence": true,
+      "status": "PASS"
+    },
+    "derivedArtifactSha256": "5628f7a699d0bd6d3f293fb712fde8a056629a83afed51e47a7f98d182b6e652",
+    "derivedSemanticDigest": "2887aace941bb9a01adc30f124dae97266dc329c77b51430147f7d541da0d904",
+    "faceBoundaryValidation": {
+      "attachmentType": "SOLE_ATTACHMENT",
+      "blockers": [],
+      "soleAttachment": "NURION_head \u2192 FACE_Rig_Root",
+      "status": "PASS"
+    },
+    "preservationEvidence": {
+      "adapt01Mutation": "NONE",
+      "adapt02Mutation": "NONE",
+      "adapt03Mutation": "NONE",
+      "adapt05Implementation": "NOT_STARTED",
+      "autoRepair": "DENY",
+      "bodyCanonicalMutation": "NONE",
+      "faceAuthorityMutation": "NONE",
+      "nurionV1Mutation": "NONE",
+      "sourceOriginalMutation": "NONE",
+      "sourceOverwrite": "DENY"
+    },
+    "schema": "NURION_ADAPT04_AUXILIARY_AUGMENTATION_CONTRACT_OUTPUT_V1",
+    "sourceAssetDigest": "a30358b310deb11a8eec27cc26d4acd96cf68a06d90dda218261619203220b8f",
+    "traceabilityValidation": {
+      "blockers": [],
+      "status": "PASS",
+      "traceability": "REQUIREMENT_TO_OPERATION"
+    }
+  }
+}

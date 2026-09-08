@@ -1,0 +1,24 @@
+{
+  "receiptId": "NURION-V2-CR02_R2_OPEN_PROTOTYPE_receipt",
+  "changeRequestId": "V2-CR-02",
+  "revision": "R2",
+  "title": "ACTUAL FACIAL DEFORMATION HARDENING",
+  "status": "OPEN / PROTOTYPE",
+  "specStatus": "APPROVED FOR R1 BLOCKER HARDENING",
+  "declaredAtUtc": "20260830T045200Z",
+  "declaredBy": "etherean",
+  "r1": {
+    "status": "HUMAN AUDIT BLOCKED / HISTORICAL / PRESERVED",
+    "blocker": "AUXILIARY_CONTROL_METADATA_WITHOUT_ACTUAL_FACIAL_DEFORMATION",
+    "receipt": "NURION-V2-CR02_R1_HUMAN_AUDIT_BLOCKED_receipt.json"
+  },
+  "authorizedStage": "CR02-R2-P01",
+  "authority": {
+    "engineV1": "CLOSED / PASS / CONSUME ONLY",
+    "V1_MUTATION": "DENY",
+    "V2-CR-01": "CONSUME ONLY",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN"
+  },
+  "humanAcceptanceCriterion": "NEUTRAL→ACTIVATE→NEUTRAL measured on actual mesh vertices; JSON-only traces DENY",
+  "next": "Implement measurable facial morph/skin deformation + independent vertex delta proof"
+}

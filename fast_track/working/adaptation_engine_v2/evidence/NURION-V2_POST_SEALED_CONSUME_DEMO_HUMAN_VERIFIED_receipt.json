@@ -1,0 +1,66 @@
+{
+  "receiptId": "NURION-V2_POST_SEALED_CONSUME_DEMO_HUMAN_VERIFIED",
+  "declaredBy": "etherean",
+  "declaredAtUtc": "20260830T080500Z",
+  "authority": "POST_V2_CONSUME_DEMO_VERIFICATION",
+  "mode": "POST_V2_SEALED_CONSUME_DEMO",
+  "result": "PASS",
+  "engineV2": "CLOSED / PASS / CONSUME ONLY",
+  "engineV2Reopen": "DENY",
+  "progress": "100%",
+  "progressScope": "DECLARED V2 SUPPORT ENVELOPE",
+  "artifactsVerified": {
+    "Sporty_SOURCE_BASELINE.glb": {
+      "sha256": "f3f9e343c8ba3c9a503a8423293dec90bb6be50f809f1321f4f6658b1bea133e",
+      "match": true,
+      "structure": {"nodes": 26, "meshes": 1, "skins": 1, "animations": 1, "morphTargets": 0}
+    },
+    "Sporty_V2_FACE.glb": {
+      "sha256": "92502f6f66b82c4dc1a7138b90746b4b0e755e6e857de0c2390ae9ef6320f51a",
+      "match": true,
+      "structure": {"nodes": 35, "meshes": 1, "skins": 1, "animations": 1, "morphTargets": 9},
+      "morphNames": [
+        "Blink_L",
+        "Blink_R",
+        "Jaw_Mouth",
+        "EXPR_SMILE",
+        "EXPR_BROW_UP",
+        "EXPR_FROWN",
+        "VISEME_AA",
+        "VISEME_OH",
+        "VISEME_EE"
+      ]
+    },
+    "Sporty_V2_FACE_TALKING.glb": {
+      "sha256": "55601949d6fc67eaebe405e683134fc516be5d6374ca748ea8809ae12dbace4d",
+      "match": true,
+      "animations": ["Armature|Idle_15|baselayer", "NURION_TALKING_VISEME_SEQUENCE"],
+      "talkingChannel": {"targetNode": 24, "path": "weights", "metadataOnly": false}
+    },
+    "Idle15_V2_FACE_TALKING_SEALED.glb": {
+      "sha256": "fe493789135aaa80f96a6c2377daafd0a3ed016f402ba8d8611c9e3d07c7c8ca",
+      "match": true,
+      "note": "MATCH with sealed CR03 pin"
+    }
+  },
+  "headResolve": {
+    "NURION_head": "Head",
+    "headNodeIndex": 18,
+    "headJointLocalIndex": 21,
+    "resolver": "CR01_NURION_head→skin.joints.index",
+    "hardcodedIdle15Index21": "NOT_USED",
+    "coincidenceNote": "local index 21 is computed result, not hardcoded SoT"
+  },
+  "temporal": {
+    "AA_vs_OH": 0.0097979456,
+    "AA_vs_EE": 0.0156204747,
+    "OH_vs_EE": 0.0200997628,
+    "startError": 0.0,
+    "endError": 0.0
+  },
+  "chain": "SOURCE → FACE → FACE+TALKING = ACTUAL ARTIFACTS CONFIRMED",
+  "demoPath": "dist/v2_final_demo/",
+  "reportPath": "dist/v2_final_demo/FINAL_DEMO_REPORT.json",
+  "meaning": "Additional real-file empirical evidence that sealed V2 consume produces actual GLB artifacts — does not reopen Engine V2",
+  "next": "V2 remains CLOSED. Further product features require Post-V2 Change Requests."
+}

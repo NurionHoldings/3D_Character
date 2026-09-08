@@ -1,0 +1,15 @@
+{
+  "receiptId": "NURION-V2-CR04_SECOND_ASSET_PIN_STATUS",
+  "changeRequest": "V2-CR-04",
+  "declaredAtUtc": "20260830T054300Z",
+  "secondAsset": "NOT_PINNED",
+  "reason": "No eligible independent second real Meshy character found in-repo at Spec Gate APPROVE time",
+  "inRepoSurvey": {
+    "idle15Family": "meshy_silver_starlight Idle_15 / motion clips / derived CR02-CR03 — SAME character lineage; NOT eligible as second independent character",
+    "v1DerivedFixtures": "adaptation_engine_v1 derived_adapt04/05 — synthetic/test fixtures; MUST_NOT for CR04 pin",
+    "eligibleIndependentSecondMeshy": []
+  },
+  "policy": "Do not pin Idle_15 clones, motion variants, or synthetic fixtures. Await Human-provided second real Meshy GLB → SHA pin → then P01.",
+  "P01": "BLOCKED_UNTIL_SECOND_ASSET_PIN",
+  "engineV2": "NOT_OPEN"
+}

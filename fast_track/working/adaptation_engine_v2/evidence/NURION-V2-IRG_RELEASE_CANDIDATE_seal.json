@@ -1,0 +1,27 @@
+{
+  "schema": "NURION_ADAPTATION_ENGINE_V2_RELEASE_CANDIDATE_V1",
+  "status": "RELEASE_CANDIDATE",
+  "irg": "V2-IRG-01",
+  "approvedSpecDigest": "a78769ecbcfc2c0094ad059dd312e565c27c975f3d68bef218c5d03c1539511a",
+  "authorityDigests": {
+    "CR01": "7b31623e7e1d2b0f4be2135c2bdd017bfbff03f483581bbec9cc412fbbadefb9",
+    "CR02": "ca1a38df612f711aa578532f8af4dc0a7a6a040043789e95b9cdcaa2da90a5b9",
+    "CR03": "965cc800aace5980f86dddd89aeb8baaa87b7a629d03bb855a425b747a196129",
+    "CR04": "b1b22671fe7cd3815ebcd61c0f8c99821ed271e1d4a55bda22ee0f51a83788da"
+  },
+  "releaseManifestDigest": "c7cfe95874eb07237fb4f9c72957d4b7a0449b160c522b042fc007843284901a",
+  "releaseCandidateDigest": "7df80ff5265aac081a5e83c3ffe3acf9f82466c35f0f3634ef2a2acb66cf32f4",
+  "integrationProofDigest": "03b1447e9c27d8553efae731cf8b80a38ee4062b8fedfafbe0b395cb5da4eb43",
+  "pins": {
+    "Idle15_baseline": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+    "CR02_derived": "1ee90420ba39cc2e74de6624230538f4416d39ec7b34656e5b175a776c171cdd",
+    "CR03_derived": "fe493789135aaa80f96a6c2377daafd0a3ed016f402ba8d8611c9e3d07c7c8ca",
+    "CR04_second": "f3f9e343c8ba3c9a503a8423293dec90bb6be50f809f1321f4f6658b1bea133e",
+    "CR04_facial": "92502f6f66b82c4dc1a7138b90746b4b0e755e6e857de0c2390ae9ef6320f51a",
+    "CR04_talking": "55601949d6fc67eaebe405e683134fc516be5d6374ca748ea8809ae12dbace4d"
+  },
+  "engineV2": "NOT_OPEN",
+  "agentCeiling": "READY_FOR_HUMAN_AUDIT",
+  "declaredAtUtc": "20260830T074112Z",
+  "finalReleaseDigest": "3f144ec3a78cd5e423384ec4b620f96a9c430ef18a878796188886818287b5a9"
+}

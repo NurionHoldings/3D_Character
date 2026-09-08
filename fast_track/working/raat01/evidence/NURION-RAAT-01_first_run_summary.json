@@ -1,0 +1,67 @@
+{
+  "schema": "NURION_RAAT01_FIRST_RUN_SUMMARY_V1",
+  "testId": "RAAT-01",
+  "executedAtUtc": "20260830T024700Z",
+  "subject": {
+    "label": "Idle_15_withSkin_WORKING_BASELINE",
+    "characterId": "raat01_idle15",
+    "sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+    "byteLength": 7543428,
+    "note": "PRODUCT-01 frozen baseline — not the synthetic fixture used for Engine V1 closure"
+  },
+  "engineV1": "CLOSED / PASS / CONSUME ONLY",
+  "pipelineStatus": "BLOCKED",
+  "firstStopStage": "ADAPT-02",
+  "stageOutcomes": {
+    "ADAPT-01": {
+      "status": "PASS",
+      "classification": "CLASS_C",
+      "summary": "Body COMPATIBLE (9 core hits); FACE/Eye/Jaw/TALKING all MISSING; blendshapes=0"
+    },
+    "ADAPT-02": {
+      "status": "BLOCKED",
+      "classification": "BLOCKED",
+      "summary": "Spine chain ancestry break: NURION_spine01 -> NURION_chest; arms/legs chains PASS"
+    },
+    "ADAPT-03": {
+      "status": "BLOCKED",
+      "classification": "BLOCKED",
+      "summary": "Upstream ADAPT-02 blocked — not evaluated independently"
+    },
+    "ADAPT-04": {
+      "status": "BLOCKED",
+      "classification": "BLOCKED",
+      "summary": "Upstream ADAPT-02 blocked"
+    },
+    "ADAPT-05": {
+      "status": "BLOCKED",
+      "classification": "BLOCKED",
+      "summary": "Upstream ADAPT-02 blocked — no derived candidate"
+    },
+    "ADAPT-06": {
+      "status": "BLOCKED",
+      "classification": "BLOCKED",
+      "summary": "Upstream ADAPT-02 blocked — release not reached"
+    }
+  },
+  "preservation": {
+    "sourceBytesUnchanged": true,
+    "engineV1Mutation": "NONE"
+  },
+  "interpretation": {
+    "automationBoundary": "Intake succeeds; full automatic pipeline stops at skeleton semantic mapping",
+    "notEngineFailure": "Engine V1 closure used synthetic fixture; RAAT-01 measures real-asset support boundary",
+    "nextSteps": [
+      "Record RAAT-01 as baseline support measurement",
+      "Optional: test additional submitted assets (external GLB, motion variants)",
+      "Runtime playback step when a RELEASED candidate exists",
+      "Canonical changes only via V2 / change-control — not product-driven ADAPT reopen"
+    ]
+  },
+  "artifacts": {
+    "contract": "semantic/NURION_RAAT01_REAL_ASSET_ACCEPTANCE_CONTRACT_V1.json",
+    "fullReport": "reports/RAAT01_report_raat01_idle15.json",
+    "receipt": "evidence/NURION-RAAT-01_raat01_idle15_acceptance_receipt.json",
+    "runner": "tools/run_raat01_real_asset_acceptance.py"
+  }
+}

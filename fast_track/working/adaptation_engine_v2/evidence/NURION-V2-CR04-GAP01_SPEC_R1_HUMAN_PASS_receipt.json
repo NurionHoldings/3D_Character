@@ -1,0 +1,17 @@
+{
+  "receiptId": "NURION-V2-CR04-GAP01_SPEC_R1_HUMAN_PASS",
+  "authority": "HUMAN_SPEC_GATE",
+  "changeRequest": "V2-CR-04-GAP-01",
+  "result": "PASS",
+  "specSha256": "4a8467ad945d3c56d9222075c44ae4cc12e8df5edcd833d4091b046901b903f3",
+  "approvedSpecDigest": "4a8467ad945d3c56d9222075c44ae4cc12e8df5edcd833d4091b046901b903f3",
+  "status": "OPEN / PROTOTYPE",
+  "implementationAuthority": "GRANTED",
+  "secondAsset": "PRESERVED Sporty f3f9e343…133e — DO NOT RESELECT",
+  "closes": "CR04-GENERALIZATION-HC-01",
+  "upstreamReopen": "DENY",
+  "engineV2": "NOT_OPEN",
+  "declaredAtUtc": "20260830T071400Z",
+  "declaredBy": "etherean",
+  "next": "Implement resolver + R3 proof on Sporty pin"
+}

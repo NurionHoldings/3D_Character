@@ -1,0 +1,133 @@
+{
+  "scenarios": {
+    "adapt04_provenance_mismatch": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "adapt04ProvenanceMismatch": true
+      }
+    },
+    "behavior_mapping_incompatible": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "behaviorMappingIncompatible": true
+      }
+    },
+    "body_hierarchy_mismatch": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "bodyHierarchyMismatch": true
+      }
+    },
+    "candidate_sha_mismatch": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "candidateShaMismatch": true
+      }
+    },
+    "canonical_motion_incompatible": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "canonicalMotionIncompatible": true
+      }
+    },
+    "competing_face_root": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "competingFaceRoot": true
+      }
+    },
+    "face_attachment_mismatch": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "faceAttachmentMismatch": true
+      }
+    },
+    "face_body_coplay_failure": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "faceBodyCoplayFailure": true
+      }
+    },
+    "fully_qualified_augmented": {
+      "asset": "body_minimal_face.glb",
+      "force": {}
+    },
+    "left_right_eye_inversion": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "leftRightEyeInversion": true
+      }
+    },
+    "malformed_candidate": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "malformedCandidate": true
+      }
+    },
+    "manual_review_required": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "manualReviewRequired": true
+      }
+    },
+    "meshy_style_augmented": {
+      "asset": "meshy_style.glb",
+      "force": {}
+    },
+    "missing_blink": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "missingBlink": true
+      }
+    },
+    "missing_jaw_mouth": {
+      "asset": "talking_augmentation_required.glb",
+      "force": {
+        "missingJawMouth": true
+      }
+    },
+    "missing_required_expression": {
+      "asset": "expression_mapping_required.glb",
+      "force": {
+        "missingRequiredExpression": true
+      }
+    },
+    "no_augmentation_required": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "noAugmentationRequired": true
+      }
+    },
+    "root_pelvis_violation": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "rootPelvisViolation": true
+      }
+    },
+    "runtime_state_incompatible": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "runtimeStateIncompatible": true
+      }
+    },
+    "talking_incompatible": {
+      "asset": "talking_augmentation_required.glb",
+      "force": {
+        "talkingIncompatible": true
+      }
+    },
+    "unauthorized_candidate_mutation": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "unauthorizedCandidateMutation": true
+      }
+    },
+    "upstream_pin_mismatch": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "upstreamPinMismatch": true
+      }
+    }
+  },
+  "schema": "NURION_ADAPT05_SCENARIO_FLAGS_V1"
+}

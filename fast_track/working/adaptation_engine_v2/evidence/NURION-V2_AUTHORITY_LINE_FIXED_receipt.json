@@ -1,0 +1,20 @@
+{
+  "receiptId": "NURION-V2_AUTHORITY_LINE_FIXED_20260830T050700Z",
+  "declaredBy": "etherean",
+  "declaredAtUtc": "20260830T050700Z",
+  "authorityLine": "FIXED",
+  "CR01": "CONSUME ONLY / REOPEN DENY",
+  "CR02": "CONSUME ONLY / REOPEN DENY",
+  "CR02_R2_pins": {
+    "derivedSha256": "1ee90420ba39cc2e74de6624230538f4416d39ec7b34656e5b175a776c171cdd",
+    "independentProofDigest": "a38a8855f1f4f1c9cb3171737c7f98355cfd79bcd72c50388d1a134faebda174",
+    "humanAuditedZipSha256": "c96e2e875797f274ad44a234726e7b80b8c7a0ebe369ade1798c0626d5189ba2"
+  },
+  "candidates": {
+    "V2-CR-03": "MORPH-WEIGHT RUNTIME TALKING SEQUENCE = CANDIDATE ONLY / NOT OPEN",
+    "V2-CR-04": "SECOND REAL MESHY ASSET GENERALIZATION = CANDIDATE ONLY / NOT OPEN"
+  },
+  "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN",
+  "Engine_V1": "CLOSED / PASS / CONSUME ONLY",
+  "note": "From this point: consume CR01+CR02 facial/body technical basis; prove remaining gaps only via separate CRs"
+}

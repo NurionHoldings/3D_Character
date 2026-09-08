@@ -1,0 +1,20 @@
+{
+  "schema": "NURION_UNAPPROVED_CANONICAL_DRAFT_ISOLATION",
+  "status": "ISOLATION_POLICY_ACTIVE",
+  "officialGateArtifact": "DENY",
+  "isolationPath": "drafts/_unapproved/canonical/",
+  "workspaceScanAt": "2026-08-15T04:09:00+00:00",
+  "findings": {
+    "contractCode": "NONE",
+    "verificationCode": "NONE",
+    "tests": "NONE",
+    "packages": "NONE"
+  },
+  "directionDocumentsNotImplementation": [
+    "dist/v0.7/canonical/NURION_V07_CANONICAL_BASE_PIPELINE_TECHNICAL_DIRECTION.json",
+    "dist/v0.7/canonical/NURION_V07_CANONICAL_BASE_PIPELINE_TECHNICAL_DIRECTION.md",
+    "dist/v0.7/canonical/STATUS.json"
+  ],
+  "note": "Any future Canonical contract/verification drafts must be written only under drafts/_unapproved/canonical/ until an explicit GO promotes them.",
+  "testsPackagingBaselineRegistration": "DENY_UNTIL_EXPLICIT_GO"
+}

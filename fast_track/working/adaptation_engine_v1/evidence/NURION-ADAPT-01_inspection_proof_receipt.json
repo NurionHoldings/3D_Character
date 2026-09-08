@@ -1,0 +1,236 @@
+{
+  "ADAPT-01_CLOSED_PASS": "DENY_AGENT",
+  "ADAPT-02": "NOT_STARTED",
+  "agentStatus": "READY_FOR_HUMAN_AUDIT",
+  "automatedGatePassCount": 15,
+  "automatedGateTotal": 15,
+  "classificationSamples": {
+    "malformed": {
+      "adaptationClass": "BLOCKED",
+      "body": "INCOMPATIBLE",
+      "evidenceBased": true,
+      "eye": "UNKNOWN",
+      "face": "UNKNOWN",
+      "jaw": "UNKNOWN",
+      "rationale": [
+        "PARSE_FAILURE"
+      ],
+      "talking": "UNKNOWN"
+    },
+    "missingFace": {
+      "adaptationClass": "CLASS_C",
+      "body": "COMPATIBLE",
+      "bodyCoreHits": 9,
+      "evidenceBased": true,
+      "eye": "MISSING",
+      "face": "MISSING",
+      "jaw": "MISSING",
+      "rationale": [
+        "body_hits=9",
+        "blendshapes=0",
+        "eyes=False/False",
+        "jaw=False",
+        "viseme=False",
+        "body_ok_needs_face_eye_jaw_helper"
+      ],
+      "talking": "MISSING"
+    },
+    "positive": {
+      "adaptationClass": "CLASS_A",
+      "body": "COMPATIBLE",
+      "bodyCoreHits": 9,
+      "evidenceBased": true,
+      "eye": "COMPATIBLE",
+      "face": "COMPATIBLE",
+      "jaw": "COMPATIBLE",
+      "rationale": [
+        "body_hits=9",
+        "blendshapes=32",
+        "eyes=True/True",
+        "jaw=True",
+        "viseme=True",
+        "near_complete_capabilities"
+      ],
+      "talking": "COMPATIBLE"
+    },
+    "renamed": {
+      "adaptationClass": "CLASS_C",
+      "body": "COMPATIBLE",
+      "bodyCoreHits": 9,
+      "evidenceBased": true,
+      "eye": "COMPATIBLE",
+      "face": "MISSING",
+      "jaw": "COMPATIBLE",
+      "rationale": [
+        "body_hits=9",
+        "blendshapes=0",
+        "eyes=True/True",
+        "jaw=True",
+        "viseme=False",
+        "body_ok_needs_face_eye_jaw_helper"
+      ],
+      "talking": "MISSING"
+    }
+  },
+  "contractSha256": "f673601d2bc950932cf915640378bd0578e564136b4b1300c0ee9a3e6797b163",
+  "criticalGates": {
+    "AD1-G02": "PASS",
+    "AD1-G05": "PASS",
+    "AD1-G06": "PASS",
+    "AD1-G12": "PASS",
+    "AD1-G14": "PASS",
+    "AD1-G15": "PASS"
+  },
+  "digestSemantics": {
+    "finalAuditZipSha256": "EXTERNAL_ONLY \u2014 written beside ZIP after seal; never embedded as self-hash inside ZIP",
+    "payloadCanonicalDigest": "hash of sealed payload bytes BEFORE zip (see packaging)",
+    "r0MismatchExplanation": "R0 READY receipt embedded a prior ZIP SHA (e3a7\u2026) while the submitted ZIP was 161676\u2026 because READY was updated after an earlier pack then re-packed, creating impossible self-referential provenance. R1 forbids embedding final ZIP SHA inside the ZIP."
+  },
+  "executionMode": "MONOREPO",
+  "fixtureHashes": {
+    "fixtures": {
+      "body_compatible_missing_face.glb": {
+        "byteLength": 1188,
+        "sha256": "aca29d80af4b3c3505f36c31fe3b219a7be6e1072f66395bedb30d03033921e0"
+      },
+      "malformed_not_glb.bin": {
+        "byteLength": 13,
+        "sha256": "102bba27bae8cec5bd7651d8ad5aeee095dac31b4f82e947c886d5ed7b78a1b1"
+      },
+      "no_mesh.glb": {
+        "byteLength": 112,
+        "sha256": "d0ec0a0c1864e30d3b63401b9db8d415265cecec5dbe7de4be5e3166c25c78f0"
+      },
+      "positive_rigged_with_face.glb": {
+        "byteLength": 2432,
+        "sha256": "3fdff18511d42c71194bc051c6510b405537e72052fc46d4bbb05dc11c71d4f2"
+      },
+      "renamed_nonstandard_bones.glb": {
+        "byteLength": 1256,
+        "sha256": "7bee762d4710b4673e38ca2cff349f86a960245d771b3485dcc0ae4ed221b2c8"
+      },
+      "unsupported_fake.fbx": {
+        "byteLength": 25,
+        "sha256": "ae1a982b941fa2a562e36807f6a09302fb9ec82b197010b844d9d3ceffcab854"
+      }
+    },
+    "schema": "NURION_ADAPT01_FIXTURE_MANIFEST_V1"
+  },
+  "gates": {
+    "AD1-G01": {
+      "byteLength": 2432,
+      "fixtureSha256": "3fdff18511d42c71194bc051c6510b405537e72052fc46d4bbb05dc11c71d4f2",
+      "status": "PASS"
+    },
+    "AD1-G02": {
+      "malformed": "FAILED",
+      "positive": "OK",
+      "status": "PASS"
+    },
+    "AD1-G03": {
+      "nodeCount": 23,
+      "status": "PASS"
+    },
+    "AD1-G04": {
+      "meshes": 1,
+      "skins": 1,
+      "status": "PASS"
+    },
+    "AD1-G05": {
+      "edges": 22,
+      "jointCount": 23,
+      "status": "PASS"
+    },
+    "AD1-G06": {
+      "policy": "name_alias+skin_joint+side+hierarchy \u2014 not name-only",
+      "renamedHead": "Cranium",
+      "renamedPelvis": "HipBone",
+      "status": "PASS"
+    },
+    "AD1-G07": {
+      "missingFaceBlendshapes": 0,
+      "positiveBlendshapes": 32,
+      "status": "PASS"
+    },
+    "AD1-G08": {
+      "missingFaceNoEyes": true,
+      "positiveEyesJaw": true,
+      "status": "PASS"
+    },
+    "AD1-G09": {
+      "blendshapeCount": 32,
+      "status": "PASS"
+    },
+    "AD1-G10": {
+      "clipCount": 1,
+      "status": "PASS"
+    },
+    "AD1-G11": {
+      "status": "PASS",
+      "upAxis": "Y"
+    },
+    "AD1-G12": {
+      "autoRepair": "DENY",
+      "sourceBytesUnchanged": true,
+      "status": "PASS"
+    },
+    "AD1-G13": {
+      "fbx": "BLOCKED",
+      "malformed": "BLOCKED",
+      "missingFace": "CLASS_C",
+      "noMesh": "BLOCKED",
+      "positive": "CLASS_A",
+      "renamed": "CLASS_C",
+      "status": "PASS"
+    },
+    "AD1-G14": {
+      "autoRepair": "DENY",
+      "failClosed": true,
+      "status": "PASS"
+    },
+    "AD1-G15": {
+      "identical": true,
+      "reportCanonicalSha256": "7d64d08c9aac281b29b68140681a03112d80e0a130e78ecc2d401661dac2872c",
+      "status": "PASS"
+    },
+    "AD1-G16": {
+      "agentMayNotPass": true,
+      "note": "Human auditor only may declare ADAPT-01 CLOSED / PASS",
+      "status": "HUMAN_FINAL_ONLY"
+    }
+  },
+  "humanPassAuthority": "RESERVED",
+  "implementationHashes": {
+    "fast_track/adaptation/__init__.py": "ddee7908dd7bccc0b05ad0eb2d17d797ed3e65377a15ed55efd288a31e540e31",
+    "fast_track/adaptation/audit_paths.py": "d487eb8219fdc9b66626209274425dd730d83d4bf0b0ce850c3b9fd2f0f74633",
+    "fast_track/adaptation/classifier.py": "cd143f6645400b4325c79162140e3c92b84e23135b6daeb678ccfc3801080e66",
+    "fast_track/adaptation/glb_io.py": "b13d5a6f975c3df425e0362a8a96bd3c57db40dc47d892327f7ef092587c1cd1",
+    "fast_track/adaptation/inspector.py": "c4832589a9a7684f703690a712f6f4aecf5eff044e7b7c83137a83b3ae122bc4",
+    "fast_track/adaptation/semantic_candidates.py": "571121a80fb0657e98df65876142b907b0e05b8fa1eab87daf97d3499c7cded3",
+    "semantic/NURION_ADAPT01_CHARACTER_INTAKE_INSPECTION_CONTRACT_V1.json": "f673601d2bc950932cf915640378bd0578e564136b4b1300c0ee9a3e6797b163",
+    "semantic/NURION_ADAPTATION_ENGINE_TRACK_V1.json": "030a23cd5f7e8801e98b8855302dfabdcce7f3ad8011f5bd2ef91e0c9797e762",
+    "tools/build_adapt01_fixtures.py": "2b2d63ec9fe4ad1da4a1a8849d85d6e5b4a231fa92e7515c278275cc58e102a6",
+    "tools/pack_adapt01_inspection_proof_zip.py": "7ea2bd0f8dc4632b1ba75517802860b1c74475e6da6e80d50b6ee813c776db87",
+    "tools/run_adapt01_independent_proof.py": "56067bcb938425691d2b53e59bfb9e1e3d72c88cfbdf7b3adcdd96161a1acb7a",
+    "tools/run_adapt01_inspection_proof.py": "689cd7d5324b6dc363ef11d5fecb421c4329fcc479eac1208cf01f723da5f645"
+  },
+  "nurionV1Mutation": {
+    "NURION_CHARACTER_PRODUCT_PIPELINE_V1": "CLOSED / PASS / CONSUME ONLY \u2014 untouched",
+    "adapt02Started": false,
+    "canonicalReleaseDigest_declared": "30d9f70790b6c834a3cc3283489b8ba60d2bf4b2d1ad956b74eb0e93c542fd4a",
+    "mutation": "NONE",
+    "noProductRuntimeImport": true,
+    "product06BaselineCanonicalSha_declared": "1a714e78f9c1eb3a09f498f29c94116d8afad79fb519a589d9f52a73167786ed",
+    "product06BaselineCanonicalSha_observed": "1a714e78f9c1eb3a09f498f29c94116d8afad79fb519a589d9f52a73167786ed",
+    "product06ZipSha_declared": "9aacac94e9e48024c3f5195ee445eee49fb83c655bd1864aa66ebf6e08d52192",
+    "product06ZipSha_observed": "9aacac94e9e48024c3f5195ee445eee49fb83c655bd1864aa66ebf6e08d52192",
+    "product07": "DOES NOT EXIST",
+    "verifyMode": "LIVE_CANONICAL_VERIFY"
+  },
+  "pass": "NOT_DECLARED",
+  "revision": "R1",
+  "schema": "NURION_ADAPT01_PROOF_RECEIPT_V1",
+  "stage": "ADAPT-01",
+  "track": "NURION_CHARACTER_ADAPTATION_ENGINE_V1",
+  "trackSha256": "030a23cd5f7e8801e98b8855302dfabdcce7f3ad8011f5bd2ef91e0c9797e762"
+}

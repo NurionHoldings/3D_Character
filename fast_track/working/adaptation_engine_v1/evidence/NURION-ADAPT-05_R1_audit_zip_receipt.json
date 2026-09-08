@@ -1,0 +1,19 @@
+{
+  "AD5-G20": "HUMAN_FINAL_ONLY",
+  "ADAPT-06": "LOCKED BY PREDECESSOR",
+  "adapt04PassReceiptSha256": "7d00bbc1c247629359785a9757694f65eef46c8148f0395cbfe2bd3797a81122",
+  "adapt05UpstreamProvenanceReceiptSha256": "25f33104ddbf844d086ad279ee7d1b2013201cd9ceac239b398071da50659d4f",
+  "adapt06HandoffDigest": "cf947e2af3266c531e1cebfd0acd2755c681e767875f1ee811970830e37d5843",
+  "agentStatus": "READY_FOR_HUMAN_AUDIT",
+  "byteLength": 129751,
+  "candidateSha": "5628f7a699d0bd6d3f293fb712fde8a056629a83afed51e47a7f98d182b6e652",
+  "entryCount": 71,
+  "finalAuditZipSha256": "1123e565a0de17fc2d066d6c8af820991697aabadef4166fef106d8043655859",
+  "pass": "NOT_DECLARED",
+  "payloadCanonicalDigest": "a12a54b23684b2c62b1d0a5885b4a420dadb29fda614ba5434aae7925fffd6de",
+  "qualificationReportDigest": "02f59a2f22d226792da00c31ce1daf7bd9dd0f011d80001ad9425c711db4e570",
+  "revision": "R1",
+  "runtimeCompatibilityDigest": "3e35c39ee3a4132fed60ecbf6f24737b63e5c1049078d2ff39db5b472424594b",
+  "schema": "NURION_ADAPT05_R1_AUDIT_ZIP_RECEIPT_V1",
+  "zip": "d:\\NURION Character Landmarker\\fast_track\\working\\adaptation_engine_v1\\evidence\\NURION-ADAPT-05_runtime_qualification_proof_R1.zip"
+}

@@ -1,0 +1,15 @@
+{
+  "AD2-G20": "HUMAN_FINAL_ONLY",
+  "ADAPT-03": "LOCKED BY PREDECESSOR",
+  "adapt01Mutation": "NONE",
+  "agentStatus": "READY_FOR_HUMAN_AUDIT",
+  "byteLength": 58479,
+  "entryCount": 36,
+  "finalAuditZipSha256": "3200a2c028ead2dcd9d1c73227ad846d453aca65fca9e2f14d5cb4076a962aa3",
+  "nurionV1Mutation": "NONE",
+  "pass": "NOT_DECLARED",
+  "payloadCanonicalDigest": "b895a6ed1870d8bb8b98b3d4f0ca0f2036025d974c6fb315fe4878c9b21a3283",
+  "revision": "R1",
+  "schema": "NURION_ADAPT02_R1_AUDIT_ZIP_RECEIPT_V1",
+  "zip": "d:\\NURION Character Landmarker\\fast_track\\working\\adaptation_engine_v1\\evidence\\NURION-ADAPT-02_skeleton_semantic_proof_R1.zip"
+}

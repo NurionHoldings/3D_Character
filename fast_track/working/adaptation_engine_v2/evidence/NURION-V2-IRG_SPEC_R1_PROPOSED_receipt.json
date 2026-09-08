@@ -1,0 +1,54 @@
+{
+  "receiptId": "NURION-V2-IRG_SPEC_R1_PROPOSED",
+  "schema": "NURION_V2_IRG_SPEC_PROPOSED_RECEIPT_V1",
+  "authority": "SPEC_PROPOSAL",
+  "changeRequest": "V2-IRG-01",
+  "alias": "V2-INTEGRATION-RELEASE-GATE",
+  "title": "INTEGRATION / RELEASE GATE",
+  "specRevision": "R1",
+  "status": "SPEC_PROPOSED",
+  "humanSpecReview": "PENDING",
+  "humanSpecPass": "NOT DECLARED",
+  "implementationAuthority": "NONE",
+  "openStatus": "NOT OPEN",
+  "declaredAtUtc": "20260830T073300Z",
+  "declaredBy": "etherean",
+  "proposedSpecDigest": "a78769ecbcfc2c0094ad059dd312e565c27c975f3d68bef218c5d03c1539511a",
+  "priorProposedSpecDigest": "81f6db4e7996c2c98a6ed03e376b8149ae2c77edc5618631e1e9262519f1efab",
+  "revisionNote": "SPEC R1 content reinforced with absolute authority boundary, release manifest SoT, support envelope, fail-closed blockers, V2-RG-P01…P07 naming — still PROPOSAL only",
+  "specPath": "semantic/NURION_ADAPTATION_ENGINE_V2_INTEGRATION_RELEASE_GATE_SPEC_R1.json",
+  "specMarkdown": "semantic/NURION_ADAPTATION_ENGINE_V2_IRG_SPEC_R1.md",
+  "irgTrack": "semantic/NURION_ADAPTATION_ENGINE_V2_IRG_TRACK_V1.json",
+  "coreClaim": "CR01+CR02+CR03+CR04 → ONE AUTHORITATIVE NURION ADAPTATION ENGINE V2 RELEASE (consume unchanged; seal release authority)",
+  "corePrinciple": "Not develop more to finish V2 — seal that Human-PASS CR01–CR04 unchanged compose one reproducible auditable V2 release authority",
+  "authorityLine": {
+    "V2-CR-01": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-02": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-03": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-04": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-IRG-01": "SPEC_PROPOSED / HUMAN_SPEC_REVIEW PENDING / IMPLEMENTATION AUTHORITY NONE / NOT OPEN",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN"
+  },
+  "agentCeiling": "SPEC_REVIEW_ONLY",
+  "humanSpecGate": {
+    "required": true,
+    "status": "PENDING",
+    "approvedSpecDigest": null
+  },
+  "onApprove": {
+    "status": "OPEN_PROTOTYPE",
+    "implementationAuthority": "GRANTED_INTEGRATION_ONLY",
+    "engineV2Remains": "NOT OPEN"
+  },
+  "onBlock": {
+    "action": "SPEC-only revise",
+    "implementationAuthority": "NONE"
+  },
+  "denyUntilHumanFinal": [
+    "NURION ADAPTATION ENGINE V2 = CLOSED / PASS",
+    "NURION_ADAPTATION_ENGINE_V2_RELEASE = AUTHORITATIVE FINAL",
+    "100% completion declaration"
+  ],
+  "progress": "~96–97%",
+  "next": "Human Spec Gate review — APPROVE or BLOCK. No IRG implementation until APPROVED."
+}

@@ -1,0 +1,62 @@
+{
+  "adapt05CanonicalSeal": {
+    "adapt05HandoffDigest": "a24d39bba4a864e1b28e18f4e3e604d9dd854238aa5e18d443b73eea82fb3b55",
+    "authority": "PINNED \u2014 must not be recomputed by ADAPT-06",
+    "candidateSha256": "5628f7a699d0bd6d3f293fb712fde8a056629a83afed51e47a7f98d182b6e652",
+    "characterId": "canonical_qualified",
+    "qualificationReportDigest": "a5362ea9339bb52c2e8e5c17b2a6c229029e5dc11f221228adf38a2b65ad0412",
+    "runtimeCompatibilityDigest": "3e35c39ee3a4132fed60ecbf6f24737b63e5c1049078d2ff39db5b472424594b"
+  },
+  "faceAuthorityPins": {
+    "assemblyBaselineSha256": "1a38586905d155053f7eff6a625bb3497a2a17235892017e4ad277ce06c14605",
+    "compositionPolicySha256": "da5b7399cc291dcf1f00fbc35052f5f69215862c26a5cf7d77c465a6778f51d3",
+    "eyeCalibrationFingerprintSha256": "2d1dbb6772cd74c2a7dc991cf497d58dc5b803359f5430105dbe4ff9e513ff19",
+    "faceBodyRuntimeSha256": "917d640f10946e4b77fe5dafa8f6c649e36b95198361024fe4514c69d05f0fef",
+    "faceProductLockSha256": "07830e1c34ce79b1d9ff9fc15a8b456ef7e3438d05ae7709d3515c00baebcf06",
+    "namingTableSha256": "61995e5c47b1c25d17cdf8733a8d23b87a7faae667dc5724ad3ea2372fe15187"
+  },
+  "faceBodyAttachment": {
+    "child": "FACE_Rig_Root",
+    "parent": "NURION_head",
+    "type": "SOLE_ATTACHMENT"
+  },
+  "invariants": {
+    "adapt01to05Modify": "DENY",
+    "adapt05DigestRecompute": "DENY",
+    "autoRepair": "DENY",
+    "candidateMutation": "DENY",
+    "candidateRepair": "DENY",
+    "nurionV1Modify": "DENY",
+    "releaseOnly": true
+  },
+  "predecessorPass": {
+    "adapt01Status": "CLOSED / PASS / CONSUME ONLY",
+    "adapt02Status": "CLOSED / PASS / CONSUME ONLY",
+    "adapt03Status": "CLOSED / PASS / CONSUME ONLY",
+    "adapt04AuditZipSha256": "dc1159c515772f4ebef3829785b6bdc6943700df0c8a7708e0ead8ac285cc5e0",
+    "adapt04PassReceiptSha256": "7d00bbc1c247629359785a9757694f65eef46c8148f0395cbfe2bd3797a81122",
+    "adapt04Status": "CLOSED / PASS / CONSUME ONLY",
+    "adapt05AuditZipSha256": "15dcc54f90f03c2b2e54d0dc03ae6800110a1edc2121554594db151f8fbebd3e",
+    "adapt05PassReceipt": "evidence/NURION-ADAPT-05_PASS_receipt.json",
+    "adapt05PassReceiptSha256": "a7f8a346db17ddc03c8067f6da53ff3d42f018a1e9a4c2c70ae82a02f84cae15",
+    "adapt05Status": "CLOSED / PASS / CONSUME ONLY"
+  },
+  "releaseIdentity": {
+    "releaseId": "NURION_ADAPTED_CHARACTER_RELEASE_V1",
+    "releaseVersion": "1.0.0"
+  },
+  "revision": "R1",
+  "role": "CONSUME_ONLY ADAPT-05 canonical seal + runtime authority pins for release packaging",
+  "runtimeAuthorityPins": {
+    "axisRetargetConventionSha256": "19da5a00f4943a144426efaf675d364f64d244773dc60ede7db81be5bb8c6d9a",
+    "bodyCanonicalSpecSha256": "c73b5c540e29fcbf4ef4477c51f869eead9640194cec21110c6d60e55d1f900a",
+    "faceProductLockSha256": "07830e1c34ce79b1d9ff9fc15a8b456ef7e3438d05ae7709d3515c00baebcf06",
+    "product01AssemblySha256": "1a38586905d155053f7eff6a625bb3497a2a17235892017e4ad277ce06c14605",
+    "product02MotionLibrarySha256": "37504c8c28545f7d486aba453cfc6afc66fe21f14500e8d2ac9be2affa56051f",
+    "product03FaceBodyRuntimeSha256": "917d640f10946e4b77fe5dafa8f6c649e36b95198361024fe4514c69d05f0fef",
+    "product04EntranceStateSha256": "ad2199932100a990f9e0ad387852ff67856d9865b927d3983ff7da7301c545d7",
+    "product05BehaviorRuntimeSha256": "5ae2e6c0169e51cecd8b9d2c7855d05add27738acf356ff0809e4addb3321a07",
+    "product06ReleaseBaselineSha256": "76741d7dd0df1748468c32ebbfaf174c00e401a4e375419d8f56cec46a7603ee"
+  },
+  "schema": "NURION_ADAPT06_RELEASE_AUTHORITY_BINDING_V1"
+}

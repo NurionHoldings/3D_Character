@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+"""Build NURION-PRODUCT-05 behavior runtime artifact."""
+
+from __future__ import annotations
+
+import json
+import os
+import sys
+from pathlib import Path
+
+ROOT = Path(os.environ.get("NURION_REPO_ROOT", r"d:\NURION Character Landmarker"))
+sys.path.insert(0, str(ROOT))
+
+from fast_track.runtime.product_behavior_runtime import RUNTIME_PATH, build_and_hash
+
+
+def main() -> int:
+    result = build_and_hash()
+    result.write(RUNTIME_PATH)
+    print(
+        json.dumps(
+            {
+                "out": str(RUNTIME_PATH),
+                "runtimeId": result.runtime["runtimeId"],
+                "canonicalSha256": result.sha256,
+                "product05Pass": "NOT_DECLARED",
+                "currentState": result.runtime["currentState"],
+            },
+            ensure_ascii=True,
+        )
+    )
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

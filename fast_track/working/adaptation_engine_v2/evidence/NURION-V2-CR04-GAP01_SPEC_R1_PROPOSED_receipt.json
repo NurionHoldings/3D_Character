@@ -1,0 +1,21 @@
+{
+  "receiptId": "NURION-V2-CR04-GAP01_SPEC_R1_PROPOSED",
+  "authority": "SPEC_PROPOSAL",
+  "changeRequest": "V2-CR-04-GAP-01",
+  "parentChangeRequest": "V2-CR-04",
+  "title": "ASSET-INDEPENDENT FACIAL REGION RESOLUTION",
+  "specRevision": "R1",
+  "status": "SPEC_PROPOSED",
+  "humanSpecReview": "PENDING",
+  "implementationAuthority": "NONE",
+  "openStatus": "NOT OPEN",
+  "declaredAtUtc": "20260830T060600Z",
+  "declaredBy": "etherean",
+  "proposedSpecDigest": "4ee4c465692f68da69fa206b68212682ec38e48ef759d8007ccb084a3f92f968",
+  "specPath": "semantic/NURION_ADAPTATION_ENGINE_V2_CR04_GAP01_ASSET_INDEPENDENT_FACIAL_REGION_RESOLUTION_SPEC_R1.json",
+  "closesBlocker": "UPSTREAM_CR02_ASSET_SPECIFIC_FACIAL_SELECTION_CONSTANTS_PLUS_INCOMPLETE_HARDCODING_SCAN",
+  "secondAsset": "PRESERVED Bolt Voyager 40b7783f…5f88b — DO NOT RESELECT",
+  "upstreamReopen": "DENY",
+  "engineV2": "NOT_OPEN",
+  "next": "Human Spec Gate — no GAP-01 implementation until APPROVED"
+}

@@ -1,0 +1,64 @@
+{
+  "scenarios": {
+    "auto_repair_attempt": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "autoRepairAttempt": true
+      }
+    },
+    "candidate_re_rig_attempt": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "candidateReRigAttempt": true
+      }
+    },
+    "candidate_repair_attempt": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "candidateRepairAttempt": true
+      }
+    },
+    "candidate_sha_mismatch": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "candidateShaMismatch": true
+      }
+    },
+    "canonical_release": {
+      "asset": "body_minimal_face.glb",
+      "force": {}
+    },
+    "incomplete_consumer_package": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "incompleteConsumerPackage": true
+      }
+    },
+    "manifest_tamper": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "manifestTamper": true
+      }
+    },
+    "not_release_eligible": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "notReleaseEligible": true
+      }
+    },
+    "nurion_v1_modify_attempt": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "nurionV1ModifyAttempt": true
+      }
+    },
+    "qualification_digest_mismatch": {
+      "asset": "body_minimal_face.glb",
+      "force": {
+        "qualificationDigestMismatch": true
+      }
+    }
+  },
+  "schema": "NURION_ADAPT06_FIXTURE_MANIFEST_V1",
+  "source": "PREPACKAGED"
+}

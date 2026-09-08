@@ -1,0 +1,32 @@
+{
+  "receiptId": "NURION-V2_COMPLETE_AUTHORITY_FIXED",
+  "declaredBy": "etherean",
+  "declaredAtUtc": "20260830T075900Z",
+  "authorityLine": "FIXED / FINAL / NO FURTHER V2 INTERNAL WORK",
+  "NURION_ADAPTATION_ENGINE_V2": "CLOSED / PASS",
+  "NURION_ADAPTATION_ENGINE_V2_RELEASE": "AUTHORITATIVE FINAL",
+  "CR01_to_CR04": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+  "IRG_R2": "HUMAN PASS / CLOSED / CONSUME ONLY",
+  "IRG_R1": "HUMAN AUDIT BLOCKED / HISTORICAL / PRESERVED",
+  "IRG-P06-SELF-CONTAINED-01": "CLOSED BY R2",
+  "progress": "100%",
+  "progressScope": "DECLARED V2 SUPPORT ENVELOPE",
+  "pins": {
+    "humanAuditedZipSha256": "233521b68a3e4a750c3854f0eeb4ee90aa1db6a442cd5eadaa64922fb67ddf72",
+    "approvedSpecDigest": "a78769ecbcfc2c0094ad059dd312e565c27c975f3d68bef218c5d03c1539511a",
+    "finalReleaseDigest": "3f144ec3a78cd5e423384ec4b620f96a9c430ef18a878796188886818287b5a9"
+  },
+  "immutableUpstreamPolicy": {
+    "V2_RELEASE": "immutable upstream / consume only",
+    "silentV2Mutation": "DENY",
+    "defectHandling": "separate Post-V2 Change Request with independent rationale / impact / evidence"
+  },
+  "postV2RequiresSeparateCR": [
+    "FBX ingestion/conversion",
+    "third / multi-character generalization",
+    "viseme expansion",
+    "speech-driven lip-sync",
+    "FACE capability upgrades"
+  ],
+  "v2InternalWork": "TERMINATED"
+}

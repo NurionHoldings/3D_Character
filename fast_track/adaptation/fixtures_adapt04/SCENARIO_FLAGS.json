@@ -1,0 +1,95 @@
+{
+  "adapt03_requirement_digest_mismatch": {
+    "asset": "body_minimal_face.glb",
+    "force": {
+      "adapt03RequirementDigestMismatch": true
+    }
+  },
+  "adapt05_premature": {
+    "asset": "body_minimal_face.glb",
+    "force": {
+      "performAdapt05Qualification": true
+    }
+  },
+  "blink_helpers_required": {
+    "asset": "body_minimal_face.glb"
+  },
+  "body_hierarchy_mutation": {
+    "asset": "body_minimal_face.glb",
+    "force": {
+      "bodyHierarchyMutation": true
+    }
+  },
+  "cross_boundary_face_ownership": {
+    "asset": "body_minimal_face.glb",
+    "force": {
+      "crossBoundaryFaceOwnership": true
+    }
+  },
+  "determinism": {
+    "asset": "body_minimal_face.glb"
+  },
+  "expression_support_required": {
+    "asset": "expression_mapping_required.glb"
+  },
+  "eye_helper_required": {
+    "asset": "eye_adaptation_required.glb"
+  },
+  "jaw_helper_required": {
+    "asset": "talking_augmentation_required.glb"
+  },
+  "left_right_eye_ambiguity": {
+    "asset": "rich_facial_morphs.glb",
+    "force": {
+      "leftRightEyeAmbiguity": true
+    }
+  },
+  "manual_review_required": {
+    "asset": "body_minimal_face.glb",
+    "force": {
+      "unsupportedTopology": true
+    }
+  },
+  "meshy_style_minimal": {
+    "asset": "meshy_style.glb"
+  },
+  "mouth_speech_required": {
+    "asset": "talking_augmentation_required.glb"
+  },
+  "multiple_requirements": {
+    "asset": "body_minimal_face.glb"
+  },
+  "no_augmentation_required": {
+    "asset": "rich_facial_morphs.glb",
+    "force": {
+      "noAugmentationRequired": true
+    }
+  },
+  "root_pelvis_collision": {
+    "asset": "rich_facial_morphs.glb",
+    "force": {
+      "rootPelvisCollision": true
+    }
+  },
+  "source_digest_mismatch": {
+    "asset": "rich_facial_morphs.glb",
+    "force": {
+      "sourceDigestMismatch": true
+    }
+  },
+  "unrequested_augmentation": {
+    "asset": "body_minimal_face.glb",
+    "force": {
+      "unrequestedAugmentation": true
+    }
+  },
+  "unsupported_topology": {
+    "asset": "body_minimal_face.glb",
+    "force": {
+      "unsupportedTopology": true
+    }
+  },
+  "viseme_support_required": {
+    "asset": "talking_augmentation_required.glb"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "NURION_ADAPTATION_ENGINE_V2_CR02_R2_ACTUAL_FACIAL_DEFORMATION_HARDENING_V1",
+  "changeRequestId": "V2-CR-02",
+  "revision": "R2",
+  "title": "ACTUAL FACIAL DEFORMATION HARDENING",
+  "status": "PROTOTYPE HUMAN PASS / ACTUAL FACIAL DEFORMATION TECHNICAL BASIS CONFIRMED / CONSUME ONLY",
+  "prototypeStatus": "HUMAN PASS / CONSUME ONLY",
+  "pass": "PROTOTYPE HUMAN PASS",
+  "CR02-R2-G20": "HUMAN PASS",
+  "CR02_REOPEN": "DENY",
+  "r1Status": "HUMAN AUDIT BLOCKED / HISTORICAL / PRESERVED",
+  "r1BlockerDisposition": "CLOSED BY R2",
+  "humanPassReceipt": "evidence/NURION-V2-CR02_R2_HUMAN_PASS_receipt.json",
+  "consumeOnlySeal": "evidence/NURION-V2-CR02_R2_CONSUME_ONLY_SEAL.json",
+  "authorizedStage": "CLOSED AS TECHNICAL BASIS — CONSUME ONLY",
+  "authority": {
+    "Engine_V1": "CLOSED / PASS / CONSUME ONLY",
+    "V2-CR-01": "CONSUME ONLY / REOPEN DENY",
+    "V2-CR-02": "CONSUME ONLY / REOPEN DENY",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN"
+  },
+  "pins": {
+    "derivedSha256": "1ee90420ba39cc2e74de6624230538f4416d39ec7b34656e5b175a776c171cdd",
+    "independentProofDigest": "a38a8855f1f4f1c9cb3171737c7f98355cfd79bcd72c50388d1a134faebda174",
+    "humanAuditedZipSha256": "c96e2e875797f274ad44a234726e7b80b8c7a0ebe369ade1798c0626d5189ba2"
+  },
+  "provenOnIdle15": "BODY/SKIN preservation → facial morph injection → Blink/Jaw/Expression/AA·OH·EE measured vertex deformation",
+  "authorityExpansionDeny": [
+    "morph-weight speech animation clip",
+    "arbitrary Meshy generalization",
+    "V2 production readiness",
+    "V2 Engine OPEN"
+  ],
+  "nextWorkPolicy": "Separate Change Request only",
+  "next": "Do not reopen CR02. Candidate separate CRs: morph-weight runtime TALKING sequence; second real Meshy asset generalization. V2 engine NOT OPEN"
+}

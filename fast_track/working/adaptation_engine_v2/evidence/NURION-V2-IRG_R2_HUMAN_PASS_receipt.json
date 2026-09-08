@@ -1,0 +1,81 @@
+{
+  "receiptId": "NURION-V2-IRG_R2_HUMAN_PASS",
+  "schema": "NURION_V2_IRG_HUMAN_PASS_RECEIPT_V1",
+  "authority": "HUMAN_FINAL_GATE",
+  "changeRequestId": "V2-IRG-01",
+  "alias": "V2-INTEGRATION-RELEASE-GATE",
+  "title": "INTEGRATION / RELEASE GATE",
+  "revision": "R2",
+  "result": "PASS",
+  "status": "HUMAN PASS / CLOSED",
+  "declaredAtUtc": "20260830T075600Z",
+  "declaredBy": "etherean",
+  "auditType": "HUMAN_FINAL_GATE",
+  "V2-RG-P07": "HUMAN PASS",
+  "V2-RG-G20": "HUMAN PASS",
+  "blocker": {
+    "id": "IRG-P06-SELF-CONTAINED-01",
+    "status": "CLOSED BY R2",
+    "r1Disposition": "HUMAN AUDIT BLOCKED / HISTORICAL / PRESERVED"
+  },
+  "packaging": {
+    "R1": "HUMAN AUDIT BLOCKED / HISTORICAL / PRESERVED — missing v2_cr03/pins.py",
+    "R2": "HUMAN-AUDITED PASS — clean extraction independent runner exit 0"
+  },
+  "pins": {
+    "approvedSpecDigest": "a78769ecbcfc2c0094ad059dd312e565c27c975f3d68bef218c5d03c1539511a",
+    "humanAuditedZipSha256": "233521b68a3e4a750c3854f0eeb4ee90aa1db6a442cd5eadaa64922fb67ddf72",
+    "zipBytes": 42361696,
+    "zipEntries": 125,
+    "releaseManifestDigest": "c7cfe95874eb07237fb4f9c72957d4b7a0449b160c522b042fc007843284901a",
+    "releaseCandidateDigest": "7df80ff5265aac081a5e83c3ffe3acf9f82466c35f0f3634ef2a2acb66cf32f4",
+    "integrationProofDigest": "03b1447e9c27d8553efae731cf8b80a38ee4062b8fedfafbe0b395cb5da4eb43",
+    "finalReleaseDigest": "3f144ec3a78cd5e423384ec4b620f96a9c430ef18a878796188886818287b5a9"
+  },
+  "humanVerified": {
+    "zipShaMatch": true,
+    "unsafePaths": "NONE",
+    "cleanExtractionIndependentRunner": "PASS / EXIT 0 / EXTRACTED_AUDIT_ZIP",
+    "specDigestMatch": true,
+    "glbPins": {
+      "Idle15_baseline": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+      "CR02_facial": "1ee90420ba39cc2e74de6624230538f4416d39ec7b34656e5b175a776c171cdd",
+      "CR03_talking": "fe493789135aaa80f96a6c2377daafd0a3ed016f402ba8d8611c9e3d07c7c8ca",
+      "CR04_Sporty": "f3f9e343c8ba3c9a503a8423293dec90bb6be50f809f1321f4f6658b1bea133e",
+      "CR04_facial": "92502f6f66b82c4dc1a7138b90746b4b0e755e6e857de0c2390ae9ef6320f51a",
+      "CR04_talking": "55601949d6fc67eaebe405e683134fc516be5d6374ca748ea8809ae12dbace4d"
+    },
+    "bodySkinPreservation": "PASS",
+    "talkingNotMetadataOnly": true,
+    "hc01Regression": "NONE",
+    "releaseDigestsRecompute": "MATCH"
+  },
+  "authorityLine": {
+    "Engine_V1": "CLOSED / PASS / CONSUME ONLY",
+    "V2-CR-01": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-02": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-03": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-04": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-IRG-01": "HUMAN PASS / CLOSED",
+    "NURION_ADAPTATION_ENGINE_V2": "CLOSED / PASS",
+    "NURION_ADAPTATION_ENGINE_V2_RELEASE": "AUTHORITATIVE FINAL"
+  },
+  "progress": "100%",
+  "progressMeaning": "100% of declared V2 support envelope — not universal 3D conversion",
+  "supportEnvelopeReminder": {
+    "includes": [
+      "rigged+skinned Meshy-style GLB",
+      "semantic BODY adaptation",
+      "source body/skin preservation",
+      "FACE/Eye/Jaw/Expression/AA-OH-EE augmentation",
+      "real morph-weight TALKING",
+      "generalization on >1 real Meshy asset"
+    ],
+    "excludes": [
+      "FBX",
+      "unrigged auto-rig",
+      "all Meshy / arbitrary topology guaranteed"
+    ]
+  },
+  "next": "V2 CLOSED. Post-V2 expansions (FBX, additional characters, new FACE/TALKING) require separate Change Requests."
+}

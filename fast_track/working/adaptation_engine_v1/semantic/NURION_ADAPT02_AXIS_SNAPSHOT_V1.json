@@ -1,0 +1,9 @@
+{
+  "forward": "+Z",
+  "handedness": "right-handed",
+  "right": "+X",
+  "schema": "NURION_ADAPT02_AXIS_SNAPSHOT_V1",
+  "sourceIdentity": "NURION_BODY_AXIS_RETARGET_CONVENTION_V1",
+  "unitScale": "meters",
+  "up": "+Y"
+}

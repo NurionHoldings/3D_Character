@@ -1,0 +1,16 @@
+{
+  "coplayPassCount": 5,
+  "eyeCalibrationFingerprintSha256": "2d1dbb6772cd74c2a7dc991cf497d58dc5b803359f5430105dbe4ff9e513ff19",
+  "eyeChannels": [
+    "FACE_eyeBlinkLeft",
+    "FACE_eyeBlinkRight",
+    "FACE_eyeSquintLeft",
+    "FACE_eyeSquintRight",
+    "FACE_eyeWideLeft",
+    "FACE_eyeWideRight"
+  ],
+  "faceLockUnmutated": true,
+  "schema": "NURION_ADAPT03_EYE_TALKING_SNAPSHOT_V1",
+  "sourceIdentity": "NURION_PRODUCT03_FACE_BODY_RUNTIME_V1",
+  "talkingStatus": "GO"
+}

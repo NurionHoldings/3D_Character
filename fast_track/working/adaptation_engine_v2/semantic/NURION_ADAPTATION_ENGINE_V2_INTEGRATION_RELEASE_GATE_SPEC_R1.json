@@ -1,0 +1,374 @@
+{
+  "schema": "NURION_ADAPTATION_ENGINE_V2_INTEGRATION_RELEASE_GATE_SPEC_R1",
+  "changeRequestId": "V2-IRG-01",
+  "alias": "V2-INTEGRATION-RELEASE-GATE",
+  "revision": "R1",
+  "title": "INTEGRATION / RELEASE GATE",
+  "status": "SPEC_PROPOSED",
+  "humanSpecReview": "PENDING",
+  "implementationAuthority": "NONE",
+  "prototypeStatus": "NOT STARTED",
+  "openStatus": "NOT OPEN",
+  "declaredAtUtc": "20260830T073300Z",
+  "declaredBy": "etherean",
+  "specNature": "PROPOSAL ONLY — Human Spec PASS not declared",
+
+  "purpose": "Seal that already Human-PASS CR01–CR04 compose one reproducible, auditable NURION Adaptation Engine V2 release authority — without further feature development or upstream mutation.",
+
+  "coreClaim": "CR01 Flexible Skeleton Semantic Adaptation + CR02 Actual FACE Deformation Augmentation + CR03 Morph-Weight Runtime TALKING + CR04 Second Real Meshy Generalization → ONE AUTHORITATIVE NURION ADAPTATION ENGINE V2 RELEASE",
+
+  "passMeans": "네 Human-PASS 기술이 변경 없이 하나의 일관된 V2 release authority로 묶이고, release manifest가 SoT로 봉인됨 (Human Final audited). 그 후에만 Engine V2 = CLOSED / PASS 및 support-envelope 기준 100% 선언.",
+
+  "passDoesNotMean": [
+    "CR01–CR04를 더 개발해서 V2를 완성함",
+    "세상의 모든 3D 캐릭터 자동 변환",
+    "unrigged character auto-rig",
+    "global auto-weight",
+    "arbitrary topology support",
+    "all Meshy characters guaranteed",
+    "all external generators guaranteed",
+    "FBX input/output",
+    "VRM",
+    "USD/USDZ",
+    "natural phoneme lip-sync",
+    "speech-engine integration",
+    "tongue/teeth advanced rig",
+    "facial muscle simulation",
+    "universal production compatibility",
+    "Engine V2 OPEN before Spec APPROVE",
+    "Engine V2 CLOSED/PASS or 100% before Human Final"
+  ],
+
+  "authority": {
+    "V2-CR-01": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-02": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-03": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-04": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-04-GAP-01": "HUMAN PASS / CLOSED INTO CR04 R3 / REOPEN DENY",
+    "V2-IRG-01": "SPEC_PROPOSED / NOT OPEN / IMPLEMENTATION AUTHORITY NONE",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN",
+    "Engine_V1": "CLOSED / PASS / CONSUME ONLY"
+  },
+
+  "absoluteAuthorityBoundary": {
+    "CR01": "CONSUME ONLY / REOPEN DENY",
+    "CR02": "CONSUME ONLY / REOPEN DENY",
+    "CR03": "CONSUME ONLY / REOPEN DENY",
+    "CR04": "CONSUME ONLY / REOPEN DENY",
+    "UPSTREAM_SOURCE_MUTATION": "DENY",
+    "UPSTREAM_REPROOF": "DENY",
+    "UPSTREAM_RECEIPT_REWRITE": "DENY",
+    "UPSTREAM_DIGEST_REBASE": "DENY",
+    "silentFixToForceFinalPass": "DENY",
+    "ifUpstreamDefectFound": {
+      "finalGate": "BLOCKED",
+      "engineV2": "remains NOT OPEN",
+      "required": "separate new Change Request — do not reopen CR01–CR04 Human PASS"
+    }
+  },
+
+  "authoritativeHumanPassChain": {
+    "chain": [
+      "CR01 HUMAN PASS",
+      "CR02 HUMAN PASS",
+      "CR03 HUMAN PASS",
+      "CR04 R3 HUMAN PASS",
+      "V2 RELEASE CANDIDATE"
+    ],
+    "perStageMinimumVerification": [
+      "track identity",
+      "spec digest",
+      "Human-PASS receipt",
+      "consume-only seal",
+      "input SHA",
+      "derived/output SHA",
+      "proof digest",
+      "Human-audited ZIP SHA",
+      "provenance linkage"
+    ],
+    "filePresenceAlone": "NOT SUFFICIENT FOR PASS"
+  },
+
+  "consumePins": {
+    "note": "SoT inputs. IRG verifies linkage/presence/digest match — does not regenerate substitute technical bases.",
+    "Idle15_baselineSha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+    "CR01": {
+      "status": "HUMAN PASS / CONSUME ONLY",
+      "humanAuditedZipSha256": "ea12a5ce5b99f1eeecfa896744785e118b7caa40d51d15991f3c23e1ea969512",
+      "semanticAdapterDigest": "c6aecfa1a90e81afa878a08ca7cdfc0ed34135b60bbdd2d48e597955d485393d",
+      "humanPassReceipt": "evidence/NURION-V2-CR01_R2_HUMAN_PASS_receipt.json"
+    },
+    "CR02": {
+      "status": "HUMAN PASS / CONSUME ONLY",
+      "idle15DerivedSha256": "1ee90420ba39cc2e74de6624230538f4416d39ec7b34656e5b175a776c171cdd",
+      "independentProofDigest": "a38a8855f1f4f1c9cb3171737c7f98355cfd79bcd72c50388d1a134faebda174",
+      "humanAuditedZipSha256": "c96e2e875797f274ad44a234726e7b80b8c7a0ebe369ade1798c0626d5189ba2",
+      "humanPassReceipt": "evidence/NURION-V2-CR02_R2_HUMAN_PASS_receipt.json"
+    },
+    "CR03": {
+      "status": "HUMAN PASS / CONSUME ONLY",
+      "idle15TalkingDerivedSha256": "fe493789135aaa80f96a6c2377daafd0a3ed016f402ba8d8611c9e3d07c7c8ca",
+      "runtimeVertexProofDigest": "593bf05d1fdebb8697bdf64f06d3f910645fc79043f465a59c20ab70897321e0",
+      "humanAuditedZipSha256": "701cad15f849558944413f16152c4c895d258bbb93c580e27c6ccec3a4fd58fb",
+      "humanPassReceipt": "evidence/NURION-V2-CR03_R2_HUMAN_PASS_receipt.json"
+    },
+    "CR04": {
+      "status": "HUMAN PASS / CONSUME ONLY",
+      "secondAssetSha256": "f3f9e343c8ba3c9a503a8423293dec90bb6be50f809f1321f4f6658b1bea133e",
+      "facialDerivedSha256": "92502f6f66b82c4dc1a7138b90746b4b0e755e6e857de0c2390ae9ef6320f51a",
+      "talkingDerivedSha256": "55601949d6fc67eaebe405e683134fc516be5d6374ca748ea8809ae12dbace4d",
+      "runtimeProofDigest": "50e085ca5ce2d33583db8ec158d21fae12987795ba33fa172f609dedae179c18",
+      "finalCandidateSemanticDigest": "d3294a62cce6c55d312fa9065e16160238b1c972a21924c5d371308f945c879d",
+      "humanAuditedZipSha256": "fbb14acf28ef3695c3cb036aedf2f976757e4f9e0046952891e8f0ec38b87d29",
+      "HC-01": "CLOSED BY R3",
+      "humanPassReceipt": "evidence/NURION-V2-CR04_R3_HUMAN_PASS_receipt.json",
+      "consumeOnlySeal": "evidence/NURION-V2-CR04_R3_CONSUME_ONLY_SEAL.json"
+    }
+  },
+
+  "releaseManifestSoT": {
+    "artifact": "NURION_ADAPTATION_ENGINE_V2_RELEASE_MANIFEST.json",
+    "role": "After Human Final PASS, this manifest becomes the SoT of V2 release authority",
+    "conceptualStructure": {
+      "engine": "NURION_ADAPTATION_ENGINE_V2",
+      "release": {
+        "version": "V2",
+        "status": "RELEASE_CANDIDATE"
+      },
+      "consumes": {
+        "CR01": "<Human-PASS pins>",
+        "CR02": "<Human-PASS pins>",
+        "CR03": "<Human-PASS pins>",
+        "CR04": "<Human-PASS pins>"
+      },
+      "supportEnvelope": "<see supportEnvelope.SUPPORTED_V2_CORE>",
+      "releaseDigest": "<canonical digest>"
+    }
+  },
+
+  "supportEnvelope": {
+    "SUPPORTED_V2_CORE": {
+      "INPUT": [
+        "rigged + skinned Meshy-style character",
+        "validated GLB pipeline"
+      ],
+      "BODY": [
+        "source skeleton preservation",
+        "source skin preservation",
+        "semantic skeleton adaptation"
+      ],
+      "FACE": [
+        "missing facial capability augmentation",
+        "Blink",
+        "Jaw / Mouth",
+        "Expression",
+        "Viseme AA/OH/EE"
+      ],
+      "TALKING": [
+        "actual GLB morph-weight animation",
+        "temporal vertex deformation",
+        "neutral restoration"
+      ],
+      "GENERALIZATION_BASIS": "Human-audited on >1 real Meshy asset"
+    },
+    "NOT_CLAIMED_BY_V2": [
+      "unrigged character auto-rig",
+      "global auto-weight",
+      "arbitrary topology support",
+      "all Meshy characters guaranteed",
+      "all external generators guaranteed",
+      "FBX input/output",
+      "VRM",
+      "USD/USDZ",
+      "natural phoneme lip-sync",
+      "speech-engine integration",
+      "tongue/teeth advanced rig",
+      "facial muscle simulation",
+      "universal production compatibility"
+    ],
+    "deferredPostV2SeparateCRs": [
+      "FBX format-adapter CR",
+      "third+ Meshy campaigns",
+      "FACE/TALKING capability expansion"
+    ],
+    "hundredPercentMeaning": "100% of this declared V2 support envelope — NOT universal 3D conversion"
+  },
+
+  "endToEndIntegration": {
+    "chain": [
+      "INPUT ASSET",
+      "Semantic Inspection",
+      "CR01 semantic result",
+      "FACE capability inspection",
+      "CR02/CR04 resolved augmentation path",
+      "Actual facial deformation",
+      "CR03 TALKING sequence",
+      "Runtime qualification",
+      "V2 RELEASE CANDIDATE"
+    ],
+    "provenanceBreak": "BLOCK",
+    "mode": "verify linkage of Human-PASS results — do not re-develop CR01–CR04"
+  },
+
+  "runtimeFunctionalContract": {
+    "mustCoexist": [
+      "BODY animation",
+      "FACE deformation",
+      "Expression",
+      "Viseme",
+      "TALKING"
+    ],
+    "talkingSequence": ["Neutral", "AA", "OH", "EE", "Neutral"],
+    "talkingConsume": "CR03/CR04 contracts unchanged",
+    "metadataOnlyWithoutWeightsAnimationOrVt": "FINAL PASS DENY"
+  },
+
+  "preservationContract": {
+    "SOURCE_BASE_POSITION": "PRESERVED",
+    "SOURCE_JOINTS": "PRESERVED",
+    "SOURCE_WEIGHTS": "PRESERVED",
+    "SOURCE_BODY_SKELETON": "PRESERVED",
+    "SOURCE_BODY_ANIMATION": "PRESERVED",
+    "AUTHORIZED_FACE_AUGMENTATION": "ALLOWED",
+    "canonicalInterface": {
+      "NURION_root_neq_NURION_pelvis": true,
+      "NURION_head_to_FACE_Rig_Root": true
+    }
+  },
+
+  "generalizationIntegrity": {
+    "consumeCr04R3": true,
+    "redevelopCr04": false,
+    "forbidden": [
+      "Idle_15-only release path",
+      "Sporty-only release path",
+      "asset SHA special-case",
+      "asset-name conditional",
+      "fixed head joint index",
+      "absolute facial Y threshold",
+      "hard-coded vertex index table"
+    ],
+    "HC01_regressionInReleaseIntegration": "IMMEDIATE BLOCK"
+  },
+
+  "determinism": {
+    "requirement": "same authoritative inputs + same approved SPEC + same parameters ⇒ identical canonical release identity",
+    "minimumPins": [
+      "CR01 authority digest",
+      "CR02 authority digest",
+      "CR03 authority digest",
+      "CR04 authority digest",
+      "release manifest digest",
+      "integration proof digest",
+      "release candidate digest",
+      "final release digest"
+    ]
+  },
+
+  "failClosedBlockers": [
+    "MISSING_HUMAN_PASS_RECEIPT",
+    "UPSTREAM_DIGEST_MISMATCH",
+    "CONSUME_ONLY_SEAL_MISMATCH",
+    "PROVENANCE_CHAIN_BROKEN",
+    "SOURCE_MUTATION_DETECTED",
+    "BODY_SKIN_REGRESSION",
+    "FACE_FUNCTIONAL_REGRESSION",
+    "TALKING_FUNCTIONAL_REGRESSION",
+    "HC01_REGRESSION",
+    "ASSET_SPECIFIC_RELEASE_BRANCH",
+    "NONDETERMINISTIC_RELEASE_IDENTITY",
+    "PROOF_PACKAGE_INCOMPLETE",
+    "SPEC_DIGEST_MISMATCH"
+  ],
+  "anyBlockerImplies": {
+    "finalGate": "BLOCKED",
+    "engineV2": "remains NOT OPEN"
+  },
+
+  "stages": {
+    "V2-RG-P01": "Authority / Receipt / Digest Chain Verification",
+    "V2-RG-P02": "Release Manifest + Support Envelope Seal",
+    "V2-RG-P03": "End-to-End Integration / Preservation Verification",
+    "V2-RG-P04": "Determinism + Generalization Regression",
+    "V2-RG-P05": "Release Candidate Seal",
+    "V2-RG-P06": "Self-Contained Human Audit Package",
+    "V2-RG-P07": "Human Final Release Audit — Agent MUST NOT declare Engine V2 CLOSED/PASS"
+  },
+
+  "fastTrack": {
+    "P01_to_P06": "ONE FAIL-CLOSED FAST-TRACK RUN after Spec Gate APPROVE",
+    "maxAgentAuthority": "READY_FOR_HUMAN_AUDIT",
+    "P07_G20": "HUMAN_FINAL_ONLY",
+    "onFailure": "STOP immediately; do not reopen CR01–CR04"
+  },
+
+  "gates": {
+    "V2-RG-G01_to_G19": "AUTOMATABLE / AUDITABLE",
+    "V2-RG-G20": "HUMAN_FINAL_ONLY"
+  },
+
+  "humanGates": {
+    "HUMAN_SPEC_GATE": {
+      "status": "PENDING",
+      "grants": "INTEGRATION AUTHORITY / OPEN_PROTOTYPE for IRG only",
+      "doesNotGrant": ["Engine V2 CLOSED / PASS", "100%"]
+    },
+    "HUMAN_FINAL_GATE": {
+      "status": "NOT STARTED",
+      "aloneMayDeclare": [
+        "NURION ADAPTATION ENGINE V2 = CLOSED / PASS",
+        "CR01–CR04 = CLOSED / PASS / CONSUME ONLY (release-bound)",
+        "NURION_ADAPTATION_ENGINE_V2_RELEASE = AUTHORITATIVE FINAL",
+        "PROGRESS = 100% (of declared V2 support envelope)"
+      ]
+    }
+  },
+
+  "engineV2Rules": {
+    "beforeSpecApprove": "NOT OPEN",
+    "afterSpecApprove": "NOT OPEN (integration authority only)",
+    "afterReadyForHumanAudit": "NOT OPEN",
+    "afterHumanFinalPass": "CLOSED / PASS only if Human Final explicitly declares",
+    "agentMayDeclareClosedPass": false,
+    "agentMayDeclare100Percent": false
+  },
+
+  "humanAuditZipRequired": [
+    "V2 Release SPEC + approvedSpecDigest",
+    "CR01 Human-PASS authority evidence",
+    "CR02 Human-PASS authority evidence",
+    "CR03 Human-PASS authority evidence",
+    "CR04 Human-PASS authority evidence",
+    "consume-only seals",
+    "release manifest",
+    "support-envelope manifest",
+    "provenance graph",
+    "release candidate",
+    "integration reports",
+    "determinism report",
+    "regression report",
+    "hardcoding/generalization report",
+    "independent runner",
+    "Human audit README"
+  ],
+
+  "independentRunner": {
+    "required": true,
+    "cleanExtractionRunnable": true
+  },
+
+  "agentCeilingUntilHumanSpecGate": "SPEC_REVIEW_ONLY",
+  "agentCeilingAfterOpen": "READY_FOR_HUMAN_AUDIT maximum",
+  "V2-RG-G20": "HUMAN_FINAL_ONLY",
+
+  "progressBoundary": {
+    "current": "~96–97%",
+    "specProposalDoesNotChangeProgress": true,
+    "afterSpecApprove": "unchanged until Human Final (Spec PASS ≠ 100%)",
+    "afterHumanFinalPass": "100% of declared V2 support envelope / Engine V2 CLOSED / PASS"
+  },
+
+  "corePrinciple": "Not 'develop more to finish V2' — seal that already Human-PASS CR01–CR04 unchanged compose one reproducible auditable V2 release authority.",
+
+  "next": "Human Spec Gate review of this R1 SPEC. APPROVE → OPEN_PROTOTYPE + INTEGRATION AUTHORITY GRANTED for IRG only (Engine V2 remains NOT OPEN). BLOCK → SPEC-only revise. No implementation until APPROVED. No Engine V2 CLOSED/PASS/100% until Human Final."
+}

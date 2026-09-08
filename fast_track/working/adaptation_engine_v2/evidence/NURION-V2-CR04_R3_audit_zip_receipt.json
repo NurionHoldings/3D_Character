@@ -1,0 +1,20 @@
+{
+  "receiptId": "NURION-V2-CR04_R3_audit_zip_receipt",
+  "changeRequestId": "V2-CR-04",
+  "corrective": "V2-CR-04-GAP-01",
+  "packagingRevision": "R3",
+  "zipPath": "d:/NURION Character Landmarker/fast_track/working/adaptation_engine_v2/evidence/NURION-V2-CR04_R3_gap01_sporty_resolved_facial_proof.zip",
+  "zipSha256": "fbb14acf28ef3695c3cb036aedf2f976757e4f9e0046952891e8f0ec38b87d29",
+  "secondAssetSha256": "f3f9e343c8ba3c9a503a8423293dec90bb6be50f809f1321f4f6658b1bea133e",
+  "facialDerivedSha256": "92502f6f66b82c4dc1a7138b90746b4b0e755e6e857de0c2390ae9ef6320f51a",
+  "derivedSha256": "55601949d6fc67eaebe405e683134fc516be5d6374ca748ea8809ae12dbace4d",
+  "approvedGap01SpecDigest": "4a8467ad945d3c56d9222075c44ae4cc12e8df5edcd833d4091b046901b903f3",
+  "approvedCr04SpecDigest": "203466befd67d01a4acf42a60048d6b2ac01c42b4dd2ffea49da73f0c8edface",
+  "finalCandidateSemanticDigest": "d3294a62cce6c55d312fa9065e16160238b1c972a21924c5d371308f945c879d",
+  "headJointLocalIndexResolved": 21,
+  "headResolveProvenance": "CR01_NURION_head→skin.joints.index",
+  "r2Status": "HUMAN_AUDIT_BLOCKED / FUNCTIONAL_PRESERVED",
+  "r2ZipSha256": "cf89065ef81cc1acc933f057bad929898e4b9f573d550437abf0d4b5b1a7912c",
+  "CR04-G20": "HUMAN_FINAL_ONLY",
+  "status": "READY_FOR_HUMAN_AUDIT"
+}

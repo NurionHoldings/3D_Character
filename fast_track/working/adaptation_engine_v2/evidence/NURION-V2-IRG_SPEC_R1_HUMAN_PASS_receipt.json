@@ -1,0 +1,37 @@
+{
+  "receiptId": "NURION-V2-IRG_SPEC_R1_HUMAN_PASS",
+  "schema": "NURION_V2_IRG_SPEC_HUMAN_PASS_RECEIPT_V1",
+  "authority": "HUMAN_SPEC_GATE",
+  "changeRequest": "V2-IRG-01",
+  "alias": "V2-INTEGRATION-RELEASE-GATE",
+  "title": "INTEGRATION / RELEASE GATE",
+  "specRevision": "R1",
+  "result": "PASS",
+  "status": "HUMAN SPEC REVIEW PASS / APPROVED",
+  "declaredAtUtc": "20260830T073600Z",
+  "declaredBy": "etherean",
+  "approvedSpecDigest": "a78769ecbcfc2c0094ad059dd312e565c27c975f3d68bef218c5d03c1539511a",
+  "specPath": "semantic/NURION_ADAPTATION_ENGINE_V2_INTEGRATION_RELEASE_GATE_SPEC_R1.json",
+  "grants": {
+    "status": "OPEN_PROTOTYPE",
+    "implementationAuthority": "GRANTED",
+    "scope": "INTEGRATION / RELEASE GATE P01–P06 only",
+    "engineV2": "NOT OPEN"
+  },
+  "authorityLine": {
+    "V2-CR-01": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-02": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-03": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-04": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-IRG-01": "OPEN / PROTOTYPE / IMPLEMENTATION AUTHORITY GRANTED",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN"
+  },
+  "boundaries": {
+    "SPEC_PASS_neq_TECHNICAL_PASS": true,
+    "P01_P06_PASS_neq_ENGINE_V2_PASS": true,
+    "READY_FOR_HUMAN_AUDIT_neq_ENGINE_V2_CLOSED": true,
+    "EngineV2_CLOSED_PASS_onlyAfter": "P07/G20 HUMAN PASS"
+  },
+  "progress": "~97%",
+  "next": "FAST-TRACK V2-RG-P01…P06 → READY_FOR_HUMAN_AUDIT. P07/G20 HUMAN FINAL ONLY."
+}

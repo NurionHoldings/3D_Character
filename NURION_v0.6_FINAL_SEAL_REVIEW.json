@@ -1,0 +1,237 @@
+{
+  "schema": "NURION_V06_FINAL_SEAL_REVIEW",
+  "project": "NURION Unified Character Animation Runtime",
+  "version": "0.6.0-rc.1",
+  "reviewedAt": "2026-08-13T13:24:24+00:00",
+  "timezone": "Asia/Seoul",
+  "reviewVerdict": "APPROVED_FOR_LIMITED_FINAL_SEAL",
+  "sealExecution": "PASS",
+  "SEALED": true,
+  "sealed": true,
+  "autoSeal": "DENY",
+  "production": "NO-GO",
+  "productionAutoAdvance": "DENY",
+  "rc1Repack": "DENY",
+  "parameterHash": "eb2bd86959b5d199fb367046daa3835b34d181883b977b0e788d43a52213768e",
+  "gateHashes": {
+    "gate1": "19a7ae9aae86437c79139b5ccc777e9bd22dcc874c21a13694509feaf06e1676",
+    "gate2": "b5d3c4931d1ef65a64844483e51bb74d6edcfcb9f90de28abe1c47192c85df6e",
+    "gate3": "35daa4fce90b00c474abcd08b7c40e313d79bcf7c50710ce8f8120b645bf1604",
+    "gate4": "a260ecd6d15502bbb5633e17b6c860955f9307fae25d777db6477c381bad5188",
+    "gate5": "81885dbc3c119c08c63add3a9e45caf9860a8bcbd1e9b4363cac46ac9aa9c0be",
+    "gate6": "3207531397c6372bbba4e38aebb3024fdc1e85f1792526a5f3115e36bbdf746e",
+    "gate7": "32e9fe4fef0f2d534d9a623f8dbfdedc0d4b9c60a5b5fe1a104c9620c4a07833",
+    "gate8": "33fd74ae5cb123d1f3d195fa5f2eb34c39bb360e4c872cb72704a06526a7759b"
+  },
+  "rc1": {
+    "frozen": true,
+    "SEALED": false,
+    "repackage": "DENY",
+    "package": "NURION_Unified_Character_Animation_Runtime_v0.6.0-rc.1.zip",
+    "packagePath": "D:/NURION Character Landmarker/dist/v0.6/gate8/package/NURION_Unified_Character_Animation_Runtime_v0.6.0-rc.1.zip",
+    "sha256": "6d421bec170c164d14217aa769a105ebdf888b592cd53f13831b4f21a62a30f1",
+    "archiveIntegrity": "PASS"
+  },
+  "holdout": {
+    "label": "AILAWFRIEND",
+    "animation": "Idle_15",
+    "eligibility": "ELIGIBLE",
+    "zipSha256": "aaf39c897f32baefe7083eb5bae5a107c5b934981773b717549b239321b18e0b",
+    "fbxSha256": "0135661b51ad6acee657b6a2cf07f3d92ca72903c686a7246c1638e8c8e19927",
+    "noveltyOk": true
+  },
+  "immutableBaselines": {
+    "v0.3_rc1": "9c3a69b723ed8ac43fc67757ba2168c316104fff1f1e3d5fa84c6960b0679238",
+    "v0.4_rc1": "10483d6ba847a28f5ce64f7179394ddc338e08871414ea72b73c44ceb4bd6bc5",
+    "v0.5_rc1": "1580f5871ba7737e34b0dfe99ef974aa7d3ed6b6656599aa51d08b8de5384722"
+  },
+  "limitations": [
+    "FOOT_SLIDE_RESIDUAL_11",
+    "SHALLOW_SUSTAINED_CONTACT_ACCEPTED",
+    "GATE3_REVERSE_FOREARM_MILD_PRESERVED",
+    "HOLDOUT_FOOT_SLIDE_9"
+  ],
+  "limitationAutoClear": "DENY",
+  "checks": [
+    {
+      "check": "PARAM_HASH_GATE1",
+      "result": "PASS",
+      "detail": "19a7ae9aae86437c79139b5ccc777e9bd22dcc874c21a13694509feaf06e1676"
+    },
+    {
+      "check": "PARAM_HASH_GATE2",
+      "result": "PASS",
+      "detail": "b5d3c4931d1ef65a64844483e51bb74d6edcfcb9f90de28abe1c47192c85df6e"
+    },
+    {
+      "check": "PARAM_HASH_GATE3",
+      "result": "PASS",
+      "detail": "35daa4fce90b00c474abcd08b7c40e313d79bcf7c50710ce8f8120b645bf1604"
+    },
+    {
+      "check": "PARAM_HASH_GATE4",
+      "result": "PASS",
+      "detail": "a260ecd6d15502bbb5633e17b6c860955f9307fae25d777db6477c381bad5188"
+    },
+    {
+      "check": "PARAM_HASH_GATE5",
+      "result": "PASS",
+      "detail": "81885dbc3c119c08c63add3a9e45caf9860a8bcbd1e9b4363cac46ac9aa9c0be"
+    },
+    {
+      "check": "PARAM_HASH_GATE6",
+      "result": "PASS",
+      "detail": "3207531397c6372bbba4e38aebb3024fdc1e85f1792526a5f3115e36bbdf746e"
+    },
+    {
+      "check": "PARAM_HASH_GATE7",
+      "result": "PASS",
+      "detail": "32e9fe4fef0f2d534d9a623f8dbfdedc0d4b9c60a5b5fe1a104c9620c4a07833"
+    },
+    {
+      "check": "PARAM_HASH_GATE8",
+      "result": "PASS",
+      "detail": "33fd74ae5cb123d1f3d195fa5f2eb34c39bb360e4c872cb72704a06526a7759b"
+    },
+    {
+      "check": "PARAM_HASH_CHAIN_CROSS_LOCK",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "RC1_PRESENT",
+      "result": "PASS",
+      "detail": "D:\\NURION Character Landmarker\\dist\\v0.6\\gate8\\package\\NURION_Unified_Character_Animation_Runtime_v0.6.0-rc.1.zip"
+    },
+    {
+      "check": "RC1_FULL_SHA256",
+      "result": "PASS",
+      "detail": "6d421bec170c164d14217aa769a105ebdf888b592cd53f13831b4f21a62a30f1"
+    },
+    {
+      "check": "RC1_ZIP_INTEGRITY",
+      "result": "PASS",
+      "detail": "members=35"
+    },
+    {
+      "check": "RC1_NO_BINARY_ASSETS",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "RC1_FREEZE_RECORD",
+      "result": "PASS",
+      "detail": "{\"packageSha256\": \"6d421bec170c164d14217aa769a105ebdf888b592cd53f13831b4f21a62a30f1\", \"SEALED\": false, \"autoSeal\": \"DENY\", \"production\": \"NO-GO\"}"
+    },
+    {
+      "check": "RC1_REPACK",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "HOLDOUT_ZIP_SHA256",
+      "result": "PASS",
+      "detail": "aaf39c897f32baefe7083eb5bae5a107c5b934981773b717549b239321b18e0b"
+    },
+    {
+      "check": "HOLDOUT_FBX_SHA256",
+      "result": "PASS",
+      "detail": "0135661b51ad6acee657b6a2cf07f3d92ca72903c686a7246c1638e8c8e19927"
+    },
+    {
+      "check": "HOLDOUT_NOVELTY_ELIGIBLE",
+      "result": "PASS",
+      "detail": "APPLY"
+    },
+    {
+      "check": "HOLDOUT_LOCK_RECORD",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "HOLDOUT_ZIP_INTEGRITY",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "BASELINE_V03_IMMUTABLE",
+      "result": "PASS",
+      "detail": "9c3a69b723ed8ac43fc67757ba2168c316104fff1f1e3d5fa84c6960b0679238"
+    },
+    {
+      "check": "BASELINE_V04_IMMUTABLE",
+      "result": "PASS",
+      "detail": "10483d6ba847a28f5ce64f7179394ddc338e08871414ea72b73c44ceb4bd6bc5"
+    },
+    {
+      "check": "BASELINE_V05_IMMUTABLE",
+      "result": "PASS",
+      "detail": "1580f5871ba7737e34b0dfe99ef974aa7d3ed6b6656599aa51d08b8de5384722"
+    },
+    {
+      "check": "MUTATION_MANUAL_TUNING_ZERO",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ROUNDTRIP_DETERMINISM_EVIDENCE",
+      "result": "PASS",
+      "detail": "g7=PASS g8=PASS"
+    },
+    {
+      "check": "HOLDOUT_EXPORT_ARTIFACTS_PRESENT",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "LIMITATIONS_ABSTAIN_REST_FALLBACK_PUBLIC",
+      "result": "PASS",
+      "detail": "['LIPSYNC_TIMELINE_UNSUPPORTED']"
+    },
+    {
+      "check": "GATE8_OFFICIAL_STATUS",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "GATE7_LOCKED",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "GATE6_LOCKED",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "AUTO_SEAL_DENY",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "PRODUCTION_NO_GO",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SEAL_EXECUTION_NOT_RUN",
+      "result": "PASS",
+      "detail": ""
+    }
+  ],
+  "hardFails": [],
+  "notes": [
+    "Limited-domain approval only; full unqualified PASS denied due to public limitations.",
+    "SEALED remains FALSE — seal execution is a separate step.",
+    "FOOT_SLIDE_RESIDUAL_11",
+    "SHALLOW_SUSTAINED_CONTACT_ACCEPTED",
+    "GATE3_REVERSE_FOREARM_MILD_PRESERVED",
+    "HOLDOUT_FOOT_SLIDE_9"
+  ],
+  "mismatchPolicy": "SEAL_REVIEW_DENY_NO_IN_PLACE_REPAIR",
+  "next": "PRODUCTION_READINESS_SEPARATE_TRACK",
+  "updatedAt": "2026-08-13T13:24:24+00:00",
+  "sealVerdict": "SEALED_WITH_LIMITATIONS",
+  "sealedAt": "2026-08-13",
+  "sealExecutionAt": "2026-08-13T13:26:23+00:00"
+}

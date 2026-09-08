@@ -1,0 +1,23 @@
+{
+  "receiptId": "NURION-V2_AUTHORITY_LINE_POST_CR04_FIXED",
+  "declaredBy": "etherean",
+  "declaredAtUtc": "20260830T072600Z",
+  "authorityLine": "FIXED",
+  "V2-CR-01": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+  "V2-CR-02": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+  "V2-CR-03": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+  "V2-CR-04": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+  "CR04_R1_BOLT": "HUMAN AUDIT BLOCKED / HISTORICAL / PRESERVED",
+  "CR04_R2_SPORTY": "FUNCTIONAL PASS / HUMAN AUDIT BLOCKED / HISTORICAL / PRESERVED / HC-01",
+  "CR04_GAP01_R3_SPORTY": "PROTOTYPE HUMAN PASS / SECOND REAL MESHY ASSET GENERALIZATION TECHNICAL BASIS CONFIRMED",
+  "HC-01": "CLOSED BY R3",
+  "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN",
+  "completionEstimate": "~96–97%",
+  "remainingCoreRisk": "V2 Integration / Release Gate — bind CR01–CR04 Human-PASS bases into one V2 release authority",
+  "policy": "Do not reopen CR01–CR04. Do not declare Engine V2 CLOSED/PASS/100% until Integration/Release Gate Human Final closes.",
+  "pins": {
+    "secondAssetSha256": "f3f9e343c8ba3c9a503a8423293dec90bb6be50f809f1321f4f6658b1bea133e",
+    "humanAuditedZipSha256": "fbb14acf28ef3695c3cb036aedf2f976757e4f9e0046952891e8f0ec38b87d29",
+    "talkingDerivedSha256": "55601949d6fc67eaebe405e683134fc516be5d6374ca748ea8809ae12dbace4d"
+  }
+}

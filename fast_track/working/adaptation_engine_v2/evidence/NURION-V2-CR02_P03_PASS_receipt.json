@@ -1,0 +1,32 @@
+{
+  "CR01_REOPEN": "DENY",
+  "augmentationPlanDigest": "857438ca4948ee53d61d71d4ae012ae4b0a7d4df1ae10a41e102282b94fdc170",
+  "changeRequestId": "V2-CR-02",
+  "cr01Digest": "c6aecfa1a90e81afa878a08ca7cdfc0ed34135b60bbdd2d48e597955d485393d",
+  "derivedAssetSha256": "a0f3b76c12b1055170f1330bda402be6c6073783c182fd92bfffea6ddbfa5fc7",
+  "derivedPath": "d:\\NURION Character Landmarker\\fast_track\\working\\adaptation_engine_v2\\derived_cr02\\Idle_15_P03_eye_blink.glb",
+  "faceRigRootIdentity": "9e55de926a907cace03d24bf4f6bcde9bedf086c440dfc4e3ef0b6b784c28f09",
+  "forbiddenNotApplied": [
+    "Expression",
+    "Jaw_Mouth",
+    "TALKING"
+  ],
+  "functionalEvidenceDigest": "b107fa0c72ec206230d11631af6903720306a146e95c146bc1fe85f1c915720a",
+  "gapInspectionDigest": "fb7ba2dfd0471482e9ad44f881e44306550fb39138bb2cf010d3dabd2ef727ab",
+  "idle15Sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+  "next": "CR02-P04 Jaw/Expression/TALKING Augmentation",
+  "p03DerivedSemanticDigest": "8dca89f8061fa05539eb06e670ceb813bb269dc97b357d0f53b35235b9772b04",
+  "p03ResultDigest": "6b56212d8a2c91a3c48b55f3f971aaacd0f013c1b5d8ebfe3b5be6a24aa10bf4",
+  "receiptId": "NURION-V2-CR02_P03_PASS_receipt",
+  "revision": "R1",
+  "scope": [
+    "Blink_L",
+    "Blink_R",
+    "Eye_L",
+    "Eye_R"
+  ],
+  "sourceImmutable": true,
+  "stage": "CR02-P03",
+  "status": "PASS",
+  "v2Engine": "NOT OPEN"
+}

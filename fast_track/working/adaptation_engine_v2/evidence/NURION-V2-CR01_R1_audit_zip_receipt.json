@@ -1,0 +1,18 @@
+{
+  "CR01-G20": "HUMAN_FINAL_ONLY",
+  "CR01-P06": "HUMAN_FINAL_ONLY",
+  "agentStatus": "READY_FOR_HUMAN_AUDIT",
+  "byteLength": 7275509,
+  "changeRequestId": "V2-CR-01",
+  "entryCount": 33,
+  "finalAuditZipSha256": "eea627cc6bd71c48fa9a655ed38ffa8e77fb3b92dedca87c8a48813709da5a67",
+  "humanPassCeiling": "PROTOTYPE HUMAN PASS / TECHNICAL BASIS CONFIRMED",
+  "idle15Sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+  "pass": "NOT_DECLARED",
+  "payloadCanonicalDigest": "23a877ee03533304db307fffea50888b7ee211538cf6887ab1329fb1673ecac1",
+  "revision": "R1",
+  "schema": "NURION_V2_CR01_R1_AUDIT_ZIP_RECEIPT_V1",
+  "semanticAdapterDigest": "c6aecfa1a90e81afa878a08ca7cdfc0ed34135b60bbdd2d48e597955d485393d",
+  "v2Engine": "NOT OPEN",
+  "zip": "d:\\NURION Character Landmarker\\fast_track\\working\\adaptation_engine_v2\\evidence\\NURION-V2-CR01_prototype_proof_R1.zip"
+}

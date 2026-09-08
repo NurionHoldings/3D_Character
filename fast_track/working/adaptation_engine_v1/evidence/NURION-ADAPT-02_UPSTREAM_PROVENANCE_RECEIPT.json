@@ -1,0 +1,37 @@
+{
+  "autoRepair": "DENY",
+  "bindingSha256": "0705cdbaa1ec95dae61a9d8719d9dde1e409e927e231d0da23d77b32382f5d68",
+  "derivation": "READ_ONLY_EXTRACT",
+  "generatedFromMonorepo": true,
+  "nurionV1Mutation": "NONE",
+  "observedUpstreamSha256": {
+    "axis": "19da5a00f4943a144426efaf675d364f64d244773dc60ede7db81be5bb8c6d9a",
+    "body": "c73b5c540e29fcbf4ef4477c51f869eead9640194cec21110c6d60e55d1f900a"
+  },
+  "policy": "Pins must match authoritative_binding.AUTHORITATIVE_* constants; mismatch = FAIL CLOSED",
+  "revision": "R2",
+  "schema": "NURION_ADAPT02_UPSTREAM_PROVENANCE_RECEIPT_V1",
+  "snapshot": {
+    "axisConventionDigest": "92f838aca6716ccad4f9213f2262836ed26a52ee6605519911bb4ffd3b8a50e0",
+    "axisSnapshotFile": "semantic/NURION_ADAPT02_AXIS_SNAPSHOT_V1.json",
+    "bodyCoreDigest": "edfa882498efa95f251c6c0cf21a4f19f8a5f7ced232712709c8c15fe4b87456",
+    "bodyCoreSnapshotFile": "semantic/NURION_ADAPT02_BODY_CORE_SNAPSHOT_V1.json",
+    "derivation": "READ_ONLY_EXTRACT"
+  },
+  "snapshotFileSha256": {
+    "axisSnapshot": "39f66a54768fcbacc4b5d3cea45fc9c6f36ef6502d1e8420b9fe221d05cbcd15",
+    "bodyCoreSnapshot": "f79495280bfd3a73b92bb52ce5bd10b10ce784bfd47d80cdc070f1e4f3b055ae"
+  },
+  "upstream": {
+    "axisRetargetConvention": {
+      "identity": "NURION_BODY_AXIS_RETARGET_CONVENTION_V1",
+      "repoRel": "fast_track/working/meshy_silver_starlight/semantic/NURION_BODY_AXIS_RETARGET_CONVENTION_V1.json",
+      "sha256": "19da5a00f4943a144426efaf675d364f64d244773dc60ede7db81be5bb8c6d9a"
+    },
+    "bodyCanonicalSpec": {
+      "identity": "NURION_BODY_CANONICAL_BONE_SPEC_V1",
+      "repoRel": "fast_track/working/meshy_silver_starlight/semantic/NURION_BODY_CANONICAL_BONE_SPEC_V1.json",
+      "sha256": "c73b5c540e29fcbf4ef4477c51f869eead9640194cec21110c6d60e55d1f900a"
+    }
+  }
+}

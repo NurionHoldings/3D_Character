@@ -1,0 +1,37 @@
+{
+  "fixtures": {
+    "axis_z_up_adapter.glb": {
+      "byteLength": 1192,
+      "sha256": "4611a1f7c04dff940c48ade4d110447efa2fcb6e1ffa671f25b3daaa91284933"
+    },
+    "body_no_face_ok.glb": {
+      "byteLength": 1188,
+      "sha256": "aca29d80af4b3c3505f36c31fe3b219a7be6e1072f66395bedb30d03033921e0"
+    },
+    "canonical_humanoid.glb": {
+      "byteLength": 1192,
+      "sha256": "01213513e2484e667f333300c02ebfdf1e1d302c26aa4b9f5f8c6beec71bd735"
+    },
+    "incompatible_hierarchy.glb": {
+      "byteLength": 1188,
+      "sha256": "ca2235c4c89ba12de1ee04ee3bc31e2d918336937343008a9f77e1b5835b56e6"
+    },
+    "intermediary_helpers.glb": {
+      "byteLength": 1232,
+      "sha256": "0f9794f03a91c86ef369533b03f12c239846b4fa56c51351b30adfda4d189081"
+    },
+    "malformed.bin": {
+      "byteLength": 13,
+      "sha256": "102bba27bae8cec5bd7651d8ad5aeee095dac31b4f82e947c886d5ed7b78a1b1"
+    },
+    "mixamo_style.glb": {
+      "byteLength": 1392,
+      "sha256": "7baa81f0cb233d3db07e9b2681fdc6e2ba5caeb685244fc97104fb84e8975e85"
+    },
+    "renamed_nonstandard.glb": {
+      "byteLength": 1256,
+      "sha256": "7bee762d4710b4673e38ca2cff349f86a960245d771b3485dcc0ae4ed221b2c8"
+    }
+  },
+  "schema": "NURION_ADAPT02_FIXTURE_MANIFEST_V1"
+}

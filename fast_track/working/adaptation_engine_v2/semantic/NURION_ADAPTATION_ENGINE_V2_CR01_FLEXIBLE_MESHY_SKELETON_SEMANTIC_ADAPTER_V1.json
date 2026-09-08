@@ -1,0 +1,470 @@
+{
+  "schema": "NURION_ADAPTATION_ENGINE_V2_CR01_FLEXIBLE_MESHY_SKELETON_SEMANTIC_ADAPTER_V1",
+  "changeRequestId": "V2-CR-01",
+  "title": "FLEXIBLE MESHY SKELETON SEMANTIC ADAPTER",
+  "engineVersion": "V2",
+  "status": "PROTOTYPE HUMAN PASS / TECHNICAL BASIS CONFIRMED / CONSUME ONLY",
+  "specStatus": "HUMAN REVIEW PASS / APPROVED",
+  "prototypeStatus": "HUMAN PASS / CONSUME ONLY",
+  "stageStatus": "CONSUME ONLY",
+  "revision": "R2",
+  "CR01_REOPEN": "DENY",
+  "humanPassAtUtc": "20260830T042800Z",
+  "consumeOnlySealedAtUtc": "20260830T043000Z",
+  "proposedAtUtc": "20260830T031000Z",
+  "openedAtUtc": "20260830T031500Z",
+  "approvedAtUtc": "20260830T031500Z",
+  "declaredBy": "etherean",
+  "agentCeiling": "READY_FOR_HUMAN_AUDIT",
+  "humanFinalGate": "CR01-G20",
+  "pass": "NOT_DECLARED",
+  "authorityTransition": {
+    "current": "V2-CR-01 = OPEN / PROTOTYPE",
+    "specGate": "HUMAN REVIEW PASS / APPROVED",
+    "v2EngineOpen": "DENY — V2 track NOT OPEN",
+    "authorizedStage": "CR01-P01",
+    "firstProofAsset": "Idle_15_withSkin_WORKING_BASELINE.glb — FIRST_PROOF_ASSET_ONLY / VALIDATION ORACLE ONLY",
+    "specialCaseHardcoding": "DENY"
+  },
+  "changeAuthority": {
+    "NURION_CHARACTER_ADAPTATION_ENGINE_V1": "CLOSED / PASS / CONSUME ONLY",
+    "ADAPT-01_V1": "CLOSED / PASS / CONSUME ONLY",
+    "ADAPT-02_V1": "CLOSED / PASS / CONSUME ONLY",
+    "ADAPT-03_V1": "CLOSED / PASS / CONSUME ONLY",
+    "ADAPT-04_V1": "CLOSED / PASS / CONSUME ONLY",
+    "ADAPT-05_V1": "CLOSED / PASS / CONSUME ONLY",
+    "ADAPT-06_V1": "CLOSED / PASS / CONSUME ONLY",
+    "V1_MUTATION": "DENY",
+    "V1_REOPEN": "DENY",
+    "note": "This Change Request creates separate V2 development authority only"
+  },
+  "sourceEvidence": [
+    "RAAT-01 Real Asset Acceptance Test",
+    "fast_track/working/raat01/evidence/NURION-MESHY-COMPATIBILITY-GAP-01.json",
+    "fast_track/working/raat01/evidence/NURION-MESHY-IDLE15_SEMANTIC_ADAPTER_ANALYSIS.json",
+    "fast_track/working/raat01/evidence/NURION-RAAT-01_CLOSED_AS_TEST_RESULT.json"
+  ],
+  "primaryRealAsset": {
+    "label": "Idle_15_withSkin_WORKING_BASELINE",
+    "path": "fast_track/working/meshy_silver_starlight/baseline/Idle_15_withSkin_WORKING_BASELINE.glb",
+    "sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+    "role": "FIRST_PROOF_ASSET_ONLY",
+    "sourceAssetMutation": "DENY",
+    "note": "First real-asset validation target after CR opens — NOT a hardcoded mapping table entry"
+  },
+  "implementationPolicy": {
+    "generalRulesRequired": true,
+    "summary": "Implementation MUST use general topology-based semantic rules — shoulder/neck/torso attachment evidence, ordered chain discovery, deterministic role assignment",
+    "forbidden": [
+      "Hardcode Idle_15 bone names (Hips, Spine02, Spine01, Spine, neck, Head) as special-case exceptions",
+      "Hardcode Meshy-specific alias tables that bypass topology discovery",
+      "Asset-specific if-sha256-then-map lookup tables",
+      "Spine02→Spine01→Spine chain as fixed exception path",
+      "Any per-asset override that skips general semantic rules"
+    ],
+    "allowed": [
+      "Idle_15 as first proof fixture in CR01-P05 / CR01-G17",
+      "Expected outcome documentation derived from general rules applied to observed topology",
+      "Synthetic test fixtures exercising general rules under varied naming/depth"
+    ],
+    "designTarget": "Shoulder/neck/torso topology → semantic role — not literal bone token matching"
+  },
+  "productPurpose": {
+    "oneLine": "Consume Meshy mesh+body rig; adapt semantics for NURION runtime; augment FACE/Eye/Jaw/TALKING — without destructively replacing source rig",
+    "notTheGoal": "Require Meshy to reproduce NURION canonical hierarchy exactly",
+    "pipelineIntent": [
+      "Meshy skin + body rig",
+      "semantic adaptation",
+      "FACE / Eye / Jaw / TALKING / auxiliary rig augmentation",
+      "runtime qualification",
+      "adapted character release"
+    ]
+  },
+  "observedV1Gap": {
+    "gapId": "MESHY-COMPATIBILITY-GAP-01",
+    "classification": "SEMANTIC_DEPTH / NAMING INVERSION",
+    "notClassification": "MISSING BODY RIG",
+    "meshyHierarchy": "Hips > Spine02 > Spine01 > Spine > {LeftShoulder, RightShoulder, neck > Head}",
+    "v1AliasSelection": {
+      "NURION_pelvis": "Hips",
+      "NURION_chest": "Spine02",
+      "NURION_spine01": "Spine",
+      "NURION_neck": "neck",
+      "NURION_head": "Head"
+    },
+    "v1Failure": "ancestry_break:NURION_spine01->NURION_chest — Spine is descendant of Spine02",
+    "v1PassingChains": ["armL", "armR", "legL", "legR"],
+    "raat01HistoricalVerdict": {
+      "ADAPT-01": "PASS",
+      "ADAPT-02": "BLOCKED",
+      "note": "V1 result remains historically valid; V2 may separately demonstrate BODY SEMANTIC PASS"
+    }
+  },
+  "changeObjective": {
+    "feature": "FLEXIBLE_SEMANTIC_CHAIN_ADAPTER",
+    "summary": "Resolve semantic body roles from topology, hierarchy, attachment position, and deterministic evidence — not primarily literal bone aliases",
+    "mustSupport": [
+      "valid intermediate bones",
+      "semantic depth variation",
+      "Meshy spine naming inversion",
+      "deterministic semantic chain selection",
+      "source skin preservation",
+      "source hierarchy preservation",
+      "safe runtime mapping to NURION semantics"
+    ],
+    "mustNot": [
+      "silently reinterpret ambiguous skeleton",
+      "delete or rename source bones",
+      "merge root and pelvis automatically"
+    ]
+  },
+  "corePrinciple": {
+    "canonicalSemanticRoleNotEqualSourceBoneName": true,
+    "canonicalSemanticEdgeMayMapToDescendantPath": true,
+    "pathRequirements": [
+      "anatomically valid",
+      "deterministic",
+      "non-branch-ambiguous",
+      "compatible with canonical semantic ordering",
+      "safe for retarget/runtime use"
+    ]
+  },
+  "firstProofAssetExpectedOutcome": {
+    "asset": "Idle_15_withSkin_WORKING_BASELINE.glb",
+    "sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+    "authority": "EXPECTED_OUTCOME_IF_GENERAL_RULES_APPLIED — not implementation lookup table",
+    "expectedMapping": {
+      "NURION_pelvis": "Hips",
+      "NURION_spine01": "Spine02",
+      "NURION_spine02": "Spine01",
+      "NURION_chest": "Spine",
+      "NURION_neck": "neck",
+      "NURION_head": "Head"
+    },
+    "derivation": "Chest = bilateral shoulder attachment point; spine roles assigned from ordered pelvis→head chain; Spine01 = INTERMEDIATE_PRESERVED",
+    "intermediatePolicy": "Intermediate bones absorbed semantically only — no source deletion",
+    "sourceBoneMutation": "NONE"
+  },
+  "chestSemanticRule": {
+    "mustNotRelyOn": ["token Chest alone", "highest-numbered SpineXX alone"],
+    "positiveEvidence": [
+      "both shoulder chains attach to candidate or immediate torso region",
+      "neck/head chain descends from candidate",
+      "candidate above pelvis/lower-spine region",
+      "candidate on unique central torso chain",
+      "candidate produces correct torso semantic ordering"
+    ],
+    "strongEvidence": "BILATERAL_SHOULDER_ATTACHMENT — LeftShoulder + RightShoulder → candidate torso bone"
+  },
+  "spineChainDiscovery": {
+    "order": "Discover ordered pelvis-to-head torso chain BEFORE semantic role assignment",
+    "illustrativeExampleOnly": {
+      "asset": "Idle_15_withSkin_WORKING_BASELINE.glb",
+      "observedChain": ["Hips", "Spine02", "Spine01", "Spine", "neck", "Head"],
+      "note": "Example only — implementation must derive chain from topology, not assume these names"
+    },
+    "deny": [
+      "Assign roles independently via name lookup before chain ordering",
+      "Treat illustrative example as hardcoded mapping"
+    ]
+  },
+  "semanticRoleAssignment": {
+    "input": "ordered pelvis-to-head torso chain",
+    "fixedAnchorsFirst": ["pelvis", "neck", "head", "chest"],
+    "thenAssign": ["spine01", "spine02", "..."],
+    "requirement": "deterministic assignment per canonical semantic order"
+  },
+  "intermediateBonePolicy": {
+    "allowed": true,
+    "classifications": [
+      "CANONICAL_BOUND",
+      "INTERMEDIATE_PRESERVED",
+      "UNUSED_BUT_PRESERVED",
+      "AMBIGUOUS",
+      "INVALID"
+    ],
+    "intermediatePreservedMeans": [
+      "source bone remains in hierarchy",
+      "existing skin weights remain intact",
+      "runtime semantic mapping may traverse through it",
+      "no unique NURION canonical runtime identity required unless mandated"
+    ],
+    "semanticOnly": true,
+    "physicalDeletionForbidden": true
+  },
+  "sourcePreservation": {
+    "nonDestructive": true,
+    "proof": "sourceAssetSha256Before == sourceAssetSha256After",
+    "mustRemainUnchanged": [
+      "mesh",
+      "skin",
+      "bone names",
+      "hierarchy",
+      "inverse bind matrices",
+      "source animation data"
+    ],
+    "preferredOutputs": [
+      "semantic mapping metadata",
+      "adapter metadata",
+      "derived auxiliary rig metadata"
+    ],
+    "forbiddenByDefault": "rewriting source body skeleton"
+  },
+  "bodyRetargetSafety": {
+    "consumeAuthority": [
+      "NURION_BODY_CANONICAL_BONE_SPEC_V1",
+      "NURION_BODY_AXIS_RETARGET_CONVENTION_V1",
+      "RIG-01 CLOSED / PASS / CONSUME ONLY",
+      "RIG-02 CLOSED / PASS / CONSUME ONLY"
+    ],
+    "validate": [
+      "pelvis/root distinction",
+      "torso order",
+      "left/right identity",
+      "arm chains",
+      "leg chains",
+      "neck/head chain",
+      "transform orientation",
+      "scale compatibility",
+      "rest-pose compatibility"
+    ],
+    "protectedInvariant": "NURION_root ≠ NURION_pelvis",
+    "weakeningInvariant": "DENY"
+  },
+  "rootHandling": {
+    "distinguish": ["scene/root transform", "skeleton root", "pelvis semantic"],
+    "automaticRootPelvisMerge": "DENY"
+  },
+  "leftRightSafety": {
+    "evidenceSources": ["source naming", "hierarchy", "geometry/spatial evidence", "connected limb topology"],
+    "namingStructuralConflict": "BLOCKED",
+    "silentSideSwap": "DENY"
+  },
+  "ambiguityPolicy": {
+    "notPermissiveGuesser": true,
+    "multipleEqualCandidates": {
+      "pelvis": "MANUAL_REVIEW_REQUIRED or BLOCKED",
+      "chest": "MANUAL_REVIEW_REQUIRED or BLOCKED",
+      "neck": "MANUAL_REVIEW_REQUIRED or BLOCKED",
+      "head": "MANUAL_REVIEW_REQUIRED or BLOCKED",
+      "limbRoot": "MANUAL_REVIEW_REQUIRED or BLOCKED",
+      "majorJointSemantic": "MANUAL_REVIEW_REQUIRED or BLOCKED"
+    },
+    "arbitraryFirstMatch": "DENY"
+  },
+  "confidenceModel": {
+    "machineReadableEvidenceRequired": true,
+    "example": {
+      "semantic": "NURION_chest",
+      "sourceBone": "Spine",
+      "confidence": 0.98,
+      "evidence": [
+        "BILATERAL_SHOULDER_ATTACHMENT",
+        "NECK_DESCENDANT",
+        "CENTRAL_TORSO_CHAIN",
+        "ABOVE_LOWER_SPINE"
+      ]
+    },
+    "confidenceCannotOverrideStructuralContradiction": true
+  },
+  "faceAugmentationHandoff": {
+    "purpose": "BODY semantic resolution enables FACE/Eye/Jaw/TALKING product stages",
+    "idle15Observed": {
+      "FACE": "MISSING",
+      "Eye controls": "MISSING",
+      "Jaw": "MISSING",
+      "TALKING": "MISSING",
+      "blendshapes": 0
+    },
+    "downstreamStages": [
+      "FACE capability judgment",
+      "Eye helper generation",
+      "blink / eyelid capability",
+      "jaw / mouth augmentation",
+      "expression controls",
+      "TALKING / viseme support",
+      "FACE_Rig_Root integration"
+    ],
+    "adapterScope": "BODY only — does not implement FACE functionality"
+  },
+  "faceBodyInterface": {
+    "locked": "NURION_head → FACE_Rig_Root",
+    "adapterResponsibility": "Resolve source bone corresponding to NURION_head",
+    "alternativeInterface": "DENY for V2-CR-01"
+  },
+  "requiredOutput": {
+    "fields": [
+      "sourceIdentity",
+      "sourceSkeletonDigest",
+      "orderedBodyChains",
+      "semanticAssignments",
+      "intermediateBones",
+      "unusedPreservedBones",
+      "assignmentEvidence",
+      "ambiguities",
+      "blockedReasons",
+      "retargetCompatibility",
+      "sourcePreservation",
+      "adapterDigest"
+    ]
+  },
+  "adapterDigest": {
+    "algorithm": "SHA256(canonical_json)",
+    "exclude": [
+      "local paths",
+      "timestamps",
+      "temporary extraction locations",
+      "nondeterministic ordering",
+      "runtime logging noise"
+    ],
+    "include": [
+      "source SHA256",
+      "semantic mapping",
+      "chain ordering",
+      "intermediate bone classifications",
+      "relevant axis/retarget decisions",
+      "authoritative upstream pins"
+    ],
+    "determinism": "Repeated run over same source and authority yields identical semanticAdapterDigest"
+  },
+  "requiredNegativeBehavior": [
+    "no pelvis candidate",
+    "multiple pelvis candidates",
+    "disconnected torso chain",
+    "shoulders on unrelated branches",
+    "neck outside torso chain",
+    "multiple competing chest candidates",
+    "left/right contradiction",
+    "root/pelvis conflation",
+    "cyclic/invalid skeleton",
+    "unsupported topology",
+    "upstream authority pin mismatch",
+    "source mutation",
+    "nondeterministic mapping result"
+  ],
+  "requiredPositiveFixtures": [
+    "exact NURION hierarchy",
+    "Meshy Idle_15 hierarchy",
+    "Meshy-style hierarchy with one intermediate spine",
+    "Meshy-style hierarchy with multiple intermediate spine bones",
+    "different spine numbering direction",
+    "chest explicitly named",
+    "chest inferred by bilateral shoulder attachment",
+    "preserved unused torso helper bone"
+  ],
+  "idle15PrototypeAcceptance": {
+    "asset": "Idle_15_withSkin_WORKING_BASELINE.glb",
+    "sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+    "role": "FIRST_REAL_ASSET_PROOF — validates general rules, not asset-specific exceptions",
+    "expectedMapping": "See firstProofAssetExpectedOutcome — must be produced by general topology rules",
+    "expectedChains": {
+      "spineHead": "PASS",
+      "armL": "PASS",
+      "armR": "PASS",
+      "legL": "PASS",
+      "legR": "PASS",
+      "sourceBytes": "UNCHANGED"
+    },
+    "antiPattern": "Implementation that only passes Idle_15 via hardcoded bone-name table = FAIL",
+    "scope": "Prototype capability only — does not authorize V2 production release by itself"
+  },
+  "prototypeStages": [
+    {"id": "CR01-P01", "name": "Real Skeleton Inspection", "status": "PASS"},
+    {"id": "CR01-P02", "name": "Flexible Torso Chain Discovery", "status": "PASS"},
+    {"id": "CR01-P03", "name": "Semantic Assignment", "status": "PASS"},
+    {"id": "CR01-P04", "name": "Retarget Safety Validation", "status": "PASS"},
+    {"id": "CR01-P05", "name": "Idle_15 Real-Asset Proof", "status": "PASS"},
+    {"id": "CR01-P06", "name": "Prototype Human Audit", "status": "HUMAN_FINAL_ONLY"}
+  ],
+  "gates": [
+    "CR01-G01",
+    "CR01-G02",
+    "CR01-G03",
+    "CR01-G04",
+    "CR01-G05",
+    "CR01-G06",
+    "CR01-G07",
+    "CR01-G08",
+    "CR01-G09",
+    "CR01-G10",
+    "CR01-G11",
+    "CR01-G12",
+    "CR01-G13",
+    "CR01-G14",
+    "CR01-G15",
+    "CR01-G16",
+    "CR01-G17",
+    "CR01-G18",
+    "CR01-G19",
+    "CR01-G20"
+  ],
+  "gateAuthority": {
+    "CR01-G01": "Exact Source Identity",
+    "CR01-G02": "Skeleton Extraction Integrity",
+    "CR01-G03": "Pelvis Anchor Resolution",
+    "CR01-G04": "Ordered Torso Chain Discovery",
+    "CR01-G05": "Chest Semantic Resolution",
+    "CR01-G06": "Intermediate Bone Preservation",
+    "CR01-G07": "Neck/Head Resolution",
+    "CR01-G08": "Arm Semantic Preservation",
+    "CR01-G09": "Leg Semantic Preservation",
+    "CR01-G10": "Root/Pelvis Separation",
+    "CR01-G11": "Axis/Retarget Compatibility",
+    "CR01-G12": "Left/Right Safety",
+    "CR01-G13": "Ambiguity Fail-Closed",
+    "CR01-G14": "Source Byte Preservation",
+    "CR01-G15": "Deterministic Mapping",
+    "CR01-G16": "Semantic Adapter Digest",
+    "CR01-G17": "Idle_15 Real Asset PASS",
+    "CR01-G18": "V1 Authority Preservation",
+    "CR01-G19": "Independent Extracted Proof",
+    "CR01-G20": "HUMAN FINAL AUDIT"
+  },
+  "criticalGates": [
+    "CR01-G01",
+    "CR01-G03",
+    "CR01-G04",
+    "CR01-G05",
+    "CR01-G06",
+    "CR01-G10",
+    "CR01-G12",
+    "CR01-G13",
+    "CR01-G14",
+    "CR01-G15",
+    "CR01-G16",
+    "CR01-G17",
+    "CR01-G18"
+  ],
+  "changeControlBoundary": {
+    "currentAuthority": "V2-CR-01 = PROPOSED — spec review only",
+    "untilHumanSpecApproval": "V2-CR-01 = PROPOSED; prototype NOT STARTED",
+    "onHumanSpecApproval": "V2-CR-01 = OPEN / PROTOTYPE; CR01-P01 may begin with Idle_15 as first proof asset",
+    "v2EngineOpen": "DENY — V2 track NOT OPEN",
+    "mustNot": [
+      "replace V1 authority",
+      "mutate V1 contracts",
+      "redefine V1 PASS receipts",
+      "overwrite ADAPT-02 V1",
+      "mark RAAT-01 V1 result as retroactively PASS",
+      "create production V2 release authority",
+      "hardcode Idle_15 or Meshy bone names as implementation exceptions"
+    ],
+    "coexistence": "RAAT-01 V1 BLOCKED and V2 Idle_15 BODY SEMANTIC PASS may both be true as different engine versions"
+  },
+  "successCriterion": {
+    "statement": "Real Meshy skin+rig anatomically compatible but hierarchically/naming-wise different from NURION maps deterministically without altering original BODY rig",
+    "meshyRigDifference": "≠ AUTOMATIC FAILURE",
+    "safeSemanticEquivalence": "→ ADAPT",
+    "trueStructuralAmbiguity": "→ BLOCK or MANUAL_REVIEW_REQUIRED",
+    "commercialCapability": "Meshy Character + NURION FACE + Eye + Jaw + Expression + TALKING + Auxiliary Rig → Runtime-Ready Adapted Character"
+  },
+  "deny": [
+    "V1 mutation",
+    "V1 reopen",
+    "AUTO REPAIR to force PASS",
+    "Retroactive rewrite of RAAT-01 V1 verdict",
+    "Production V2 release without separate V2 pipeline closure",
+    "Asset-specific hardcoding (Idle_15 bone-name exceptions)",
+    "Agent self-authorization to OPEN / PROTOTYPE without Human spec approval"
+  ]
+}

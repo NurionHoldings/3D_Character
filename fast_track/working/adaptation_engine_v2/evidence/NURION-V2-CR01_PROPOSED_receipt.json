@@ -1,0 +1,35 @@
+{
+  "schema": "NURION_V2_CR01_PROPOSED_RECEIPT_V1",
+  "changeRequestId": "V2-CR-01",
+  "title": "FLEXIBLE MESHY SKELETON SEMANTIC ADAPTER",
+  "status": "PROPOSED",
+  "prototypeStatus": "NOT STARTED",
+  "revision": "R1",
+  "declaredAtUtc": "20260830T031000Z",
+  "declaredBy": "etherean",
+  "authority": {
+    "creates": "NURION_CHARACTER_ADAPTATION_ENGINE_V2 change-control track",
+    "preserves": "NURION_CHARACTER_ADAPTATION_ENGINE_V1 CLOSED / PASS / CONSUME ONLY",
+    "V1_MUTATION": "DENY",
+    "V1_REOPEN": "DENY"
+  },
+  "sourceEvidence": {
+    "RAAT-01": "CLOSED AS TEST RESULT — ADAPT-02 BLOCKED",
+    "GAP-01": "MESHY-COMPATIBILITY-GAP-01 — SEMANTIC_DEPTH / NAMING INVERSION",
+    "analysis": "NURION-MESHY-IDLE15_SEMANTIC_ADAPTER_ANALYSIS"
+  },
+  "primaryRealAsset": {
+    "path": "fast_track/working/meshy_silver_starlight/baseline/Idle_15_withSkin_WORKING_BASELINE.glb",
+    "sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1"
+  },
+  "contract": "semantic/NURION_ADAPTATION_ENGINE_V2_CR01_FLEXIBLE_MESHY_SKELETON_SEMANTIC_ADAPTER_V1.json",
+  "track": "semantic/NURION_ADAPTATION_ENGINE_V2_TRACK_V1.json",
+  "agentCeiling": "SPEC_REVIEW_ONLY",
+  "CR01-G20": "HUMAN_FINAL_ONLY",
+  "authorityTransition": {
+    "current": "V2-CR-01 = PROPOSED",
+    "v2Engine": "NOT OPEN",
+    "onHumanSpecApproval": "V2-CR-01 = OPEN / PROTOTYPE → Idle_15 first proof asset"
+  },
+  "next": "Human review of V2-CR-01 R1 spec — approve to OPEN / PROTOTYPE; no implementation until then"
+}

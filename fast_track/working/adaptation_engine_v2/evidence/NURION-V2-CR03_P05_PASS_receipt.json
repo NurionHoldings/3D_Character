@@ -1,0 +1,10 @@
+{
+  "receiptId": "NURION-V2-CR03_P05_PASS_receipt",
+  "changeRequestId": "V2-CR-03",
+  "stage": "P05",
+  "status": "PASS",
+  "declaredAtUtc": "20260830T053050Z",
+  "approvedSpecDigest": "3e3885335bcfd8489209a302852230ae6cdd55da89fb8328048f82d8fe4a206c",
+  "cr03DerivedSemanticDigest": "fd8967fb597f7d501fd8977b6bdba3f1e522288b7ca00357744e6b83fadef2d5",
+  "derivedSha256": "fe493789135aaa80f96a6c2377daafd0a3ed016f402ba8d8611c9e3d07c7c8ca"
+}

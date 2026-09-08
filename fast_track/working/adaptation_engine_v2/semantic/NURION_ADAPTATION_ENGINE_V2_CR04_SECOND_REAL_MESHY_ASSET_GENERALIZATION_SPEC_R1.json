@@ -1,0 +1,253 @@
+{
+  "schema": "NURION_ADAPTATION_ENGINE_V2_CR04_SECOND_REAL_MESHY_ASSET_GENERALIZATION_SPEC_R1",
+  "changeRequestId": "V2-CR-04",
+  "revision": "R1",
+  "title": "SECOND REAL MESHY ASSET GENERALIZATION",
+  "status": "SPEC_PROPOSED",
+  "humanSpecReview": "PENDING",
+  "implementationAuthority": "NONE",
+  "prototypeStatus": "NOT STARTED",
+  "openStatus": "NOT OPEN",
+  "declaredAtUtc": "20260830T054100Z",
+  "declaredBy": "etherean",
+
+  "purpose": "Prove that the Human-audited CR01 → CR02 → CR03 technology chain on Idle_15 reproduces on a second independent real Meshy-generated character without asset-specific hardcoding. This CR is generalization validation — not new feature development.",
+
+  "coreClaim": "SECOND REAL MESHY CHARACTER → CR01 semantic consume → CR02 facial augmentation consume → actual facial deformation → CR03 morph-weight TALKING consume → runtime qualification → SECOND NURION-COMPATIBLE CHARACTER",
+
+  "passMeans": "Idle_15이 아닌 두 번째 독립 실자산에서도 동일 파이프라인이 asset-specific hardcoding 없이 재현됨 (Human-audited)",
+  "passDoesNotMean": [
+    "ALL MESHY CHARACTERS SUPPORTED",
+    "ARBITRARY EXTERNAL CHARACTER SUPPORT",
+    "UNIVERSAL GENERALIZATION",
+    "V2 PRODUCTION READY",
+    "Engine V2 OPEN",
+    "비리깅 캐릭터 지원",
+    "모든 topology 지원",
+    "모든 외부 3D 생성기 지원"
+  ],
+
+  "authority": {
+    "V2-CR-01": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-02": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-03": "HUMAN PASS / CONSUME ONLY / REOPEN DENY",
+    "V2-CR-04": "SPEC_PROPOSED / NOT OPEN / IMPLEMENTATION AUTHORITY NONE",
+    "NURION_ADAPTATION_ENGINE_V2": "NOT OPEN",
+    "Engine_V1": "CLOSED / PASS / CONSUME ONLY"
+  },
+
+  "upstreamPins": {
+    "CR01": {
+      "status": "CONSUME ONLY",
+      "semanticAdapterDigest": "c6aecfa1a90e81afa878a08ca7cdfc0ed34135b60bbdd2d48e597955d485393d"
+    },
+    "CR02": {
+      "status": "CONSUME ONLY",
+      "idle15DerivedSha256": "1ee90420ba39cc2e74de6624230538f4416d39ec7b34656e5b175a776c171cdd",
+      "independentProofDigest": "a38a8855f1f4f1c9cb3171737c7f98355cfd79bcd72c50388d1a134faebda174"
+    },
+    "CR03": {
+      "status": "CONSUME ONLY",
+      "idle15TalkingDerivedSha256": "fe493789135aaa80f96a6c2377daafd0a3ed016f402ba8d8611c9e3d07c7c8ca",
+      "runtimeVertexProofDigest": "593bf05d1fdebb8697bdf64f06d3f910645fc79043f465a59c20ab70897321e0",
+      "humanAuditedZipSha256": "701cad15f849558944413f16152c4c895d258bbb93c580e27c6ccec3a4fd58fb"
+    },
+    "idle15BaselineSha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1"
+  },
+
+  "secondAssetContract": {
+    "selectionOrder": "PIN SHA256 FIRST → then CR04 execution (never reverse)",
+    "MUST": [
+      "real Meshy-generated asset",
+      "SHA256 ≠ Idle_15 baseline a113cca…805db1",
+      "real mesh present",
+      "skin present",
+      "body rig present",
+      "SHA256 pinned before CR04 execution",
+      "source immutable"
+    ],
+    "MUST_NOT": [
+      "synthetic fixture crafted to pass CR04",
+      "Idle_15 clone",
+      "Idle_15 geometry lightly mutated fixture",
+      "cherry-pick asset after scanning for code success"
+    ],
+    "secondAssetPinAtSpecTime": null,
+    "note": "Second asset identity is NOT chosen in this SPEC proposal. Human Spec Gate APPROVE 이후, 구현 전에 SHA pin 필수."
+  },
+
+  "generalizationRules": {
+    "BONE_NAME_EQUALITY": "NOT REQUIRED",
+    "TOPOLOGY_SEMANTIC_ADAPTABILITY": "REQUIRED",
+    "consumeCR01": "topology-first flexible semantic adapter — CONSUME ONLY",
+    "immediateBlockers": [
+      "Idle_15 SHA special-case in production logic",
+      "secondAsset SHA special-case in production logic",
+      "if asset == secondAsset: force mapping",
+      "secondAsset-only bone-name table",
+      "secondAsset-only vertex index table",
+      "secondAsset-only morph geometry constants",
+      "asset-specific bypass"
+    ]
+  },
+
+  "upstreamImmutability": {
+    "CR01_CODE": "CONSUME ONLY",
+    "CR02_CODE": "CONSUME ONLY",
+    "CR03_CODE": "CONSUME ONLY",
+    "UPSTREAM_PATCH": "DENY",
+    "UPSTREAM_AUTO_REPAIR": "DENY",
+    "UPSTREAM_SPEC_CHANGE": "DENY",
+    "failurePolicy": "Do not patch CR01/02/03 to force CR04 PASS. Classify failure. Upstream generalization defect → separate successor CR (do not reopen prior Human PASS)."
+  },
+
+  "failureClassification": [
+    "SUPPORTED_AND_PASS",
+    "SUPPORTED_BUT_PIPELINE_DEFECT → CR04 BLOCKED",
+    "OUTSIDE_DECLARED_SUPPORT_ENVELOPE → MANUAL_REVIEW_REQUIRED / UNSUPPORTED",
+    "AMBIGUOUS → BLOCKED / FAIL CLOSED"
+  ],
+
+  "bodyPreservation": {
+    "SOURCE_BODY_RIG": "PRESERVE",
+    "SOURCE_SKIN": "PRESERVE",
+    "GLOBAL_AUTO_WEIGHT": "DENY",
+    "BODY_RE_RIG": "DENY",
+    "ROOT_PELVIS_MERGE": "DENY",
+    "note": "CR01 is understanding/mapping layer — not forced conversion of source BODY to NURION canonical skeleton"
+  },
+
+  "faceAugmentation": {
+    "inspectFirst": ["Eye", "Blink", "Jaw/Mouth", "Expression", "Viseme", "TALKING"],
+    "ifExistsAndValid": "PRESERVE / CONSUME",
+    "ifMissingAndWithinCR02Support": "CR02 augmentation mechanism consume",
+    "ifAmbiguous": "FAIL CLOSED",
+    "ifUnsupported": "MANUAL_REVIEW_REQUIRED",
+    "rule": "Minimum augmentation of missing capabilities only — do not force-create all 9 morphs unconditionally"
+  },
+
+  "deformationProof": {
+    "jsonOnlyPass": "DENY",
+    "capabilities": ["Blink", "Jaw", "Expression", "AA", "OH", "EE"],
+    "activate": "max ||Vactive - Vneutral|| > activationThreshold",
+    "restore": "max ||Vrestored - Vneutral|| <= restorationTolerance",
+    "activationThreshold": 1e-4,
+    "restorationTolerance": 1e-6,
+    "thresholdMutationAfterRun": "DENY — if scale makes thresholds structurally inappropriate, STOP CR04 and open separate contract review"
+  },
+
+  "talkingGeneralization": {
+    "consume": "CR03 Human PASS mechanism",
+    "sequence": "Neutral → AA → OH → EE → Neutral",
+    "required": [
+      "actual GLB weights animation",
+      "actual timestamps",
+      "actual morph weights",
+      "actual temporal vertex deformation",
+      "geometrically distinct AA/OH/EE",
+      "neutral restoration"
+    ],
+    "notPass": "AA/OH/EE morph exists alone"
+  },
+
+  "runtimeQualification": {
+    "minimum": "ONE real embedded BODY clip + TALKING coexistence",
+    "noEmbeddedAnimation": "record as LIMITATION — do not hide",
+    "simulationAsEmbeddedProof": "DENY"
+  },
+
+  "crossAssetHardcodingScan": {
+    "required": true,
+    "searchProductionLogicFor": [
+      "Idle_15",
+      "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+      "1ee90420ba39cc2e74de6624230538f4416d39ec7b34656e5b175a776c171cdd",
+      "fe493789135aaa80f96a6c2377daafd0a3ed016f402ba8d8611c9e3d07c7c8ca",
+      "SECOND_ASSET_NAME",
+      "SECOND_ASSET_SHA",
+      "hard-coded bone names as asset identity",
+      "hard-coded vertex indices",
+      "asset-specific morph vertex constants",
+      "asset-specific forced semantic mappings"
+    ],
+    "allowed": "fixture/receipt/report recording of asset name or SHA",
+    "denied": "production adaptation logic branching on asset identity"
+  },
+
+  "determinism": {
+    "requirement": "same second asset + same upstream Human-PASS code + same SPEC ⇒ identical digests",
+    "digests": [
+      "semanticAdapterDigest",
+      "facialAugmentationDigest",
+      "talkingAnimationDigest",
+      "runtimeProofDigest",
+      "finalCandidateSemanticDigest"
+    ],
+    "byteLevelGlb": "If claimed, derivedAssetSha256 must also match; else declare semantic digests as SoT before implementation"
+  },
+
+  "stages": {
+    "CR04-P01": "Second Asset Intake / Pin / Capability Inspection",
+    "CR04-P02": "CR01 Semantic Adaptation Consumption",
+    "CR04-P03": "CR02 FACE Augmentation Consumption",
+    "CR04-P04": "CR03 Runtime TALKING Consumption",
+    "CR04-P05": "Cross-Asset Regression / Generalization Qualification",
+    "CR04-P06": "Self-Contained Proof Packaging",
+    "CR04-P07": "Human Final Audit — Agent MUST NOT declare PASS"
+  },
+
+  "fastTrack": {
+    "P01_to_P06": "ONE FAIL-CLOSED FAST-TRACK RUN",
+    "P07_G20": "HUMAN_FINAL_ONLY",
+    "onFailure": "STOP immediately; do not re-run prior PASS stages"
+  },
+
+  "gates": {
+    "CR04-G01_to_G19": "AUTOMATABLE / AUDITABLE",
+    "CR04-G20": "HUMAN_FINAL_ONLY"
+  },
+
+  "humanGates": {
+    "HUMAN_SPEC_GATE": "implementation authorization — PENDING",
+    "HUMAN_FINAL_GATE": "technical Human PASS — separate; after READY_FOR_HUMAN_AUDIT"
+  },
+
+  "humanAuditZipRequired": [
+    "SECOND ORIGINAL GLB",
+    "FINAL DERIVED GLB",
+    "CR01/CR02/CR03 Human-PASS pins/receipts",
+    "CR04 approved SPEC",
+    "CR04 execution code",
+    "capability inspection",
+    "semantic mapping",
+    "facial deformation evidence",
+    "TALKING evidence",
+    "runtime qualification",
+    "hardcoding scan",
+    "mutation ledger",
+    "determinism evidence",
+    "independent runner"
+  ],
+
+  "humanFinalRecomputeFromAssets": [
+    "source SHA",
+    "skeleton hierarchy",
+    "skin / BODY preservation",
+    "semantic mapping",
+    "FACE augmentation",
+    "morph POSITION",
+    "actual vertex Δ",
+    "AA/OH/EE distinctness",
+    "weights animation",
+    "V(t)",
+    "neutral restoration",
+    "runtime coexistence",
+    "hardcoding absence"
+  ],
+
+  "agentCeilingUntilHumanSpecGate": "SPEC_REVIEW_ONLY",
+  "agentCeilingAfterOpen": "READY_FOR_HUMAN_AUDIT maximum",
+  "CR04-G20": "HUMAN_FINAL_ONLY",
+
+  "next": "Human Spec Gate review of this R1 SPEC — APPROVE to OPEN / PROTOTYPE + IMPLEMENTATION AUTHORITY GRANTED (then pin second asset SHA before P01). REJECT returns to CANDIDATE. No implementation until APPROVED. No second-asset selection in this proposal."
+}

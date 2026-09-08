@@ -1,0 +1,122 @@
+{
+  "critical": {
+    "AD3-G01": "PASS",
+    "AD3-G03": "PASS",
+    "AD3-G05": "PASS",
+    "AD3-G07": "PASS",
+    "AD3-G08": "PASS",
+    "AD3-G10": "PASS",
+    "AD3-G13": "PASS",
+    "AD3-G16": "PASS",
+    "AD3-G17": "PASS",
+    "AD3-G18": "PASS",
+    "AD3-G19": "PASS"
+  },
+  "gates": {
+    "AD3-G01": {
+      "faceBindingSha256": "13b815a91561914d66fee25ee077d133385e754bce52d19c45c38c901a92c565",
+      "faceProductLockSha256": "07830e1c34ce79b1d9ff9fc15a8b456ef7e3438d05ae7709d3515c00baebcf06",
+      "faceSemanticDigest": "eb10f6455295af2138914c15382ea8382ed8e9e4d41059ea3158f270468b8bc1",
+      "provenanceSha256": "f5299db69fa81e61f2fc48f48180cad3921467f1995055a00d49f7c19bd3c6b4",
+      "status": "PASS",
+      "verifyChecks": [
+        "pinned_upstream_identities",
+        "face_semantic_snapshot_digest",
+        "attachment_snapshot_digest",
+        "eye_talking_snapshot_digest",
+        "binding_attachment_semantic_link",
+        "binding_eye_fingerprint_link",
+        "monorepo_live_upstream_match"
+      ],
+      "verifyMode": "MONOREPO_LIVE_VERIFY"
+    },
+    "AD3-G02": {
+      "adapt01Digest": "32d958f43e5ff11adcbfe3f672cd79d00c718de12715dbb9ea8fd60f10083b4f",
+      "status": "PASS"
+    },
+    "AD3-G03": {
+      "adapt02Digest": "756d11ad335ade6793579eab4498be46e0f8a6c3f577372599664e5e2c08dc0b",
+      "headResolved": true,
+      "status": "PASS"
+    },
+    "AD3-G04": {
+      "positive": "RESOLVED",
+      "status": "PASS",
+      "unresolvedCase": "BLOCKED"
+    },
+    "AD3-G05": {
+      "attachmentDigest": "5ff7277baf421a9cc59fef35f8892f9c26bab765817641719682e712e0171e0f",
+      "cryptographicLink": "VERIFIED",
+      "eyeTalkingDigest": "63fd641857f4c5f5255a26f721a675030e4674e9caeb718f0fdf861d6c5c011a",
+      "status": "PASS"
+    },
+    "AD3-G06": {
+      "richClassification": "ADAPTED_WITH_AUGMENTATION_PENDING",
+      "status": "PASS"
+    },
+    "AD3-G07": {
+      "ambiguousCase": "AMBIGUOUS",
+      "positive": "PASS",
+      "status": "PASS"
+    },
+    "AD3-G08": {
+      "attachment": "COMPATIBLE",
+      "status": "PASS"
+    },
+    "AD3-G09": {
+      "mappingEvidence": "multi_evidence",
+      "status": "PASS"
+    },
+    "AD3-G10": {
+      "fingerprint": "2d1dbb6772cd74c2a7dc991cf497d58dc5b803359f5430105dbe4ff9e513ff19",
+      "status": "PASS"
+    },
+    "AD3-G11": {
+      "inversion": "BLOCKED",
+      "status": "PASS"
+    },
+    "AD3-G12": {
+      "status": "PASS"
+    },
+    "AD3-G13": {
+      "status": "PASS",
+      "talkingStatus": "GO"
+    },
+    "AD3-G14": {
+      "augmentationCase": "AUGMENTATION_REQUIRED",
+      "richOutcome": "ADAPTATION_REQUIRED",
+      "status": "PASS"
+    },
+    "AD3-G15": {
+      "missingClassified": true,
+      "status": "PASS"
+    },
+    "AD3-G16": {
+      "handoff": "SPECIFICATION_ONLY",
+      "status": "PASS"
+    },
+    "AD3-G17": {
+      "adapt01Mutation": "NONE",
+      "adapt02Mutation": "NONE",
+      "adapt04Implementation": "NOT_STARTED",
+      "faceAuthorityMutation": "NONE",
+      "nurionV1Mutation": "NONE",
+      "status": "PASS"
+    },
+    "AD3-G18": {
+      "digestMismatch": "BLOCKED",
+      "identityMismatch": "BLOCKED",
+      "status": "PASS"
+    },
+    "AD3-G19": {
+      "contractCanonicalSha256": "c3bbabe8278c05626fa400c2bc1d55dac1013add8e240aab43664523ba80edf6",
+      "executionMode": "MONOREPO",
+      "note": "Extracted ZIP must run run_adapt03_independent_proof.py exit 0",
+      "status": "PASS"
+    },
+    "AD3-G20": {
+      "agentMayNotPass": true,
+      "status": "HUMAN_FINAL_ONLY"
+    }
+  }
+}

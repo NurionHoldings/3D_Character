@@ -1,0 +1,23 @@
+{
+  "receiptId": "NURION-V2-CR04_READY_FOR_HUMAN_AUDIT",
+  "changeRequestId": "V2-CR-04",
+  "status": "READY_FOR_HUMAN_AUDIT",
+  "declaredAtUtc": "20260830T060449Z",
+  "approvedSpecDigest": "203466befd67d01a4acf42a60048d6b2ac01c42b4dd2ffea49da73f0c8edface",
+  "secondAssetSha256": "f3f9e343c8ba3c9a503a8423293dec90bb6be50f809f1321f4f6658b1bea133e",
+  "derivedSha256": "e511b985314264735d4de59038c68d104f19ca0d9e9180db40ee117a4aba6f21",
+  "finalCandidateSemanticDigest": "8c4956b167e99ba7c3aaee8c94926b276e244e2876f3bbf2868c352ae84cd90e",
+  "runtimeProofDigest": "4af2681bc7fd0a1d080106f4618377c971a05ed57732dd5d636d2ac6159f0421",
+  "agentCeiling": "READY_FOR_HUMAN_AUDIT",
+  "CR04-P07": "HUMAN_FINAL_ONLY",
+  "CR04-G20": "HUMAN_FINAL_ONLY",
+  "engineV2": "NOT_OPEN",
+  "stages": {
+    "CR04-P01": "PASS",
+    "CR04-P02": "PASS",
+    "CR04-P03": "PASS",
+    "CR04-P04": "PASS",
+    "CR04-P05": "PASS",
+    "CR04-P06": "PASS"
+  }
+}
