@@ -37,5 +37,9 @@
   with PATH alone. The corrected tests skip only the unavailable Windows
   symlink capability (Linux CI still exercises it) and pass the full inherited
   environment to isolated Python processes.
+- CI failure record: GitHub Actions runs 1 and 2 ended before job creation
+  because the inline Python command contained an unquoted YAML colon. The
+  command is now a fully quoted YAML scalar; this is a workflow-only delta and
+  does not change runtime behavior or sealed sources.
 - Credit guard: no reliable in-repository credit meter exists. This bounded Terra
   implementation is to stop and report before any additional broad work.
