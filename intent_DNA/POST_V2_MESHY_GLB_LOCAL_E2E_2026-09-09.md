@@ -42,3 +42,12 @@ Does **not** reopen NURION Adaptation Engine V2.
 ## Runner
 
 `tools/run_v2_consume_meshy_glb.py`
+
+## CI #8 RED → NumPy dependency fix
+
+| Item | Detail |
+|------|--------|
+| Failure | CI #8 RED — `ModuleNotFoundError: No module named 'numpy'` (13 passed, 8 errors) on Python 3.10 and 3.12 |
+| Cause | New E2E tests import sealed consume path → `fast_track.v2_cr02.facial_deformation` needs NumPy; local env had it, CI installed pytest only |
+| Fix | `pyproject.toml` `[project.optional-dependencies].test` adds `numpy>=1.24`; workflow installs `pytest numpy` |
+| Merge | Remains HOLD until new HEAD CI is GREEN |
