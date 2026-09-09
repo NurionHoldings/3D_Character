@@ -100,6 +100,21 @@ Silent mutation / upstream rebase = **DENY**. 확장은 Post-V2 CR만.
 | `nurion_character_landmarker` | Blender 랜드마커 애드온 |
 | `tools/` | runners / packers |
 
+## Post-V2 안전 보완
+
+후속 런타임 보완은 기존 V2 증빙을 변경하지 않고 `nurion_post_v2_runtime`에서
+검증합니다. Gate 6은 FBX 입력·내보내기 경로·시간값·원본 권위를 fail-closed로
+확인합니다. 로컬 재현 절차와 환경변수는
+[`docs/REPRODUCIBLE_RUNTIME.md`](docs/REPRODUCIBLE_RUNTIME.md)를 따릅니다.
+
+### 공개 Release 후보
+
+PR과 일반 `main` CI는 공개 소스만 담긴 Release 후보를 Actions artifact로 만듭니다.
+후보는 엔진 런타임, 랜드마커 애드온, 공개 가이드와 SHA-256 manifest만 포함하며
+Meshy·사용자 메쉬, GLB/FBX, 결과물, IRG ZIP, 옛 `dist/`는 고정 허용목록 검증으로
+fail-closed 차단합니다. 실제 GitHub Release는 현재 `main`을 가리키는 기존의 명시적
+`v*` 태그에서만 만들며, PR이나 수동 실행에서는 만들지 않습니다.
+
 ## Quick pointers
 
 - V2 Integration SPEC: `fast_track/working/adaptation_engine_v2/semantic/NURION_ADAPTATION_ENGINE_V2_INTEGRATION_RELEASE_GATE_SPEC_R1.json`

@@ -9,6 +9,7 @@ from typing import Any, Dict, List, Optional
 
 from ..core.landmark_engine import LandmarkPoint
 from ..core.sources import ESTIMATED
+from .profile_contract import MAX_PROFILE_BYTES, ContractViolation, normalize_and_validate
 
 SCHEMA = "NURION_CHARACTER_PROFILE"
 PROFILE_VERSION = "0.2.0-alpha.2"
@@ -44,18 +45,18 @@ class NurionCharacterProfile:
 
     @classmethod
     def from_dict(cls, data: dict) -> "NurionCharacterProfile":
-        raw_landmarks = data.get("landmarks", [])
-        landmarks = _normalize_landmarks(raw_landmarks)
+        doc = normalize_and_validate(data)
+        landmarks = doc["landmarks"]
         return cls(
-            schema=data.get("schema", SCHEMA),
-            version=data.get("version", PROFILE_VERSION),
-            character_id=data.get("characterId", "character-001"),
-            character_height=float(data.get("characterHeight", 0.0)),
-            width=float(data.get("width", 0.0)),
-            center=[float(v) for v in data.get("center", [0.0, 0.0, 0.0])],
-            forward_axis=data.get("forwardAxis", "-Y"),
-            floor_z=float(data.get("floorZ", 0.0)),
-            measurements=dict(data.get("measurements", {})),
+            schema=doc["schema"],
+            version=doc["version"],
+            character_id=doc["characterId"],
+            character_height=float(doc["characterHeight"]),
+            width=float(doc["width"]),
+            center=[float(v) for v in doc["center"]],
+            forward_axis=doc["forwardAxis"],
+            floor_z=float(doc["floorZ"]),
+            measurements=dict(doc.get("measurements", {})),
             landmarks=landmarks,
         )
 
@@ -69,31 +70,6 @@ class NurionCharacterProfile:
         return result
 
 
-def _normalize_landmarks(raw: Any) -> List[dict]:
-    """Accept list-of-objects (v0.1) or legacy dict name→[x,y,z]."""
-    if isinstance(raw, dict):
-        out = []
-        for name, value in raw.items():
-            if isinstance(value, dict):
-                entry = dict(value)
-                entry.setdefault("name", name)
-                out.append(LandmarkPoint.from_profile_entry(entry).to_profile_entry())
-            else:
-                point = LandmarkPoint.from_profile_entry(value)
-                point.name = name
-                out.append(point.to_profile_entry())
-        return out
-
-    if isinstance(raw, list):
-        out = []
-        for item in raw:
-            if isinstance(item, dict):
-                out.append(LandmarkPoint.from_profile_entry(item).to_profile_entry())
-        return out
-
-    return []
-
-
 def save_profile(profile: NurionCharacterProfile, path: str | Path) -> Path:
     target = Path(path)
     if target.is_dir() or str(path).endswith(("/", "\\")):
@@ -101,13 +77,20 @@ def save_profile(profile: NurionCharacterProfile, path: str | Path) -> Path:
     if target.suffix.lower() != ".json":
         target = target.with_suffix(".json")
 
+    document = normalize_and_validate(profile.to_dict())
     target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text(json.dumps(profile.to_dict(), indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    target.write_text(json.dumps(document, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return target
 
 
 def load_profile(path: str | Path) -> NurionCharacterProfile:
-    data = json.loads(Path(path).read_text(encoding="utf-8"))
+    try:
+        source = Path(path)
+        if source.stat().st_size > MAX_PROFILE_BYTES:
+            raise ContractViolation("PROFILE_INPUT_TOO_LARGE")
+        data = json.loads(source.read_text(encoding="utf-8"))
+    except OverflowError as exc:
+        raise ContractViolation("PROFILE_INPUT_INVALID") from exc
     return NurionCharacterProfile.from_dict(data)
 
 

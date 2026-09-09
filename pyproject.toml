@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nurion-3d-character"
+version = "0.0.0"
+description = "NURION 3D character source and Post-V2 isolated runtime"
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/test_post_v2_runtime.py", "tests/test_post_v2_release_candidate.py"]
+addopts = "-ra"
