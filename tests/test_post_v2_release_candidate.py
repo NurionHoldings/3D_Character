@@ -2,6 +2,7 @@ import importlib.util
 import json
 import zipfile
 from pathlib import Path
+from types import SimpleNamespace
 
 import pytest
 
@@ -11,6 +12,23 @@ SPEC = importlib.util.spec_from_file_location("post_v2_release_candidate", ROOT 
 assert SPEC and SPEC.loader
 release = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(release)
+
+
+def test_isolated_import_preserves_required_child_environment(monkeypatch, tmp_path):
+    archive = tmp_path / "candidate.zip"
+    observed = {}
+
+    def fake_run(_args, **kwargs):
+        observed.update(kwargs["env"])
+        return SimpleNamespace(returncode=0, stdout="isolated-import PASS")
+
+    monkeypatch.setenv("NURION_RELEASE_ENV_TEST", "preserved")
+    monkeypatch.setattr(release.subprocess, "run", fake_run)
+
+    release._run_isolated_import(archive, "package.module")
+
+    assert observed["NURION_RELEASE_ENV_TEST"] == "preserved"
+    assert observed["PYTHONNOUSERSITE"] == "1"
 
 
 def test_release_candidate_is_deterministic_and_self_verifying(tmp_path):

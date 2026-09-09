@@ -307,10 +307,12 @@ def _run_isolated_import(archive_path: Path, module: str) -> None:
             f"sys.path.insert(0, {str(archive_path.resolve())!r}); "
             f"importlib.import_module({module!r}); print('isolated-import PASS')"
         )
+        child_environment = os.environ.copy()
+        child_environment["PYTHONNOUSERSITE"] = "1"
         completed = subprocess.run(
             [sys.executable, "-I", "-S", "-c", code],
             cwd=temporary,
-            env={"PYTHONNOUSERSITE": "1"},
+            env=child_environment,
             capture_output=True,
             text=True,
         )

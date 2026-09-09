@@ -68,6 +68,13 @@
 - Policy enforcement decision: candidate build/verify now validates
   `ASSETS_MANIFEST.json` as a pin-only schema and checks Git-tracked paths for
   protected mesh/archive suffixes and `dist`/`.nurion_blender_tmp` directories.
+- Windows release-candidate delta: the first Windows 10/Python 3.10 validation
+  after the source-only release pipeline was applied failed only at isolated ZIP
+  import. The child process had been given a replacement environment containing
+  only `PYTHONNOUSERSITE`; this omits Windows process variables required by the
+  interpreter. The verifier now inherits the environment and sets that one
+  restriction explicitly. `-I -S` remains the isolation boundary; bundle
+  inventory, SHA-256, policy, and sealed-source behavior are unchanged.
   The candidate manifest additionally binds each archive to a static source
   allowlist derived from the checked-out source revision; manifest-only added
   files cannot be accepted. This closes the prior gap where a self-consistent
