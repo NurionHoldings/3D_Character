@@ -1,0 +1,85 @@
+{
+  "schema": "NURION_V2_ASSETS_MANIFEST_V1",
+  "repoPolicy": "PUBLIC_PINS_ONLY_NO_MESH_BINARY",
+  "productPurpose": "Meshy-style character in → FACE/rig augmentation → user downloads for own platform",
+  "engineV2": "CLOSED / PASS / CONSUME ONLY",
+  "note": "Binaries are NOT in the public repo. Resolve files locally, private assets store, or Meshy re-download; verify SHA256.",
+  "assets": [
+    {
+      "id": "IDLE15_SILVER_STARLIGHT_BASELINE",
+      "role": "CR01-CR03 input baseline",
+      "format": "GLB",
+      "sha256": "a113cca61d31b0a03f24703ce093149611e8b403952305370cce15d601805db1",
+      "publicGitHub": "DENY",
+      "channel": "private_or_local",
+      "localHints": [
+        "fast_track/intake/meshy_silver_starlight/extracted/Meshy_AI_Silver_Starlight_Sent_biped_Animation_Idle_15_withSkin.glb",
+        "fast_track/working/meshy_silver_starlight/baseline/Idle_15_withSkin_WORKING_BASELINE.glb"
+      ]
+    },
+    {
+      "id": "IDLE15_V2_FACE_TALKING_SEALED",
+      "role": "CR03 talking derived (sealed demo)",
+      "format": "GLB",
+      "sha256": "fe493789135aaa80f96a6c2377daafd0a3ed016f402ba8d8611c9e3d07c7c8ca",
+      "publicGitHub": "DENY",
+      "channel": "private_or_local",
+      "localHints": [
+        "dist/v2_final_demo/Idle15_V2_FACE_TALKING_SEALED.glb"
+      ]
+    },
+    {
+      "id": "SPORTY_SOURCE_BASELINE",
+      "role": "CR04 second-asset input / final demo source",
+      "format": "GLB",
+      "characterFamily": "Meshy_AI_Sporty_Studio_Portrai_biped",
+      "sha256": "f3f9e343c8ba3c9a503a8423293dec90bb6be50f809f1321f4f6658b1bea133e",
+      "publicGitHub": "DENY",
+      "channel": "private_or_local",
+      "localHints": [
+        "dist/v2_final_demo/Sporty_SOURCE_BASELINE.glb",
+        "D:/보관자료/MJN/assets/Sporty_Studio_Portrait_Idle_15_withSkin.glb"
+      ]
+    },
+    {
+      "id": "SPORTY_V2_FACE",
+      "role": "CR04 / consume demo FACE derived",
+      "format": "GLB",
+      "sha256": "92502f6f66b82c4dc1a7138b90746b4b0e755e6e857de0c2390ae9ef6320f51a",
+      "publicGitHub": "DENY",
+      "channel": "private_or_local",
+      "localHints": [
+        "dist/v2_final_demo/Sporty_V2_FACE.glb"
+      ]
+    },
+    {
+      "id": "SPORTY_V2_FACE_TALKING",
+      "role": "CR04 / consume demo FACE+TALKING derived",
+      "format": "GLB",
+      "sha256": "55601949d6fc67eaebe405e683134fc516be5d6374ca748ea8809ae12dbace4d",
+      "publicGitHub": "DENY",
+      "channel": "private_or_local",
+      "localHints": [
+        "dist/v2_final_demo/Sporty_V2_FACE_TALKING.glb"
+      ]
+    },
+    {
+      "id": "IRG_R2_PROOF_ZIP",
+      "role": "Human-audited IRG R2 package",
+      "format": "ZIP",
+      "sha256": "233521b68a3e4a750c3854f0eeb4ee90aa1db6a442cd5eadaa64922fb67ddf72",
+      "publicGitHub": "DENY",
+      "channel": "private_or_local",
+      "localHints": [
+        "fast_track/working/adaptation_engine_v2/evidence/NURION-V2-IRG_R2_integration_release_proof.zip",
+        "NURION-V2-IRG_R2_integration_release_proof.zip"
+      ]
+    }
+  ],
+  "publicUploadAllowed": [
+    "ASSETS_MANIFEST.json",
+    "README.md policy sections",
+    "evidence/*.json digests and receipts",
+    "engine source under fast_track/v2_*"
+  ]
+}
