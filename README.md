@@ -133,12 +133,15 @@ py -3 tools/run_v2_consume_meshy_glb.py `
 
 Outputs under `--out-dir`: `*_SOURCE_BASELINE.glb`, `*_V2_FACE.glb`, `*_V2_FACE_TALKING.glb`, `CONSUME_E2E_REPORT.json`. Exit `0` = PASS.
 
-## Hand / finger (Post-V2 — not started)
+## Hand / finger (Post-V2 — Spec Gate, not started)
 
-- **CR:** `POST-V2-CR-HAND-01` — existing finger bones → map + min motions (**SPEC_PROPOSED / Human Spec PENDING**)
-- Spec: `fast_track/working/post_v2_hand_rig/semantic/NURION_POST_V2_CR_HAND_01_EXISTING_FINGER_BONES_HAND_MOTION_SPEC_R1.json`
+- **CR:** `POST-V2-CR-HAND-01` — existing finger bones → semantic map + append-only minimum motions (**SPEC_PROPOSED / Human Spec PENDING / authority NONE**)
+- R2 Spec: `fast_track/working/post_v2_hand_rig/semantic/NURION_POST_V2_CR_HAND_01_EXISTING_FINGER_BONES_HAND_MOTION_SPEC_R2.json`
+- R2 Track: `fast_track/working/post_v2_hand_rig/semantic/NURION_POST_V2_CR_HAND_01_TRACK_V2.json`
+- Proposed R2 SPEC SHA-256: `965e3364b9d14061b4ee449caa716200a5c192614872266ba4f64195d626bfb8` (raw UTF-8/LF file bytes)
 - Intent: `intent_DNA/POST_V2_HAND_RIG_P1_2026-09-09.md`
-- Auto bone-create (`HAND-02`) is deferred. Do not implement `--add-hand-rig` until Human Spec APPROVE.
+- R1 is retained as a superseded audit trail. P01 private calibration lock must precede **APPROVED → OPEN_PROTOTYPE → GRANTED**. Do not implement `--add-hand-rig` or `--hand-motion` before GRANTED.
+- Auto bone-create and weight synthesis (`HAND-02`) remain **NOT OPEN**.
 
 ## License / ownership
 
