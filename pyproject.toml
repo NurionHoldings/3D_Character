@@ -9,8 +9,15 @@ description = "NURION 3D character source and Post-V2 isolated runtime"
 requires-python = ">=3.10"
 
 [project.optional-dependencies]
-test = ["pytest>=8.0"]
+test = [
+    "pytest>=8.0",
+    "numpy>=1.24",
+]
 
 [tool.pytest.ini_options]
-testpaths = ["tests/test_post_v2_runtime.py", "tests/test_post_v2_release_candidate.py"]
+testpaths = [
+    "tests/test_post_v2_runtime.py",
+    "tests/test_post_v2_release_candidate.py",
+    "tests/test_v2_consume_meshy_glb.py",
+]
 addopts = "-ra"

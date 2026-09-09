@@ -121,6 +121,18 @@ fail-closed 차단합니다. 실제 GitHub Release는 현재 `main`을 가리키
 - Engine closed receipt: `fast_track/working/adaptation_engine_v2/evidence/NURION-V2_ENGINE_CLOSED_PASS_FINAL_receipt.json`
 - Sporty final demo GLB: **local / private only** — `dist/v2_final_demo/` (not in this public repo)
 
+## Local E2E (one new Meshy GLB)
+
+Sealed V2 consume only — does not reopen the engine. Input must be rigged+skinned Meshy-style `.glb`.
+
+```powershell
+py -3 tools/run_v2_consume_meshy_glb.py `
+  --input "D:\path\to\YourCharacter_Idle_withSkin.glb" `
+  --out-dir "dist/v2_consume/your_character"
+```
+
+Outputs under `--out-dir`: `*_SOURCE_BASELINE.glb`, `*_V2_FACE.glb`, `*_V2_FACE_TALKING.glb`, `CONSUME_E2E_REPORT.json`. Exit `0` = PASS.
+
 ## License / ownership
 
 - **Engine source & NURION docs in this repo:** Nurion Holdings  
