@@ -12,5 +12,5 @@ requires-python = ">=3.10"
 test = ["pytest>=8.0"]
 
 [tool.pytest.ini_options]
-testpaths = ["tests/test_post_v2_runtime.py"]
+testpaths = ["tests/test_post_v2_runtime.py", "tests/test_post_v2_release_candidate.py"]
 addopts = "-ra"
