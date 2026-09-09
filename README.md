@@ -133,6 +133,13 @@ py -3 tools/run_v2_consume_meshy_glb.py `
 
 Outputs under `--out-dir`: `*_SOURCE_BASELINE.glb`, `*_V2_FACE.glb`, `*_V2_FACE_TALKING.glb`, `CONSUME_E2E_REPORT.json`. Exit `0` = PASS.
 
+## Hand / finger (Post-V2 — not started)
+
+- **CR:** `POST-V2-CR-HAND-01` — existing finger bones → map + min motions (**SPEC_PROPOSED / Human Spec PENDING**)
+- Spec: `fast_track/working/post_v2_hand_rig/semantic/NURION_POST_V2_CR_HAND_01_EXISTING_FINGER_BONES_HAND_MOTION_SPEC_R1.json`
+- Intent: `intent_DNA/POST_V2_HAND_RIG_P1_2026-09-09.md`
+- Auto bone-create (`HAND-02`) is deferred. Do not implement `--add-hand-rig` until Human Spec APPROVE.
+
 ## License / ownership
 
 - **Engine source & NURION docs in this repo:** Nurion Holdings  

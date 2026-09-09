@@ -1,0 +1,264 @@
+{
+  "schema": "NURION_POST_V2_CR_HAND_01_EXISTING_FINGER_BONES_HAND_MOTION_SPEC_R1",
+  "changeRequestId": "POST-V2-CR-HAND-01",
+  "alias": "CR-HAND-01",
+  "revision": "R1",
+  "title": "EXISTING FINGER BONES → STANDARD MAP + HAND MOTION (P1)",
+  "status": "SPEC_PROPOSED",
+  "humanSpecReview": "PENDING",
+  "implementationAuthority": "NONE",
+  "openStatus": "NOT OPEN",
+  "prototypeStatus": "NOT STARTED",
+  "declaredAtUtc": "20260909T073500Z",
+  "declaredBy": "codex",
+  "specNature": "PROPOSAL ONLY — Human Spec PASS not declared; implementation DENY until APPROVED",
+
+  "purpose": "For Meshy-style rigged+skinned GLBs that already have finger bones, diagnose adaptability, map to NURION hand standard, optionally repair axes/names, and add a minimal hand-motion clip set while preserving BODY/Skin and sealed FACE/TALKING contracts.",
+
+  "coreClaim": "Existing finger-bone characters can receive NURION standard hand mapping + min motion library without mutating source bytes and without reopening Engine V2.",
+
+  "passMeans": "Human Spec APPROVED → prototype stages P01–P08 PASS under independent gates → Human Final on proof package. Only then CLI --add-hand-rig may claim HAND_RIG_PASS / HAND_MOTION_PASS / NEUTRAL_RETURN_PASS together with existing FACE/TALKING consume PASS.",
+
+  "passDoesNotMean": [
+    "finger bone auto-creation",
+    "weight synthesis from scratch for bone-less hands",
+    "all Meshy/Mixamo/MetaHuman hands guaranteed",
+    "fused-finger mesh topology support",
+    "Engine V2 reopen",
+    "FBX-only hand pipeline (GLB P1 first)",
+    "full gesture emotion library beyond min set"
+  ],
+
+  "authority": {
+    "NURION_ADAPTATION_ENGINE_V2": "CLOSED / PASS / CONSUME ONLY / REOPEN DENY",
+    "CR01-CR04": "CONSUME ONLY / REOPEN DENY",
+    "POST-V2-CR-HAND-01": "SPEC_PROPOSED / NOT OPEN / IMPLEMENTATION AUTHORITY NONE",
+    "POST-V2-CR-HAND-02": "NOT OPEN — auto bone create deferred"
+  },
+
+  "absoluteAuthorityBoundary": {
+    "UPSTREAM_V2_MUTATION": "DENY",
+    "UPSTREAM_FACE_TALKING_REPROOF_AS_HAND_BLOCKER_REWRITE": "DENY",
+    "silentFixToForceFinalPass": "DENY",
+    "autoApplyOnAmbiguousMapping": "DENY",
+    "autoCreateMissingFingerBones": "DENY (HAND-02 only)",
+    "ifConfidenceBelowThreshold": {
+      "gate": "BLOCKED",
+      "code": "AMBIGUOUS_FINGER_MAPPING",
+      "required": "manual guide or ADAPTABLE repair path — do not invent bones"
+    }
+  },
+
+  "nurionHandStandard": {
+    "sides": ["L", "R"],
+    "palmBones": ["hand.L", "hand.R"],
+    "fingers": ["thumb", "index", "middle", "ring", "pinky"],
+    "jointsPerFinger": 3,
+    "namePattern": "{finger}.{01|02|03}.{L|R}",
+    "examples": [
+      "hand.L",
+      "thumb.01.L",
+      "thumb.02.L",
+      "thumb.03.L",
+      "index.01.L",
+      "index.02.L",
+      "index.03.L",
+      "middle.01.L",
+      "middle.02.L",
+      "middle.03.L",
+      "ring.01.L",
+      "ring.02.L",
+      "ring.03.L",
+      "pinky.01.L",
+      "pinky.02.L",
+      "pinky.03.L",
+      "hand.R",
+      "thumb.01.R",
+      "index.01.R",
+      "pinky.03.R"
+    ],
+    "hierarchy": {
+      "parentOfFinger01": "hand.{side}",
+      "chain": "01 → 02 → 03 (distal)",
+      "wristParent": "resolved via CR01-style semantic arm/hand chain; fail-closed if ambiguous"
+    },
+    "laterality": "explicit .L/.R suffix + mirrored hierarchy + mesh-side vertex bias",
+    "jointAxes": {
+      "flexionDefault": "local X (to be calibrated per asset in ADAPTABLE)",
+      "thumbOppositionPlane": "separate from digit flexion plane — must be recorded in mapping extras",
+      "splay": "limited abduction/adduction on 01 joints only unless asset proves otherwise"
+    },
+    "limits": {
+      "note": "Numeric min/max bend and splay degrees are locked at Human Spec APPROVE or P01 lock receipt — placeholders DENY silent invention",
+      "flexionDeg": {"min": "TBD_AT_P01_LOCK", "max": "TBD_AT_P01_LOCK"},
+      "splayDeg": {"min": "TBD_AT_P01_LOCK", "max": "TBD_AT_P01_LOCK"},
+      "thumbOppositionDeg": {"min": "TBD_AT_P01_LOCK", "max": "TBD_AT_P01_LOCK"}
+    },
+    "palmFacing": "NURION character forward / rest-pose palm normal recorded in diagnostic"
+  },
+
+  "diagnosticContract": {
+    "artifact": "HAND_RIG_DIAGNOSTIC_V1",
+    "checks": [
+      "wristAndHandBonesPresent",
+      "fingerBoneCount",
+      "nameAndHierarchy",
+      "leftRightSeparation",
+      "boneLengthAndDirection",
+      "meshFingerSeparabilityHint",
+      "perFingerVertexWeightCoverage",
+      "missingDuplicateFlippedJoints",
+      "existingHandAnimations"
+    ],
+    "verdicts": ["DIRECT", "ADAPTABLE", "BLOCKED"],
+    "exampleShape": {
+      "status": "ADAPTABLE",
+      "leftHand": {"fingerBones": 15, "mappingConfidence": 0.96},
+      "rightHand": {"fingerBones": 15, "mappingConfidence": 0.95},
+      "weightRepairRequired": false
+    },
+    "confidenceFloorForAutoApply": "LOCKED_AT_IMPLEMENTATION_OPEN — below floor → AMBIGUOUS_FINGER_MAPPING / BLOCKED"
+  },
+
+  "mapperContract": {
+    "sources": ["Meshy", "Mixamo", "MetaHuman-style", "generic L/R digit names"],
+    "exampleAliases": {
+      "mixamorig:LeftHandThumb1": "thumb.01.L",
+      "LeftHandIndex2": "index.02.L",
+      "finger_middle_03_r": "middle.03.R"
+    },
+    "signals": [
+      "hierarchy",
+      "distanceFromWrist",
+      "fingerDirection",
+      "boneLength",
+      "boundVertexCentroid",
+      "leftRightSymmetry"
+    ],
+    "nameOnlyMapping": "INSUFFICIENT — must combine geometric signals"
+  },
+
+  "motionLibraryMinSet": {
+    "basic": ["open", "fist"],
+    "dialogue": ["wave"],
+    "point": ["point"],
+    "positive": ["thumbs_up"],
+    "system": ["neutral"],
+    "deferredToLaterCR": ["ok", "numbers_1_to_5", "clap", "pray", "heart", "explain", "emphasize", "rest_idle"],
+    "delivery": {
+      "staticPose": true,
+      "loopableClip": true,
+      "leftRightAndBoth": true,
+      "transitionSeconds": true,
+      "neutralReturn": true,
+      "intensity": true
+    },
+    "clipNamePrefix": "NURION_HAND_",
+    "reservedClipNames": [
+      "NURION_TALKING_VISEME_SEQUENCE",
+      "NURION_HAND_WAVE",
+      "NURION_HAND_POINT_L",
+      "NURION_HAND_THUMBS_UP_R",
+      "NURION_HAND_FIST",
+      "NURION_HAND_OPEN",
+      "NURION_HAND_NEUTRAL"
+    ],
+    "animationNameCollision": "DENY — fail-closed"
+  },
+
+  "syncContract": {
+    "preserveTalkingClip": true,
+    "preserveFaceMorphChannels": true,
+    "handUsesBoneChannelsOnly": true,
+    "faceMorphAndHandBoneCollision": "DENY",
+    "bodyIdleAndWristComposition": "compose; do not erase BODY idle",
+    "sharedTimeline": "optional same clock; document in report",
+    "neutralReturnRequired": true
+  },
+
+  "qualityGates": {
+    "automaticPassRequires": [
+      "HAND_RIG_PASS",
+      "HAND_MOTION_PASS",
+      "NEUTRAL_RETURN_PASS",
+      "fingerHierarchyOk",
+      "lateralityOk",
+      "noNaNInfinityTransforms",
+      "vertexWeightSumOkWhenTouched",
+      "bodySkinDigestPreservedInDeclaredEnvelope",
+      "faceTalkingContractMaintained",
+      "noFingerMeshTearOnFlexSmoke",
+      "interFingerPenetrationWithinTolerance",
+      "clipsReloadWithChannels",
+      "sourceBytesUnmutated",
+      "OUTPUT_ALREADY_EXISTS_noClobber"
+    ],
+    "visualReviewRequired": [
+      "front",
+      "palm",
+      "dorsum",
+      "leftRightProfile",
+      "fist",
+      "perFingerFlex",
+      "talkingPlusHandSimultaneous"
+    ]
+  },
+
+  "sampleAssetsPolicy": {
+    "minimumPrivateSamples": [
+      "Meshy GLB with 15 finger bones healthy",
+      "GLB with bones but divergent names/axes",
+      "rigged/skinned GLB with NO finger bones (BLOCKED for P1; reserved for HAND-02)"
+    ],
+    "optionalPrivateSamples": [
+      "MetaHuman-style skeleton",
+      "Mixamo-style",
+      "short fingers or gloves",
+      "fused low-res finger mesh"
+    ],
+    "publicGitHub": "DENY mesh binaries",
+    "redistributionRights": "REQUIRED before private store intake"
+  },
+
+  "cliTarget": {
+    "runner": "tools/run_v2_consume_meshy_glb.py",
+    "flags": {
+      "--add-hand-rig": "run diagnostic+map+motion after FACE/TALKING when verdict DIRECT|ADAPTABLE",
+      "--hand-motion": "comma list e.g. wave,point,thumbs_up,fist,open"
+    },
+    "completionRequiresAll": [
+      "FACE/TALKING consume PASS (existing)",
+      "HAND_RIG_PASS",
+      "HAND_MOTION_PASS",
+      "NEUTRAL_RETURN_PASS"
+    ],
+    "note": "Flags MUST NOT be implemented until Human Spec APPROVE + track OPEN_PROTOTYPE"
+  },
+
+  "stages": {
+    "HAND01-P01": "Lock NURION hand standard numeric limits + axis conventions",
+    "HAND01-P02": "Diagnostic emitter (DIRECT/ADAPTABLE/BLOCKED)",
+    "HAND01-P03": "Universal mapper + AMBIGUOUS_FINGER_MAPPING fail-closed",
+    "HAND01-P04": "ADAPTABLE name/axis repair path (no bone invent)",
+    "HAND01-P05": "Min motion library clips",
+    "HAND01-P06": "FACE/TALKING/HAND sync + clip name isolation",
+    "HAND01-P07": "Independent QA gates + visual checklist receipt",
+    "HAND01-P08": "CLI flags on consume runner + report fields"
+  },
+
+  "deferredSeparateCRs": [
+    {
+      "id": "POST-V2-CR-HAND-02",
+      "title": "FINGER BONE AUTO-CREATE + WEIGHT SYNTHESIS",
+      "status": "NOT OPEN",
+      "requires": "HAND-01 Human PASS / CONSUME ONLY"
+    },
+    {
+      "id": "POST-V2-CR-HAND-03",
+      "title": "EXPANDED GESTURE LIBRARY + FACE/HAND COARTICULATION",
+      "status": "NOT OPEN"
+    }
+  ],
+
+  "engineV2": "CLOSED / CONSUME ONLY — this CR does not open Engine V2"
+}
