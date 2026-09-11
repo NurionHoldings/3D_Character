@@ -1,0 +1,16 @@
+{
+    "order":  4,
+    "product":  "NURION Character Landmarker",
+    "root":  "D:\\NURION Character Landmarker",
+    "mode":  "python-tooling",
+    "api_base":  ".arkaon/participation",
+    "api_host":  "local",
+    "applied_at":  "2026-09-11T13:11:21.3826739+09:00",
+    "actions":  [
+                    "rule",
+                    "contract",
+                    "host_profile",
+                    "phase_a_doc"
+                ],
+    "live_gate_wired":  false
+}

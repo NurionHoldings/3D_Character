@@ -1,0 +1,42 @@
+{
+  "schema": "NURION_POST_V2_CR_HAND_01_TRACK_V1",
+  "changeRequest": "POST-V2-CR-HAND-01",
+  "title": "EXISTING FINGER BONES → STANDARD MAP + HAND MOTION (P1)",
+  "revision": "R1",
+  "status": "SPEC_PROPOSED",
+  "phase": "SPEC_GATE",
+  "implementationAuthority": "NONE",
+  "openStatus": "NOT OPEN",
+  "updatedAtUtc": "20260909T073500Z",
+  "declaredBy": "codex",
+  "humanSpecGate": {
+    "status": "PENDING",
+    "approvedSpecDigest": null,
+    "proposedSpecDigest": "77a1524309d4d70406de617cb9021e4b41a0a454fd4e4bab1bd65eb5b0c29645",
+    "specPath": "fast_track/working/post_v2_hand_rig/semantic/NURION_POST_V2_CR_HAND_01_EXISTING_FINGER_BONES_HAND_MOTION_SPEC_R1.json",
+    "rule": "Implementation DENY until status==APPROVED and approvedSpecDigest==SHA256(SPEC bytes) and track OPEN_PROTOTYPE"
+  },
+  "humanFinalGate": {
+    "required": true,
+    "status": "NOT_STARTED"
+  },
+  "upstream": {
+    "NURION_ADAPTATION_ENGINE_V2": "CLOSED / PASS / CONSUME ONLY / REOPEN DENY",
+    "meshyConsumeE2E": "main@1b32c26 PR#2 — FACE/TALKING local consume AVAILABLE"
+  },
+  "phasePolicy": {
+    "P1": "existing finger bones only",
+    "P2_HAND02": "auto bone create — DENY until HAND-01 closed"
+  },
+  "stages": {
+    "HAND01-P01": "NOT STARTED",
+    "HAND01-P02": "NOT STARTED",
+    "HAND01-P03": "NOT STARTED",
+    "HAND01-P04": "NOT STARTED",
+    "HAND01-P05": "NOT STARTED",
+    "HAND01-P06": "NOT STARTED",
+    "HAND01-P07": "NOT STARTED",
+    "HAND01-P08": "NOT STARTED"
+  },
+  "next": "Human Spec REVIEW of SPEC R1. On APPROVE: set approvedSpecDigest, OPEN_PROTOTYPE, GRANTED — then P01 lock numeric limits."
+}

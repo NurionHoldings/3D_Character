@@ -1,0 +1,53 @@
+{
+  "schema": "NURION_POST_V2_CR_HAND_01_TRACK_V2",
+  "changeRequest": "POST-V2-CR-HAND-01",
+  "revision": "R2",
+  "status": "SPEC_PROPOSED",
+  "phase": "SPEC_GATE",
+  "humanSpecReview": "PENDING",
+  "implementationAuthority": "NONE",
+  "openStatus": "NOT_OPEN",
+  "prototypeStatus": "NOT_STARTED",
+  "updatedAtUtc": "20260909T000000Z",
+  "auditTrail": {
+    "R1": {
+      "specPath": "fast_track/working/post_v2_hand_rig/semantic/NURION_POST_V2_CR_HAND_01_EXISTING_FINGER_BONES_HAND_MOTION_SPEC_R1.json",
+      "humanSummaryPath": "fast_track/working/post_v2_hand_rig/semantic/NURION_POST_V2_CR_HAND_01_SPEC_R1.md",
+      "trackPath": "fast_track/working/post_v2_hand_rig/semantic/NURION_POST_V2_CR_HAND_01_TRACK_V1.json",
+      "disposition": "SUPERSEDED_FOR_NEW_WORK; immutable audit trail"
+    }
+  },
+  "humanSpecGate": {
+    "status": "PENDING",
+    "approvedSpecDigest": null,
+    "proposedSpecDigest": "965e3364b9d14061b4ee449caa716200a5c192614872266ba4f64195d626bfb8",
+    "specPath": "fast_track/working/post_v2_hand_rig/semantic/NURION_POST_V2_CR_HAND_01_EXISTING_FINGER_BONES_HAND_MOTION_SPEC_R2.json",
+    "digestRule": "SHA-256 of Git blob raw bytes, UTF-8 and LF; no Git object header, reserialization, or CRLF conversion.",
+    "P01CalibrationLockReceiptDigest": null,
+    "rule": "Keep authority NONE until P01 lock digest and proposedSpecDigest are independently verified. Then transition APPROVED, OPEN_PROTOTYPE, GRANTED in that exact order."
+  },
+  "requiredGates": ["HAND_RIG_PASS", "HAND_MAPPING_PASS", "HAND_WEIGHT_PASS", "HAND_MOTION_PASS", "NEUTRAL_RETURN_PASS", "BODY_PRESERVATION_PASS", "FACE_TALKING_PRESERVATION_PASS", "GLB_RELOAD_PASS"],
+  "upstream": {
+    "NURION_ADAPTATION_ENGINE_V2": "CLOSED / CONSUME_ONLY / READ_ONLY",
+    "RIG-02": "READ_ONLY",
+    "V05": "READ_ONLY",
+    "V06": "READ_ONLY",
+    "V07": "READ_ONLY",
+    "meshyConsumeE2E": "main@1b32c26 PR#2 — FACE/TALKING local consume available"
+  },
+  "phasePolicy": {
+    "P1": "existing finger bones and accepted existing weights only",
+    "P2_HAND02": "finger-bone creation and weight synthesis — NOT_OPEN"
+  },
+  "stages": {
+    "HAND01-P01": "NOT_STARTED — private calibration lock only; authority remains NONE",
+    "HAND01-P02": "NOT_STARTED — diagnosis prototype after GRANTED",
+    "HAND01-P03": "NOT_STARTED",
+    "HAND01-P04": "NOT_STARTED",
+    "HAND01-P05": "NOT_STARTED",
+    "HAND01-P06": "NOT_STARTED",
+    "HAND01-P07": "NOT_STARTED",
+    "HAND01-P08": "NOT_STARTED"
+  },
+  "next": "Privately complete and review P01 calibration lock. Then record its digest, APPROVE R2, OPEN_PROTOTYPE, and only then GRANT authority."
+}

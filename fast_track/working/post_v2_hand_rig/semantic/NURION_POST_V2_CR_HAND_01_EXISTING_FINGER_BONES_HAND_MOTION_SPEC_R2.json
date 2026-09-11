@@ -1,0 +1,139 @@
+{
+  "schema": "NURION_POST_V2_CR_HAND_01_EXISTING_FINGER_BONES_HAND_MOTION_SPEC_R2",
+  "changeRequestId": "POST-V2-CR-HAND-01",
+  "revision": "R2",
+  "title": "EXISTING FINGER BONES — DIAGNOSIS, SEMANTIC MAP, AND APPEND-ONLY HAND MOTIONS (P1)",
+  "status": "SPEC_PROPOSED",
+  "humanSpecReview": "PENDING",
+  "implementationAuthority": "NONE",
+  "openStatus": "NOT_OPEN",
+  "prototypeStatus": "NOT_STARTED",
+  "declaredAtUtc": "20260909T000000Z",
+  "specNature": "PROPOSAL ONLY. No runtime, CLI, output, or sample asset is authorized by this document.",
+  "supersedes": {
+    "specPath": "fast_track/working/post_v2_hand_rig/semantic/NURION_POST_V2_CR_HAND_01_EXISTING_FINGER_BONES_HAND_MOTION_SPEC_R1.json",
+    "disposition": "SUPERSEDED_FOR_NEW_WORK; retained as immutable audit trail"
+  },
+  "purpose": "For private rigged and skinned GLBs that already contain usable finger bones, diagnose only, map those existing bones to separate NURION semantic IDs, and eventually append a minimal hand-motion library without changing source bytes or sealed BODY, FACE, and TALKING evidence.",
+  "outOfScope": [
+    "finger-bone creation",
+    "weight synthesis, painting, repair, or normalization",
+    "upstream bone or node rename",
+    "Meshy, user, result GLB, IRG ZIP, or private authority-bundle publication",
+    "reopening NURION_ADAPTATION_ENGINE_V2, RIG-02, V05, V06, or V07",
+    "CLI flags or runtime implementation before authority is granted"
+  ],
+  "authorityBoundary": {
+    "NURION_ADAPTATION_ENGINE_V2": "CLOSED / CONSUME_ONLY / READ_ONLY",
+    "RIG-02": "READ_ONLY",
+    "V05": "READ_ONLY",
+    "V06": "READ_ONLY",
+    "V07": "READ_ONLY",
+    "POST-V2-CR-HAND-02": "NOT_OPEN; missing-bone generation is prohibited",
+    "forbiddenActions": [
+      "mutate source GLB bytes",
+      "rename, reparent, add, remove, or rest-pose-edit upstream nodes or bones",
+      "auto-apply an ambiguous mapping",
+      "claim HAND_WEIGHT_PASS after a repair",
+      "overwrite an existing output",
+      "publish private samples or visual receipts"
+    ]
+  },
+  "semanticIdentityContract": {
+    "principle": "Semantic IDs are mapping metadata, never requested upstream bone names.",
+    "canonicalExistingBodyNodes": ["NURION_hand_L", "NURION_hand_R"],
+    "canonicalExistingBodyNodeRule": "When these existing node names occur, preserve their bytes, names, hierarchy, transforms, skin membership, and inverse-bind-matrix relationship exactly; map them to semantic IDs without renaming.",
+    "semanticIdPattern": "hand.{L|R} and {thumb|index|middle|ring|pinky}.{01|02|03}.{L|R}",
+    "mappingRecordRequired": ["semanticId", "upstreamNodeIndex", "upstreamNodeName", "side", "evidence", "confidenceEvidenceRef"],
+    "upstreamRename": "DENY"
+  },
+  "P01CalibrationLock": {
+    "purpose": "Lock flexion, abduction/adduction, thumb opposition, rotation-axis convention, rest-pose comparison method, weight acceptance method, and all tolerances from a private calibration set before any approval transition.",
+    "authorityBeforeLock": "NONE",
+    "privateInputs": ["rights-confirmed private calibration sample manifest", "human-reviewed visual receipts", "per-asset rest-pose and skin evidence"],
+    "acceptanceMethod": "Conservative, evidence-backed acceptance. The lock must define a lower confidence bound and a second-best mapping margin, plus tolerance derivation from the private calibration distribution; no universal confidence, weight, angle, penetration, or epsilon number is invented in R2.",
+    "requiredReceiptFields": ["calibrationSetManifestDigest", "parameterEnvelopeDigest", "confidenceMethod", "secondBestMarginMethod", "toleranceDerivationMethod", "humanReviewer", "decision", "createdAtUtc"],
+    "publicPolicy": "Publish schema and digests only; retain samples, screenshots, raw measurements, and asset identifiers privately."
+  },
+  "authorityTransitions": [
+    "SPEC_PROPOSED / PENDING / NOT_OPEN / NONE",
+    "P01_CALIBRATION_LOCKED / PENDING / NOT_OPEN / NONE",
+    "APPROVED / APPROVED / NOT_OPEN / NONE",
+    "APPROVED / APPROVED / OPEN_PROTOTYPE / NONE",
+    "APPROVED / APPROVED / OPEN_PROTOTYPE / GRANTED"
+  ],
+  "authorityTransitionRule": "Only after a valid P01 calibration-lock receipt may the states APPROVED, then OPEN_PROTOTYPE, then GRANTED occur in that exact order. A missing, mismatched, or private-evidence-incomplete receipt leaves authority NONE.",
+  "diagnosticContract": {
+    "artifact": "HAND_RIG_DIAGNOSTIC_V2",
+    "verdicts": ["DIRECT", "ADAPTABLE", "BLOCKED"],
+    "requiredEvidence": [
+      "wrist and hand-chain resolution",
+      "per-side finger-chain presence and parent hierarchy",
+      "laterality and duplicate/flipped-joint checks",
+      "rest-pose transforms and local-axis evidence",
+      "skin joint membership and inverse-bind-matrix evidence",
+      "per-finger existing weight coverage evidence",
+      "existing animation inventory",
+      "mesh finger-separability hint"
+    ],
+    "blockedReasons": {
+      "NO_FINGER_BONES_HAND_UNIT_GESTURE_ONLY": "No resolvable articulated finger-bone chains exist. P1 must not create bones or synthesize weights; require HAND-02 consideration and Blender manual guidance.",
+      "MISSING_WRIST_OR_HAND_CHAIN": "No unambiguous wrist-to-hand parent chain exists.",
+      "INCOMPLETE_FINGER_CHAIN": "One or more required digit chains are absent, discontinuous, duplicated, or have unresolved parentage.",
+      "AMBIGUOUS_FINGER_MAPPING": "The P01 lower-confidence-bound or second-best-margin rule does not accept exactly one mapping.",
+      "LATERALITY_CONFLICT": "Left/right evidence, hierarchy, or geometric side evidence conflicts.",
+      "REST_POSE_OR_AXIS_UNRESOLVED": "Rest pose or the calibrated rotation axis cannot be established conservatively.",
+      "HAND_SKIN_OR_IBM_UNRESOLVED": "Hand joints are not verifiably present in the bound skin or their inverse-bind-matrix evidence is unavailable or inconsistent.",
+      "HAND_WEIGHT_EVIDENCE_INSUFFICIENT": "Existing weights cannot be accepted by the P01 method. This is not authorization to repair them.",
+      "FUSED_OR_NON_SEPARABLE_FINGER_GEOMETRY": "Mesh evidence cannot support the required visual proof; require Blender manual guidance.",
+      "ANIMATION_OR_DIGEST_ENVELOPE_CONFLICT": "Existing animation, BODY, FACE, TALKING, skin, or digest preservation cannot be proven.",
+      "OUTPUT_ALREADY_EXISTS": "No-clobber rule prevents publish."
+    },
+    "directRule": "All required evidence passes and the P01 conservative acceptance method selects one mapping per semantic ID.",
+    "adaptableRule": "Mapping is uniquely evidenced but requires a documented semantic transform convention; no upstream rename, rest-pose edit, reparenting, or weight repair is allowed.",
+    "blockedRule": "Any required evidence failure, any listed blocked reason, or absent P01 lock is fail-closed."
+  },
+  "gltfAppendOnlyContract": {
+    "source": "Input GLB raw bytes are hashed before processing and never modified in place.",
+    "restPose": "Existing node TRS or matrix values are immutable. Every appended motion's neutral sample must reproduce the recorded existing local rest pose under the P01 locked comparison method.",
+    "existingAnimations": "All existing animation objects, channels, samplers, target node/path pairs, sampler input/output accessor raw bytes, and interpolation values are inventoried and preserved in the digest envelope. Existing animation objects are never edited, reordered, or removed.",
+    "newAnimations": "Each hand motion is a new, uniquely named animation object. It may target mapped existing hand/finger nodes only with rotation channels; it must use new sampler input and output accessors and the P01-locked interpolation convention. Translation, scale, morph-weight, and unrelated-node channels are prohibited.",
+    "channelRules": ["channel target node and path are explicit", "sampler input/output accessors are explicit", "interpolation is explicit", "accessor component type, type, count, min, max, buffer-view range, and raw-byte digest are receipted", "animation-name collision is fail-closed"],
+    "appendOnly": "Append new data only after staging validation. No mutation of pre-existing nodes, skins, meshes, primitives, accessors, buffer views, materials, images, or animations is permitted."
+  },
+  "digestEnvelope": {
+    "sourceAndBody": ["source GLB raw SHA-256", "node index/name/parent/local transform evidence", "skin joint lists", "inverse-bind-matrix accessor metadata and raw-byte digests", "all mesh primitives including attributes, indices, mode, material, morph-target references, and referenced accessor raw-byte digests"],
+    "existingAnimations": ["animation names", "channel target node/path", "sampler interpolation", "sampler input/output accessor metadata and raw-byte digests"],
+    "faceTalking": ["FACE morph-target and weight-channel evidence", "TALKING clip identity and animation evidence", "existing Post-V2 FACE/TALKING report/digest references when supplied"],
+    "passMeaning": "BODY_PRESERVATION_PASS and FACE_TALKING_PRESERVATION_PASS require equality for the declared pre-existing envelope. New append-only animation structures are documented separately, not silently included as preserved source structures."
+  },
+  "qualityGates": {
+    "allRequired": ["HAND_RIG_PASS", "HAND_MAPPING_PASS", "HAND_WEIGHT_PASS", "HAND_MOTION_PASS", "NEUTRAL_RETURN_PASS", "BODY_PRESERVATION_PASS", "FACE_TALKING_PRESERVATION_PASS", "GLB_RELOAD_PASS"],
+    "HAND_RIG_PASS": "Resolved existing hand/finger hierarchy and skin/IBM evidence; never bone creation.",
+    "HAND_MAPPING_PASS": "One semantic mapping accepted per required ID by the P01 conservative method.",
+    "HAND_WEIGHT_PASS": "Validation of pre-existing weights only. It never means weights were repaired, painted, synthesized, normalized, or otherwise changed.",
+    "HAND_MOTION_PASS": "P1 motion clips open, fist, wave, point, and thumbs_up are append-only, structurally valid, and visually accepted under the P01 lock.",
+    "NEUTRAL_RETURN_PASS": "The return sample meets the P01 rest-pose comparison method without editing the upstream rest pose.",
+    "BODY_PRESERVATION_PASS": "Declared source/body node, skin, IBM, primitive, and existing-animation envelope is equal.",
+    "FACE_TALKING_PRESERVATION_PASS": "Declared FACE morph and TALKING animation envelope is equal and simultaneous hand proof is accepted.",
+    "GLB_RELOAD_PASS": "Published GLB reloads and its new channels/accessors/interpolation validate against the staged receipt."
+  },
+  "humanVisualReceiptSchema": {
+    "publicSchemaOnly": true,
+    "privateReceiptRequired": true,
+    "requiredFields": ["receiptSchema", "sampleManifestDigest", "sourceSha256", "mappingDigest", "parameterEnvelopeDigest", "motion", "side", "views", "observations", "decision", "reviewer", "createdAtUtc"],
+    "requiredViews": ["front", "palm", "dorsum", "left/right profile", "per-finger flex", "fist", "wave", "point", "thumbs_up", "talking plus hand"],
+    "privateSampleManifestSchema": ["manifestSchema", "samplePseudonym", "sourceSha256", "rightsConfirmed", "fingerBoneClass", "storageClass=PRIVATE", "humanReviewRequired", "createdAtUtc"],
+    "publicationRule": "Do not commit GLBs, screenshots, raw sample identifiers, absolute paths, authority bundles, or receipts containing them."
+  },
+  "publishAndRollback": {
+    "staging": "Write candidate GLB and complete receipt only to a unique private staging location.",
+    "validateBeforePublish": ["all eight gates", "digest-envelope comparison", "GLB reload", "private human visual receipt"],
+    "atomicPublish": "Check final target absence immediately before one atomic publish operation. Publish only the complete validated candidate and receipt set.",
+    "noClobber": "An existing final target yields OUTPUT_ALREADY_EXISTS and no overwrite.",
+    "rollback": "On any failure, leave no partial final output; discard or retain the private staging candidate only under private retention policy and emit a fail-closed receipt."
+  },
+  "motionLibraryP1": ["open", "fist", "wave", "point", "thumbs_up", "neutral return"],
+  "deferred": ["POST-V2-CR-HAND-02 finger-bone creation and weight synthesis", "expanded gesture library", "production upload/worker service"],
+  "GitBlobDigestRule": "The proposed SPEC digest is SHA-256 of this file's Git blob raw bytes, encoded UTF-8 with LF line endings; do not hash a pretty-printed reserialization, a platform CRLF conversion, or a Git object header."
+}
