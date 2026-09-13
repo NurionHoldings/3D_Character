@@ -1,0 +1,22 @@
+{
+  "schema": "ARKAON_FACE_FAILURE_ROUTING_MATRIX_R1",
+  "status": "PROPOSAL_ONLY",
+  "defaultMaximumRepairCycles": 3,
+  "routes": [
+    {"condition": "expression_strength_timing_or_local_weight_error", "verdict": "REPAIR", "scope": "failed morph, clip, or weight only"},
+    {"condition": "local_eye_lip_jaw_penetration_or_deformation", "verdict": "REPAIR", "scope": "failed anatomical region only"},
+    {"condition": "semantic_or_geometric_neutral_residue", "verdict": "REPAIR", "scope": "state release, clip termination, or bounded neutral restore"},
+    {"condition": "texture_only_defect_with_identity_and_geometry_preserved", "verdict": "REPAIR", "scope": "texture only"},
+    {"condition": "facial_topology_cannot_support_required_deformation", "verdict": "REGENERATE", "scope": "proposal for remesh, retopology, or external regeneration"},
+    {"condition": "fundamental_identity_geometry_mismatch", "verdict": "REGENERATE", "scope": "proposal after reference and generation-condition review"},
+    {"condition": "partial_repair_proven_insufficient", "verdict": "REGENERATE", "scope": "whole-face regeneration proposal requiring separate human authorization"},
+    {"condition": "rights_privacy_provenance_or_provider_terms_unresolved", "verdict": "REJECT", "scope": "stop using the asset"},
+    {"condition": "V2_boundary_or_sealed_digest_mismatch", "verdict": "REJECT", "scope": "stop and preserve the last accepted checkpoint"},
+    {"condition": "source_mutation_or_body_skin_preservation_failure", "verdict": "REJECT", "scope": "quarantine candidate and restore prior checkpoint"},
+    {"condition": "measurement_mapping_or_evidence_insufficient", "verdict": "BLOCKED", "scope": "collect evidence before classification"},
+    {"condition": "repair_cycle_limit_reached", "verdict": "BLOCKED", "scope": "human decision required for any additional cycle or regeneration"},
+    {"condition": "candidate_regresses_a_locked_dimension", "verdict": "REJECT", "scope": "do not overwrite; restore previous PASS checkpoint"}
+  ],
+  "regenerationProtocol": ["REGENERATE_CANDIDATE", "EVIDENCE_PARTIAL_REPAIR_INSUFFICIENT", "IMPACT_COST_RIGHTS_UPLOAD_ANALYSIS", "SEPARATE_HUMAN_AUTHORIZATION", "BOUNDED_EXECUTION"],
+  "rules": ["A verdict is not execution authority.", "Whole-face regeneration is never automatic.", "No candidate may overwrite the prior accepted checkpoint."]
+}

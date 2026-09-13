@@ -1,0 +1,36 @@
+{
+  "schema": "NURION_POST_V2_ARKAON_FACE_WEB_AFW_P01_DESIGN_APPROVED_R1_RECEIPT",
+  "changeRequestId": "POST-V2-CR-ARKAON-FACE-WEB-01",
+  "profileId": "ARKAON_FACE_WEB_PROFILE",
+  "phase": "AFW-P01",
+  "revision": "R1",
+  "status": "HUMAN_DESIGN_APPROVED",
+  "approvalDate": "2026-09-13",
+  "approvedBy": "human-owner",
+  "approvalSource": "explicit human instruction in the controlling conversation",
+  "approvedProposal": {
+    "path": "fast_track/working/post_v2_arkaon_face_web/semantic/NURION_POST_V2_ARKAON_FACE_WEB_AFW_P01_CALIBRATION_PROPOSAL_R1.json",
+    "gitBlobSha": "ab58f289a11961b66b62838ecd317da90f70f8ea",
+    "introducedByCommit": "21359dad2b5290ecb1b3cc3cc84be892c9bb360b"
+  },
+  "authorityEffect": {
+    "designDocumentationLocked": true,
+    "calibrationLocked": false,
+    "privateSampleProcessing": "DENY",
+    "implementationAuthority": "NONE",
+    "openStatus": "NOT_OPEN",
+    "prototypeStatus": "NOT_STARTED",
+    "externalUpload": "DENY",
+    "purchase": "DENY",
+    "modelGenerationOrMutation": "DENY",
+    "publication": "DENY",
+    "merge": "DENY",
+    "deployment": "DENY"
+  },
+  "upstreamBoundary": {
+    "NURION_ADAPTATION_ENGINE_V2": "CLOSED / PASS / CONSUME ONLY / READ_ONLY",
+    "V2_RELEASE": "AUTHORITATIVE FINAL",
+    "V2_REOPEN": "DENY"
+  },
+  "next": "Prepare an eligible private calibration evidence plan and obtain separate human authorization before sample ingestion or measurement execution."
+}

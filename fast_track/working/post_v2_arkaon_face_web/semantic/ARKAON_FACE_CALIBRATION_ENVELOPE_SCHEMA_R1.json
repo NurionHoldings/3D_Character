@@ -1,0 +1,41 @@
+{
+  "schema": "ARKAON_FACE_CALIBRATION_ENVELOPE_SCHEMA_R1",
+  "status": "SCHEMA_PROPOSAL_ONLY",
+  "calibrationLocked": false,
+  "fixedUniversalThresholds": "FORBIDDEN",
+  "envelope": {
+    "envelopeId": null,
+    "revision": null,
+    "applicablePopulation": [],
+    "characterStyleClass": null,
+    "topologyClass": null,
+    "deviceBrowserTier": null,
+    "sampleManifestDigest": null,
+    "rightsPrivacyGateDigest": null,
+    "toolVersions": [],
+    "parameters": [
+      {
+        "parameterId": null,
+        "dimension": null,
+        "measurementDefinition": null,
+        "normalizationMethod": null,
+        "observedDistributionPrivateRef": null,
+        "bands": {"pass": null, "humanReview": null, "fail": null},
+        "exceptions": [],
+        "humanDecisionRef": null,
+        "status": "UNLOCKED"
+      }
+    ],
+    "dimensions": ["identity", "neutralGeometry", "expressionDistinctness", "eyeMouthJawIntegrity", "neutralReturn", "bodySkinPreservation", "glbReload", "webPerformance"],
+    "lockedAtUtc": null,
+    "lockedByHumanRef": null
+  },
+  "rules": [
+    "No eligible private sample manifest means UNLOCKED.",
+    "A measurement-tool version change requires recalibration or explicit compatibility evidence.",
+    "A materially different character style, topology, or device tier requires applicability review.",
+    "Machine and human disagreement cannot yield automatic PASS.",
+    "Envelope revisions are append-only and never rewrite prior results.",
+    "Observed distributions and private samples remain outside the public repository."
+  ]
+}

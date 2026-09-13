@@ -1,0 +1,250 @@
+{
+  "schema": "NURION_POST_V2_ARKAON_FACE_WEB_AFW_P01_CALIBRATION_PROPOSAL_R1",
+  "changeRequestId": "POST-V2-CR-ARKAON-FACE-WEB-01",
+  "profileId": "ARKAON_FACE_WEB_PROFILE",
+  "phase": "AFW-P01",
+  "revision": "R1",
+  "status": "HUMAN_DESIGN_APPROVED",
+  "calibrationLocked": false,
+  "executionStatus": "NOT_EXECUTED",
+  "implementationAuthority": "NONE",
+  "openStatus": "NOT_OPEN",
+  "proposalNature": "PUBLIC-SAFE CALIBRATION AND QA DESIGN ONLY. No sample ingestion, measurement run, implementation, purchase, external upload, generation, mutation, publication, merge, or deployment is authorized.",
+  "upstreamBoundary": {
+    "NURION_ADAPTATION_ENGINE_V2": "CLOSED / PASS / CONSUME ONLY / READ_ONLY",
+    "V2_RELEASE": "AUTHORITATIVE FINAL",
+    "V2_REOPEN": "DENY",
+    "postV2Work": "ISOLATED DERIVED WORK ONLY"
+  },
+  "identityDecision": {
+    "rule": "Use multi-layer comparison of approved references, normalized facial geometry, material appearance, and private human visual review. A single embedding or similarity score is never authoritative.",
+    "referenceViews": [
+      "front",
+      "left_45",
+      "right_45",
+      "left_profile",
+      "right_profile",
+      "neutral_closeup",
+      "eyes_closed",
+      "mouth_open"
+    ],
+    "measurementFamilies": [
+      "normalized_landmark_ratios",
+      "angles_and_curvature",
+      "silhouette_deviation",
+      "surface_normal_change",
+      "local_displacement",
+      "approved_asymmetry",
+      "material_appearance_notes"
+    ],
+    "machineOutcomes": [
+      "IN_RANGE",
+      "REVIEW",
+      "OUT_OF_RANGE",
+      "UNMEASURABLE"
+    ],
+    "finalIdentityAuthority": "PRIVATE_HUMAN_VISUAL_RECEIPT",
+    "unmeasurableRule": "BLOCKED_FOR_HUMAN_REVIEW"
+  },
+  "geometryComparison": {
+    "spaces": [
+      "2D_REFERENCE_TO_RENDER",
+      "NORMALIZED_3D_NEUTRAL",
+      "NEUTRAL_TO_EXPRESSION_DELTA"
+    ],
+    "normalization": "Normalize by locked facial anchors and relative dimensions; do not depend on universal absolute distances.",
+    "differentTopologyRouting": [
+      "anatomical_landmark_correspondence",
+      "surface_correspondence",
+      "approved_UV_or_region_correspondence",
+      "bounded_nonrigid_registration"
+    ],
+    "ambiguousMapping": "AMBIGUOUS_FACE_MAPPING / BLOCKED"
+  },
+  "qaSequence": [
+    "RECORD_NEUTRAL",
+    "ACTIVATE_TARGET",
+    "RECORD_PEAK",
+    "RELEASE_TARGET",
+    "VERIFY_NEUTRAL_RETURN",
+    "TEST_APPROVED_COMBINATIONS",
+    "RUN_TALKING",
+    "RELOAD_GLB",
+    "REPEAT"
+  ],
+  "requiredRuntimeEvidence": [
+    "Blink_L",
+    "Blink_R",
+    "Jaw_Mouth",
+    "VISEME_AA",
+    "VISEME_OH",
+    "VISEME_EE",
+    "TALKING_CLIP",
+    "sourceUnmutated=true",
+    "bodySkinDigestMatch=true"
+  ],
+  "qaDimensions": {
+    "blink": [
+      "independent_left_right",
+      "lid_closure",
+      "no_eye_penetration",
+      "no_inversion",
+      "no_unintended_coupling"
+    ],
+    "jawMouth": [
+      "natural_jaw_motion",
+      "lip_jaw_coupling",
+      "no_teeth_tongue_cheek_penetration"
+    ],
+    "viseme": [
+      "AA_OH_EE_distinct",
+      "visible_deformation",
+      "no_unintended_nonface_motion"
+    ],
+    "expression": [
+      "distinct_from_neutral",
+      "distinct_from_other_states",
+      "structurally_valid"
+    ],
+    "talking": [
+      "clip_exists",
+      "time_progresses",
+      "visible_deformation",
+      "returns_to_neutral"
+    ],
+    "neutralReturn": [
+      "zero_semantic_state_residue",
+      "geometry_within_locked_envelope"
+    ],
+    "preservation": [
+      "source_unmutated",
+      "body_skin_digest_match",
+      "no_V2_boundary_change"
+    ],
+    "reload": [
+      "mesh",
+      "skin",
+      "morph_targets",
+      "animations",
+      "materials",
+      "manifest_and_digest_match"
+    ]
+  },
+  "webPerformanceCalibration": {
+    "measurements": [
+      "transfer_size",
+      "request_count",
+      "download_time",
+      "parse_time",
+      "gpu_upload_time",
+      "first_render_time",
+      "frame_time_distribution",
+      "interaction_latency",
+      "cpu_memory",
+      "gpu_memory",
+      "reload_recovery",
+      "context_loss",
+      "LCP",
+      "INP",
+      "CLS",
+      "main_thread_blocking"
+    ],
+    "method": [
+      "lock_target_device_browser_tiers",
+      "run_identical_scene_and_animation",
+      "separate_cold_and_warm_load",
+      "repeat_and_record_distributions",
+      "combine_machine_results_with_human_usability",
+      "lock_per_tier_envelopes"
+    ],
+    "fixedUniversalNumbers": "FORBIDDEN",
+    "semanticDegradationForPerformance": "DENY"
+  },
+  "privateCalibrationEligibility": {
+    "required": [
+      "verified_owner_or_licensee",
+      "AI_processing_right_confirmed",
+      "derivative_right_confirmed",
+      "internal_QA_right_confirmed",
+      "commercial_use_classified",
+      "redistribution_separately_classified",
+      "likeness_and_privacy_basis_confirmed",
+      "retention_and_deletion_defined",
+      "digest_linked_approval"
+    ],
+    "variationAxes": [
+      "repeat_render",
+      "camera_angle",
+      "expression",
+      "lighting",
+      "face_style_and_proportion",
+      "topology",
+      "texture_resolution",
+      "rig_and_morph_configuration",
+      "target_device_tier"
+    ],
+    "publicRepositoryBinaryAssets": "DENY"
+  },
+  "classificationSchemas": {
+    "rights": [
+      "R0_UNKNOWN",
+      "R1_INTERNAL_ONLY",
+      "R2_AI_PROCESS_ALLOWED",
+      "R3_DERIVATIVE_ALLOWED",
+      "R4_COMMERCIAL_ALLOWED",
+      "R5_PUBLIC_REDISTRIBUTION"
+    ],
+    "privacy": [
+      "P0_NON_PERSONAL",
+      "P1_PSEUDONYMOUS_CHARACTER",
+      "P2_LIKENESS",
+      "P3_IDENTIFYING_FACE_DATA",
+      "P4_BIOMETRIC_USE"
+    ],
+    "inheritanceRule": "Classification labels do not imply other permissions; each permission is an independently verified claim."
+  },
+  "externalUploadGate": "ARKAON_EXTERNAL_UPLOAD_GATE_SCHEMA_R1",
+  "calibrationEnvelope": "ARKAON_FACE_CALIBRATION_ENVELOPE_SCHEMA_R1",
+  "humanReceipt": "ARKAON_HUMAN_VISUAL_RECEIPT_SCHEMA_R1",
+  "failureRouting": "ARKAON_FACE_FAILURE_ROUTING_MATRIX_R1",
+  "failClosed": [
+    "missing_or_expired_authority",
+    "scope_or_digest_mismatch",
+    "rights_or_privacy_unresolved",
+    "provider_terms_unpinned",
+    "ambiguous_mapping",
+    "insufficient_sample_evidence",
+    "V2_or_source_mutation",
+    "repair_cycle_limit"
+  ],
+  "references": [
+    {
+      "title": "Google AI Edge Face Landmarker",
+      "url": "https://developers.google.com/edge/mediapipe/solutions/vision/face_landmarker",
+      "use": "candidate landmark, blendshape, and transformation evidence; not identity authority"
+    },
+    {
+      "title": "Khronos glTF 2.0 Specification",
+      "url": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html",
+      "use": "GLB structure, morph target, skin, and animation verification basis"
+    },
+    {
+      "title": "Web Vitals",
+      "url": "https://web.dev/articles/vitals",
+      "use": "page performance measurement context; not a substitute for calibrated 3D budgets"
+    },
+    {
+      "title": "Korea Privacy Portal",
+      "url": "https://www.privacy.go.kr/",
+      "use": "official privacy guidance entry point; provider-specific and legal review remains required"
+    }
+  ],
+  "nextDecision": "Prepare eligible private calibration evidence and request a separate human decision before any sample processing. OPEN_PROTOTYPE and GRANTED remain separate later transitions.",
+  "humanDesignReview": {
+    "status": "APPROVED",
+    "approvalDate": "2026-09-13",
+    "approvedBy": "human-owner",
+    "approvedProposalBlobSha": "ab58f289a11961b66b62838ecd317da90f70f8ea",
+    "decision": "AFW-P01 R1 calibration and QA design approved for documentation lock only. No private calibration, sample processing, implementation, purchase, external upload, generation, mutation, merge, publication, or deployment authority granted."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "ARKAON_EXTERNAL_UPLOAD_GATE_SCHEMA_R1",
+  "status": "SCHEMA_PROPOSAL_ONLY",
+  "defaultDecision": "BLOCKED",
+  "gate": {
+    "gateId": null,
+    "providerId": null,
+    "providerTermsVersionOrDigest": null,
+    "providerPrivacyVersionOrDigest": null,
+    "assetBundleDigest": null,
+    "includedAssetIds": [],
+    "excludedAssetIds": [],
+    "purpose": null,
+    "rightsClaims": {
+      "ownerOrLicenseeVerified": false,
+      "aiProcessingAllowed": false,
+      "derivativeUseAllowed": false,
+      "commercialUseAllowed": false,
+      "publicRedistributionAllowed": false
+    },
+    "privacyClass": null,
+    "likenessConsentRef": null,
+    "retentionAndDeletionTerms": null,
+    "trainingUsePolicy": null,
+    "regionAndSubprocessors": [],
+    "purchaseRequired": null,
+    "estimatedCost": null,
+    "authorizationRef": null,
+    "authorizedOperation": null,
+    "authorizedAtUtc": null,
+    "expiresAtUtc": null,
+    "singleUse": true,
+    "consumedAtUtc": null,
+    "decision": "BLOCKED"
+  },
+  "blockers": [
+    "provider_terms_or_privacy_version_unknown",
+    "training_use_unknown",
+    "retention_or_deletion_unknown",
+    "rights_or_likeness_basis_unknown",
+    "bundle_digest_mismatch",
+    "provider_or_operation_scope_mismatch",
+    "purchase_authority_missing",
+    "authorization_expired_or_reused",
+    "identifying_metadata_not_removed",
+    "output_or_redistribution_rights_unknown"
+  ],
+  "rule": "Approval is bound to one provider, purpose, asset bundle, operation, and validity window. It cannot be generalized to another provider or retry."
+}
