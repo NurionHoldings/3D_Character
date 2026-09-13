@@ -4,7 +4,7 @@
   "profileId": "ARKAON_FACE_WEB_PROFILE",
   "revision": "R1",
   "status": "SPEC_LOCKED",
-  "phase": "AFW-P00",
+  "phase": "AFW-P01",
   "humanSpecReview": "APPROVED",
   "implementationAuthority": "NONE",
   "openStatus": "NOT_OPEN",
@@ -17,7 +17,24 @@
     "digestRule": "SHA-256 of raw UTF-8/LF file bytes; no Git object header, reserialization, or CRLF conversion.",
     "decision": "Requirements and acceptance criteria locked by explicit human instruction. No implementation authority granted."
   },
-  "requiredGates": ["GOVERNANCE_PASS", "V2_IMMUTABILITY_PASS", "IDENTITY_PASS", "INPUT_QUALIFICATION_PASS", "FACE_RUNTIME_PASS", "EXPRESSION_PASS", "EYE_MOUTH_PASS", "NEUTRAL_RETURN_PASS", "BODY_SKIN_PRESERVATION_PASS", "CHANGE_ANALYSIS_PASS", "GLB_RELOAD_PASS", "WEB_RUNTIME_PASS", "PRIVACY_LICENSE_PASS", "EVIDENCE_CHAIN_PASS", "FAIL_CLOSED_PASS", "HUMAN_FINAL_PASS"],
+  "requiredGates": [
+    "GOVERNANCE_PASS",
+    "V2_IMMUTABILITY_PASS",
+    "IDENTITY_PASS",
+    "INPUT_QUALIFICATION_PASS",
+    "FACE_RUNTIME_PASS",
+    "EXPRESSION_PASS",
+    "EYE_MOUTH_PASS",
+    "NEUTRAL_RETURN_PASS",
+    "BODY_SKIN_PRESERVATION_PASS",
+    "CHANGE_ANALYSIS_PASS",
+    "GLB_RELOAD_PASS",
+    "WEB_RUNTIME_PASS",
+    "PRIVACY_LICENSE_PASS",
+    "EVIDENCE_CHAIN_PASS",
+    "FAIL_CLOSED_PASS",
+    "HUMAN_FINAL_PASS"
+  ],
   "upstream": {
     "NURION_ADAPTATION_ENGINE_V2": "CLOSED / PASS / CONSUME ONLY / READ_ONLY",
     "NURION_ADAPTATION_ENGINE_V2_RELEASE": "AUTHORITATIVE FINAL",
@@ -26,7 +43,7 @@
   },
   "stages": {
     "AFW-P00": "SPEC_LOCKED",
-    "AFW-P01": "NOT_STARTED — private identity and QA calibration plus rights/privacy lock",
+    "AFW-P01": "DESIGN_APPROVED / CALIBRATION_PENDING / NOT_EXECUTED",
     "AFW-P02": "NOT_STARTED — connectors and input qualification",
     "AFW-P03": "NOT_STARTED — FACE-01 bounded prototype",
     "AFW-P04": "NOT_STARTED — QA-01 and change analyzer",
@@ -35,6 +52,15 @@
     "AFW-P07": "NOT_STARTED — independent rerun and audit package",
     "AFW-P08": "NOT_STARTED — human final audit"
   },
-  "nextAuthorityTransition": "After AFW-P01 evidence is locked, obtain separate explicit human OPEN_PROTOTYPE then GRANTED decisions in that order.",
-  "next": "Prepare the private AFW-P01 calibration, identity, rights, privacy, and QA parameter-envelope proposal; do not execute external or implementation actions."
+  "nextAuthorityTransition": "After eligible private calibration evidence is prepared and separately approved, calibration may be locked. OPEN_PROTOTYPE then GRANTED still require later explicit human decisions in that order.",
+  "next": "Prepare the rights-confirmed private calibration evidence plan without ingesting samples or executing tools until separately authorized.",
+  "afwP01DesignGate": {
+    "status": "APPROVED",
+    "approvalDate": "2026-09-13",
+    "approvalReceiptPath": "fast_track/working/post_v2_arkaon_face_web/evidence/NURION_POST_V2_ARKAON_FACE_WEB_AFW_P01_DESIGN_APPROVED_R1_receipt.json",
+    "proposalPath": "fast_track/working/post_v2_arkaon_face_web/semantic/NURION_POST_V2_ARKAON_FACE_WEB_AFW_P01_CALIBRATION_PROPOSAL_R1.json",
+    "approvedProposalBlobSha": "ab58f289a11961b66b62838ecd317da90f70f8ea",
+    "calibrationLocked": false,
+    "decision": "Design documentation approved only; execution and authority remain unchanged."
+  }
 }

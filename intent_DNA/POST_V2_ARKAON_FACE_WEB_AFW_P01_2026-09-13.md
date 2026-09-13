@@ -4,8 +4,8 @@
 - Profile: `ARKAON FACE WEB PROFILE`
 - Phase: `AFW-P01`
 - Revision: `R1`
-- Status: **PROPOSAL READY FOR HUMAN REVIEW**
-- Calibration lock: **FALSE**
+- Status: **HUMAN DESIGN APPROVED**
+- Calibration lock: **FALSE — PRIVATE CALIBRATION PENDING**
 - Execution: **NOT EXECUTED**
 - Implementation authority: **NONE**
 - Open status: **NOT OPEN**
@@ -14,7 +14,7 @@
 
 Define how identity, facial geometry, expression behavior, neutral return, GLB reload, web performance, rights, privacy, external uploads, human review, and failure routing will later be calibrated from rights-confirmed private samples.
 
-This document set contains no universal numeric threshold. It does not ingest samples, run measurements, implement tooling, authorize external services, or alter an asset.
+The R1 design has explicit human approval for documentation lock only. This document set contains no universal numeric threshold. It does not ingest samples, run measurements, implement tooling, authorize external services, or alter an asset.
 
 ## Decision model
 
@@ -53,7 +53,7 @@ The default repair-cycle limit remains three. Previous accepted checkpoints are 
 
 ## V2 and authority boundary
 
-`NURION_ADAPTATION_ENGINE_V2` remains **CLOSED / PASS / CONSUME ONLY / READ_ONLY**. This AFW-P01 proposal neither locks calibration nor transitions `OPEN_PROTOTYPE` or `GRANTED`.
+`NURION_ADAPTATION_ENGINE_V2` remains **CLOSED / PASS / CONSUME ONLY / READ_ONLY**. This AFW-P01 design approval does not lock calibration and does not transition `OPEN_PROTOTYPE` or `GRANTED`.
 
 All later actions remain governed by:
 

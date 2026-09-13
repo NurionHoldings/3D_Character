@@ -160,11 +160,11 @@ Outputs under `--out-dir`: `*_SOURCE_BASELINE.glb`, `*_V2_FACE.glb`, `*_V2_FACE_
 
 ### AFW-P01 calibration and QA design (R1 proposal)
 
-- Status: `PROPOSAL_READY_FOR_HUMAN_REVIEW / NOT_LOCKED / NOT_EXECUTED`
+- Status: `HUMAN_DESIGN_APPROVED / CALIBRATION_PENDING / NOT_EXECUTED`
 - Calibration proposal: `fast_track/working/post_v2_arkaon_face_web/semantic/NURION_POST_V2_ARKAON_FACE_WEB_AFW_P01_CALIBRATION_PROPOSAL_R1.json`
 - Calibration envelope schema: `fast_track/working/post_v2_arkaon_face_web/semantic/ARKAON_FACE_CALIBRATION_ENVELOPE_SCHEMA_R1.json`
 - Human visual receipt schema: `fast_track/working/post_v2_arkaon_face_web/semantic/ARKAON_HUMAN_VISUAL_RECEIPT_SCHEMA_R1.json`
 - External upload gate schema: `fast_track/working/post_v2_arkaon_face_web/semantic/ARKAON_EXTERNAL_UPLOAD_GATE_SCHEMA_R1.json`
 - Failure routing matrix: `fast_track/working/post_v2_arkaon_face_web/semantic/ARKAON_FACE_FAILURE_ROUTING_MATRIX_R1.json`
 - Intent: `intent_DNA/POST_V2_ARKAON_FACE_WEB_AFW_P01_2026-09-13.md`
-- This proposal defines how later private calibration may be performed. It does not lock any threshold, authorize sample use, transition `OPEN_PROTOTYPE` or `GRANTED`, or permit implementation, external upload, purchase, generation, mutation, merge, or deployment.
+- Human approval locks this R1 design documentation only. It does not lock a calibration envelope, authorize sample use, transition `OPEN_PROTOTYPE` or `GRANTED`, or permit implementation, external upload, purchase, generation, mutation, merge, publication, or deployment.
