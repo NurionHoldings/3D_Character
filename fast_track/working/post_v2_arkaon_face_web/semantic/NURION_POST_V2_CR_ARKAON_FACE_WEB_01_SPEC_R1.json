@@ -1,0 +1,161 @@
+{
+  "schema": "NURION_POST_V2_CR_ARKAON_FACE_WEB_01_SPEC_R1",
+  "changeRequestId": "POST-V2-CR-ARKAON-FACE-WEB-01",
+  "profileId": "ARKAON_FACE_WEB_PROFILE",
+  "revision": "R1",
+  "title": "ARKAON-GOVERNED IDENTITY, FACE RIG, EXPRESSION QA, REPAIR, AND WEB DELIVERY",
+  "status": "SPEC_LOCKED",
+  "humanSpecReview": "APPROVED",
+  "implementationAuthority": "NONE",
+  "openStatus": "NOT_OPEN",
+  "prototypeStatus": "NOT_STARTED",
+  "declaredAtUtc": "20260913T000000Z",
+  "declaredBy": "human-owner",
+  "specNature": "REQUIREMENTS AND ACCEPTANCE CRITERIA LOCK ONLY. This document authorizes no implementation, external generation, asset purchase, upload, publication, or deployment.",
+  "purpose": "Develop and apply the relevant ARKAON planning, governance, building, verification, change-analysis, evidence, recovery, and reporting capabilities across an identity-preserving 3D face production loop from approved multi-view references through Meshy-style model acquisition, NURION face augmentation, expression QA, targeted repair, and web delivery.",
+  "operatingProtocol": ["READ", "ANALYZE", "PROPOSE", "AUTHORIZE", "EXECUTE", "VERIFY", "REPORT"],
+  "proposalIsExecution": false,
+  "highRiskActionsRequireExplicitHumanAuthorization": true,
+  "authorityBoundary": {
+    "NURION_ADAPTATION_ENGINE_V2": "CLOSED / PASS / CONSUME ONLY / READ_ONLY",
+    "NURION_ADAPTATION_ENGINE_V2_RELEASE": "AUTHORITATIVE FINAL",
+    "CR01_TO_CR04_AND_IRG": "REOPEN DENY",
+    "POST_V2_CHANGE": "ISOLATED DERIVED WORK ONLY",
+    "forbiddenActions": [
+      "mutate or replace sealed V2 source, semantic contracts, evidence, receipts, manifests, or digests",
+      "rename, reinterpret, or silently rewrite canonical BODY, FACE, TALKING, motion, or P05 semantics",
+      "mutate a user or third-party source asset in place",
+      "treat an analysis, proposal, preview, or metadata-only result as execution or PASS",
+      "bypass authorization, gate, domain service, audit, manifest, hash, tamper, or provenance checks",
+      "trust client-supplied permission, policy, gate, or proof claims without server-side verification",
+      "publish private reference images, source models, derived models, screenshots, prompts, seeds, or receipts",
+      "auto-purchase, externally upload, regenerate, overwrite, or deploy without the required authorization",
+      "claim universal topology, generator, auto-rig, facial-rig, or production compatibility"
+    ]
+  },
+  "capabilityOwners": {
+    "ARKAON_PLANNER": "Build the bounded production plan, iteration budget, cost/risk estimate, dependencies, and measurable completion conditions.",
+    "ARKAON_ARCHITECT": "Define versioned contracts between reference generation, Meshy-style acquisition, NURION processing, QA, repair, and web runtime.",
+    "ARKAON_GOVERNOR": "Enforce authority, scope, privacy, licensing, V2 locks, state transitions, and fail-closed gates.",
+    "ARKAON_BUILDER": "After separate authority is granted, implement only the approved adapters, rig augmentation, repair, optimization, and packaging scope.",
+    "ARKAON_VERIFIER": "Run structural, behavioral, visual, preservation, provenance, reload, and web-performance verification.",
+    "ARKAON_CHANGE_ANALYZER": "Classify every delta as improvement, no-change, regression, identity drift, contract violation, or V2-boundary violation.",
+    "ARKAON_AI_SUPERVISOR": "Observe pipeline state, diagnose failures, propose the next bounded action, and never self-authorize execution.",
+    "ARKAON_EVIDENCE_ENGINE": "Preserve hashes, manifests, parameters, decisions, reports, and approval references without publishing private payloads.",
+    "ARKAON_RECOVERY_ENGINE": "Stop safely, retain the last accepted checkpoint, prevent clobber, and support deterministic rollback.",
+    "ARKAON_REPORT_ENGINE": "Report status, blockers, evidence, residual risk, required human decisions, and the exact proposed next action."
+  },
+  "requiredModules": {
+    "IDENTITY-01": "Approved multi-view A-pose and close-up reference set plus identity lock.",
+    "MESHY-01": "External model acquisition and input qualification; external facial rig is never presumed production-ready.",
+    "FACE-01": "NURION facial capability inspection and authorized append-only augmentation or isolated derived repair.",
+    "QA-01": "Automated and human-verifiable facial expression, talking, preservation, and web QA.",
+    "REPAIR-01": "Failure-directed internal correction, re-rig, partial reference regeneration, remesh/retopology request, or texture-only request.",
+    "WEB-01": "Web-profile optimization, runtime state mapping, packaging, and staged delivery."
+  },
+  "workflow": [
+    {
+      "stage": "IDENTITY-01",
+      "input": "Human-approved character brief and rights/privacy classification",
+      "requiredOutputs": ["front A-pose", "left and right 45-degree views", "left and right profiles", "neutral face close-up", "eyes-closed reference", "mouth-open reference", "prompt and generation metadata", "per-file SHA-256", "arkaon_identity_profile.json"],
+      "rule": "All views must represent the same identity. A human approval receipt is required before any external 3D generation or upload."
+    },
+    {
+      "stage": "MESHY-01",
+      "input": "Approved identity package and explicitly authorized external-upload bundle",
+      "requiredOutputs": ["private source asset", "source SHA-256", "rights and redistribution classification", "topology/rig/skin/material/texture inventory", "input qualification report"],
+      "rule": "Use external generation for geometry, texture, and available base rig only. Do not claim production facial-rig completion from provider labels alone."
+    },
+    {
+      "stage": "FACE-01",
+      "input": "Qualified rigged and skinned asset",
+      "requiredOutputs": ["private derived candidate", "face mapping manifest", "expression manifest", "source-preservation envelope", "processing receipt"],
+      "rule": "Consume sealed V2 interfaces read-only. Any new capability is isolated Post-V2 work and must not become an alternate canonical runtime authority."
+    },
+    {
+      "stage": "QA-01",
+      "input": "Derived face candidate and locked identity profile",
+      "requiredOutputs": ["arkaon_face_qa_report.json", "change analysis", "verdict", "human visual review package"],
+      "verdicts": ["PASS", "REPAIR", "REGENERATE", "REJECT"],
+      "rule": "A verdict must cite machine evidence and, for final acceptance, a private human visual receipt."
+    },
+    {
+      "stage": "REPAIR-01",
+      "input": "One classified failure with evidence",
+      "requiredOutputs": ["bounded repair proposal", "authorization reference", "new candidate and delta evidence when executed"],
+      "rule": "Prefer the smallest failed-region correction. Whole-face regeneration is prohibited unless evidence shows partial repair cannot satisfy identity and topology criteria and a human explicitly authorizes it."
+    },
+    {
+      "stage": "WEB-01",
+      "input": "QA PASS candidate",
+      "requiredOutputs": ["arkaon_face_web.glb", "arkaon_identity_profile.json", "arkaon_expression_manifest.json", "arkaon_web_state_map.json", "arkaon_face_qa_report.json", "public-safe manifest and private evidence references"],
+      "rule": "Stage first; verify reload, runtime behavior, performance, privacy, and no-clobber before any separate deployment authorization."
+    }
+  ],
+  "identityLockContract": {
+    "canonicalArtifact": "arkaon_identity_profile.json",
+    "requiredFields": ["profileSchema", "characterId", "referenceManifestDigest", "approvedReferenceIds", "promptDigest", "generationMetadataDigest", "landmarkSignature", "proportionSignature", "materialAppearanceNotes", "rightsClass", "privacyClass", "humanApprovalRef", "createdAtUtc"],
+    "identityDriftRule": "Compare every candidate with the last human-approved identity checkpoint using a calibrated private method. Uncalibrated universal numeric thresholds are forbidden.",
+    "onDrift": "REGENERATE or REJECT; never silently accept or overwrite the last PASS checkpoint."
+  },
+  "failureRouting": {
+    "expression timing or strength": "NURION internal correction",
+    "shape-key vertex deformation": "NURION re-rig or bounded weight/morph repair under separate authority",
+    "missing facial edge loops": "external remesh or partial retopology proposal",
+    "incorrect facial geometry": "targeted reference generation plus explicitly authorized external regeneration",
+    "texture-only defect": "texture-only repair",
+    "neck or upper-body seam": "NURION neck-fit or bounded mesh repair",
+    "web performance failure": "WEB-01 optimization without semantic degradation",
+    "rights, privacy, provenance, or V2-boundary failure": "REJECT and stop"
+  },
+  "iterationAndRecovery": {
+    "defaultMaximumRepairCycles": 3,
+    "additionalCycleAuthority": "EXPLICIT_HUMAN_ONLY",
+    "checkpointRule": "Each accepted stage produces an immutable logical checkpoint identified by manifest and artifact digests.",
+    "regressionRule": "If a new candidate regresses any locked acceptance dimension, restore the prior accepted checkpoint and report the regression.",
+    "noClobber": true,
+    "partialPublish": "DENY"
+  },
+  "acceptanceCriteria": {
+    "AC-01-GOVERNANCE": "Every executed action has an intent, scope, authority reference, result, verification, and report following the operating protocol in order.",
+    "AC-02-V2-IMMUTABILITY": "Independent digest comparison proves all sealed V2 authority files and the declared canonical preservation envelope were not changed.",
+    "AC-03-IDENTITY": "The candidate matches the human-approved multi-view identity checkpoint under the locked calibration method and receives a human visual PASS.",
+    "AC-04-INPUT-QUALIFICATION": "Rig, skin, topology, materials, textures, animation inventory, rights, privacy, provenance, and source digest are complete; ambiguity blocks processing.",
+    "AC-05-FACE-RUNTIME": "Blink_L, Blink_R, Jaw_Mouth, VISEME_AA, VISEME_OH, and VISEME_EE produce actual visible deformation and the talking clip exists.",
+    "AC-06-EXPRESSION": "Every expression/state in the approved expression manifest is visually distinct, structurally valid, and accepted by the private human visual review.",
+    "AC-07-EYES-AND-MOUTH": "Blink, gaze, jaw, lips, and any approved tongue behavior show no unresolved penetration, inversion, collapse, or unintended coupling under the calibrated QA method.",
+    "AC-08-NEUTRAL-RETURN": "Every tested expression and talking sequence returns to its recorded neutral state with zero semantic state residue; numeric geometry tolerances must come from the approved calibration lock.",
+    "AC-09-BODY-SKIN-PRESERVATION": "sourceUnmutated is true and bodySkinDigestMatch is true for the declared source/body/skin envelope.",
+    "AC-10-CHANGE-ANALYSIS": "Every repair candidate has a before/after diff and is classified; no unresolved regression, identity drift, or locked-contract intrusion remains.",
+    "AC-11-GLB-RELOAD": "The staged GLB reloads successfully and its meshes, skins, morph targets, animations, materials, manifests, and digests match the staged receipt.",
+    "AC-12-WEB-RUNTIME": "The approved ARKAON web states deterministically map to declared expressions and restore correctly after transitions; target device/browser and performance budgets must be separately calibrated and locked before implementation PASS.",
+    "AC-13-PRIVACY-LICENSE": "No private or third-party binary or identifying source payload is committed publicly; rights and allowed-use classification are verified before each external upload and publication.",
+    "AC-14-EVIDENCE": "All required artifacts, hashes, tool/model versions, parameters, approvals, QA results, and rollback references form a complete provenance chain.",
+    "AC-15-FAIL-CLOSED": "Missing evidence, uncertain mapping, unauthorized action, digest mismatch, provider failure, or validation failure yields BLOCKED/REJECT and cannot render as success.",
+    "AC-16-HUMAN-FINAL": "Final product PASS, release, publication, or deployment is declared only after an independent rerun, digest/tamper verification, and explicit human final audit."
+  },
+  "requiredGates": ["GOVERNANCE_PASS", "V2_IMMUTABILITY_PASS", "IDENTITY_PASS", "INPUT_QUALIFICATION_PASS", "FACE_RUNTIME_PASS", "EXPRESSION_PASS", "EYE_MOUTH_PASS", "NEUTRAL_RETURN_PASS", "BODY_SKIN_PRESERVATION_PASS", "CHANGE_ANALYSIS_PASS", "GLB_RELOAD_PASS", "WEB_RUNTIME_PASS", "PRIVACY_LICENSE_PASS", "EVIDENCE_CHAIN_PASS", "FAIL_CLOSED_PASS", "HUMAN_FINAL_PASS"],
+  "failClosedBlockers": ["AUTHORITY_MISSING_OR_EXPIRED", "SCOPE_MISMATCH", "V2_DIGEST_OR_CONTRACT_MISMATCH", "SOURCE_MUTATION_DETECTED", "BODY_SKIN_REGRESSION", "IDENTITY_DRIFT", "AMBIGUOUS_FACE_MAPPING", "FACIAL_TOPOLOGY_INSUFFICIENT", "EXPRESSION_OR_VISEME_FAILURE", "NEUTRAL_RETURN_FAILURE", "GLB_RELOAD_FAILURE", "WEB_BUDGET_NOT_LOCKED_OR_FAILED", "RIGHTS_OR_PRIVACY_UNRESOLVED", "PROVENANCE_OR_EVIDENCE_INCOMPLETE", "OUTPUT_ALREADY_EXISTS", "REPAIR_CYCLE_LIMIT_REACHED"],
+  "publicPrivateBoundary": {
+    "publicAllowed": ["source code", "schemas", "requirements", "acceptance criteria", "public-safe manifests containing digests and pseudonymous identifiers", "rights-cleared self-produced documentation"],
+    "privateOnly": ["reference images", "prompts and seeds when identifying", "Meshy or user source models", "derived GLB/FBX assets", "raw screenshots and visual receipts", "absolute storage paths", "provider credentials", "private authorization bundles"],
+    "publicBinaryRedistribution": "DENY unless a separate rights review explicitly grants it"
+  },
+  "implementationStages": {
+    "AFW-P00": "SPEC_LOCKED — this document set only",
+    "AFW-P01": "NOT_STARTED — private identity and QA calibration lock",
+    "AFW-P02": "NOT_STARTED — connectors and input qualification",
+    "AFW-P03": "NOT_STARTED — FACE-01 bounded prototype",
+    "AFW-P04": "NOT_STARTED — QA-01 and change analyzer",
+    "AFW-P05": "NOT_STARTED — REPAIR-01 bounded loop",
+    "AFW-P06": "NOT_STARTED — WEB-01 runtime and optimization",
+    "AFW-P07": "NOT_STARTED — independent rerun and audit package",
+    "AFW-P08": "NOT_STARTED — human final audit"
+  },
+  "authorityTransitions": ["SPEC_LOCKED / APPROVED / NOT_OPEN / NONE", "CALIBRATION_LOCKED / APPROVED / NOT_OPEN / NONE", "APPROVED / APPROVED / OPEN_PROTOTYPE / NONE", "APPROVED / APPROVED / OPEN_PROTOTYPE / GRANTED", "READY_FOR_HUMAN_AUDIT", "HUMAN_FINAL_PASS / CLOSED"],
+  "transitionRule": "This requirements lock grants no implementation authority. P01 private calibration and rights/privacy controls must be evidenced first. OPEN_PROTOTYPE and GRANTED require later explicit human authorization in order. Agents may reach READY_FOR_HUMAN_AUDIT but may not self-declare HUMAN_FINAL_PASS.",
+  "deferredSeparateDecisions": ["external provider and model selection", "purchase approval", "production credentials", "calibrated identity/geometry/performance tolerances", "deployment target and browser/device matrix", "production upload/download service", "additional visemes, tongue/teeth, muscle simulation, and full auto-retopology"],
+  "canonicalDeliverables": ["arkaon_face_web.glb", "arkaon_identity_profile.json", "arkaon_expression_manifest.json", "arkaon_web_state_map.json", "arkaon_face_qa_report.json", "public-safe digest manifest", "private evidence package"],
+  "digestRule": "The locked SPEC digest is SHA-256 of this file's raw UTF-8/LF bytes; do not hash a reserialization, CRLF conversion, or Git object header.",
+  "next": "Complete AFW-P01 private calibration and rights/privacy lock. Do not implement, purchase, externally upload, regenerate, publish, or deploy until a later explicit OPEN_PROTOTYPE then GRANTED authorization."
+}
