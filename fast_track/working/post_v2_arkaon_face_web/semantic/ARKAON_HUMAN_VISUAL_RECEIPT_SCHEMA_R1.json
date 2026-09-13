@@ -1,0 +1,38 @@
+{
+  "schema": "ARKAON_HUMAN_VISUAL_RECEIPT_SCHEMA_R1",
+  "status": "SCHEMA_PROPOSAL_ONLY",
+  "receipt": {
+    "receiptId": null,
+    "characterId": null,
+    "candidateDigest": null,
+    "identityProfileDigest": null,
+    "calibrationEnvelopeDigest": null,
+    "reviewPackageDigest": null,
+    "reviewerRole": "HUMAN_OWNER_OR_DELEGATE",
+    "reviewContext": {"displayClass": null, "viewSet": [], "expressionSet": [], "glbReloadVerified": false},
+    "decisions": {
+      "identity": null,
+      "expressionDistinctness": null,
+      "eyes": null,
+      "mouthJaw": null,
+      "neutralReturn": null,
+      "bodySkinPreservation": null,
+      "overall": null
+    },
+    "observations": [],
+    "failedRegions": [],
+    "verdict": null,
+    "authorizationGranted": [],
+    "reviewedAtUtc": null,
+    "signatureOrApprovalRef": null,
+    "privateEvidenceRef": null,
+    "publicSafe": false
+  },
+  "allowedVerdicts": ["PASS", "REPAIR", "REGENERATE", "REJECT", "BLOCKED"],
+  "rules": [
+    "The underlying images, video, screenshots, and identifying evidence are private-only.",
+    "A PASS receipt does not grant implementation, upload, purchase, publication, merge, or deployment authority.",
+    "An empty authorizationGranted array means no subsequent execution authority.",
+    "REGENERATE records a recommendation only until separately authorized by a human."
+  ]
+}
