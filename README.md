@@ -147,3 +147,13 @@ Outputs under `--out-dir`: `*_SOURCE_BASELINE.glb`, `*_V2_FACE.glb`, `*_V2_FACE_
 
 - **Engine source & NURION docs in this repo:** Nurion Holdings  
 - **Meshy (or user) character meshes:** respective owner — **not redistributed** via this public repository
+
+## ARKAON FACE WEB (Post-V2 — Spec locked)
+
+- **CR:** `POST-V2-CR-ARKAON-FACE-WEB-01`
+- **Profile:** `ARKAON FACE WEB PROFILE`
+- **Status:** `SPEC_LOCKED / HUMAN APPROVED / NOT_OPEN / IMPLEMENTATION AUTHORITY NONE`
+- Intent: `intent_DNA/POST_V2_ARKAON_FACE_WEB_01_2026-09-13.md`
+- R1 Spec: `fast_track/working/post_v2_arkaon_face_web/semantic/NURION_POST_V2_CR_ARKAON_FACE_WEB_01_SPEC_R1.json`
+- R1 Track: `fast_track/working/post_v2_arkaon_face_web/semantic/NURION_POST_V2_CR_ARKAON_FACE_WEB_01_TRACK_R1.json`
+- This lock covers requirements and Acceptance Criteria only. It does not grant implementation, purchase, external upload, publication, or deployment authority. V2 remains consume-only and must not be reopened.
